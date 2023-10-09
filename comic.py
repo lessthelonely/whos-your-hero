@@ -36,8 +36,6 @@ for index, h2 in enumerate(h2_tags):
     content = ''
     next_element = h2.find_next_sibling()
     while next_element and next_element.name != 'h2':
-        if h2.get_text() == 'Powers_and_Abilities':
-            print(content)
         if next_element.name == 'figure':
             content += ''
         else:
@@ -46,14 +44,14 @@ for index, h2 in enumerate(h2_tags):
                 if li_elements != None:
                     for li_element in next_element.find_all('li'):
                         content += '\n' + str(li_element.get_text())
-            if next_element.name == 'h3':
+            if next_element.name == 'h3' or next_element.name == 'h4':
                 content += '\n' + str(next_element.get_text()) + '\n'
             else:
                 content += str(next_element.get_text())
         next_element = next_element.find_next_sibling()
 
     # Create a separate file for each <h2> tag
-    file_name = h2.get_text().strip().replace(' ', '_') + '.txt'
+    file_name = "emma_frost/emma_" + h2.get_text().strip().replace(' ', '_') + '.txt'
     
     
     with open(file_name, 'w') as file:
@@ -61,7 +59,6 @@ for index, h2 in enumerate(h2_tags):
 
     print(f'Saved text from <h2> tag {index + 1} to {file_name}')
 
-# check files
 # check table especially death thingy
 # check tvtropes
 
