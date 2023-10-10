@@ -7,8 +7,43 @@ from simyan.comicvine import Comicvine
 from simyan.sqlite_cache import SQLiteCache
 from bs4 import BeautifulSoup
 
-session = Comicvine(api_key=apikey, cache=SQLiteCache())
+URL = "https://comicvine.gamespot.com/emma-frost/4005-1457/"
 
+page = requests.get(URL)
+
+
+soup = BeautifulSoup(page.content, "lxml")
+div_characters = soup.find_all("div", {"class":"wiki-details"})[0]
+
+
+# Initialize a dictionary to store the extracted data
+data = {}
+
+
+rows = div_characters.find_all('tr')
+for row in rows:
+    # Extract the header and data from each row
+    header = row.find('th').text.strip()
+    if header == 'Powers':
+        data_cell = row.find("div", {"class":"wiki-item-display"}).text.strip()
+    else:
+        data_cell = row.find('span').text.strip()
+    # Store the data in the dictionary
+    data[header] = data_cell
+
+# put each header and value in a new file
+for header, value in data.items():
+    file_name = "emma_frost/emma_" + header + '.txt'
+    with open(file_name, 'w') as file:
+        file.write(value)
+    print(f'Saved text from {header} to {file_name}')
+    print()
+
+
+
+
+
+"""
 # Search for Publisher
 results = session.list_characters(params={"filter": "name:Emma Frost"})
 # Save data per character
@@ -59,9 +94,9 @@ for index, h2 in enumerate(h2_tags):
 
     print(f'Saved text from <h2> tag {index + 1} to {file_name}')
 
-# check table especially death thingy
 # check tvtropes
 
+def get_comic_info():
 
 
 
@@ -72,25 +107,12 @@ for index, h2 in enumerate(h2_tags):
 
 
 first_issue = emma.first_issue
-gender = emma.gender
-issues = emma.issue_count
-origin = emma.origin
-real_name = emma.real_name
-publisher = emma.publisher
 summary = emma.summary
 print("Alias: " + alias)
 # print("Birth: " + birth)
 #print("Description: " + description) # printing everything
 print("First Issue: " + first_issue.name)
-if(gender == 1):
-    gender = "male"
-else:
-    gender = "female"
-print("Gender: " + gender)
-print("Issue Count: " + str(issues))
-print("Character Type: " + origin.name)
-print("Real Name: " + real_name)
-print("Publisher: " + publisher.name)
+
 print("Summary: " + summary)
 
 
@@ -99,3 +121,4 @@ print("Summary: " + summary)
 # results = session.list_characters(params={"filter": "name:Deadpool"})
 # results = session.list_characters(params={"filter": "name:Wally West"})
 
+"""
