@@ -1,0 +1,13 @@
+Adaptive
+Agility
+Escape Artist
+Gadgets
+Intellect
+Leadership
+Marksmanship
+Stamina
+Stealth
+Swordsmanship
+Tracking
+Unarmed Combat
+Weapon Master
