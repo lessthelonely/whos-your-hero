@@ -41,10 +41,7 @@ def get_comic_character_info(folder_info, character_name, url):
 
 
         results = session.list_characters(params={"filter": "name:" + character_name})
-        if character_name == 'Wally West':
-            character = results[1]
-        else:
-            character = results[0]
+        character = results[0]
 
         summary = character.summary
         # Save summary into a file
@@ -100,8 +97,8 @@ def get_comic_character_info(folder_info, character_name, url):
 
 
 
-get_comic_character_info("emma_frost", "Emma Frost", "https://comicvine.gamespot.com/emma-frost/4005-1457/")
-get_comic_character_info("cassandra_cain", "Cassandra Cain", "https://comicvine.gamespot.com/cassandra-cain/4005-65230/")
-get_comic_character_info("midnighter", "Midnighter", "https://comicvine.gamespot.com/midnighter/4005-2196/")
-get_comic_character_info("deadpool", "Deadpool", "https://comicvine.gamespot.com/deadpool/4005-7606/")
+#get_comic_character_info("emma_frost", "Emma Frost", "https://comicvine.gamespot.com/emma-frost/4005-1457/")
+#get_comic_character_info("cassandra_cain", "Cassandra Cain", "https://comicvine.gamespot.com/cassandra-cain/4005-65230/")
+#get_comic_character_info("midnighter", "Midnighter", "https://comicvine.gamespot.com/midnighter/4005-2196/")
+#get_comic_character_info("deadpool", "Deadpool", "https://comicvine.gamespot.com/deadpool/4005-7606/")
 get_comic_character_info("wally_west", "Wally West", "https://comicvine.gamespot.com/wally-west/4005-23879/")
