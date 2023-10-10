@@ -4,13 +4,16 @@
 import requests
 from bs4 import BeautifulSoup
 
-URL = "https://tvtropes.org/pmwiki/pmwiki.php/Characters/TheAuthorityMidnighter"
+URL = "https://tvtropes.org/pmwiki/pmwiki.php/Characters/MarvelComicsEmmaFrost"
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, "lxml")
 div_characters = soup.find("div", id="main-article")
 h2 = div_characters.find("h2")
 after_h2 = h2.find_all_next("ul")
+
+if soup.find("div",{"class": "folderlabel"}) != None:
+    after_h2 = soup.find("div",{"class": "folderlabel"}).find_all_next("ul")
 
 
 a_list = []
@@ -21,7 +24,7 @@ for a in after_h2:
         break
     else:
         a_list+=a
-# print(a_list)
+print(a_list)
 tropes = []
 with open("tropes.txt", "w", encoding="utf-8") as f:
     for t in a_list:
