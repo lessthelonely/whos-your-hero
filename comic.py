@@ -87,18 +87,8 @@ def get_comic_character_info(folder_info, character_name, url):
 
             print(f'Saved text from <h2> tag {index + 1} to {file_name}')
 
-        # check tvtropes
-
-
-
-
-
-
-
-
-
-#get_comic_character_info("emma_frost", "Emma Frost", "https://comicvine.gamespot.com/emma-frost/4005-1457/")
+get_comic_character_info("emma_frost", "Emma Frost", "https://comicvine.gamespot.com/emma-frost/4005-1457/")
 get_comic_character_info("cassandra_cain", "Cassandra Cain", "https://comicvine.gamespot.com/cassandra-cain/4005-65230/")
-#get_comic_character_info("midnighter", "Midnighter", "https://comicvine.gamespot.com/midnighter/4005-2196/")
-#get_comic_character_info("deadpool", "Deadpool", "https://comicvine.gamespot.com/deadpool/4005-7606/")
-#get_comic_character_info("wally_west", "Wally West", "https://comicvine.gamespot.com/wally-west/4005-23879/")
+get_comic_character_info("midnighter", "Midnighter", "https://comicvine.gamespot.com/midnighter/4005-2196/")
+get_comic_character_info("deadpool", "Deadpool", "https://comicvine.gamespot.com/deadpool/4005-7606/")
+get_comic_character_info("wally_west", "Wally West", "https://comicvine.gamespot.com/wally-west/4005-23879/")
