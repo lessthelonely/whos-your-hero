@@ -31,8 +31,6 @@ def get_character_tropes(folder_info, url):
         else:
             a_list+=a
     print(a_list)
-    print(folder_info + "/" + folder_info + "_Tropes.txt")
-    print(len(a_list))
     with open(folder_info + "/" + folder_info + "_Tropes.txt", "w", encoding="utf-8") as f:
         for t in a_list:
             f.write(t.text + "\n")
