@@ -1,12 +1,8 @@
-dbo:abstract
-dbo:creator
-dbp:aliases
-dbp:characterName
-dbp:creators
-dbp:debut
-dbp:hero
-dbp:powers
-dbp:publisher
-dbp:realName
-dbp:species
-dbp:villain
+abstract
+aliases
+creator
+debut
+powers
+publisher
+real name or full name or alter ego
+species
