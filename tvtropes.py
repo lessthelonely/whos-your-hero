@@ -26,7 +26,9 @@ def get_character_tropes(folder_info, url):
     for a in after_h2:
         li_element = a.find('li')
         a_element = li_element.find('a')
-        if a_element and a_element.get('href', '').startswith('/pmwiki/pmwiki.php') and not a_element.get('class') == ['twikilink']:
+        if a_element and a_element.text == 'Identity Wars':
+            a_list+=a
+        elif a_element and a_element.get('href', '').startswith('/pmwiki/pmwiki.php') and not a_element.get('class') == ['twikilink']:
             break
         else:
             a_list+=a
@@ -35,7 +37,7 @@ def get_character_tropes(folder_info, url):
         for t in a_list:
             f.write(t.text + "\n")
 
-get_character_tropes("midnighter", "https://tvtropes.org/pmwiki/pmwiki.php/Characters/TheAuthorityMidnighter")
-get_character_tropes("emma_frost", "https://tvtropes.org/pmwiki/pmwiki.php/Characters/MarvelComicsEmmaFrost")
-get_character_tropes("wally_west","https://tvtropes.org/pmwiki/pmwiki.php/Characters/TheFlashWallyWest")
+# get_character_tropes("midnighter", "https://tvtropes.org/pmwiki/pmwiki.php/Characters/TheAuthorityMidnighter")
+# get_character_tropes("emma_frost", "https://tvtropes.org/pmwiki/pmwiki.php/Characters/MarvelComicsEmmaFrost")
+# get_character_tropes("wally_west","https://tvtropes.org/pmwiki/pmwiki.php/Characters/TheFlashWallyWest")
 get_character_tropes("deadpool", "https://tvtropes.org/pmwiki/pmwiki.php/Characters/DeadpoolWadeWilson")
