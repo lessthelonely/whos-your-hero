@@ -57,6 +57,15 @@ with open("all_tropes_clean.txt", "w", encoding="utf-8") as f:
                 t = t.replace("!", "")
             if "?" in t:
                 t = t.replace("?", "")
+            if "..." in t:
+                t = t.replace("...", "")
+
+            #check if there's in quotes
+            if "\"" in t:
+                t = t.replace("\"", "")
+            
+            #Need to replace numbers with words
+
 
             f.write(t + "\n")
 
