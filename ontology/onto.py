@@ -23,8 +23,16 @@ with onto:
     class Trope(Thing):
         pass
 
+    # Define the Story class
+    class Story(Thing):
+        pass
+
 # Properties
 with onto:
+    class storyDescription(Property):
+        domain = [Story]
+        range = [str]
+
     class hasAlias(Property):
         domain = [Character]
         range = [str]
@@ -65,9 +73,10 @@ with onto:
         domain = [Character]
         range = [str]
 
+    # Define the storyArcs property
     class storyArcs(Property):
         domain = [Character]
-        range = [str]
+        range = [Story]
 
     class origin(Property):
         domain = [Character]
