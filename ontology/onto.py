@@ -12,6 +12,9 @@ class Woman(Person):
 class Man(Person):
     ontology = onto
 
+class NonBinary(Person):
+    ontology = onto
+
 class Character(Person):
     ontology = onto
 
@@ -24,77 +27,102 @@ class hasAlias(Property):
     domain = [Character]
     range = [str]
 
-class Birthday(Property):
+class birthday(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class CharacterType(Property):
+class characterType(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class Appearances(Property):
+class appearsIn(Property):
+    ontology = onto
+    domain = [Character]
+    range = [int]
+
+class appearances(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class Deaths(Property):
+class creation(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class StoryArcs(Property):
+class creators(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class Origin(Property):
+class deaths(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class OtherMedia(Property):
+class disambiguation(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class OtherVersion(Property):
+class firstAppearance(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class Characteristics(Property):
+class storyArcs(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class Powers(Property):
+class origin(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class Publisher(Property):
+class otherMedia(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class RealName(Property):
+class otherVersion(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class Summary(Property):
+class characteristics(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class SuperName(Property):
+class powers(Property):
     ontology = onto
     domain = [Character]
     range = [str]
 
-class TropeNames(Property):
+class publisher(Property):
+    ontology = onto
+    domain = [Character]
+    range = [str]
+
+class realName(Property):
+    ontology = onto
+    domain = [Character]
+    range = [str]
+
+class summary(Property):
+    ontology = onto
+    domain = [Character]
+    range = [str]
+
+class superName(Property):
+    ontology = onto
+    domain = [Character]
+    range = [str]
+
+class videoGames(Property):
     ontology = onto
     domain = [Character]
     range = [str]
@@ -103,6 +131,8 @@ class hasWeaponsEquipment(Property):
     ontology = onto
     domain = [Character]
     range = [str]
+
+
 
 class hasTrope(Property):
     ontology = onto
@@ -120,6 +150,11 @@ class isWoman(Property):
     type = [bool]
 
 class isMan(Property):
+    ontology = onto
+    domain = [Character]
+    range = [bool]
+
+class isNonBinary(Property):
     ontology = onto
     domain = [Character]
     range = [bool]
