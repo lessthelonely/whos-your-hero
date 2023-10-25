@@ -1,4 +1,5 @@
 from onto import Character 
+from onto import Story
 from owlready2 import *
 import os
 
@@ -70,7 +71,7 @@ def load_deaths(names):
                 continue
             character.deaths.append(line.strip())
 
-def load_disambiguation(names):
+def load_disambiguation(names): #only cassandra has this
     for folder_name in names:
         f = open(folder_name + "/" + folder_name + "_Disambiguation.txt", "r")
         for line in f:
@@ -87,13 +88,17 @@ def load_first_appearance(names):
             character.firstAppearance.append(line.strip())
 
 def load_story_arcs(names):
-    #TODO: Make subproperties so we can save all headings and stuff.
     for folder_name in names:
         f = open(folder_name + "/" + folder_name + "_Major_Story_Arcs.txt", "r")
-        for line in f:
-            if (line.strip() == ""):
-                continue
-            character.storyArcs.append(line.strip())
+        file_contents = [line.strip() for line in f]
+        character_story = None 
+        for line in range(len(file_contents)):        
+            if line % 2 == 0:
+                 character_story = Story(file_contents[line].strip())
+            else:
+                if character_story:
+                    character_story.storyDescription.append(file_contents[line].strip())
+                    character.storyArcs.append(character_story)
 
 def load_origin(names):
     for folder_name in names:
