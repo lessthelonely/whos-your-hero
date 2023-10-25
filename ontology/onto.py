@@ -23,14 +23,20 @@ with onto:
     class Trope(Thing):
         pass
 
-    # Define the Story class
     class Story(Thing):
+        pass
+
+    class Power(Thing):
         pass
 
 # Properties
 with onto:
     class storyDescription(Property):
         domain = [Story]
+        range = [str]
+
+    class powerDescription(Property):
+        domain = [Power]
         range = [str]
 
     class hasAlias(Property):
@@ -96,7 +102,7 @@ with onto:
 
     class powers(Property):
         domain = [Character]
-        range = [str]
+        range = [Power]
 
     class publisher(Property):
         domain = [Character]

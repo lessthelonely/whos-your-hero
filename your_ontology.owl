@@ -36,10 +36,20 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Power">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
 <owl:Class rdf:about="#storyDescription">
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   <rdfs:domain rdf:resource="#Story"/>
+</owl:Class>
+
+<owl:Class rdf:about="#powerDescription">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:domain rdf:resource="#Power"/>
 </owl:Class>
 
 <owl:Class rdf:about="#hasAlias">
@@ -133,9 +143,9 @@
 </owl:Class>
 
 <owl:Class rdf:about="#powers">
-  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="#Power"/>
 </owl:Class>
 
 <owl:Class rdf:about="#publisher">
