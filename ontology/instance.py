@@ -1,5 +1,4 @@
-from onto import Character 
-from onto import Story
+from onto import Character, Story, Power
 from owlready2 import *
 import os
 
@@ -134,18 +133,20 @@ def load_characteristics(names):
             character.characteristics.append(line.strip())
 
 def load_powers_and_abilities(names):
-    #TODO: Make a subproperty so we can save names and the descriptions.
     for folder_name in names:
-        # f = open(folder_name + "/" + folder_name + "_Powers_and_Abilities.txt", "r")
-        # for line in f:
-        #     if (line.strip() == ""):
-        #         continue
-        #     character.characteristics.append(line.strip())
-        f = open(folder_name + "/" + folder_name + "_Powers.txt", "r")
+        f = open(folder_name + "/" + folder_name + "_Powers_and_Abilities.txt", "r")
         for line in f:
             if (line.strip() == ""):
                 continue
-            character.powers.append(line.strip())
+            power_info = line.strip().split(":")
+            character_power = Power(power_info[0])
+            character_power.powerDescription.append(power_info[1])
+            character.powers.append(character_power)
+        # f = open(folder_name + "/" + folder_name + "_Powers.txt", "r")
+        # for line in f:
+        #     if (line.strip() == ""):
+        #         continue
+        #     character.powers.append(line.strip())
 
 def load_publisher(names):
     for folder_name in names:
