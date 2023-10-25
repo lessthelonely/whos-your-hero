@@ -1,0 +1,43 @@
+# Common Properties
+- Aliases
+- Appears in
+- Birthday
+- Character Type
+- Character Evolution (deadpool + emma + midnighter)
+- Creation
+- Creators
+- Died
+- First Appearance
+- Gender
+- Major Story Arcs
+- Origin
+- Other Media (deadpool + emma + cass)
+- Powers and Abilities (wally is the only one who doesn't have this)
+- Powers
+- Publisher
+- Real Name
+- summary
+- Super Name
+- TropeNames
+- Tropes
+
+
+# Uncommon Properties
+- Alternate Versions (wally)
+- Characteristics (wally)
+- Creators Thoughts on (wally)
+- Alternate Realities (emma)
+- Current Events (emma)
+- Personal Information (emma)
+- Popular Recognition (emma)
+- Origin_Post-Flashpoint (midnighter)
+- Character Profile (deapool)
+- Character Appearances (cass)
+- Disambiguation (cass)
+- Merchandise (deadpool)
+- Other Version (cass)
+- Personal Characteristics (cass)
+- Video Games (cass)
+- Weapons and Equipment (cass)
+- Variants (deadpool)
+- Television (wally)
