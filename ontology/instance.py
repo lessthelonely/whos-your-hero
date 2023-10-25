@@ -1,4 +1,4 @@
-from onto import Character, Story, Power
+from onto import Character, Story, Power, Trope
 from owlready2 import *
 import os
 
@@ -180,14 +180,17 @@ def load_super_name(names):
                 continue
             character.superName.append(line.strip())
 
-def load_trope_names(names):
+def load_character_tropes(names):
     #TODO: Make a subproperty so we can save names and the descriptions.
     for folder_name in names:
-        f = open(folder_name + "/" + folder_name + "_TropeNames.txt", "r")
+        f = open(folder_name + "/" + folder_name + "_Tropes.txt", "r")
         for line in f:
             if (line.strip() == ""):
                 continue
-            character.hasTrope.append(line.strip())
+            trope_info = line.strip().split(":")
+            character_trope = Trope(trope_info[0])
+            character_trope.tropeDescription.append(trope_info[1])
+            character.hasTrope.append(character_trope)
 
 def load_video_games(names):
     #TODO: Make a subproperty so we can save names and the descriptions.
@@ -227,7 +230,7 @@ load_publisher(["cassandra_cain"])
 load_real_name(["cassandra_cain"])
 load_summary(["cassandra_cain"])
 load_super_name(["cassandra_cain"])
-load_trope_names(["cassandra_cain"])
+load_character_tropes(["cassandra_cain"])
 load_video_games(["cassandra_cain"])
 load_weapons_and_equipment(["cassandra_cain"])
 
