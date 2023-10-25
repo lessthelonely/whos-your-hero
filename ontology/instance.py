@@ -1,4 +1,5 @@
 from onto import Character 
+from owlready2 import *
 import os
 
 character = Character("Cassandra Cain")
@@ -225,3 +226,6 @@ load_video_games(["cassandra_cain"])
 load_weapons_and_equipment(["cassandra_cain"])
 
 print(character)
+
+# Save the ontology as an RDF file (including the individual character)
+default_world.save(file="cassandra_cain.owl", format="rdfxml")

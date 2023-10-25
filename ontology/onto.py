@@ -1,162 +1,137 @@
-from owlready import *
+from owlready2 import *
 
+# Create and load your ontology
 onto = get_ontology("http://whosyourhero.com/heroes.owl")
 
 # Entities
-class Person(Thing):
-    ontology = onto
+with onto:
+    class Person(Thing):
+        pass
 
-class Woman(Person):
-    ontology = onto
+    class Woman(Person):
+        pass
 
-class Man(Person):
-    ontology = onto
+    class Man(Person):
+        pass
 
-class NonBinary(Person):
-    ontology = onto
+    class NonBinary(Person):
+        pass
 
-class Character(Person):
-    ontology = onto
+    class Character(Person):
+        pass
 
-class Trope(Thing):
-    ontology = onto
+    class Trope(Thing):
+        pass
 
 # Properties
-class hasAlias(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+with onto:
+    class hasAlias(Property):
+        domain = [Character]
+        range = [str]
 
-class birthday(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class birthday(Property):
+        domain = [Character]
+        range = [str]
 
-class characterType(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class characterType(Property):
+        domain = [Character]
+        range = [str]
 
-class appearsIn(Property):
-    ontology = onto
-    domain = [Character]
-    range = [int]
+    class appearsIn(Property):
+        domain = [Character]
+        range = [int]
 
-class appearances(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class appearances(Property):
+        domain = [Character]
+        range = [str]
 
-class creation(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class creation(Property):
+        domain = [Character]
+        range = [str]
 
-class creators(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class creators(Property):
+        domain = [Character]
+        range = [str]
 
-class deaths(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class deaths(Property):
+        domain = [Character]
+        range = [str]
 
-class disambiguation(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class disambiguation(Property):
+        domain = [Character]
+        range = [str]
 
-class firstAppearance(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class firstAppearance(Property):
+        domain = [Character]
+        range = [str]
 
-class storyArcs(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class storyArcs(Property):
+        domain = [Character]
+        range = [str]
 
-class origin(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class origin(Property):
+        domain = [Character]
+        range = [str]
 
-class otherMedia(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class otherMedia(Property):
+        domain = [Character]
+        range = [str]
 
-class otherVersion(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class otherVersion(Property):
+        domain = [Character]
+        range = [str]
 
-class characteristics(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class characteristics(Property):
+        domain = [Character]
+        range = [str]
 
-class powers(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class powers(Property):
+        domain = [Character]
+        range = [str]
 
-class publisher(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class publisher(Property):
+        domain = [Character]
+        range = [str]
 
-class realName(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class realName(Property):
+        domain = [Character]
+        range = [str]
 
-class summary(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class summary(Property):
+        domain = [Character]
+        range = [str]
 
-class superName(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class superName(Property):
+        domain = [Character]
+        range = [str]
 
-class videoGames(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class videoGames(Property):
+        domain = [Character]
+        range = [str]
 
-class hasWeaponsEquipment(Property):
-    ontology = onto
-    domain = [Character]
-    range = [str]
+    class hasWeaponsEquipment(Property):
+        domain = [Character]
+        range = [str]
 
+    class hasTrope(Property):
+        domain = [Character]
+        range = [Trope]
 
+    class hasDied(Property):
+        domain = [Character]
+        range = [bool]
 
-class hasTrope(Property):
-    ontology = onto
-    domain = [Character]
-    range = [Trope]
+    class isWoman(Property):
+        domain = [Character]
+        range = [bool]
 
-class hasDied(Property):
-    ontology = onto
-    domain = [Character]
-    type = [bool]
+    class isMan(Property):
+        domain = [Character]
+        range = [bool]
 
-class isWoman(Property):
-    ontology = onto
-    domain = [Character]
-    type = [bool]
+    class isNonBinary(Property):
+        domain = [Character]
+        range = [bool]
 
-class isMan(Property):
-    ontology = onto
-    domain = [Character]
-    range = [bool]
-
-class isNonBinary(Property):
-    ontology = onto
-    domain = [Character]
-    range = [bool]
-
-
+# Save the ontology
+onto.save(file="your_ontology.owl", format="rdfxml")
