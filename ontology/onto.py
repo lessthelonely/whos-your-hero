@@ -128,6 +128,10 @@ with onto:
         domain = [Character]
         range = [str]
 
+    class tropeDescription(Property):
+        domain = [Trope]
+        range = [str]
+
     class hasTrope(Property):
         domain = [Character]
         range = [Trope]
