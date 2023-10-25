@@ -181,7 +181,6 @@ def load_super_name(names):
             character.superName.append(line.strip())
 
 def load_character_tropes(names):
-    #TODO: Make a subproperty so we can save names and the descriptions.
     for folder_name in names:
         f = open(folder_name + "/" + folder_name + "_Tropes.txt", "r")
         for line in f:
