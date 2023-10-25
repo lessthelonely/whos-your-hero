@@ -1,5 +1,4 @@
 from owlready import *
-import datetime
 
 onto = get_ontology("http://whosyourhero.com/heroes.owl")
 
@@ -28,7 +27,7 @@ class hasAlias(Property):
 class Birthday(Property):
     ontology = onto
     domain = [Character]
-    range = [datetime]
+    range = [str]
 
 class CharacterType(Property):
     ontology = onto
