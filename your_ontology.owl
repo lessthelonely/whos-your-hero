@@ -44,6 +44,10 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Variant">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
 <owl:Class rdf:about="#storyDescription">
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -54,6 +58,12 @@
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   <rdfs:domain rdf:resource="#Power"/>
+</owl:Class>
+
+<owl:Class rdf:about="#alternateVersionsDescription">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:domain rdf:resource="#Variant"/>
 </owl:Class>
 
 <owl:Class rdf:about="#mediaType">
@@ -92,7 +102,7 @@
   <rdfs:domain rdf:resource="#Character"/>
 </owl:Class>
 
-<owl:Class rdf:about="#appearances">
+<owl:Class rdf:about="#evolution">
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   <rdfs:domain rdf:resource="#Character"/>
@@ -140,10 +150,10 @@
   <rdfs:range rdf:resource="#Media"/>
 </owl:Class>
 
-<owl:Class rdf:about="#otherVersion">
-  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<owl:Class rdf:about="#alternateVersions">
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="#Variant"/>
 </owl:Class>
 
 <owl:Class rdf:about="#characteristics">

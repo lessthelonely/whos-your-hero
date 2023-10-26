@@ -1,4 +1,4 @@
-from onto import Character, Story, Power, Trope, Media
+from onto import Character, Story, Power, Trope, Media, Variant
 from owlready2 import *
 import os
 
@@ -37,14 +37,6 @@ def load_character_type(names):
             if (line.strip() == ""):
                 continue
             character.characterType.append(line.strip())
-
-def load_appearances(names):
-    for folder_name in names:
-        f = open(folder_name + "/" + folder_name + "_Character_Appearances.txt", "r")
-        for line in f:
-            if (line.strip() == ""):
-                continue
-            character.appearances.append(line.strip())
 
 def load_creation(names):
     for folder_name in names:
@@ -134,13 +126,18 @@ def load_other_media(names):
         #         continue
         #     character.otherMedia.append(line.strip())
 
-def load_other_version(names):
+def load_alternate_version(names):
     for folder_name in names:
-        f = open(folder_name + "/" + folder_name + "_Other_Version.txt", "r")
-        for line in f:
-            if (line.strip() == ""):
-                continue
-            character.otherVersion.append(line.strip())
+        f = open(folder_name + "/" + folder_name + "_Alternate_Versions.txt", "r")
+        file_contents = [line.strip() for line in f]
+        alternate_version = None 
+        for line in range(len(file_contents)):        
+            if line % 2 == 0:
+                 alternate_version = Variant(file_contents[line].strip())
+            else:
+                if alternate_version:
+                    alternate_version.alternateVersions.append(file_contents[line].strip())
+                    character.alternateVersions.append(alternate_version)
 
 def load_characteristics(names):
     for folder_name in names:
@@ -184,11 +181,19 @@ def load_real_name(names):
 
 def load_summary(names):
     for folder_name in names:
-        f = open(folder_name + "/" + folder_name + "_summary.txt", "r")
+        f = open(folder_name + "/" + folder_name + "_Summary.txt", "r")
         for line in f:
             if (line.strip() == ""):
                 continue
             character.summary.append(line.strip())
+
+def load_character_evolution(names):
+    for folder_name in names:
+        f = open(folder_name + "/" + folder_name + "_Character_Evolution.txt", "r")
+        for line in f:
+            if (line.strip() == ""):
+                continue
+            character.evolution.append(line.strip())
 
 def load_super_name(names):
     for folder_name in names:
@@ -200,7 +205,7 @@ def load_super_name(names):
 
 def load_character_tropes(names):
     for folder_name in names:
-        f = open(folder_name + "/" + folder_name + "_Tropes.txt", "r")
+        f = open(folder_name + "/" + folder_name + "_Tropes.txt", "r", encoding="utf8")
         for line in f:
             if (line.strip() == ""):
                 continue
@@ -209,28 +214,60 @@ def load_character_tropes(names):
             character_trope.tropeDescription.append(trope_info[1])
             character.hasTrope.append(character_trope)
 
-load_aliases(["cassandra_cain"])
-load_appears_in(["cassandra_cain"])
-load_birthday(["cassandra_cain"])
-load_character_type(["cassandra_cain"])
-load_appearances(["cassandra_cain"])
-load_creation(["cassandra_cain"])
-load_creators(["cassandra_cain"])
-load_deaths(["cassandra_cain"])
-load_first_appearance(["cassandra_cain"])
-load_story_arcs(["cassandra_cain"])
-load_origin(["cassandra_cain"])
-load_other_media(["cassandra_cain"])
-load_other_version(["cassandra_cain"])
-load_characteristics(["cassandra_cain"])
-load_powers_and_abilities(["cassandra_cain"])
-load_publisher(["cassandra_cain"])
-load_real_name(["cassandra_cain"])
-load_summary(["cassandra_cain"])
-load_super_name(["cassandra_cain"])
-load_character_tropes(["cassandra_cain"])
+def create_character_rdf(character_name, file_name):
+    if(character_name == ["cassandra_cain"]):
+        character = Character("Cassandra Cain")
+        character.isWoman.append(True)
+    elif(character_name == ["deadpool"]):
+        character = Character("Deadpool")
+        character.isMan.append(True)
+    elif(character_name == ["emma_frost"]):
+        character = Character("Emma Frost")
+        character.isWoman.append(True)
+    elif(character_name == ["midnighter"]):
+        character = Character("Midnighter")
+        character.isMan.append(True)
+    elif(character_name == ["wally_west"]):
+        character = Character("Wally West")
+        character.isMan.append(True)
 
-print(character)
+    load_aliases(character_name)
+    load_alternate_version(character_name)
+    load_appears_in(character_name)
+    load_birthday(character_name)
+    load_character_type(character_name)
+    load_creators(character_name)
+    load_deaths(character_name)
+    load_first_appearance(character_name)
+    load_story_arcs(character_name)
+    load_origin(character_name)
+    load_powers_and_abilities(character_name)
+    load_publisher(character_name)
+    load_real_name(character_name)
+    load_summary(character_name)
+    load_super_name(character_name)
+    load_character_tropes(character_name)
 
-# Save the ontology as an RDF file (including the individual character)
-default_world.save(file="cassandra_cain.owl", format="rdfxml")
+    if character_name != ["midnighter"]:
+        load_other_media(character_name)
+        load_characteristics(character_name)
+
+    if character_name != ["wally_west"]:
+        load_creation(character_name)
+    
+    if character_name != ["wally_west"] and character_name != ["cassandra_cain"]:
+        load_character_evolution(character_name)
+
+
+    print(character)
+    # Save the ontology as an RDF file (including the individual character)
+    default_world.save(file=file_name, format="rdfxml")
+
+    
+
+create_character_rdf(["cassandra_cain"], "cassandra_cain.owl")
+create_character_rdf(["deadpool"], "deadpool.owl")
+create_character_rdf(["emma_frost"], "emma_frost.owl")
+create_character_rdf(["midnighter"], "midnighter.owl")
+create_character_rdf(["wally_west"], "wally_west.owl")
+

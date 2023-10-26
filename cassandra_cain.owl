@@ -45,6 +45,10 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
+<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#Variant">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#storyDescription">
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -53,6 +57,12 @@
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#powerDescription">
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#alternateVersionsDescription">
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
@@ -93,7 +103,7 @@
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#appearances">
+<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#evolution">
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -141,9 +151,9 @@
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#otherVersion">
+<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#alternateVersions">
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
-  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <rdfs:range rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
 
@@ -247,6 +257,8 @@
   <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#Justice League"/>
   <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#Batman: Dark Tomorrow"/>
   <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#DC Universe Online"/>
+  <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#Elseworlds"/>
+  <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#Pre-52"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Unarmed Combat"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Reading Body Language"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Weakness Perception"/>
@@ -299,7 +311,7 @@
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Dying to Be Replaced"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Even the Loving Hero Has Hated Ones"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Extreme Omnivore"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Faceâ€“Heel Turn"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Face–Heel Turn"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Gambit Roulette"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Good Scars, Evil Scars"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Grappling-Hook Pistol"/>
@@ -376,87 +388,11 @@
   <hero:birthday rdf:datatype="http://www.w3.org/2001/XMLSchema#string">January 26, 1989</hero:birthday>
   <hero:characterType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human</hero:characterType>
   <hero:appearsIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">813</hero:appearsIn>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999-2005: Detective Comics Vol. 1 #734, 738, 739, 741, 782, 790, 796, 797, 799, 800</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999-2009: Batman Vol. 1 #567, 569, 586, 594, 597, 600, 605, 631-633, 635, 683</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999: Batman: Legends of the Dark Knight #120, 182-184</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999-2001: Catwoman Vol. 2 #72, 90</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999-2002: Azrael: Agent of the Bat Vol. 1 #56, 57, 60, 61, 66, 84, 94</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999: The Batman Chronicles #18</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999-2007: Robin Vol. 4 #70, 73, 86, 88, 98, 119, 127, 128, 132, 133, 148-151, 161, 162</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999-2000: Batman: Shadow of the Bat #92, 93</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000-2004: Batman: Gotham Knights #2, 5, 33-36, 42, 45, 46, 58, 49, 56, 57</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000-2006: Batgirl Vol. 1 #1-73</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000: Young Justice Vol. 1 #20, 21</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2001-2004: Birds of Prey Vol. 1 #27, 61, 63</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2001: Superboy #85</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2001: Harley Quinn Vol. 1 #6, 10-12</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2001: Wonder Woman Vol. 2 #174, 175</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2001-2002: Supergirl Vol. 4 #64, 74</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2003: Nightwing Vol. 2 #81, 98</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2003: Action Comics Vol. 1 #804</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2003: JLA Vol. 1 #88</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2004: Superman/Batman #5</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2004-2005: Justice League Elite #1-8, 11, 12</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2005-2008: Teen Titans Vol. 3 #22, 43-46, 52, 53</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007: Supergirl Vol. 5 #13, 14</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007: Batman and the Outsiders Vol. 2 #1-14</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-2011: Batgirl Vol. 3 #1, 6, 24</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010: Wonder Woman Vol. 3 #600</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011: Red Robin #17, 19, 25</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011: Batman, Incorporated Vol. 1 #61999-2005: Detective Comics Vol. 1 #734, 738, 739, 741, 782, 790, 796, 797, 799, 8001999-2009: Batman Vol. 1 #567, 569, 586, 594, 597, 600, 605, 631-633, 635, 6831999: Batman: Legends of the Dark Knight #120, 182-1841999-2001: Catwoman Vol. 2 #72, 901999-2002: Azrael: Agent of the Bat Vol. 1 #56, 57, 60, 61, 66, 84, 941999: The Batman Chronicles #181999-2007: Robin Vol. 4 #70, 73, 86, 88, 98, 119, 127, 128, 132, 133, 148-151, 161, 1621999-2000: Batman: Shadow of the Bat #92, 932000-2004: Batman: Gotham Knights #2, 5, 33-36, 42, 45, 46, 58, 49, 56, 572000-2006: Batgirl Vol. 1 #1-732000: Young Justice Vol. 1 #20, 212001-2004: Birds of Prey Vol. 1 #27, 61, 632001: Superboy #852001: Harley Quinn Vol. 1 #6, 10-122001: Wonder Woman Vol. 2 #174, 1752001-2002: Supergirl Vol. 4 #64, 742003: Nightwing Vol. 2 #81, 982003: Action Comics Vol. 1 #8042003: JLA Vol. 1 #882004: Superman/Batman #52004-2005: Justice League Elite #1-8, 11, 122005-2008: Teen Titans Vol. 3 #22, 43-46, 52, 532007: Supergirl Vol. 5 #13, 142007: Batman and the Outsiders Vol. 2 #1-142009-2011: Batgirl Vol. 3 #1, 6, 242010: Wonder Woman Vol. 3 #6002011: Red Robin #17, 19, 252011: Batman, Incorporated Vol. 1 #6Miniseries</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000: Batman: Outlaws #2</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2001-2002: Batman: Orpheus Rising #3, 5</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2003: Batman Family #2, 6-8</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2003-2004: Batman and City of Light #1-8</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2005: The OMAC Project #2</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2006: Solo #10</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007: World War III #1-3</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007: Black Canary Vol. 3 #2</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008: Gotham Underground #7, 9</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008-2009: Batgirl Vol. 2 #1-6</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009: Batman: Battle for the Cowl #1, 3</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011: Batman: Gates of Gotham #1-52000: Batman: Outlaws #22001-2002: Batman: Orpheus Rising #3, 52003: Batman Family #2, 6-82003-2004: Batman and City of Light #1-82005: The OMAC Project #22006: Solo #102007: World War III #1-32007: Black Canary Vol. 3 #22008: Gotham Underground #7, 92008-2009: Batgirl Vol. 2 #1-62009: Batman: Battle for the Cowl #1, 32011: Batman: Gates of Gotham #1-5One-Shot</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2002: DC First: Batgirl/Joker #1</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2003: JLA: Welcome to the Working Week #1</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009: Batman: Battle for the Cowl: The Network #12002: DC First: Batgirl/Joker #12003: JLA: Welcome to the Working Week #12009: Batman: Battle for the Cowl: The Network #1Annuals</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000: Batgirl Annual #12000: Batgirl Annual #1events</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2001: Joker Last Laugh #3</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008: Final Crisis #32001: Joker Last Laugh #32008: Final Crisis #3Event Series</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2006: 52 #8</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008: Countdown to Final Crisis #52006: 52 #82008: Countdown to Final Crisis #5New 52</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-2016: Batman and Robin Eternal #1-8, 11-14, 18-22, 24, 262015-2016: Batman and Robin Eternal #1-8, 11-14, 18-22, 24, 26Mini-Series</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015: Convergence Batgirl #1, 22015: Convergence Batgirl #1, 2One-Shot</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014: Batgirl: Futures End #12014: Batgirl: Futures End #1Events</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015: Convergence #82015: Convergence #8Rebirth</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-2022: Detective Comics Vol. 3 #934-947, 950-956, 958, 959, 961, 962, 964, 965, 967-975, 978-981, 983-987, 992, 1000, 1030-1032, 1038, 1039, 1045, 1047, 1049, 1051-1053</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-2022: Batman Vol. 3 #7, 8, 71, 81-83, 85, 99, 100, 103-105, 112, 115-117</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-2022: Nightwing Vol. 4 #5, 6, 85, 86</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017: Batgirl and the Birds of Prey #14-17</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017: Red Hood &amp; the Outlaws Vol. 2 #15</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-2020 Batman &amp; the Outsiders Vol. 4 #1-17</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-2020: Justice League Vol. 4 #26, 36</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020: Batgirl Vol. 5 #50</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-2022: Batman: Urban Legends #2, 3, 5-8</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-2022: The Joker #3, 4, 7, 12</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022: Batgirls #1-32016-2022: Detective Comics Vol. 3 #934-947, 950-956, 958, 959, 961, 962, 964, 965, 967-975, 978-981, 983-987, 992, 1000, 1030-1032, 1038, 1039, 1045, 1047, 1049, 1051-10532016-2022: Batman Vol. 3 #7, 8, 71, 81-83, 85, 99, 100, 103-105, 112, 115-1172016-2022: Nightwing Vol. 4 #5, 6, 85, 862017: Batgirl and the Birds of Prey #14-172017: Red Hood &amp; the Outlaws Vol. 2 #152019-2020 Batman &amp; the Outsiders Vol. 4 #1-172019-2020: Justice League Vol. 4 #26, 362020: Batgirl Vol. 5 #502021-2022: Batman: Urban Legends #2, 3, 5-82021-2022: The Joker #3, 4, 7, 122022: Batgirls #1-3Miniseries</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018: Batman &amp; the Signal #1, 3</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020: DCeased: Unkillables #1-3</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-2021: Harley Quinn &amp; the Birds of Prey #1-4</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-2021: DCeased: Dead Planet #2 ,5, 7</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021: Future State: The Next Batman #2, 4</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021: Infinite Frontier #0, 42018: Batman &amp; the Signal #1, 32020: DCeased: Unkillables #1-32020-2021: Harley Quinn &amp; the Birds of Prey #1-42020-2021: DCeased: Dead Planet #2 ,5, 72021: Future State: The Next Batman #2, 42021: Infinite Frontier #0, 4Maxiseries</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022: DC vs. Vampires #4, 52022: DC vs. Vampires #4, 5One-Shots</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017: Batwoman: Rebirth #12017: Batwoman: Rebirth #1Others</hero:appearances>
-  <hero:appearances rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000: Ghost/Batgirls #1-42000: Ghost/Batgirls #1-4</hero:appearances>
   <hero:creation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain was created by Kelley Puckett and Damion Scott. She first appeared in Batman #567 - Mark of Cain Part 1.</hero:creation>
   <hero:creators rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kelley Puckett</hero:creators>
   <hero:deaths rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hero:deaths>
   <hero:firstAppearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman #567 - Mark of Cain Part 1</hero:firstAppearance>
   <hero:origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Cain trained Cassandra in isolation and kept her away from human speech, raising her on the language of motion and violence. The idea was to adapt the language centers of her brain, and train it to interpret physical movement as a language. This gifted Cassandra with superb body-reading abilities, and has made fighting her "mother tongue" so to speak. However, this upbringing has also rendered her dyslexic, and when taught to speak, with audible speech-impediments.When Cassandra was eight, Cain took her to carry out a hit in Macau. Cassandra did as her father trained and instructed her to do, and ripped out the throat of a local triad boss. Due to her body-reading ability, she was able to see how death effected the man, and was traumatized by her irreversible sin. Her father came to congratulate her, and she rejected him by delivering an emotional uppercut. Shocked, Cain did not pursue Cassandra when she fled in tears. Cassandra would then wander the Earth for the next eight years, before meeting her father once again in Gotham during No Man's Land.</hero:origin>
-  <hero:otherVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elseworlds</hero:otherVersion>
-  <hero:otherVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An adult version of Cassandra appeared as the subject of an issue of Solo. She was shown to be married to Tim Drake.</hero:otherVersion>
-  <hero:otherVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pre-52</hero:otherVersion>
-  <hero:otherVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the Pre-52 Cass was given her language from a physic and didn't need to study language, however in the New 52 she has to learn how to speak through normal circumstances.</hero:otherVersion>
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">First Appearance: Batman #567 (July 1999)</hero:characteristics>
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Civilian Name: Cassandra Cain</hero:characteristics>
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Status: Hero</hero:characteristics>
@@ -473,6 +409,16 @@
   <hero:summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The daughter of two notorious assassins, David Cain and Lady Shiva, Cassandra left her father as a child after she killed a man and saw his pain and fear while he died. After saving Commissioner Gordon's life, she became the new Batgirl with Batman and Oracle's blessing, and was later adopted by Bruce Wayne. She would later give the role of Batgirl to her friend Stephanie Brown, and became Black Bat. In the New 52 and Rebirth, she takes the alias of Orphan.</hero:summary>
   <hero:superName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain</hero:superName>
   <hero:isWoman rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hero:isWoman>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Elseworlds">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
+  <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An adult version of Cassandra appeared as the subject of an issue of Solo. She was shown to be married to Tim Drake.</hero:alternateVersions>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Pre-52">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
+  <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the Pre-52 Cass was given her language from a physic and didn't need to study language, however in the New 52 she has to learn how to speak through normal circumstances.</hero:alternateVersions>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Batgirl">
@@ -528,29 +474,6 @@
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Detective Comics: Rebirth">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When Batman realizes that someone is targeting all of Gotham's vigilantes, he begins recruiting them to train them to ready them for this new threat and to help them become better crime fighters. After enlisting Batwoman to help lead his new team, they begin gathering the recruits. Deciding on their second recruit, they find Orphan taking down a group of sex traffickers. After she dispatches them, Batman calls out for her to come with him. She and the other recruits arrive atop GCPD Headquarters and the two explain their plan to train them.During one of their first training sessions, the team is forced a fight a simulated army of Jokers. When Spoiler gets overwhelmed, an already fatigued Cassandra rescues her. When Red Robin shuts down the simulation against Batwoman's orders, she calls everyone out on their flawed performances. Cassandra's flaw was that she divided her attention. As the best fighter present, she focused too much on fighting for everyone. After they break for the night, Cassandra decides to drop by Stephanie and Tim's apartment, but when she sees the two are talking, she heads off to find someone to fight.Later, after Batman is captured by the Colony, Batwoman and Red Robin summon the team Cassandra is the last to arrive, but before she can go inside the Belfry, she notices jets overhead and realizes something is amiss. When Colony soldiers drop onto the roof of the Belfry and demand her surrender, she merely says "no" and charges into battle. When another contingient breaches the base, she follows them in after dispatching the first group. She tries to fight them off but they shoot her with tranquilizer darts to keep her down. She recovers as the teams uses the Belfry's escape hatch to reqroup and come up with a plan. Once Orphan confirms they are not being followed, the group head over to the Bat-Train Tim designed for fast exits. Cassandra is also present when they storm the Colony's base to free Batman. She is tasked with clearing their escape route of soldiers. By the time the others reach her, she has taken them all down, enabling them to escape.When they return to the Belfry, they discover from Tim that the Colony is trying to purge members of the League of Shadows from Gotham at the cost of several hundred innocent lives. Wanting to save as many people as possible, the team splits up to cover more ground. Cassandra is seen clearing out a shelter, unaware that member of the Shadows walked right past her. She is not seen again during the evacuation attempt.</hero:storyDescription>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Justice League">
-  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animation</hero:mediaType>
-  <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the season one finale, "The Savage Time," Cassandra makes a cameo appearance in an alternate future timeline, alongside Dick Grayson, Tim Drake, and Barbara Gordon.</hero:mediaDescription>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#media1">
-  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animation</hero:mediaType>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Batman: Dark Tomorrow">
-  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Games</hero:mediaType>
-  <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain appears in a cameo alongside Tim Drake.</hero:mediaDescription>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DC Universe Online">
-  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Games</hero:mediaType>
-  <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">She appears in the Justice League Watchtower in the Tech Wing. In the game she acts as a vendor for the Tech Iconic Suit and the Dark Spector Batsuit.</hero:mediaDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Unarmed Combat">
@@ -670,12 +593,12 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Book Dumb">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Originally, she barely was able to speak and couldn't read at all (she had trouble reading the words it was). Then, during her Faceâ€“Heel Turn, she miraculously gained the ability to speak and read perfectly. As of DC Rebirth, she's back to being illiterate and unable to speak more than a few words at a time.</hero:tropeDescription>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Originally, she barely was able to speak and couldn't read at all (she had trouble reading the words it was). Then, during her Face–Heel Turn, she miraculously gained the ability to speak and read perfectly. As of DC Rebirth, she's back to being illiterate and unable to speak more than a few words at a time.</hero:tropeDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Brainwashed and Crazy">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Her Faceâ€“Heel Turn was explained away as Deathstroke the Terminator drugging her with the same stuff that drove his daughter insane. In his words, he stole Cassandra from the Bat Family as revenge for Nightwing "stealing" Ravager.</hero:tropeDescription>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Her Face–Heel Turn was explained away as Deathstroke the Terminator drugging her with the same stuff that drove his daughter insane. In his words, he stole Cassandra from the Bat Family as revenge for Nightwing "stealing" Ravager.</hero:tropeDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#But Not Too Foreign">
@@ -730,7 +653,7 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Contagious Heroism">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Lifelong Professional Killer Alpha made a Heelâ€“Face Turn after working with her while he was amnesiac and realizing she was the girl who he'd helped train under Cain. The concept of someone with that background being able to become a hero made him decide that he wasn't Beyond Redemption after all.</hero:tropeDescription>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Lifelong Professional Killer Alpha made a Heel–Face Turn after working with her while he was amnesiac and realizing she was the girl who he'd helped train under Cain. The concept of someone with that background being able to become a hero made him decide that he wasn't Beyond Redemption after all.</hero:tropeDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Corruption of a Minor">
@@ -790,7 +713,7 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Dragon Lady">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> During her Faceâ€“Heel Turn. Not only does she monologue, she starts to flirt with Robin.</hero:tropeDescription>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> During her Face–Heel Turn. Not only does she monologue, she starts to flirt with Robin.</hero:tropeDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Driven to Suicide">
@@ -813,7 +736,7 @@
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> It doesn't get much more impressive than eating Lovecraftian horrors from the Shadowlands.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Faceâ€“Heel Turn">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Face–Heel Turn">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She becomes the leader of the League of Assassins in the One Year Later relaunch and later becomes a member of Titans East. Retcon revealed that this was caused by Deathstroke's drugs.</hero:tropeDescription>
 </owl:NamedIndividual>
@@ -860,7 +783,7 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Intergenerational Friendship">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She developed one with Clayface, shortly after his Heelâ€“Face Turn, even performing Shakespeare with him on occasion.</hero:tropeDescription>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She developed one with Clayface, shortly after his Heel–Face Turn, even performing Shakespeare with him on occasion.</hero:tropeDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#In the Hood">
@@ -965,12 +888,12 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#O.O.C. Is Serious Business">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> After Cassandraâ€™s brain is rewired to allow her to read and speak at the cost of her ability to read body language, Barbara is shocked to see her actually bruised as Batman said that literally nobody could hit Batgirl.</hero:tropeDescription>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> After Cassandra’s brain is rewired to allow her to read and speak at the cost of her ability to read body language, Barbara is shocked to see her actually bruised as Batman said that literally nobody could hit Batgirl.</hero:tropeDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Odd Friendship">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She developed one with Clayface shortly after his Heelâ€“Face Turn, largely due to the fact that she understands what it feels like to be an outsider.</hero:tropeDescription>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She developed one with Clayface shortly after his Heel–Face Turn, largely due to the fact that she understands what it feels like to be an outsider.</hero:tropeDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#One-Man Army">
@@ -990,7 +913,7 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Phlebotinum Rebel">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Through a horrifyingly abusive system of child-rearing, her father created her to be one of the best (if not the best) martial artists in the world. Given that she became Batgirl and it took mind controlling drugs to execute her Faceâ€“Heel Turn, and it was temporary, his idea of creating the perfect assassin clearly didn't take.</hero:tropeDescription>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Through a horrifyingly abusive system of child-rearing, her father created her to be one of the best (if not the best) martial artists in the world. Given that she became Batgirl and it took mind controlling drugs to execute her Face–Heel Turn, and it was temporary, his idea of creating the perfect assassin clearly didn't take.</hero:tropeDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Platonic Life-Partners">
@@ -1000,7 +923,7 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Put on a Bus">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> After the Infinite Crisis, she has a Faceâ€“Heel Turn, followed by a Heelâ€“Face Turn, and is subsequently benched until being wiped away from existence by Flashpoint. She's finally reintroduced in Batman &amp; Robin Eternal, however.</hero:tropeDescription>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> After the Infinite Crisis, she has a Face–Heel Turn, followed by a Heel–Face Turn, and is subsequently benched until being wiped away from existence by Flashpoint. She's finally reintroduced in Batman &amp; Robin Eternal, however.</hero:tropeDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#The Quiet One">
@@ -1095,7 +1018,7 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Took a Level in Jerkass">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> After Stephanie's death in War Games, Cass became much more temperamental and ruthless even before her editorially mandated Faceâ€“Heel Turn. This went away after her stint as a villain was over.</hero:tropeDescription>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> After Stephanie's death in War Games, Cass became much more temperamental and ruthless even before her editorially mandated Face–Heel Turn. This went away after her stint as a villain was over.</hero:tropeDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#The Tragic Rose">
@@ -1146,6 +1069,29 @@
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#You Are Better Than You Think You Are">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Gives this speech to several villains, using herself as an example of how people can change. Most notably, this seemed to work on Alpha, though he later returned to the League of Assassins.</hero:tropeDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Justice League">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
+  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animation</hero:mediaType>
+  <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the season one finale, "The Savage Time," Cassandra makes a cameo appearance in an alternate future timeline, alongside Dick Grayson, Tim Drake, and Barbara Gordon.</hero:mediaDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#media1">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
+  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animation</hero:mediaType>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Batman: Dark Tomorrow">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
+  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Games</hero:mediaType>
+  <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain appears in a cameo alongside Tim Drake.</hero:mediaDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DC Universe Online">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
+  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Games</hero:mediaType>
+  <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">She appears in the Justice League Watchtower in the Tech Wing. In the game she acts as a vendor for the Tech Iconic Suit and the Dark Spector Batsuit.</hero:mediaDescription>
 </owl:NamedIndividual>
 
 

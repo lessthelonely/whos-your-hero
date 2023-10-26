@@ -32,6 +32,9 @@ with onto:
     class Media(Thing):
         pass
 
+    class Variant(Thing):
+        pass
+
 # Properties
 with onto:
     class storyDescription(Property):
@@ -40,6 +43,10 @@ with onto:
 
     class powerDescription(Property):
         domain = [Power]
+        range = [str]
+
+    class alternateVersionsDescription(Property):
+        domain = [Variant]
         range = [str]
 
     class mediaType(Property):
@@ -66,7 +73,11 @@ with onto:
         domain = [Character]
         range = [int]
 
-    class appearances(Property):
+    # class appearances(Property):
+    #     domain = [Character]
+    #     range = [str]
+
+    class evolution(Property):
         domain = [Character]
         range = [str]
 
@@ -86,7 +97,6 @@ with onto:
         domain = [Character]
         range = [str]
 
-    # Define the storyArcs property
     class storyArcs(Property):
         domain = [Character]
         range = [Story]
@@ -99,9 +109,9 @@ with onto:
         domain = [Character]
         range = [Media]
 
-    class otherVersion(Property):
+    class alternateVersions(Property):
         domain = [Character]
-        range = [str]
+        range = [Variant]
 
     class characteristics(Property):
         domain = [Character]
