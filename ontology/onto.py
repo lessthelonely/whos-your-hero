@@ -29,6 +29,9 @@ with onto:
     class Power(Thing):
         pass
 
+    class Media(Thing):
+        pass
+
 # Properties
 with onto:
     class storyDescription(Property):
@@ -37,6 +40,14 @@ with onto:
 
     class powerDescription(Property):
         domain = [Power]
+        range = [str]
+
+    class mediaName(Property):
+        domain = [Media]
+        range = [str]
+
+    class mediaDescription(Property):
+        domain = [Media]
         range = [str]
 
     class hasAlias(Property):
@@ -71,10 +82,6 @@ with onto:
         domain = [Character]
         range = [str]
 
-    class disambiguation(Property):
-        domain = [Character]
-        range = [str]
-
     class firstAppearance(Property):
         domain = [Character]
         range = [str]
@@ -90,7 +97,7 @@ with onto:
 
     class otherMedia(Property):
         domain = [Character]
-        range = [str]
+        range = [Media]
 
     class otherVersion(Property):
         domain = [Character]

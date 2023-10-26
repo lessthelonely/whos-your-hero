@@ -1,4 +1,4 @@
-from onto import Character, Story, Power, Trope
+from onto import Character, Story, Power, Trope, Media
 from owlready2 import *
 import os
 
@@ -70,14 +70,6 @@ def load_deaths(names):
                 continue
             character.deaths.append(line.strip())
 
-def load_disambiguation(names): #only cassandra has this
-    for folder_name in names:
-        f = open(folder_name + "/" + folder_name + "_Disambiguation.txt", "r")
-        for line in f:
-            if (line.strip() == ""):
-                continue
-            character.disambiguation.append(line.strip())
-
 def load_first_appearance(names):
     for folder_name in names:
         f = open(folder_name + "/" + folder_name + "_First Appearance.txt", "r")
@@ -111,10 +103,27 @@ def load_other_media(names):
     #TODO: Make a subproperty so we can save names and the descriptions.
     for folder_name in names:
         f = open(folder_name + "/" + folder_name + "_Other_Media.txt", "r")
-        for line in f:
-            if (line.strip() == ""):
-                continue
-            character.otherMedia.append(line.strip())
+        file_contents = [line.strip() for line in f]
+        character_media = None
+        for line in range(len(file_contents)):
+            if line == 0:
+                character_media = Media(file_contents[line].strip())
+            elif file_contents[line-1].strip() == "":
+                character.otherMedia.append(character_media)
+                character_media = Media(file_contents[line].strip())
+            # titles are on odd lines and descriptions are on even lines
+            else:
+                if line % 2 != 0:
+                    character_media.mediaName.append(file_contents[line].strip())
+                else:
+                    character_media.mediaDescription.append(file_contents[line].strip())
+                    if line == len(file_contents) - 1:
+                        character.otherMedia.append(character_media)
+
+        # for line in f:
+        #     if (line.strip() == ""):
+        #         continue
+        #     character.otherMedia.append(line.strip())
 
 def load_other_version(names):
     for folder_name in names:
@@ -191,24 +200,6 @@ def load_character_tropes(names):
             character_trope.tropeDescription.append(trope_info[1])
             character.hasTrope.append(character_trope)
 
-def load_video_games(names):
-    #TODO: Make a subproperty so we can save names and the descriptions.
-    for folder_name in names:
-        f = open(folder_name + "/" + folder_name + "_Video_Games.txt", "r")
-        for line in f:
-            if (line.strip() == ""):
-                continue
-            character.videoGames.append(line.strip())
-
-def load_weapons_and_equipment(names):
-    #TODO: Make a subproperty so we can save former and current.
-    for folder_name in names:
-        f = open(folder_name + "/" + folder_name + "_Weapons_and_Equipment.txt", "r")
-        for line in f:
-            if (line.strip() == "" or line.strip() == "Current" or line.strip() == "Former"):
-                continue
-            character.hasWeaponsEquipment.append(line.strip())
-
 load_aliases(["cassandra_cain"])
 load_appears_in(["cassandra_cain"])
 load_birthday(["cassandra_cain"])
@@ -217,7 +208,6 @@ load_appearances(["cassandra_cain"])
 load_creation(["cassandra_cain"])
 load_creators(["cassandra_cain"])
 load_deaths(["cassandra_cain"])
-load_disambiguation(["cassandra_cain"])
 load_first_appearance(["cassandra_cain"])
 load_story_arcs(["cassandra_cain"])
 load_origin(["cassandra_cain"])
@@ -230,8 +220,6 @@ load_real_name(["cassandra_cain"])
 load_summary(["cassandra_cain"])
 load_super_name(["cassandra_cain"])
 load_character_tropes(["cassandra_cain"])
-load_video_games(["cassandra_cain"])
-load_weapons_and_equipment(["cassandra_cain"])
 
 print(character)
 

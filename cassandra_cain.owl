@@ -41,6 +41,10 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
+<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#Media">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#storyDescription">
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -49,6 +53,18 @@
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#powerDescription">
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#mediaName">
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#mediaDescription">
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
@@ -101,12 +117,6 @@
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#disambiguation">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
-  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-</owl:Class>
-
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#firstAppearance">
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -127,7 +137,7 @@
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#otherMedia">
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
-  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <rdfs:range rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
 
@@ -234,6 +244,8 @@
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Convergence"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Batman and Robin Eternal"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Detective Comics: Rebirth"/>
+  <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#Animation"/>
+  <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#Video Games"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Unarmed Combat"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Reading Body Language"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Weakness Perception"/>
@@ -438,20 +450,8 @@
   <hero:creation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain was created by Kelley Puckett and Damion Scott. She first appeared in Batman #567 - Mark of Cain Part 1.</hero:creation>
   <hero:creators rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kelley Puckett</hero:creators>
   <hero:deaths rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hero:deaths>
-  <hero:disambiguation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain was the 4th Batgirl.</hero:disambiguation>
-  <hero:disambiguation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1st Batgirl: Bette Kane</hero:disambiguation>
-  <hero:disambiguation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2nd Batgirl: Barbara Gordon</hero:disambiguation>
-  <hero:disambiguation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3rd Batgirl: Helena Bertinelli</hero:disambiguation>
-  <hero:disambiguation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5th Batgirl: Charlie Gage-Radcliffe</hero:disambiguation>
-  <hero:disambiguation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6th Batgirl: Stephanie Brown1st Batgirl: Bette Kane2nd Batgirl: Barbara Gordon3rd Batgirl: Helena Bertinelli5th Batgirl: Charlie Gage-Radcliffe6th Batgirl: Stephanie BrownDisambiguation notes:</hero:disambiguation>
-  <hero:disambiguation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pre-New 52: Cassandra is currently using the alias Black Bat.</hero:disambiguation>
-  <hero:disambiguation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Future's End: Cassandra was back as Batgirl, as part of the League of Batgirls.</hero:disambiguation>
-  <hero:disambiguation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">New 52: Cassandra is introduced with a modified origin. After helping Batman's former sidekicks take down an international criminal ring, she joins the Batman Family as Orphan</hero:disambiguation>
-  <hero:disambiguation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DC: Rebirth: Cassandra remains a member of the Bat-Family fighting crime in Gotham. She operates independently most times, but also as a member of the new crimefighting team Batman assembled.Pre-New 52: Cassandra is currently using the alias Black Bat.Future's End: Cassandra was back as Batgirl, as part of the League of Batgirls.New 52: Cassandra is introduced with a modified origin. After helping Batman's former sidekicks take down an international criminal ring, she joins the Batman Family as OrphanDC: Rebirth: Cassandra remains a member of the Bat-Family fighting crime in Gotham. She operates independently most times, but also as a member of the new crimefighting team Batman assembled.</hero:disambiguation>
   <hero:firstAppearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman #567 - Mark of Cain Part 1</hero:firstAppearance>
   <hero:origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Cain trained Cassandra in isolation and kept her away from human speech, raising her on the language of motion and violence. The idea was to adapt the language centers of her brain, and train it to interpret physical movement as a language. This gifted Cassandra with superb body-reading abilities, and has made fighting her "mother tongue" so to speak. However, this upbringing has also rendered her dyslexic, and when taught to speak, with audible speech-impediments.When Cassandra was eight, Cain took her to carry out a hit in Macau. Cassandra did as her father trained and instructed her to do, and ripped out the throat of a local triad boss. Due to her body-reading ability, she was able to see how death effected the man, and was traumatized by her irreversible sin. Her father came to congratulate her, and she rejected him by delivering an emotional uppercut. Shocked, Cain did not pursue Cassandra when she fled in tears. Cassandra would then wander the Earth for the next eight years, before meeting her father once again in Gotham during No Man's Land.</hero:origin>
-  <hero:otherMedia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Justice League</hero:otherMedia>
-  <hero:otherMedia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the season one finale, "The Savage Time," Cassandra makes a cameo appearance in an alternate future timeline, alongside Dick Grayson, Tim Drake, and Barbara Gordon.</hero:otherMedia>
   <hero:otherVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elseworlds</hero:otherVersion>
   <hero:otherVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An adult version of Cassandra appeared as the subject of an issue of Solo. She was shown to be married to Tim Drake.</hero:otherVersion>
   <hero:otherVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pre-52</hero:otherVersion>
@@ -466,20 +466,11 @@
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eyes: Brown</hero:characteristics>
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hair: Black</hero:characteristics>
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Known Relatives: Sandra Wu-San (mother), David Cain (father)</hero:characteristics>
-  <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marital Status: SingleFirst Appearance: Batman #567 (July 1999)Civilian Name: Cassandra CainStatus: HeroOccupation: Adventurer, vigilanteBase: Gotham CityHeight: 5 feet 9 inchesWeight: 130 poundsEyes: BrownHair: BlackKnown Relatives: Sandra Wu-San (mother), David Cain (father)Marital Status: Single</hero:characteristics>
+  <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marital Status: Single</hero:characteristics>
   <hero:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DC Comics</hero:publisher>
   <hero:realName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain-Wayne</hero:realName>
   <hero:summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The daughter of two notorious assassins, David Cain and Lady Shiva, Cassandra left her father as a child after she killed a man and saw his pain and fear while he died. After saving Commissioner Gordon's life, she became the new Batgirl with Batman and Oracle's blessing, and was later adopted by Bruce Wayne. She would later give the role of Batgirl to her friend Stephanie Brown, and became Black Bat. In the New 52 and Rebirth, she takes the alias of Orphan.</hero:summary>
   <hero:superName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain</hero:superName>
-  <hero:videoGames rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Dark Tomorrow</hero:videoGames>
-  <hero:videoGames rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain appears in a cameo alongside Tim Drake.</hero:videoGames>
-  <hero:videoGames rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DC Universe Online</hero:videoGames>
-  <hero:videoGames rdf:datatype="http://www.w3.org/2001/XMLSchema#string">She appears in the Justice League Watchtower in the Tech Wing. In the game she acts as a vendor for the Tech Iconic Suit and the Dark Spector Batsuit.</hero:videoGames>
-  <hero:videoGames rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scribblenauts Unmasked: A DC Comics Adventure</hero:videoGames>
-  <hero:hasWeaponsEquipment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman Family Equipment: Cassanda carries an assortment of Bat-gadgets such as Batarangs, smoke grenades, small explosives, grappling hooks and lines.</hero:hasWeaponsEquipment>
-  <hero:hasWeaponsEquipment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orphan Suit: Cassandra currently wears a modified version of her original outfit, thought the design is largely the same, rather than a hood, the suit comes with a mask completely covering her head. The mask itself has a stitching pattern around her mouth to symbolize her limited speaking abilities.Batman Family Equipment: Cassanda carries an assortment of Bat-gadgets such as Batarangs, smoke grenades, small explosives, grappling hooks and lines.Orphan Suit: Cassandra currently wears a modified version of her original outfit, thought the design is largely the same, rather than a hood, the suit comes with a mask completely covering her head. The mask itself has a stitching pattern around her mouth to symbolize her limited speaking abilities.</hero:hasWeaponsEquipment>
-  <hero:hasWeaponsEquipment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batgirl Suit: Cassie wore a costume originally created by Huntress, taken from her by Batman. As Blackbat, she wears her old Batgirl costume with a domino mask. Her cape is torn, and her hands are wrapped in bandages with claws on the fingertips of her gloves.</hero:hasWeaponsEquipment>
-  <hero:hasWeaponsEquipment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Original Outfit: When Cassandra was introduced into the New 52, she wore a hooded black and yellow ninja outfit similar to her father's Orphan suit. She also wore a utility belt for carrying equipment and weapons for her missions. For a brief period, she fashioned a mask for herself resembling the Batman symbol by painting her face with blood of some of her father's victims. This was presumably an act of defiance against her father and a sign of her admiration and respect for Batman.Batgirl Suit: Cassie wore a costume originally created by Huntress, taken from her by Batman. As Blackbat, she wears her old Batgirl costume with a domino mask. Her cape is torn, and her hands are wrapped in bandages with claws on the fingertips of her gloves.Original Outfit: When Cassandra was introduced into the New 52, she wore a hooded black and yellow ninja outfit similar to her father's Orphan suit. She also wore a utility belt for carrying equipment and weapons for her missions. For a brief period, she fashioned a mask for herself resembling the Batman symbol by painting her face with blood of some of her father's victims. This was presumably an act of defiance against her father and a sign of her admiration and respect for Batman.</hero:hasWeaponsEquipment>
   <hero:isWoman rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hero:isWoman>
 </owl:NamedIndividual>
 
@@ -495,7 +486,7 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Justice League Elite">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
-  <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The reformed assassin, Kasumi's skills are legendary amongst the underground; said to have killed 200 people by the age of 16. While it is unclear whether or not a girl named Kasumi actually exists, the Kasumi that entered the Justice League Elite was actually Cassandra posing as Kasumi to keep a check on the experimental team; a spy inserted by Batman (Bruce Wayne). With Green Arrow (Oliver Queen) acting as her backup, Cassandra secretly delivered annual reports to Batman on the teamï¿½s progress.Sticking rigidly to her sense of responsibility and, under her disguise, redemption, Kasumiï¿½s self discipline attracted the attention of Coldcast (Nathan Jones) as a brotherly influence for her on the team as it began to fall apart. When Coldcast was accused of murdering a captured dictator in cold blood, Cassandra insisted on his innocence and, after the team was disbanded due to Manchester Blackï¿½s return, Cassandra infiltrated Coldcastï¿½s prison to break him out and face Black before he destroyed the planet.</hero:storyDescription>
+  <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The reformed assassin, Kasumi's skills are legendary amongst the underground; said to have killed 200 people by the age of 16. While it is unclear whether or not a girl named Kasumi actually exists, the Kasumi that entered the Justice League Elite was actually Cassandra posing as Kasumi to keep a check on the experimental team; a spy inserted by Batman (Bruce Wayne). With Green Arrow (Oliver Queen) acting as her backup, Cassandra secretly delivered annual reports to Batman on the team's progress.Sticking rigidly to her sense of responsibility and, under her disguise, redemption, Kasumi's self discipline attracted the attention of Coldcast (Nathan Jones) as a brotherly influence for her on the team as it began to fall apart. When Coldcast was accused of murdering a captured dictator in cold blood, Cassandra insisted on his innocence and, after the team was disbanded due to Manchester Black's return, Cassandra infiltrated Coldcast's prison to break him out and face Black before he destroyed the planet.</hero:storyDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Batgirl Returns">
@@ -538,6 +529,21 @@
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When Batman realizes that someone is targeting all of Gotham's vigilantes, he begins recruiting them to train them to ready them for this new threat and to help them become better crime fighters. After enlisting Batwoman to help lead his new team, they begin gathering the recruits. Deciding on their second recruit, they find Orphan taking down a group of sex traffickers. After she dispatches them, Batman calls out for her to come with him. She and the other recruits arrive atop GCPD Headquarters and the two explain their plan to train them.During one of their first training sessions, the team is forced a fight a simulated army of Jokers. When Spoiler gets overwhelmed, an already fatigued Cassandra rescues her. When Red Robin shuts down the simulation against Batwoman's orders, she calls everyone out on their flawed performances. Cassandra's flaw was that she divided her attention. As the best fighter present, she focused too much on fighting for everyone. After they break for the night, Cassandra decides to drop by Stephanie and Tim's apartment, but when she sees the two are talking, she heads off to find someone to fight.Later, after Batman is captured by the Colony, Batwoman and Red Robin summon the team Cassandra is the last to arrive, but before she can go inside the Belfry, she notices jets overhead and realizes something is amiss. When Colony soldiers drop onto the roof of the Belfry and demand her surrender, she merely says "no" and charges into battle. When another contingient breaches the base, she follows them in after dispatching the first group. She tries to fight them off but they shoot her with tranquilizer darts to keep her down. She recovers as the teams uses the Belfry's escape hatch to reqroup and come up with a plan. Once Orphan confirms they are not being followed, the group head over to the Bat-Train Tim designed for fast exits. Cassandra is also present when they storm the Colony's base to free Batman. She is tasked with clearing their escape route of soldiers. By the time the others reach her, she has taken them all down, enabling them to escape.When they return to the Belfry, they discover from Tim that the Colony is trying to purge members of the League of Shadows from Gotham at the cost of several hundred innocent lives. Wanting to save as many people as possible, the team splits up to cover more ground. Cassandra is seen clearing out a shelter, unaware that member of the Shadows walked right past her. She is not seen again during the evacuation attempt.</hero:storyDescription>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Animation">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
+  <hero:mediaName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Justice League</hero:mediaName>
+  <hero:mediaName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></hero:mediaName>
+  <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the season one finale, "The Savage Time," Cassandra makes a cameo appearance in an alternate future timeline, alongside Dick Grayson, Tim Drake, and Barbara Gordon.</hero:mediaDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Video Games">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
+  <hero:mediaName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Dark Tomorrow</hero:mediaName>
+  <hero:mediaName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DC Universe Online</hero:mediaName>
+  <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain appears in a cameo alongside Tim Drake.</hero:mediaDescription>
+  <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">She appears in the Justice League Watchtower in the Tech Wing. In the game she acts as a vendor for the Tech Iconic Suit and the Dark Spector Batsuit.</hero:mediaDescription>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Unarmed Combat">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Due to the harsh training she went through as a child, Cassandra is one of the greatest martial artists in the world and is a master assassin. Some of her feats include shattering brick and stone as well as a sword. She has used nerve strikes and pressure points. She has dodged bullets at point blank range and even disarmed a gunman before the bullet could hit her. She has invented her own styles and techniques. She can lift about twice her weight and carry 230 lbs while running.</hero:powerDescription>
@@ -555,7 +561,7 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Intellect">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
-  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Cassandra was given some detective training from Tim Drake while they were in Blï¿½dhaven.</hero:powerDescription>
+  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Cassandra was given some detective training from Tim Drake while they were in Bl'dhaven.</hero:powerDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Weapons-Master">
