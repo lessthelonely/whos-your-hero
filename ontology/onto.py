@@ -42,7 +42,7 @@ with onto:
         domain = [Power]
         range = [str]
 
-    class mediaName(Property):
+    class mediaType(Property):
         domain = [Media]
         range = [str]
 

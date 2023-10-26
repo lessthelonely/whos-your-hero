@@ -105,20 +105,30 @@ def load_other_media(names):
         f = open(folder_name + "/" + folder_name + "_Other_Media.txt", "r")
         file_contents = [line.strip() for line in f]
         character_media = None
+        media_type = ""
+        skip_lines = []
         for line in range(len(file_contents)):
+            if line in skip_lines:
+                continue
             if line == 0:
-                character_media = Media(file_contents[line].strip())
-            elif file_contents[line-1].strip() == "":
-                character.otherMedia.append(character_media)
-                character_media = Media(file_contents[line].strip())
+                character_media = Media(file_contents[line + 1].strip()) # title
+                media_type = file_contents[line].strip() # type
+                character_media.mediaType.append(media_type) # type
+                skip_lines.append(line + 1)
+            elif file_contents[line-1].strip() == "": # new type
+                character_media = Media(file_contents[line + 1].strip()) # title
+                media_type = file_contents[line].strip() # type
+                character_media.mediaType.append(media_type)
+                skip_lines.append(line + 1)
+                # character.otherMedia.append(character_media)
             # titles are on odd lines and descriptions are on even lines
             else:
-                if line % 2 != 0:
-                    character_media.mediaName.append(file_contents[line].strip())
-                else:
+                if line % 2 != 0: # title
+                    character_media = Media(file_contents[line].strip()) # title
+                    character_media.mediaType.append(media_type)
+                else: # description
                     character_media.mediaDescription.append(file_contents[line].strip())
-                    if line == len(file_contents) - 1:
-                        character.otherMedia.append(character_media)
+                    character.otherMedia.append(character_media)
 
         # for line in f:
         #     if (line.strip() == ""):
