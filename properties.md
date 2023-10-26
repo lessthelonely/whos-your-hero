@@ -29,12 +29,10 @@
 - Alternate Realities (emma)
 - Personal Information (emma)
 - Character Profile (deapool)
-- Disambiguation (cass)
 - Merchandise (deadpool)
 - Other Version (cass)
 - Personal Characteristics (cass)
 - Video Games (cass)
-- Weapons and Equipment (cass)
 - Variants (deadpool)
 - Television (wally) - it included other types of media
 
@@ -47,3 +45,10 @@ Equivalent stuff
 I would say eliminate Creators thoughts on, current events, popular recognition, origin_post-flaspoint, disambiguation, weapons and equipment 
 
 Character Evolution doesn't exist for wally and cassandra
+
+
+
+Other media
+- Type of media
+- Name of the project
+- Description
