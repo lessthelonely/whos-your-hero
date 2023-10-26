@@ -4,6 +4,7 @@ import os
 
 character = Character("Cassandra Cain")
 character.isWoman.append(True)
+trope = Trope("Abusive Parents")
 
 
 def load_aliases(names):
@@ -270,4 +271,38 @@ create_character_rdf(["deadpool"], "deadpool.owl")
 create_character_rdf(["emma_frost"], "emma_frost.owl")
 create_character_rdf(["midnighter"], "midnighter.owl")
 create_character_rdf(["wally_west"], "wally_west.owl")
+
+"""
+def load_tropes(file_name, trope_name):
+    f = open("tropes/" + file_name, "r", encoding="utf8")
+    trope_description = [line.strip() for line in f]
+    trope = Trope(trope_name)
+    trope.tropeDescription = trope_description
+    print(trope)
+    if trope_name == "\"Freaky Friday\" Flip":
+        trope_name = "Freaky Friday Flip"
+    if trope_name == "\"The Reason You Suck\" Speech":
+        trope_name = "The Reason You Suck Speech"
+    if trope_name == "\"Well Done, Son\" Guy":
+        trope_name = "Well Done Son Guy"
+    if trope_name[len(trope_name)-1] == "?":
+        trope_name = trope_name[0:len(trope_name)-1]
+
+    rdf_name = trope_name + ".owl"
+    default_world.save(file="tropes/" + rdf_name, format="rdfxml")
+"""
+
+all_tropes_file = open("all_tropes.txt", "r")
+all_tropes = [line.strip() for line in all_tropes_file]
+all_tropes.sort()
+
+tropes = []
+directory = 'tropes'
+for filename in os.scandir(directory):
+    if filename.is_file():
+        tropes.append(filename.name)
+tropes.sort()
+# for t in range(len(tropes)):
+#     load_tropes(tropes[t], all_tropes[t])
+
 
