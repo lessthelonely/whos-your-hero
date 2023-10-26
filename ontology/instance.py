@@ -100,7 +100,6 @@ def load_origin(names):
             character.origin.append(line.strip())
 
 def load_other_media(names):
-    #TODO: Make a subproperty so we can save names and the descriptions.
     for folder_name in names:
         f = open(folder_name + "/" + folder_name + "_Other_Media.txt", "r")
         file_contents = [line.strip() for line in f]
