@@ -13,6 +13,11 @@ def get_comic_character_info(folder_info, character_name, url):
     page = requests.get(url)
 
     soup = BeautifulSoup(page.content, "lxml")
+    image = soup.find_all("img")[0]
+    file_name = folder_info + "/" + folder_info + "_" + "Photo" + '.txt'
+    with open(file_name, 'w') as file:
+        file.write(image['src'])
+
     div_characters = soup.find_all("div", {"class":"wiki-details"})[0]
 
 
@@ -86,6 +91,7 @@ def get_comic_character_info(folder_info, character_name, url):
                 file.write(content)
 
             print(f'Saved text from <h2> tag {index + 1} to {file_name}')
+
 
 get_comic_character_info("emma_frost", "Emma Frost", "https://comicvine.gamespot.com/emma-frost/4005-1457/")
 get_comic_character_info("cassandra_cain", "Cassandra Cain", "https://comicvine.gamespot.com/cassandra-cain/4005-65230/")

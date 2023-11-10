@@ -6,6 +6,13 @@ character = Character("Cassandra Cain")
 character.isWoman.append(True)
 trope = Trope("Abusive Parents")
 
+def load_photos(names):
+    for folder_name in names:
+        f = open(folder_name + "/" + folder_name + "_Photo.txt", "r")
+        for line in f:
+            if (line.strip() == ""):
+                continue
+            character.hasPhoto.append(line.strip())
 
 def load_aliases(names):
     for folder_name in names:
@@ -232,6 +239,7 @@ def create_character_rdf(character_name, file_name):
         character = Character("Wally West")
         character.isMan.append(True)
 
+    load_photos(character_name)
     load_aliases(character_name)
     load_alternate_version(character_name)
     load_appears_in(character_name)
@@ -290,7 +298,7 @@ def load_tropes(file_name, trope_name):
 
     rdf_name = trope_name + ".owl"
     default_world.save(file="tropes/" + rdf_name, format="rdfxml")
-"""
+
 
 all_tropes_file = open("all_tropes.txt", "r")
 all_tropes = [line.strip() for line in all_tropes_file]
@@ -304,5 +312,7 @@ for filename in os.scandir(directory):
 tropes.sort()
 # for t in range(len(tropes)):
 #     load_tropes(tropes[t], all_tropes[t])
+
+"""
 
 

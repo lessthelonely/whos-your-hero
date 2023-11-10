@@ -61,6 +61,10 @@ with onto:
         domain = [Character]
         range = [str]
 
+    class hasPhoto(Property):
+        domain = [Character]
+        range = [str]
+
     class birthday(Property):
         domain = [Character]
         range = [str]
