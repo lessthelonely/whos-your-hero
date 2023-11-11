@@ -418,11 +418,6 @@
   <hero:isWoman rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hero:isWoman>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AbusiveParents">
-  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Both her parents are in the running for some of the worst in the DCU. Shiva is trying to be better, though.</hero:tropeDescription>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Elseworlds">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An adult version of Cassandra appeared as the subject of an issue of Solo. She was shown to be married to Tim Drake.</hero:alternateVersions>
@@ -511,6 +506,11 @@
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WeaponsMaster">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She is also a master of different kinds of melee and ranged weaponry. Her time with Barbara Gordon and the Batman only enhanced her already considerable skills.Unarmed Combat</hero:powerDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AbusiveParents">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Both her parents are in the running for some of the worst in the DCU. Shiva is trying to be better, though.</hero:tropeDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheAce">

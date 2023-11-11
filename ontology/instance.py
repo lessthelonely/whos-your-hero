@@ -6,6 +6,12 @@ character = Character("CassandraCain")
 character.isWoman.append(True)
 trope = Trope("AbusiveParents")
 
+# Clear the default_world
+def clear_default_world():
+    entities_to_destroy = list(default_world.individuals()) + list(default_world.data_properties())
+    for entity in entities_to_destroy:
+        destroy_entity(entity)
+
 def load_photos(names):
     for folder_name in names:
         f = open(folder_name + "/" + folder_name + "_Photo.txt", "r")
@@ -232,6 +238,7 @@ def load_character_tropes(names):
 
 def create_character_rdf(character_name, file_name):
     # sparql doesn't allow for URI's with spaces or special characters
+    clear_default_world()
     if(character_name == ["cassandra_cain"]):
         character = Character("CassandraCain")
         character.isWoman.append(True)
