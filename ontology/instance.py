@@ -2,9 +2,9 @@ from onto import Character, Story, Power, Trope, Media, Variant
 from owlready2 import *
 import os
 
-character = Character("Cassandra Cain")
+character = Character("CassandraCain")
 character.isWoman.append(True)
-trope = Trope("Abusive Parents")
+trope = Trope("AbusiveParents")
 
 def load_photos(names):
     for folder_name in names:
@@ -85,7 +85,9 @@ def load_story_arcs(names):
         character_story = None 
         for line in range(len(file_contents)):        
             if line % 2 == 0:
-                 character_story = Story(file_contents[line].strip())
+                 # has to have no spaces or special characters
+                 processed_name = file_contents[line].strip().replace(" ", "").replace(":", "").replace("?", "").replace("!", "").replace(".", "").replace(",", "").replace("'", "").replace("\"", "").replace("(", "").replace(")", "").replace("-", "").replace("’", "")
+                 character_story = Story(processed_name)
             else:
                 if character_story:
                     character_story.storyDescription.append(file_contents[line].strip())
@@ -110,12 +112,14 @@ def load_other_media(names):
             if line in skip_lines:
                 continue
             if line == 0:
-                character_media = Media(file_contents[line + 1].strip()) # title
+                processed_name = file_contents[line + 1].strip().replace(" ", "").replace(":", "").replace("?", "").replace("!", "").replace(".", "").replace(",", "").replace("'", "").replace("\"", "").replace("(", "").replace(")", "").replace("-", "").replace("’", "")
+                character_media = Media(processed_name) # title
                 media_type = file_contents[line].strip() # type
                 character_media.mediaType.append(media_type) # type
                 skip_lines.append(line + 1)
             elif file_contents[line-1].strip() == "": # new type
-                character_media = Media(file_contents[line + 1].strip()) # title
+                processed_name = file_contents[line + 1].strip().replace(" ", "").replace(":", "").replace("?", "").replace("!", "").replace(".", "").replace(",", "").replace("'", "").replace("\"", "").replace("(", "").replace(")", "").replace("-", "").replace("’", "")
+                character_media = Media(processed_name) # title
                 media_type = file_contents[line].strip() # type
                 character_media.mediaType.append(media_type)
                 skip_lines.append(line + 1)
@@ -123,7 +127,8 @@ def load_other_media(names):
             # titles are on odd lines and descriptions are on even lines
             else:
                 if line % 2 != 0: # title
-                    character_media = Media(file_contents[line].strip()) # title
+                    processed_name = file_contents[line].strip().replace(" ", "").replace(":", "").replace("?", "").replace("!", "").replace(".", "").replace(",", "").replace("'", "").replace("\"", "").replace("(", "").replace(")", "").replace("-", "").replace("’", "")
+                    character_media = Media(processed_name) # title
                     character_media.mediaType.append(media_type)
                 else: # description
                     character_media.mediaDescription.append(file_contents[line].strip())
@@ -141,7 +146,8 @@ def load_alternate_version(names):
         alternate_version = None 
         for line in range(len(file_contents)):        
             if line % 2 == 0:
-                 alternate_version = Variant(file_contents[line].strip())
+                 processed_name = file_contents[line].strip().replace(" ", "").replace(":", "").replace("?", "").replace("!", "").replace(".", "").replace(",", "").replace("'", "").replace("\"", "").replace("(", "").replace(")", "").replace("-", "").replace("’", "")
+                 alternate_version = Variant(processed_name)
             else:
                 if alternate_version:
                     alternate_version.alternateVersions.append(file_contents[line].strip())
@@ -162,7 +168,8 @@ def load_powers_and_abilities(names):
             if (line.strip() == ""):
                 continue
             power_info = line.strip().split(":")
-            character_power = Power(power_info[0])
+            processed_name = power_info[0].strip().replace(" ", "").replace(":", "").replace("?", "").replace("!", "").replace(".", "").replace(",", "").replace("'", "").replace("\"", "").replace("(", "").replace(")", "").replace("-", "").replace("’", "")
+            character_power = Power(processed_name)
             character_power.powerDescription.append(power_info[1])
             character.powers.append(character_power)
         # f = open(folder_name + "/" + folder_name + "_Powers.txt", "r")
@@ -218,25 +225,27 @@ def load_character_tropes(names):
             if (line.strip() == ""):
                 continue
             trope_info = line.strip().split(":")
-            character_trope = Trope(trope_info[0])
+            processed_name = trope_info[0].strip().replace(" ", "").replace(":", "").replace("?", "").replace("!", "").replace(".", "").replace(",", "").replace("'", "").replace("\"", "").replace("(", "").replace(")", "").replace("-", "").replace("’", "")
+            character_trope = Trope(processed_name)
             character_trope.tropeDescription.append(trope_info[1])
             character.hasTrope.append(character_trope)
 
 def create_character_rdf(character_name, file_name):
+    # sparql doesn't allow for URI's with spaces or special characters
     if(character_name == ["cassandra_cain"]):
-        character = Character("Cassandra Cain")
+        character = Character("CassandraCain")
         character.isWoman.append(True)
     elif(character_name == ["deadpool"]):
         character = Character("Deadpool")
         character.isMan.append(True)
     elif(character_name == ["emma_frost"]):
-        character = Character("Emma Frost")
+        character = Character("EmmaFrost")
         character.isWoman.append(True)
     elif(character_name == ["midnighter"]):
         character = Character("Midnighter")
         character.isMan.append(True)
     elif(character_name == ["wally_west"]):
-        character = Character("Wally West")
+        character = Character("WallyWest")
         character.isMan.append(True)
 
     load_photos(character_name)

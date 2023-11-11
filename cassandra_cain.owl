@@ -247,143 +247,143 @@
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Cassandra Cain">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CassandraCain">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Batgirl"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Ghost/Batgirl"/>
-  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Justice League Elite"/>
-  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Batgirl Returns"/>
-  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Batman and the Outsiders"/>
-  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Hong Kong and Black Bat"/>
-  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Batman Incorporated"/>
-  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Future's End"/>
+  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#JusticeLeagueElite"/>
+  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#BatgirlReturns"/>
+  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#BatmanandtheOutsiders"/>
+  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#HongKongandBlackBat"/>
+  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#BatmanIncorporated"/>
+  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#FuturesEnd"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Convergence"/>
-  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Batman and Robin Eternal"/>
-  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Detective Comics: Rebirth"/>
-  <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#Justice League"/>
-  <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#Batman: Dark Tomorrow"/>
-  <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#DC Universe Online"/>
+  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#BatmanandRobinEternal"/>
+  <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#DetectiveComicsRebirth"/>
+  <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#JusticeLeague"/>
+  <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#BatmanDarkTomorrow"/>
+  <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#DCUniverseOnline"/>
   <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#Elseworlds"/>
-  <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#Pre-52"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Unarmed Combat"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Reading Body Language"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Weakness Perception"/>
+  <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#Pre52"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#UnarmedCombat"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#ReadingBodyLanguage"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#WeaknessPerception"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Intellect"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Weapons-Master"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Abusive Parents"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#The Ace"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Action Girl"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Affirmative-Action Legacy"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Age Lift"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#All-Loving Hero"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Amazon Chaser"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Amazonian Beauty"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Ambiguously Bi"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Animal-Themed Superbeing"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Another Man's Terror"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Anti-Hero Substitute"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Arrogant Kung-Fu Guy"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#The Atoner"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Awesomeness by Analysis"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Back from the Dead"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Big Eater"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Blood Knight"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Book Dumb"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Brainwashed and Crazy"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#But Not Too Foreign"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Can't Hold Her Liquor"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#The Cape"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Cartwright Curse"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Charles Atlas Superpower"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Chekhov's Gunman"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Chuck Cunningham Syndrome"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Classical Anti-Hero"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Combat Stilettos"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Competition Freak"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Contagious Heroism"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Corruption of a Minor"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Covered with Scars"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Creepy Good"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Cute Bruiser"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Dance Battler"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Dark Is Not Evil"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Death Seeker"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Defusing the Tyke-Bomb"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Dented Iron"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Depending on the Artist"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Dodge the Bullet"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Dragon Lady"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Driven to Suicide"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Dying to Be Replaced"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Even the Loving Hero Has Hated Ones"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Extreme Omnivore"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Face–Heel Turn"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Gambit Roulette"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Good Scars, Evil Scars"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Grappling-Hook Pistol"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Happily Adopted"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Heroic Vow"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Heterosexual Life-Partners"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#I Am Not a Gun"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Inexplicably Awesome"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Intergenerational Friendship"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#In the Hood"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#WeaponsMaster"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AbusiveParents"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TheAce"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#ActionGirl"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AffirmativeActionLegacy"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AgeLift"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AllLovingHero"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AmazonChaser"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AmazonianBeauty"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AmbiguouslyBi"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AnimalThemedSuperbeing"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AnotherMansTerror"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AntiHeroSubstitute"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#ArrogantKungFuGuy"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TheAtoner"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AwesomenessbyAnalysis"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#BackfromtheDead"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#BigEater"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#BloodKnight"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#BookDumb"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#BrainwashedandCrazy"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#ButNotTooForeign"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#CantHoldHerLiquor"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TheCape"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#CartwrightCurse"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#CharlesAtlasSuperpower"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#ChekhovsGunman"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#ChuckCunninghamSyndrome"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#ClassicalAntiHero"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#CombatStilettos"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#CompetitionFreak"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#ContagiousHeroism"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#CorruptionofaMinor"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#CoveredwithScars"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#CreepyGood"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#CuteBruiser"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#DanceBattler"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#DarkIsNotEvil"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#DeathSeeker"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#DefusingtheTykeBomb"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#DentedIron"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#DependingontheArtist"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#DodgetheBullet"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#DragonLady"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#DriventoSuicide"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#DyingtoBeReplaced"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#EventheLovingHeroHasHatedOnes"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#ExtremeOmnivore"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Face–HeelTurn"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#GambitRoulette"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#GoodScarsEvilScars"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#GrapplingHookPistol"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#HappilyAdopted"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#HeroicVow"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#HeterosexualLifePartners"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#IAmNotaGun"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#InexplicablyAwesome"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#IntergenerationalFriendship"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#IntheHood"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Irony"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Lamarck Was Right"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Legacy Character"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Leeroy Jenkins"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Little Miss Badass"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Living Shadow"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Logical Weakness"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Luke, I Am Your Father"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Made of Iron"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Major Injury Underreaction"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#LamarckWasRight"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#LegacyCharacter"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#LeeroyJenkins"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#LittleMissBadass"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#LivingShadow"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#LogicalWeakness"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#LukeIAmYourFather"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#MadeofIron"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#MajorInjuryUnderreaction"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Malaproper"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Maybe Magic, Maybe Mundane"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Missing Mom"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#The Mole"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#My God, What Have I Done?"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Mythology Gag"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Name of Cain"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Never Learned to Talk"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#No Social Skills"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#O.O.C. Is Serious Business"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Odd Friendship"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#One-Man Army"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#One-Steve Limit"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Parental Substitute"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Phlebotinum Rebel"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Platonic Life-Partners"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Put on a Bus"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#The Quiet One"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#A Real Man Is a Killer"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#The Real Remington Steele"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#MaybeMagicMaybeMundane"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#MissingMom"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TheMole"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#MyGodWhatHaveIDone"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#MythologyGag"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#NameofCain"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#NeverLearnedtoTalk"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#NoSocialSkills"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#OOCIsSeriousBusiness"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#OddFriendship"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#OneManArmy"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#OneSteveLimit"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#ParentalSubstitute"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#PhlebotinumRebel"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#PlatonicLifePartners"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#PutonaBus"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TheQuietOne"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#ARealManIsaKiller"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TheRealRemingtonSteele"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Retcon"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Silent Snarker"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Socially Awkward Hero"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Shoo the Dog"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#The Spartan Way"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Stealth Hi/Bye"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Super-Strength"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Super-Speed"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Taking the Bullet"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Tap on the Head"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Technical Pacifist"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Terror Hero"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Thou Shalt Not Kill"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Tomboy and Girly Girl"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Too Hungry to Be Polite"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Took a Level in Jerkass"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#The Tragic Rose"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Training from Hell"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Twofer Token Minority"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Tyke Bomb"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Vague Age"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Waif-Fu"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Well-Trained, but Inexperienced"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#Wild Child"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#World's Best Warrior"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#You Are Better Than You Think You Are"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#SilentSnarker"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#SociallyAwkwardHero"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#ShootheDog"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TheSpartanWay"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#StealthHi/Bye"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#SuperStrength"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#SuperSpeed"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TakingtheBullet"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TapontheHead"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TechnicalPacifist"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TerrorHero"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#ThouShaltNotKill"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TomboyandGirlyGirl"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TooHungrytoBePolite"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TookaLevelinJerkass"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TheTragicRose"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TrainingfromHell"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TwoferTokenMinority"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TykeBomb"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#VagueAge"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#WaifFu"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#WellTrainedbutInexperienced"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#WildChild"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#WorldsBestWarrior"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#YouAreBetterThanYouThinkYouAre"/>
   <hero:hasAlias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Bat</hero:hasAlias>
   <hero:hasAlias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batgirl</hero:hasAlias>
   <hero:hasAlias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kasumi</hero:hasAlias>
@@ -418,7 +418,7 @@
   <hero:isWoman rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hero:isWoman>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Abusive Parents">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AbusiveParents">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Both her parents are in the running for some of the worst in the DCU. Shiva is trying to be better, though.</hero:tropeDescription>
 </owl:NamedIndividual>
@@ -428,7 +428,7 @@
   <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An adult version of Cassandra appeared as the subject of an issue of Solo. She was shown to be married to Tim Drake.</hero:alternateVersions>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Pre-52">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Pre52">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the Pre-52 Cass was given her language from a physic and didn't need to study language, however in the New 52 she has to learn how to speak through normal circumstances.</hero:alternateVersions>
 </owl:NamedIndividual>
@@ -443,32 +443,32 @@
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Under the tutelage of Oracle, Batgirl investigates the bombing of the international Diamond Exchange which has resulted in severe casualties. Two-Face openly claims responsibility for the disaster but reports show that nothing is stolen, nor were there any high profile enemies at the scene that Two-Face would consider targeting. Oracle's investigation lead to the city of Arcadia, where Ghost is on the search for Malcolm Greymatter, a Civil War veteran kept alive by his own scientific experiments.Councilman Fletcher, while at a social event, reveals that his daughter is among 6 persons reported missing after the bombing of the International Diamond Exchange. Bruce Wayne mentions that no body has been recovered, and this may indicate she is not dead. The disheartened Councilman responds "if Harvey Dent has her, she may wish she were."Wayne instinctively assumes Barbara Gordon may be planning a mission to apprehend Dent, and specifically warns her not to. He claims that Two-Face is Batman's responsibility, and adds that if Batman needs help, he'll call.Gordon, ignoring Wayne's order, plans a trip to investigate St. Mary's Hospital in Arcadia. Meanwhile, Ghost is investigating the disappearance of a young woman named Debbie Scoggins. Both she and Batgirl end up meeting for the first time at an underground nightclub. Although they are unable to communicate verbally, the two quickly realize their agendas are compatible.With the assistance of Oracle and Batgirl, Ghost comes face to face with Malcolm Greymatter, the mastermind behind the disappearances of numerous woman in Gotham and Arcadia. While Ghost believed Greymatter faked their deaths in order to sell them into servitude, he reveals their deaths were real and that he was responsible for reanimating their bodies through the use of his "resurrection machine".Two-Face seeks revenge on Greymatter for reanimating the corpses of henchmen he has killed himself, claiming them as property. The conflict is cut short as Ghost and Batgirl wreak havoc on Greymatter's heart of operations. Facing defeat, he destroys the base of operations with a bomb, leaving no evidence of the reanimated bodies or the resurrection machine. Ghost and Batgirl are unable to capture the villain.</hero:storyDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Justice League Elite">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#JusticeLeagueElite">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The reformed assassin, Kasumi's skills are legendary amongst the underground; said to have killed 200 people by the age of 16. While it is unclear whether or not a girl named Kasumi actually exists, the Kasumi that entered the Justice League Elite was actually Cassandra posing as Kasumi to keep a check on the experimental team; a spy inserted by Batman (Bruce Wayne). With Green Arrow (Oliver Queen) acting as her backup, Cassandra secretly delivered annual reports to Batman on the team's progress.Sticking rigidly to her sense of responsibility and, under her disguise, redemption, Kasumi's self discipline attracted the attention of Coldcast (Nathan Jones) as a brotherly influence for her on the team as it began to fall apart. When Coldcast was accused of murdering a captured dictator in cold blood, Cassandra insisted on his innocence and, after the team was disbanded due to Manchester Black's return, Cassandra infiltrated Coldcast's prison to break him out and face Black before he destroyed the planet.</hero:storyDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Batgirl Returns">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BatgirlReturns">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When Cassie returned to Gotham, most of the Bat Family embraced her but not everyone. Nightwing still mistrusted her and continued to berate Batman about allowing her back into the family. Oracle and Batman worked together to try to pull Cassie out of her depressive angry state. There was nothing any of them could say or do to help her to move on, Cassie had been a victim, used and abused, and for that she needed them to pay, needed to finish her father to allow herself to move on. Finding the name of a doctor who had worked on the experiments of Cain and Wilson, Cassie broke into the Batcave and hacked her way into the bat computer, with Oracle watching and intervening. Cassandra pleaded with Oracle for support and understanding, Oracle her heart understanding the girls need for redemption helped her by removing all trace of her hunt through the computer.Cassandra continued to hunt for her father, trailing the streets she followed the trail only to find a woman killing several girls strapped to a massive roundabout table. The woman Marque was killing the new creations of Cain and Wilson, a new breed of girls to fight where Cassie had left off. Marque explained she had been one of them, but had managed to escape and now vowed to destroy their plans. Cassie begged the woman to hear her out and trust her but to no avail, the woman disappeared and left Cassie with a blood sample to test. Taking the test back to the cave Batgirl was confronted by Nightwing who had tracked her down through the use of the bat computer and had a hunch that she was seeking vengeance against her father. With his hunch being correct all along, Nightwing confronted Cassie and the two began to fight. They were interrupted however by the arrival of Batman and Robin, and Cassie fled from the scene. Knowing, if she had not they would try to stop her, the thought made her realize she would kill them if they did.Tracking down Marque she managed to convince the woman to team up with her and for them to work together to find Cain, but with the promise that no one would be killed other than Cain himself. During their journey they were put upon by Rose Wilson aka Ravager, the daughter of Slade Wilson (Deathstroke) the co-conspirator of the creation of the female army.The three women eventually fought through their issues and came together to hunt the men responsible, with the promise that Slade belonged to Ravager. The women managed to track down the training compound for this new breed of women but were thwarted as Deathstroke had been tracking his daughter and found the girls. Using the new army of girls he attacked the three, a massive fight continued until Deathstroke blew up the building making sure his daughter and the girls escaped.Cassandra is abandoned but manages to work out Cain's plan, when she overhears his phone call with Deathstroke she picks up the message that he is going to kill someone and it will shake Gotham to its core, realizing that he means Oracle she runs off to kill her father before he can manage the task. After saving Oracle the father and daughter fight atop the roof opposite the clock tower, Cain mocks Cassandra's skills and tries to use her own emotions of belonging against her, she finally managed to conquer her own demons and threw him off the building, but he managed to hold on. Watching as he slipped Cassie tangle with the demons inside her, the need for her father to die tangling with the training Batman had given her, she finally made the lunge for him to save his life, as Batman and Robin arrived at the scene. She could not grab her father's hand but he was saved by a lower roof top and sent to hospital by Batman as they helped Cassandra. Batman seeing that Cassandra had finally dealt with her demons, made the gesture of adopting her as he had the others in the family finally cementing for her the love of a father she had always craved.</hero:storyDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Batman and the Outsiders">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BatmanandtheOutsiders">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra joins the outsiders at the end of Batman and the Outsiders. Only for the team to fall apart during "Batman R.I.P". When Green Arrow is offered a part of the team by Batman he is angry and is disgusted that the former leader of the League of Assassins is the new leader. While on a mission Green Arrow and Batgirl fight one another and form a bond.Though unwilling to form bonds with her team Batgirl continues to lead them with strength and later forms tight bonds with them and gains their respect when she frees them from the Chinese Military. After her disappearance during the new Batgirl series, the Outsiders begin to fall apart with her loss.During a mission with the JLA, Batman is killed and the Bat family are thrown into a state of disrepair. While Jason and Dick fought over the Battle for the Cowl, Cassie was faced with the pain of losing a family member yet again. Meeting Spoiler (Stephanie Brown) during a patrol of the city. The two women fought side by side, afterwards Batgirl stripped off her outfit and left it for Stephanie saying she had no use for it any more. Although Cassie did not appear in Gotham until Bruce's return, it was revealed that she was operating in Hong Kong and had remained in touch with Red Robin.</hero:storyDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Hong Kong and Black Bat">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#HongKongandBlackBat">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When her adopted father Bruce Wayne returns she reveals that he had told her to give the Batgirl mantle in the event of his death to Stephanie Brown. A conversation with Alfred, reveals that Bruce Wayne always knew where his adopted daughter was, and that Tim Drake (who is now Red Robin) has secretly been in touch with her the whole time. When Red Robin visits Cassandra in Hong Kong they talked about her coming back home to Gotham; however, she refuses to become Batgirl again and but still wishes to be a member of the family. At this time she had adopted another secret identity incorporating a ninja motif with a sword.Months later at the behest of Bruce Wayne, Cassandra joins the new super team Batman Inc. operating under the alias of Black Bat in Hong Kong. This new identity incorporates elements of her previous costumed persona's. She has also bonded with Damien Wayne (the son of Batman and the new Robin) who idolizes her.</hero:storyDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Batman Incorporated">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BatmanIncorporated">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra later becomes an operative of Batman Incorporated protecting Hong Kong, using the suit given to her by Tim and calling herself Blackbat. Bruce Wayne has her take down a neo-heroin smuggling operation.Blackbat travelled to Paris following a homing signal to Red Robin to the final site in a tournament of assassins, saving him from being raped by Daughter of Acheron, Ra's Al-Ghul's half sister, and defeated the vigilante Promise while freeing Drake. Cassandra then proceeded to take a sword and impale Tim in the chest, triggering confirmation that she had won the tournament, being only the eight in history to do so, and activating a system that would 'immortalize' her, by killing her with a laser. Red Robin saved her from the beam, and the two revealed they had faked Red Robin's death, using a trick sword, blood packets, and a stopped heart to fool the temple's automated systems. They attempted to examine the base, but although Tim conversed with the assassin tournament's creator, a previously unknown centuries old immortal, the base self destructed before they could learn any close as to his location.Red Robin came to Hong Kong to assist Black Bat in Cassandra's hunt for Cricket, but Red Robin and Black Bat were defeated by the superhumanly fast assassin, badly injuring Tim including having an arm and several ribs broken, and Cricket promised to fight Cassandra 'For real' next time.Black Bat returned to Gotham to aid Dick Grayson in his hunt for The Architect. Alongside Tim Drake and Damian Wayne, she played a major role in solving the case, and in a conversation with Tim, expressed an interest in stopping by Gotham more.</hero:storyDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Future's End">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#FuturesEnd">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the Future's End continuity, Cassandra is shown to be one of Barbara's successors and part of the League of Batgirls. She is close friends with her teammate, Stephanie Brown, and displays a big sisterly protective streak toward Tiffany Fox, the team's youngest member.It is unknown what her back-story in the New 52 continuity is, but Barbara states that Cassandra "has been through hell," and expresses admiration for her ability to continue onward with her life.</hero:storyDescription>
 </owl:NamedIndividual>
@@ -478,27 +478,27 @@
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain's Pre-New 52 incarnation returns as Black Bat, alongside her crime-fighting partners, Stephanie Brown as Batgirl, and Tim Drake as Red Robin.</hero:storyDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Batman and Robin Eternal">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BatmanandRobinEternal">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra first appears after the Joker's endgame, after Batman loses his memories. She arrives in Gotham to deliver a message to Dick Grayson from Batman. The message was for Dick to investigate a list of names affiliated with a secret criminal organisation led by a figure known only as Mother. Bruce intended for Cassandra to gather up his former Robins take down Mother and all those working for her. When an agent of Mother, codename Orphan, attacks Harper Row in her apartment, Cassandra arrives and helps drive Orphan away. She then heads off to find the Red Hood, another potential target of Mother. However, he believes she is the one after him and tries kill her, but Dick arrives to stop the fight before things escalate.Once the Robins and their friends are gathered, they begin investigating Bruce's message, but Cassandra and sneaks off with Harper. However, they are attacked by Orphan again. When Harper is wounded, Cassandra intervenes and drives him away yet again. Later, Dick arrives in the Batplane and takes them with him to Prague to start tracking down Mother. Once they arrive and set up shop, Dick instructs Cassandra and Harper to investigate someone on Mother's list: Prague's Prima ballerina. While they watch the ballet, Cassandra gets enamored by the sight of dancing, and almost doesn't notice when the dancers try to kill them. The two of them fend off the dancers until Dick arrives to help finish them off, but before they can leave, Cassandra runs off on her own.It is revealed that Cassandra went back to Mother's base of operations to stop her from killing all of the children under her control. as she travels trough her old home, she remembers her own story. Her father David a.k.a Orphan raised her is secret inside Mother's base. Rather than teach her how to read and speak, he taught her to read body language to hone her into the ultimate fighter. Whenever she tried to sneak out to be with other people, he would lock her in a pitch black, soundproof box for long periods of time as punishment. When she grew up, David presented her to Mother, but she was only upset that David kept a secret from her. Eventually, she decided to take a better path and escaped Mother's base. Wanting to see Mother taken down, she traveled to Gotham and informed Batman that Mother, who he thought was dead, was still active. Preoccupied with the Joker's attack, he asks her to deliver a thumb drive with everything he knows about Mother to Dick should he fall fighting the Joker. He then tells her that despite the terrible things she's done in the past, he is glad she chose to be more than what everyone wanted her to be. He then hugs her and leaves.In the present, Orphan catches her and shows her a hole filled with the bodies of Mother's children. Cassandra escapes and prepares face her father, but Dick and Harper arrive and knock him out. While they prepare to leave, Mother appears on a hologram and informs them that she rigged the base with a nuclear bomb to take hem all out. While Dick fights a recovered David, Cassandra takes Harper to the base's control room and covers her while she tried to shut down the bomb's countdown timer. When that fails, the two are surrounded by defense drones, but they all deactivate before they can kill the two. Dick found the shutdown controls after defeating David, and the three take him and escape in the Batplane just before the base explodes.The group then head's to Spyral's HQ to interrogate Orphan and figure out Mother's plan. While Spyral and the Robins try to come up a strategy, Mother uses Spyral's own technology to implement her plan: brainwash every child and teenager on Earth and force them to kill every adult. This include Cassandra and Red Robin, who begin attacking Dick and Helena Bertenelli. However, Tim told them that Scarecrow's Fear Gas could neutralize the brainwashing. Once the two teen s regain their senses, Dick takes Cassandra and they leave to find Harper and stop the brainwashed students around them. When they find Harper, Cassandra puts a fear gas mask on her. While she is no longer under Mother's control she tries to kill Cassandra anyway because she learned from Orphan that Cassandra was the one who murdered her Mother years ago. Out of options, Cassandra forces herself to fight her best friend. Hoowever, she holds back allowing Harper to gain the upper hand. Before she can kill her, Red Hood saves her, but the fear gas causes her to see Jason as her father, driving her to use Harper's taser gun on him. However, the floor is covered in water, so all three of them are shocked.Cassandra is later seen with Harper, the two of them having been captured by Orphan. As they are fly to Mother's base in Antarctica, she tries to convey an apology to Harper, but she is not interested in a apology. While she understands and is no longer angry with her, she cannot yet bring herself to forgive her. When they reach Mother's base, David presents Cassandra and Harper to her. Though she is pleased, she kills him and drops him out of the base. She then unveils a new group of Orphans, and activates her brainwashing program across the world, and have the two knocked out. When Harper recovers, Mother offers her a chance to join her. She then shows her Cassandra, completely immobilized and at her mercy. She instructs Harper to kill Cassandra and join her. Before Harper can move, the Robins and heir allies stop Mother's brainwashing program and Dick arrives to finish her. Both Mother and Dick try to get Harper to do what they think is right, but Cassandra, deciding to make things right, tells Harper to kill her. Having made her choice, Harper frees Cassandra and attacks Mother. However, Mother draws her hidden gun and fires, but Cassandra takes the bullet for her. As the remaining Robins their allies, and more Orphans arrive, Harper forgives Cassandra and helps her to her feet. Alongside Spoiler, they charge into the melee.As Mother and her Orphans are defeated, she decides to kill everyone by triggering the base's self destruct, which involves activating the dormant volcano the base is built on. Before she can escape, Cassandra leaps in to stop her. She easily best Mother, but instead of killing her like everyone thought she would, she vows never to take another life and leaves her alive. However, her father, who survived Mother's betrayal, stabs Mother and pins her in place as the base falls into the lava. Having seen the error of his ways, he apologizes for being a terrible father and falls into the lave with Mother. Everyone escapes alive, and Harper and Spoiler accept her as a friend.A month after Mother's death, Bruce has regained his memories and resumed being Batman. After talking with Harper about everything she learned, he instructs Cassandra to come out of hiding as Harper leaves. Batman tells her that even though she will have to live with killing Harper's mother, she can take another path. He asks her to leave the life behind, but she refuses to stay and help him in his fight as the new Orphan.</hero:storyDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Detective Comics: Rebirth">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DetectiveComicsRebirth">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When Batman realizes that someone is targeting all of Gotham's vigilantes, he begins recruiting them to train them to ready them for this new threat and to help them become better crime fighters. After enlisting Batwoman to help lead his new team, they begin gathering the recruits. Deciding on their second recruit, they find Orphan taking down a group of sex traffickers. After she dispatches them, Batman calls out for her to come with him. She and the other recruits arrive atop GCPD Headquarters and the two explain their plan to train them.During one of their first training sessions, the team is forced a fight a simulated army of Jokers. When Spoiler gets overwhelmed, an already fatigued Cassandra rescues her. When Red Robin shuts down the simulation against Batwoman's orders, she calls everyone out on their flawed performances. Cassandra's flaw was that she divided her attention. As the best fighter present, she focused too much on fighting for everyone. After they break for the night, Cassandra decides to drop by Stephanie and Tim's apartment, but when she sees the two are talking, she heads off to find someone to fight.Later, after Batman is captured by the Colony, Batwoman and Red Robin summon the team Cassandra is the last to arrive, but before she can go inside the Belfry, she notices jets overhead and realizes something is amiss. When Colony soldiers drop onto the roof of the Belfry and demand her surrender, she merely says "no" and charges into battle. When another contingient breaches the base, she follows them in after dispatching the first group. She tries to fight them off but they shoot her with tranquilizer darts to keep her down. She recovers as the teams uses the Belfry's escape hatch to reqroup and come up with a plan. Once Orphan confirms they are not being followed, the group head over to the Bat-Train Tim designed for fast exits. Cassandra is also present when they storm the Colony's base to free Batman. She is tasked with clearing their escape route of soldiers. By the time the others reach her, she has taken them all down, enabling them to escape.When they return to the Belfry, they discover from Tim that the Colony is trying to purge members of the League of Shadows from Gotham at the cost of several hundred innocent lives. Wanting to save as many people as possible, the team splits up to cover more ground. Cassandra is seen clearing out a shelter, unaware that member of the Shadows walked right past her. She is not seen again during the evacuation attempt.</hero:storyDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Unarmed Combat">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#UnarmedCombat">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Due to the harsh training she went through as a child, Cassandra is one of the greatest martial artists in the world and is a master assassin. Some of her feats include shattering brick and stone as well as a sword. She has used nerve strikes and pressure points. She has dodged bullets at point blank range and even disarmed a gunman before the bullet could hit her. She has invented her own styles and techniques. She can lift about twice her weight and carry 230 lbs while running.</hero:powerDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Reading Body Language">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ReadingBodyLanguage">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She is skilled in being able to comprehend a person's body movements as if it were language or speech, and thus knows what actions a person will use before they actually do. Her ability to comprehend body language enables her to quickly learn new martial arts style, such as learning Escrima from a single sparring session with Oracle. After having her mind altered to think like a normal person, her ability to predict movements was lost. However, Lady Shiva retrained Cass to read body language.</hero:powerDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Weakness Perception">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WeaknessPerception">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Starting in The New 52 and going forward, Cassandra has the ability to see the weaknesses in almost any person or thing she sees. Because she sees everything in this way, she can assess the weaknesses she sees and determine how best to beat or kill a target in a matter of seconds. Combined with her ability to read body language, Cassandra can both determine a target's actions and calculate the best counterattack, making her more dangerous. This ability is a double-edged sword, though, as Cassandra is always aware of which weaknesses will kill her target and which won't. Because of her vow against killing, she constantly battles the impulse to kill her enemies outright. However, because she is always aware of the ways to kill her opponents, she has to willingly ignore those options and attack in a non-lethal fashion. This nature of holding back makes her think and act below her full capabilities, which hinders her when facing opponents on her level, such as her mother.</hero:powerDescription>
 </owl:NamedIndividual>
@@ -508,292 +508,292 @@
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Cassandra was given some detective training from Tim Drake while they were in Bl'dhaven.</hero:powerDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Weapons-Master">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WeaponsMaster">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She is also a master of different kinds of melee and ranged weaponry. Her time with Barbara Gordon and the Batman only enhanced her already considerable skills.Unarmed Combat</hero:powerDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#The Ace">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheAce">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Pre-New 52, she is named the greatest fighter in the DCU for good reason. After all, she beat the former holder of that title</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Action Girl">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ActionGirl">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> A lot of people are in agreement that she is quite possibly the greatest martial artist on the planet. At least, when the writers treat her well.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Affirmative-Action Legacy">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AffirmativeActionLegacy">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Both the first Asian Batgirl and the first disabled Batgirl. More generally, she was the first non-white person to be a member of the Batfamily. She's also this as Orphan, as a disabled Asian girl taking over from her father, a disabled white man (she cut his hand off, and he replaced it with a prosthetic). Both she and Batman expressed the intention for her to eventually replace him as Gotham's protector, which would make her a disabled non-white woman taking the place of a neurotypical white man (though it's debatable how neurotypical Bruce Wayne is). However, the events of One Year Later derailed that plan.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Age Lift">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AgeLift">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Pre-Reboot she was in her early twenties, around Jason's age. However, in Rebirth she appears to be closer to Tim's age, in her mid teens.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#All-Loving Hero">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AllLovingHero">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> As Stephanie's "ghost" tells her, she cares about everyone. It takes a special sort of this to be willing to die for a random Mook.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Amazon Chaser">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AmazonChaser">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Implied by her agreeing with Batwoman that she "wants to marry" Zatanna while the latter is fighting demons.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Amazonian Beauty">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AmazonianBeauty">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She tends to attract a lot of male attention, and Depending on the Artist is very muscular.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Ambiguously Bi">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AmbiguouslyBi">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She agrees with Batwoman's comment that she "wants to marry [Zatanna]," but was seen attracted to men Pre-Flashpoint. DC Future State, which is described as one of the probable futures the DCU can take, also ups her Les Yay with Stephanie, making it seem like they were a couple at one point.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Animal-Themed Superbeing">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AnimalThemedSuperbeing">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Bats, as both Batgirl and Black Bat.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Another Man's Terror">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AnotherMansTerror">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Turned her good and inspired her Thou Shalt Not Kill attitude because of her body-reading ability. Death was just scary.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Anti-Hero Substitute">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AntiHeroSubstitute">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Subverted in the original series. Cassandra's outfit and backstory scream this when contrasted with Barbara Gordon's, but she is very much The Cape.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Arrogant Kung-Fu Guy">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ArrogantKungFuGuy">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> A Lighter and Softer take on the trope. While an antisocial, temperamental, and very cocky martial arts master, she's also genuinely extremely compassionate and while she's extremely confident about her abilities her self-image is much less positive.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#The Atoner">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheAtoner">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> More or less her motivation is to make up for her first kill.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Awesomeness by Analysis">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AwesomenessbyAnalysis">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> How she manages to defeat the Brotherhood of Evil singlehandedly.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Back from the Dead">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BackfromtheDead">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Twice, both times at the hands of her mother, Lady Shiva. Of course, both deaths were, directly or indirectly, caused by Shiva.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Big Eater">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BigEater">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> At least after really tough fights.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Blood Knight">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BloodKnight">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Hates killing, but obviously loves fighting.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Book Dumb">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BookDumb">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Originally, she barely was able to speak and couldn't read at all (she had trouble reading the words it was). Then, during her Face–Heel Turn, she miraculously gained the ability to speak and read perfectly. As of DC Rebirth, she's back to being illiterate and unable to speak more than a few words at a time.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Brainwashed and Crazy">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BrainwashedandCrazy">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Her Face–Heel Turn was explained away as Deathstroke the Terminator drugging her with the same stuff that drove his daughter insane. In his words, he stole Cassandra from the Bat Family as revenge for Nightwing "stealing" Ravager.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#But Not Too Foreign">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ButNotTooForeign">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Half Asian, half white. This is emphasized by the fact that, Depending on the Artist, she can have blue or green eyes (very improbable for a half-Asian person).</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Can't Hold Her Liquor">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CantHoldHerLiquor">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> According to Superboy, she was a complete lightweight at the party he hosted at the Fortress of Solitude.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#The Cape">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheCape">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Espoused the virtues of not killing while bleeding to death from a knife in the chest.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Cartwright Curse">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CartwrightCurse">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Pre-Flashpoint, almost every guy she expressed interest in (and the women she had Les Yay with) ended up dying. To name a few, John Robinson (though that was more of a Precocious Crush), Black Wind, Superboy, Zero, and Brenda Miller were killed off, and Stephanie Brown was killed before it was retconned that she was Faking the Dead. The only people she had Ship Tease with who didn't die were Coldcast and Tim Drake.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Charles Atlas Superpower">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CharlesAtlasSuperpower">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Super body language reading. Moreover, her Training from Hell allows her to perform such feats as throwing a Batarang, then racing ahead of the missile and catching it before it hits the target. In fact, when she encountered a group of rogue government agents, their computers identified her as having Super-Speed and Super-Strength, surprising them when a blood test showed that she wasn't actually a metahuman.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Chekhov's Gunman">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ChekhovsGunman">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Downplayed, but she's initially just an agent of Oracle before rising in prominence to join the actual Bat Family.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Chuck Cunningham Syndrome">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ChuckCunninghamSyndrome">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> For a few years after the New 52 began.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Classical Anti-Hero">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ClassicalAntiHero">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> An unusual example. Cassandra is in fact extremely skilled, but in her Batgirl solo she fails constantly due to a combination of inexperience, her own personal flaws, and most of all bad luck and circumstances outside of her control. One of the main themes of the book is that even someone with her extreme level of skill simply cannot save everyone, but her guilt complex keeps her from internalizing that lesson for a long time, leading to constant emotional turmoil on her part as she fails to live up to her own impossible standards.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Combat Stilettos">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CombatStilettos">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Lampshaded; when she steals Barbara's costume, she trips on the heels and it disrupts her Waif-Fu.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Competition Freak">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CompetitionFreak">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> While Cassandra is normally quite amicable she's also very competitive and can be a Sore Loser.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Contagious Heroism">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ContagiousHeroism">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Lifelong Professional Killer Alpha made a Heel–Face Turn after working with her while he was amnesiac and realizing she was the girl who he'd helped train under Cain. The concept of someone with that background being able to become a hero made him decide that he wasn't Beyond Redemption after all.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Corruption of a Minor">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CorruptionofaMinor">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> On the recieving end; assassin David Cain attempted to turn his daughter into the perfect killer; not even teaching her how to talk (so that the language centers of her brain would focus on body language and make her that much more perceptive and deadly in combat). However, she rebeled after her first murder and fled (because reading the body language of a dying man was so horrific), ultimately becoming Batgirl.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Covered with Scars">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CoveredwithScars">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Depending on the artist.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Creepy Good">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CreepyGood">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Her unsettling personal habits and disturbing costume tend to give other heroes the creeps, but she's a very kind person.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Cute Bruiser">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CuteBruiser">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She's a 5'5", 115 pound, pretty, rather quiet Asian girl. She has the remarkable skill of reading body language, but what makes her a cute bruiser is her ability to tank bullets without flinching and punch through inches of quartz.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Dance Battler">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DanceBattler">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Post-Flashpoint, she works ballet moves into her fighting style.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Dark Is Not Evil">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DarkIsNotEvil">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Referred to as "Miss Dark and Spooky" by Steph, she still manages to be The Cape.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Death Seeker">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DeathSeeker">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> At first. When first introduced, the guilt she feels from the murder her father made her commit makes her seek out ways to die while helping others. She mostly gets over it after dying and coming back to life (the first time).</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Defusing the Tyke-Bomb">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DefusingtheTykeBomb">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She defused herself.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Dented Iron">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DentedIron">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Most of the time she is seen out of costume she is shown covered in scars, befitting her abusive upbringing and Bat Family vigilantism.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Depending on the Artist">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DependingontheArtist">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The most common interpretation is heavily scarred, skinny, and (comparatively) small-breasted, but that doesn't stop some artists. In addition, her height varies somewhat. Her official height is 5'5", but while speaking with Bronze Tiger she seems much smaller. Furthermore, her eye color and skin tone vary significantly.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Dodge the Bullet">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DodgetheBullet">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> While many of the Bat-Family have been shown to evade gunfire, Cassandra has been explicitly shown to be able to dodge bullets after they've left the chamber. Taken to its most extreme when she dodges a full chamber of revolver shots at point-blank range while taking down Agent Masters.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Dragon Lady">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DragonLady">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> During her Face–Heel Turn. Not only does she monologue, she starts to flirt with Robin.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Driven to Suicide">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DriventoSuicide">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> In her first appearance, her fight with David triggers her trauma from the incident, causing her to throw herself from the GCPD headquarters toward the street below. Bruce saves her, but it doesn't stop her death wish.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Dying to Be Replaced">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DyingtoBeReplaced">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She does not die, but the writers had her abandon being Batgirl solely because they wanted to transfer the mantle to Stephanie Brown. It is eventually revealed that this is part of a plan by Bruce Wayne to force Stephanie to mature both personally and as a crime-fighter.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Even the Loving Hero Has Hated Ones">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#EventheLovingHeroHasHatedOnes">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> While Cassandra shows love and compassion towards everybody, by the end of her solo series she has developed a clear hatred for her father, who she at first didn't even understand was abusive. She also hates Deathstroke due to his brainwashing of both her and his own daughter Rose.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Extreme Omnivore">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ExtremeOmnivore">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> It doesn't get much more impressive than eating Lovecraftian horrors from the Shadowlands.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Face–Heel Turn">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Face–HeelTurn">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She becomes the leader of the League of Assassins in the One Year Later relaunch and later becomes a member of Titans East. Retcon revealed that this was caused by Deathstroke's drugs.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Gambit Roulette">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#GambitRoulette">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> It is revealed in a one-shot issue of the Stephanie Brown Batgirl series that Cassandra Cain abandoned the Batgirl identity on the orders of Bruce Wayne, who planned for the title to pass to Stephanie to force her to personally and professionally mature.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Good Scars, Evil Scars">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#GoodScarsEvilScars">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> When the artists remember.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Grappling-Hook Pistol">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#GrapplingHookPistol">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Standard Bat-family equipment.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Happily Adopted">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#HappilyAdopted">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Pre-Flashpoint, she was Bruce Wayne's adopted daughter.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Heroic Vow">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#HeroicVow">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> What Thou Shalt Not Kill is to her post-Flashpoint</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Heterosexual Life-Partners">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#HeterosexualLifePartners">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> With Stephanie.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#I Am Not a Gun">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#IAmNotaGun">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She decided this after her first kill, despite being trained to be the ultimate assassin.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Inexplicably Awesome">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#InexplicablyAwesome">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> While her training explains her skill and ability to read body language, other elements like her seemingly superhuman ability to coordinate her body in combat and her bizarre blood chemistry are never explained.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Intergenerational Friendship">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#IntergenerationalFriendship">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She developed one with Clayface, shortly after his Heel–Face Turn, even performing Shakespeare with him on occasion.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#In the Hood">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#IntheHood">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Her costume in Batman and Robin Eternal.</hero:tropeDescription>
 </owl:NamedIndividual>
@@ -803,47 +803,47 @@
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Her father gave her Training from Hell involving lack of verbal communication in the hopes that she would become the ultimate killing machine and assassin. The enhanced body-reading skills that she acquired from this very training ended up playing an enormous part in her decision to reject killing and become a crime-fighter.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Lamarck Was Right">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#LamarckWasRight">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Her instinctive grasp of martial arts is suggested to come from her mother. Cain notes that he put multiple kids through the same Training from Hell as her, but she was the only success. He isn't surprised at all.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Legacy Character">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#LegacyCharacter">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Obviously with the Batgirl identity pre-Flashpoint, but in the New 52 continuity, she takes on her father's old code name of "Orphan"  after his death. She also has shown a consistent desire to become the next Batman, which even Bruce Wayne himself seems to approve of.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Leeroy Jenkins">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#LeeroyJenkins">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> A common habit of hers is to jump into situations without thinking because she's used to being able to win almost any fight with no preparation. This can cause problems when her objective is more complex than just "beat the bad guys", as shown when she accidentally ruined Batman and Robin's sting operation on a human trafficking network.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Little Miss Badass">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#LittleMissBadass">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She's been a very good fighter since a very young age.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Living Shadow">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#LivingShadow">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> In her disguise as The Nothing, she uses the Shadow Thief's belt to become this.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Logical Weakness">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#LogicalWeakness">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Because so much of her fighting style is based around reading body language, she has a hard time fighting foes who aren't human and thus don't have human body language (She was geared to read human body language so trying to read someone or something that's not human would be like trying to understand Russian when you speak Mandarin), people who can keep up with her body language reading ability (like her mother Shiva who is the deadliest assassin in the world and also seems to have this ability), people who are physically augmented to be able to perfectly coordinate and control their movements so as not to give away their moves while "bluffing" very well (this would apply to low-level enhanced individuals like Deathstroke whose body language Cassandra noted as being like a chorus that's "too fast with too many instruments" to pick up anything significant), and of course those who specialize in Confusion Fu (people like the Joker fall into this category as the Joker was overwhelming her in a fight much to Black Canary's shock. Batman explained that she can read the Joker's body language but to her "It's just gibberish".) Also, because she's reading body language, she obviously relies heavily on her eyes. While Cassandra can fight blind folded and detect movement with her other senses, taking away her sight or being unable to see her opponent greatly hinders her effectiveness as it would be the same as putting heavy ear muffs (While some words may get through, the dialogue is terribly muffled and some words may be missed). Cassandra has a harder time predicting her opponents and may be caught off guard.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Luke, I Am Your Father">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#LukeIAmYourFather">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Pre-Flashpoint, it took her some time to find out David Cain was her father by blood, not adoption.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Made of Iron">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MadeofIron">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> For a tiny girl, she's survived some truly staggering trauma.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Major Injury Underreaction">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MajorInjuryUnderreaction">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Sample exercise from her childhood training program? Getting shot, then being punished if she flinched. The lessons stuck.</hero:tropeDescription>
 </owl:NamedIndividual>
@@ -853,97 +853,97 @@
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> As a result of her lack of experience with language she sometimes mixes up words like "tourniquet" and "tournament" or "cheater" and "cheeser".</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Maybe Magic, Maybe Mundane">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MaybeMagicMaybeMundane">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Though her abilities seem to be the result of her father's training, her mother, Lady Shiva, has similar ones despite her lack of such an upbringing, suggesting there is a hereditary component to it. Whatever the source of her abilities, genetic testing confirmed that she is not a metahuman.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Missing Mom">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MissingMom">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Lady Shiva, who she knew for a while before finding out their relation. They do reunite... it's not happy.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#The Mole">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheMole">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> In the Justice League Elite for the JLA.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#My God, What Have I Done?">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MyGodWhatHaveIDone">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Without even talking, this was how she regarded her first kill, being so traumatized by the horrific body language of her victim, that she immediately swore off killing.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Mythology Gag">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MythologyGag">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Her family name is almost certainly a reference to the original Bat-Girl's family name with a different spelling (Cain, as opposed to Kane).</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Name of Cain">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#NameofCain">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Like her father, though she later takes on the Wayne name instead.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Never Learned to Talk">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#NeverLearnedtoTalk">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She was taught to read body language as a child, not verbal language, so her father could mold her into the perfect assassin.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#No Social Skills">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#NoSocialSkills">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> What with her upbringing, it would be odder if she did not have trouble interacting. She didn't even learn to speak before her pre-teens! There was also a famous scene in the 2007 run of Batman and the Outsiders where she strutted around in the nude, with Scenery Censor to cover up the naughty bits.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#O.O.C. Is Serious Business">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#OOCIsSeriousBusiness">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> After Cassandra’s brain is rewired to allow her to read and speak at the cost of her ability to read body language, Barbara is shocked to see her actually bruised as Batman said that literally nobody could hit Batgirl.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Odd Friendship">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#OddFriendship">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She developed one with Clayface shortly after his Heel–Face Turn, largely due to the fact that she understands what it feels like to be an outsider.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#One-Man Army">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#OneManArmy">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Downplayed. She's almost unstoppable in a fight, and can take down Mooks by the dozen, but she can be tired out by enough opponents.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#One-Steve Limit">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#OneSteveLimit">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The second Wonder Girl is also called Cassandra. Usually Cassandra Cain is known as "Cass" and Cassandra Sandsmark is "Cassie", but sometimes members of the Batfamily will also call Cassandra Cain "Cassie". This is only really confusing when Tim does it, as he is close to both girls and, if the context is unclear, could be referring to either of them.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Parental Substitute">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ParentalSubstitute">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Bruce and Barbara.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Phlebotinum Rebel">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#PhlebotinumRebel">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Through a horrifyingly abusive system of child-rearing, her father created her to be one of the best (if not the best) martial artists in the world. Given that she became Batgirl and it took mind controlling drugs to execute her Face–Heel Turn, and it was temporary, his idea of creating the perfect assassin clearly didn't take.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Platonic Life-Partners">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#PlatonicLifePartners">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She has this dynamic with Tim Drake in the Pre-Flashpoint timeline which was generally presented as a Like Brother and Sister relationship. After jointing Bruce's Outsiders in the Post-Flashpoint timeline, Cass develops this same type of dynamic with newcomer Duke Thomas.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Put on a Bus">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#PutonaBus">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> After the Infinite Crisis, she has a Face–Heel Turn, followed by a Heel–Face Turn, and is subsequently benched until being wiped away from existence by Flashpoint. She's finally reintroduced in Batman &amp; Robin Eternal, however.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#The Quiet One">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheQuietOne">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She speaks little and mostly with short words. This is the result of her father raising her without talking to her or letting her hear people talk, so that body language would be her language. Even after a telepath fixed her inability to talk pre-Flashpoint, she was never comfortable with words. The nature of her difficulty with language differs pre- and post-Flashpoint. Pre-Flashpoint, she started out with a near-total incapacity with language before encountering the telepath who rewired her brain. Post-Flashpoint, she does understand language, but forming what she wants to say in her mind is difficult for her.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#A Real Man Is a Killer">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ARealManIsaKiller">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Subversion.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#The Real Remington Steele">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheRealRemingtonSteele">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> This is likely the reason Cassandra was created, especially since she takes the costume of the previous Batgirl shortly after her introduction.</hero:tropeDescription>
 </owl:NamedIndividual>
@@ -953,132 +953,132 @@
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The Author's Saving Throw is obvious, so let's discuss her origins. Even though her upbringing was a neverending training from hell, she did love her father, and yet she ran away from him. The reason was that her first kill was the very first time she had witnessed death up close and due to her body-reading abilities, she thought it to be very, very, scary. Thus she found out her upbringing was evil. Now enter the last issue of Adam Beechen's miniseries about her where it is revealed that she hated her dad all along, and that she had actually witnessed her father committing murder up close many times before her first kill. Her post-Flashpoint origin changes up a number of things</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Silent Snarker">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SilentSnarker">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She doesn't make as many verbal quips as the other members of the family, but her body language conveys a lot of sass.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Socially Awkward Hero">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SociallyAwkwardHero">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Not as much as Tim, but she is very socially awkward and often quotes TV and movies (since she uses them to help teach her to speak).</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Shoo the Dog">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ShootheDog">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Much of her conflict with Stephanie comes from Cass driving her off due to either Bruce's orders or her own fears about Stephanie being hurt.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#The Spartan Way">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheSpartanWay">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She was trained to read human movement as her only language and become an unparalleled assassin in a classical Spartan way, up to and including being shot in non-vital areas as punishment--with the threat of being shot again for crying out from the pain.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Stealth Hi/Bye">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#StealthHi/Bye">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She pulls this almost as frequently as Batman himself. This is partly due to her lack of social skills, since she simply doesn't bother to announce her presence or departure.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Super-Strength">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SuperStrength">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Of the Charles Atlas Superpower variety, but even then her strength is still nigh-unbelievable.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Super-Speed">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SuperSpeed">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> In one issue she outruns a bullet.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Taking the Bullet">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TakingtheBullet">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> One of her most impressive moments involved taking half a dozen rounds from an assault rifle in order to keep a Mook from getting hit by friendly fire.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Tap on the Head">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TapontheHead">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Often applied by Cassandra to Stephanie.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Technical Pacifist">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TechnicalPacifist">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Just because she won't kill doesn't mean she won't stop your heart with pressure strikes so you understand what death will be like. She'll restart it afterwards, but...</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Terror Hero">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TerrorHero">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Like her adopted father, Cass is very willing to use fear as a weapon, even incorporating tactics used by the Xenomorph in Alien to better frighten criminals.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Thou Shalt Not Kill">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ThouShaltNotKill">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Because of her ability to read body language, when she made her first kill she was able to understand the fear of death on an intimate level, and vowed to never take another life. She actually holds onto this rule even more firmly than the rest of the Bat-Family. However, she notes that she does not apply this policy to demons or the mindless undead.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Tomboy and Girly Girl">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TomboyandGirlyGirl">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Her and Steph had this dynamic, with Steph being the Girly-Girl to Cass' Tomboy. More recently, she's become the girly girl to Harper Row's tomboy.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Too Hungry to Be Polite">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TooHungrytoBePolite">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Her life as a homeless runaway has caused her to have absolutely no manners when eating, much to the amusement of her friends.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Took a Level in Jerkass">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TookaLevelinJerkass">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> After Stephanie's death in War Games, Cass became much more temperamental and ruthless even before her editorially mandated Face–Heel Turn. This went away after her stint as a villain was over.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#The Tragic Rose">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheTragicRose">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The rose is a recurring motif throughout her solo series, appearing symbolically in many places but most prominently in a literal rose that Barbara gives her as a gift, the care it requires representing Cassandra's need to learn to take care of herself and be around other people. The rose's death along with the destruction of Bludhaven represents Cassandra's Despair Event Horizon.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Training from Hell">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TrainingfromHell">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> First nine or so years of her life were spent doing this.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Twofer Token Minority">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TwoferTokenMinority">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Half-Chinese-American woman who is illiterate and can barely speak.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Tyke Bomb">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TykeBomb">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She was trained from a young age to be an assassin. She was horrified by her first kill, and ran away. She subsisted on the streets, until encountering Batman and his allies.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Vague Age">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#VagueAge">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Pre-Flashpoint she was at least 18 by the time her solo series ended, but Post-Flashpoint things are a bit less certain. James Tynion IV says that she's about Tim's age in Detective Comics (Rebirth), but in Batman and Robin Eternal the timeline would indicate she's closer to Dick's age. Batgirls confuses things even further, with one writer referring to her and Stephanie as being in their early teens, the other saying they're in their later teens, and some scenes in the book itself implying they're in their early 20s.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Waif-Fu">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WaifFu">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> A 110 pound girl who is canonically the best non-powered fighter on the planet.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Well-Trained, but Inexperienced">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WellTrainedbutInexperienced">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> This is part of Cassandra Cain's backstory. She spent her whole childhood being trained to kill someone as easily as other humans talk, but when her father actually forced her to go through with it, the experience was so traumatic that she immediately swore never to kill anyone again. Later, in her early time as Batgirl, she was extremely technically proficient in combat but inexperienced in the field and had trouble facing metahumans and genuine supervillains. Her general solution to any problem was hitting people, which sometimes led to unfortunate consequences. It took some hard lessons for her to be more flexible and clever on the job.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Wild Child">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WildChild">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She spent around eight years surviving in the wilderness and on the streets, somehow making it from Macau to Gotham, presumably by hitchhiking on ships.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#World's Best Warrior">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WorldsBestWarrior">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Shaping up to be one, she already outdoes Bruce in the hand to hand department, and she may end up outdoing her mother, who is THE best martial artist in DC's setting, with only Richard Dragon that can realistically match her.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#You Are Better Than You Think You Are">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#YouAreBetterThanYouThinkYouAre">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Gives this speech to several villains, using herself as an example of how people can change. Most notably, this seemed to work on Alpha, though he later returned to the League of Assassins.</hero:tropeDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Justice League">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#JusticeLeague">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animation</hero:mediaType>
   <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the season one finale, "The Savage Time," Cassandra makes a cameo appearance in an alternate future timeline, alongside Dick Grayson, Tim Drake, and Barbara Gordon.</hero:mediaDescription>
@@ -1089,13 +1089,13 @@
   <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animation</hero:mediaType>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Batman: Dark Tomorrow">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BatmanDarkTomorrow">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Games</hero:mediaType>
   <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain appears in a cameo alongside Tim Drake.</hero:mediaDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DC Universe Online">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DCUniverseOnline">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Games</hero:mediaType>
   <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">She appears in the Justice League Watchtower in the Tech Wing. In the game she acts as a vendor for the Tech Iconic Suit and the Dark Spector Batsuit.</hero:mediaDescription>
