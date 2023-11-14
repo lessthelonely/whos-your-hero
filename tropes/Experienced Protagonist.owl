@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#ExperiencedProtagonist">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>This character starts out experienced. They have finished training, have attained most of their power, and made a name for themselves. The audience may only learn of their Back Story ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BackStory"] in a prequel, short flashback, or a brief mention, if they learn any backstory at all. On the low-experience end of comparisons for this trope, we have From Zero to Hero ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FromZeroToHero"], Ordinary High-School Student and Farm Boy, who are complete novices, Rookie Red Ranger who is a novice compared to the others on his team, and Child Prodigy and Skilled, but Naive protagonists, who are young and inexperienced but are quick learners. A highly experienced supporting character would be The Mentor, who is experienced and skilled but only tasked in the story with teaching a protagonist, rather then being one themselves.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

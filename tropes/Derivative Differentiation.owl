@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#DerivativeDifferentiation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>This technique can be quite a double-edged sword, however. Some fans stay away from such derivative works, either because they know that most imitations are bound to be bad ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SturgeonsLaw"] or because the work is so similar that they feel no need to invest any time into experiencing more of the same, regardless of quality. If the derivative work is too obviously similar, it may even trigger a lawsuit from the creators of whatever work is being aped. So creators of derivative works find ways to make later installments less derivative, either in response to fan reaction or because their storytelling skills have improved to the point that they themselves no longer have to use derivation as a crutch. The work may still have some trappings that hint at its formerly derivative nature, but it's less likely that newcomers will easily be able to discern this. Related to Growing the Beard ["https://tvtropes.org/pmwiki/pmwiki.php/Main/GrowingTheBeard"]. Compare to Spiritual Antithesis. Has nothing to do with calculus.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

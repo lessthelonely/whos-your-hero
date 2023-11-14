@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#DorkKnight">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Bob's a great guy. Why? Well, for one, he's brave, determined ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Determinator"], good at what he does, genuinely nice, and, most importantly, his moral fiber has a higher tensile strength than spider silk. Sure, he's a bit socially awkward and has a few other harmless quirks, but that's all part of his particular charm. An obvious play on Dark Knight ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SelfProclaimedKnight"], the Dork Knight is The Ace, The Cape, the Knight in Shining Armor or a similar character type infused with Endearingly Dorky, where the endearing awkwardness serves to humanize an otherwise idealized hero. (It can also work in reverse, where an established lovable dork shows unexpected courage and prowess.) See also Badass Adorable and Socially Awkward Hero (which tend to overlap). Goofier examples of this trope may overlap with Crouching Moron, Hidden Badass. Compare the Super Loser ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SuperLoser"], who's superpowered, but not necessarily endearing.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

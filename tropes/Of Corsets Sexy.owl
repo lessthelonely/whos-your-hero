@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#OfCorsetsSexy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>The corset, that most evocative of undergarments. Of course it's sexy. Designed to shape a woman's silhouette, it has captured the erotic imagination for centuries due to its ability to shrink the waist, define the hips, and to create heaving bosoms where once there were none. Even after the corset fell out of fashion in the early 20th centurynote due in part to the rise of the brassiere, it has remained a feature in period films and fetish magazines. More recently, the wily corset has gone through a renaissance of sorts—now often worn as outerwear—thanks in part to the popularity of movies like Moulin Rouge! ["https://tvtropes.org/pmwiki/pmwiki.php/Film/MoulinRouge"] and the increased public interest in things like the Goth and steam/dieselpunk genre, not to mention the resurgence of the burlesque scene. In older fiction, corsets were sometimes used to provide mild fanservice — yes, everything's covered, but a woman's corset is still part of her underwear ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FullyClothedNudity"]. Newer works get a similar reaction because corsets today are fetish or specialty wear — a 21st-century woman in a corset has a certain exotic allure without showing too much skin. Can involve Impossibly-Low Neckline ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ImpossiblyLowNeckline"], Sexy Coat Flashing. See also Of Corset Hurts for another common use of the garment in fiction.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

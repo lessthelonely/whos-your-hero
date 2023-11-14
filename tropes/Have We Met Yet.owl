@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#HaveWeMetYet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Bob the Time Master ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TimeMaster"] meets Alice, the time-stream's Chosen One, or perhaps just a random Magnetic Hero. He greets them with an air of familiarity, something along the lines of "Alice, how've you been? Long time no see!", and upon seeing the look of confusion on Alice's face asks "Oh, wait, have we 'met' yet?" This is most common in series with Stable Time Loop ["https://tvtropes.org/pmwiki/pmwiki.php/Main/StableTimeLoop"] style Time Travel, since it makes the most sense if the future meeting is already predetermined. Often, the Bob will have to prove he knows or will know Alice, either by revealing a secret he knows about Alice, or telling Alice something about her ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TrustPassword"]. Related to Time-Travel Tense Trouble ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TimeTravelTenseTrouble"], the difference being that rather than confusion over what he will have done, Bob doesn't remember the "first" time he met Alice. If the timeline has been changed to them never having met, one may comment that the other seems familiar, but it must be their imagination.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

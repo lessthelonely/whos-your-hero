@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#VagueAge">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Some characters are subject to a strange fluctuating sense of maturity depending on plot necessity, mostly because animated characters can have abstract designs and lack obvious visual cues ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ArtisticAge"] (especially when the characters are non-human). We're only left with the personality of the character, which tends to suggest their age. Dawson Casting, leading to a blurring of the line between adults-playing-adults and adults-playing-teenagers, is responsible for several live-action examples. A TV character may be implied to be some sort of adult compared to other characters who are clearly kids or teenagers, or vice versa, but this is largely an illusion in case the writers still want them in plots to which a younger audience can more easily relate. The only nominally-aged character is usually the lead, and this is only useful to make his same-aged audience feel better, since s/he will probably not be allowed to get older ["https://tvtropes.org/pmwiki/pmwiki.php/Main/NotAllowedToGrowUp"]. Occasionally, characters are given specific ages along with more obscure and extensive biographies, but are ultimately ruled by audience appeal, Cast Speciation ["https://tvtropes.org/pmwiki/pmwiki.php/Main/CastSpeciation"] or personalities that fit into the mean age of the audience. Information that runs counter to that turns into the Improbable Age issue, and may be tweaked in other places. Compare Mistaken Age ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MistakenAge"]. Compare and contrast Really 700 Years Old.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

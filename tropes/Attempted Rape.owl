@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#AttemptedRape">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Someone is about to be raped ["https://tvtropes.org/pmwiki/pmwiki.php/Main/RapeAsDrama"], but at the last minute, the rapist is foiled violently. This can happen in one of two ways. If the victim is particularly tough, she (or more rarely he) fights the rapist off themself. Alternatively, they will be rescued by someone else. Depending on who does the rescuing, this can fuel Bodyguard Crush or start a Rescue Romance. Not to Be Confused with ["https://tvtropes.org/pmwiki/pmwiki.php/JustForFun/NotToBeConfusedWith"] Near-Rape Experience, where the would-be rapist stops of their own free will. Distinct from Date Rape Averted in that there is no date, and the rapist must, by necessity, be stopped violently — no amount of yelling and slapping is going to work as a deterrent. If the victim requires no time or effort to move past the assault before engaging in sex or romance with their love interest, they Got Over Rape Instantly ["https://tvtropes.org/pmwiki/pmwiki.php/Main/GotOverRapeInstantly"]. It is not unknown for the would-be rapist to offer a rescuer a chance to join in ["https://tvtropes.org/pmwiki/pmwiki.php/Main/EvilCannotComprehendGood"] (and then be shocked when it makes him/her angrier). Popular in Fan Fiction ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FanFiction"], especially for the aforementioned Bodyguard Crush and Rescue Romance. Can result in Big Damn Heroes since Rape Is a Special Kind of Evil.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

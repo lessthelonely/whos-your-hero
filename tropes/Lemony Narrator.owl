@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#LegacyImmortality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>A character is said to have lived for centuries ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Immortality"]; his name found all throughout the history books. When our hero or heroes finally meet him, he reveals his deepest, darkest secret — he's not actually immortal. As it turns out, he is merely the latest in a long line of Bob The Immortals. Apparently, the original Bob secretly trained a second to take up his name, appearance, and personality. The second continued this with a third, and so on until the present day. (There was always someone to Take Up My Sword, or for Passing the Torch to.) This can be made much easier if the first Bob The Immortal wore a mask all the time (possibly while claiming ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MetaphoricallyTrue"] that the mask is what gives him immortality) or no one can agree on what the original looked like beyond 'he wears a Badass Longcoat and carries around a huge sword.' This can also apply to Time Travellers ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TimeMaster"], if they're sighted in multiple time periods and are thought to be immortal because of it. Related to (and partially named for ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TropeNamer"]) Legacy Character. The primary difference between the two is that most Legacy Characters aren't attempting to appear immortal, but are instead Mythology Gags, promoted sidekicks, or simply revivals of older, forgotten characters. See also You Kill It, You Bought It. May overlap Shrouded in Myth. For the inversion, (an immortal character pretends to be a series of different people) see My Grandson, Myself ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MyGrandsonMyself"].</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#DentedIron">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>What happens when you get enough injuries, even if you appear to be Made of Iron ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MadeOfIron"]. Usually showcased by having a Made of Iron ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MadeOfIron"] hero trudge into their headquarters after an action scene (one that more often than not establishes how much punishment the hero can give and receive) only to have them shuffle off their uniform and reveal the various injuries and strain on their joints that a life of adventure would realistically lead to. Typically done to show that the hero is even more of a Determinator than first thought since they're still out doing what they do despite looking like they should be in a hospital. Often the fate for a hero who pushes himself into Heroic RRoD ["https://tvtropes.org/pmwiki/pmwiki.php/Main/HeroicRROD"] mode on a regular basis. May be combined with Feeling Their Age. See also Scar Survey ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ScarSurvey"], Covered with Scars, Perilous Old Fool.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

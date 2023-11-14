@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#ActionMom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>When an Action Girl ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ActionGirl"] is confronted with motherhood, she usually has two choices. She could accept the baby and her "fate" to Stay in the Kitchen; or she can keep her Action Girl ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ActionGirl"] status by losing her baby through the wonders of a Magical Abortion, a Convenient Miscarriage or simply giving it up for adoption if it gets born. The Action Mom says bollocks to that and chooses to Take a Third Option ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TakeAThirdOption"] as she keeps her role as savior of the day and the world while raising her children. She's a real badass mother. Beware if you ever harm her children, for you will have an Action Girl ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ActionGirl"] invoking the Mama Bear at your heels. There is also a chance that said children will grow up to be badasses just like her. Related to Action Girlfriend ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ActionGirlfriend"], as she may graduate to "Mom" status if she and her boyfriend tie the knot and have kids of their own. Alternatively, a Battle Couple may find themselves acting as parental surrogates, with the female effectively taking on this role. Truth in Television in the case of mothers working in hazardous jobs such as police work. Often the matriarch of a Badass Family ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BadassFamily"]. If she enters this state before the child has even been born, she is a Pregnant Badass.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

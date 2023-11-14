@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#HamandDeadpanDuo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>A pair of characters, either lifelong partners or just met up, in which one is a ham of decent size and the other speaks in a deadpan tone. The juxtaposition of the two, along with each of them on their own, is a common source of comedy for the audience. Can overlap with a few Duo Tropes ["https://tvtropes.org/pmwiki/pmwiki.php/Main/DuoTropes"]:</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

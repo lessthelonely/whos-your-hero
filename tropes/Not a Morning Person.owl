@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#NotaMorningPerson">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Some characters get up in the morning smiling, their hair perfectly in place ["https://tvtropes.org/pmwiki/pmwiki.php/Main/WakeupMakeup"], ready to face their Morning Routine with a song and the help of cute animal critters. Then there are ["https://tvtropes.org/pmwiki/pmwiki.php/Main/WellThisIsNotThatTrope"] these characters. These are probably the night owls. They don't want to get up in the morning at all if they can help it, and when they do they wobble around as if they're some sort of zombie, often sporting bags under their eyes and Messy Hair that would devour combs whole. It's best not to talk to them in the morning, because goodness knows they'll take everything you say as an insult. From the merely lethargic to the downright dangerous, these characters are just not a morning person. No Instant Waking Skills for them. In anime ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Anime"] and manga, it seems to often be implied that characters are this way because they have low blood pressure. In the west, these characters are more prone to desperately need coffee in the mornings instead. Of course, coffee isn't exactly known to lower blood pressure, so both can go hand in hand. If you Wake Up, Go to School, Save the World ["https://tvtropes.org/pmwiki/pmwiki.php/Main/WakeUpGoToSchoolSaveTheWorld"], you will most likely be like this. Crime-fighting always beats out sleep, for some reason. Sometimes these characters are also Heavy Sleepers in general, but not always. They may also have a tendency to kill roosters and smash alarm clocks. Then again some days you really don't want to wake up early. Is Truth in Television ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TruthInTelevision"], as many a troper could probably tell you. Almost always doubles with Must Have Caffeine.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

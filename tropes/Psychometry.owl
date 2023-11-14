@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#Psychometry">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Psychometry is a Psychic Power ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PsychicPowers"] whereby a character receives visions upon physical contact, sometimes involuntarily. The most common form is when the person touches an object and receives information about things or people the object has associated with and/or the environment around the object. It can also manifest as touching a person and getting visions or knowledge of their history, memories, or character. Sister Trope ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SisterTrope"] to Touch Telepathy (active mental communication through touch), often overlaps with it. Compare Dreaming of Times Gone By, which can convey similar information but is done through dreams rather than a psychic event.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

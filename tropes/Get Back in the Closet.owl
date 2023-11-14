@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#GetBackintheCloset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>The tendency of Moral Guardians ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MoralGuardians"] to be harsher toward homosexuality than heterosexuality. In American media, male/female couples can kiss and make out, but even a slight peck from a same-sex couple is an automatic PG-13, if not an R. And of course, there's no way to include even a tame homosexual sex scene without getting an R or NC-17 rating. Unfortunate Implications of this become even more apparent as gay people become more accepted and equal in society, or at least in the West. Not to be confused with Hide Your Lesbians ["https://tvtropes.org/pmwiki/pmwiki.php/Main/HideYourLesbians"], which refers to the tendency to reduce canon gay relationships to subtext. See also But Not Too Gay for the downplaying of sexuality/exclusion of gay affection altogether. Not related at all to Closet Punishment.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

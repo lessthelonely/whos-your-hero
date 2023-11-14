@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#BitterWeddingSpeech">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Someone you know is getting married. They've asked you to speak at their reception. Unfortunately, there's some bad blood between you — maybe they're an ex ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheOneThatGotAway"] or a person you were one-sidedly in love with, maybe they're a family member that you haven't always gotten along with or secretly resent, maybe you love the friend/relative but can't stand the person they're marrying. Something like that. You might do it on purpose, as a calculated attack. You might mean to give a perfectly nice speech, but when the time comes you find yourself saying something... different (especially if you've been enjoying the open bar a bit too much ["https://tvtropes.org/pmwiki/pmwiki.php/Main/InVinoVeritas"]). Either way, you're now giving a speech that embarrasses, insults, and/or attacks one or both of the newlyweds. For all that they're ruining someone's special day, the bitter speech-giver is usually the one we're supposed to be sympathetic towards (although the bitter speech-giving is generally treated as something they shouldn't have done). Compare with Speak Ill of the Dead and But I Digress.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

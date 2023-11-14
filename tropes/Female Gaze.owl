@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#FemaleGaze">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>The Female Gaze ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Gaze"] is a Gaze ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Gaze"] trope about the way a work is presented from a female perspective or reflects female attitudes, either because of the creator's gender or because it is deliberately aimed at a female audience. Although looking at sexy men can contribute to it, Female Gaze ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Gaze"] is not restricted to that but is more importantly about the expectations of how the (presumptive) audience relate to the work. Female Gaze is a Distaff Counterpart ["https://tvtropes.org/pmwiki/pmwiki.php/Main/DistaffCounterpart"] to Male Gaze. It is generally less common than its Spear Counterpart, and this is largely believed to be due to Most Writers Are Male. May overlap with Homosexual Male Gaze ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MaleGaze"]. Compare Eating the Eye Candy and Longing Look.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

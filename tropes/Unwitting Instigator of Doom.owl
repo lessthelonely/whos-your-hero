@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#UnwittingInstigatorofDoom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Someone unintentionally plays a small and/or unlikely but crucial role ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SmallRoleBigImpact"] in some horrible development (usually this action serves as the catalyst). An Unwitting Instigator of Doom can be basically complicit with the villain, but in that case, they're generally seeing only a small portion of the picture. If they're being specifically manipulated but do not realize, they're an Unwitting Pawn ["https://tvtropes.org/pmwiki/pmwiki.php/Main/UnwittingPawn"]. Other times, they're simply blundering in like a wrench in some particularly highly valued machine, so it can be caused by The Load or The Millstone. They may also end up as the Idiot Houdini. In the worst cases, more in the know characters will chew them out for bumbling in and screwing things up, trusting them little better than they would a traitor. Compare Nice Job Breaking It, Hero ["https://tvtropes.org/pmwiki/pmwiki.php/Main/NiceJobBreakingItHero"] for when the heroes cause doom, and Mike Nelson, Destroyer of Worlds for a different type of unwilling doom bringer. Also compare Chekhov's Gunman, in which a seemingly insignificant character becomes more important later on. See also Interrupted Cooldown Hug, Endangering News Broadcast, Tragic Mistake, and Small Role, Big Impact. No Real Life Examples, Please! ["https://tvtropes.org/pmwiki/pmwiki.php/Administrivia/NoRealLifeExamplesPlease"] Aside from being prone to misuse, it is likely to invite Flame Wars.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

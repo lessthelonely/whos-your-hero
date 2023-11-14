@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#PowerMakesYourHairGrow">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>So, your hero has just powered up and you need a way to get this change across visually to your audience. How do that? Well let's see... We have glowing with power ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PowerGlows"]. Check. Ground quaking. Check. Muscle mass increased by 300%. Check. Rapid air displacement. Check. But there's still something missing... Ah! Of course! Let's make their hair grow out as well! This is the essence of Power Makes Your Hair Grow. Now however silly this may seem at a glance, most people will immediately understand that they should now be wary of your hero. It's probably because the sudden appearance of long, unkempt hair can make your hero appear rather feral ["https://tvtropes.org/pmwiki/pmwiki.php/Main/WildHair"] which may be related to therianthropes since they have a habit of growing lots and lots of hair while becoming far more powerful. Also because even if a character can't see the aura of power, and everything else signalling that the hero just got stronger, longer hair is a little hard to miss. Sometimes "justified" with a Slipknot Ponytail ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SlipknotPonytail"] coming loose. This is primarily an Anime ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Anime"] specific trope, but there are a few non-anime examples out there. Magical Girls are known for this. Subtrope of Anime Hair ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AnimeHair"] and Rapid Hair Growth. Sister trope of Power Dyes Your Hair.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

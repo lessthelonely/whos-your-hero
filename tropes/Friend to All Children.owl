@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#FriendtoAllChildren">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Describing a character as being fond of and having a soft spot for children is an automatic Pet the Dog ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PetTheDog"] since Children Are Innocent with bonus points if the kids like the character back. (Double bonus points if the character is normally a hard-ass around adults) Characters who don't like kids are usually villains or anti-heroic. Note that this trope doesn't apply if it is a disguise put on to avoid suspicion for something else entirely... This is mainly a trait of the Gentle Giant ["https://tvtropes.org/pmwiki/pmwiki.php/Main/GentleGiant"], the Emotional Bruiser, All-Loving Hero, and a requirement for Purity Personifiednote Though not every friend to all children is Purity Personified unless Pure Is Not Good is in play, and a redeeming trait for many antiheroes. Overlaps with Wouldn't Hurt a Child, as characters who fit this trope not only refuse to injure children, but would go out of their way to protect children if it was necessary. Gods help you if you're dumb enough to harm a child in the presence of someone with this character trait. They will not forgive you, ever. ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ThisIsUnforgivable"] (Though, this trope is a trait of many deities, so you may not get that help and may suffer even more for it in the next life.) Compare Friend to All Living Things ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FriendToAllLivingThings"] and Big Brother Instinct, and contrast Child Hater.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

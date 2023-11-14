@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#PopCulturedBadass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>While the Cultured Badass ["https://tvtropes.org/pmwiki/pmwiki.php/Main/CulturedBadass"] and Wicked Cultured listen to Tchaikovsky and Wagner, and read Nietzsche in their spare time, the Pop-Cultured Badass ["https://tvtropes.org/pmwiki/pmwiki.php/Main/CulturedBadass"] rocks out to the latest hits on their iPod and discusses their interpretation of recent movies. They may very well engage in discussing tropes ["https://tvtropes.org/pmwiki/pmwiki.php/Main/DiscussedTrope"] and Conversational Troping, and weaponising their media awareness to analyse and solve problems. They’re also very prone to being Sophisticated as Hell. Contrast Cultured Badass ["https://tvtropes.org/pmwiki/pmwiki.php/Main/CulturedBadass"] and Wicked Cultured. Sometimes the eponymous bunny ears of a Bunny-Ears Lawyer.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

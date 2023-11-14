@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#GeniusDitz">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>This character would be nothing more than The Ditz ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheDitz"], except they have one area of expertise in which no one can beat them. When that skill or talent is needed, they suddenly switch gears from airheadedness to hyper-competency. Sometimes they don't even know that they're doing it. Genius Ditz is closely related to Idiot Savant ["https://tvtropes.org/pmwiki/pmwiki.php/Main/IdiotSavant"]. The main difference between that trope and the Genius Ditz is that the Genius Ditz is merely stupid outside their field of expertise while the Idiot Savant ["https://tvtropes.org/pmwiki/pmwiki.php/Main/IdiotSavant"] is implied to have a genuine mental disorder. Such a character who is well respected may become a Bunny-Ears Lawyer ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BunnyEarsLawyer"]. The academic variant is Absent-Minded Professor. Opposite of the Modern Major General, who appears to have specialised incompetence. Southern-Fried Genius may be mistaken for this, especially if the audience believes in the Half-Witted Hillbilly stereotype. Contrast with Cloudcuckoolander ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Cloudcuckoolander"]. Compare Too Dumb to Fool and Book Dumb. Compare and contrast Ditzy Genius, Dumb Muscle, and Dumb Blonde. A character of this type may also be an example of Crouching Moron, Hidden Badass. Some characters engaging in Obfuscating Stupidity might pretend to be this trope rather than simply stupid. Can overlap with Nerds Are Naďve if the genius character is also geeky/nerdy and their area of expertise relates to those interests.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

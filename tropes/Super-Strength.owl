@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#SuperStrength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Likely the most primal and common super-power ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Superhero"]. In a way, it's one of the oldest "super-power ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Superhero"]s" that mankind came up with; ancient myths have plenty of tales about mighty warriors and demigods, apparently normal humans but with strength beyond any human limits. Very common power from the Silver Age ["https://tvtropes.org/pmwiki/pmwiki.php/UsefulNotes/TheSilverAgeOfComicBooks"]. Usually does not know Kung Fu. Usually, this is the linchpin power of a Flying Brick. Characters with a wide variety of Superpowers will very frequently include this as a baseline ability. Characters with super strength may demonstrate it with a Neck Lift. A must for The Big Guy. This is also the most common Charles Atlas Superpower. A source of strength could be Uninhibited Muscle Power. See also World's Strongest Man ["https://tvtropes.org/pmwiki/pmwiki.php/Main/WorldsStrongestMan"], Muscles Are Meaningless and Required Secondary Powers. Villains show this off with a Neck Lift, Minion Maracas, Barrier-Busting Blow, or Hoist Hero over Head; heroes do it by being a Load-Bearing Hero. Characters with this power may sometimes not know their own strength. They are often described as having The Strength of Ten Men. Children with this power have their own trope, as do characters with big stomachs.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

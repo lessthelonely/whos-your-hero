@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#ImmunetoMindControl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>This describes a character who is, somehow, immune to any kind of Mind Manipulation ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MindManipulation"] when other characters aren't. Maybe they have strong willpower ["https://tvtropes.org/pmwiki/pmwiki.php/Main/HeroicWillpower"].note Note that being mind controlled and then fighting it off successfully doesn't count here. Maybe they have superpowers or some Applied Phlebotinum that protects them. Maybe it's inherent to their species. Maybe they're just too stupid, or just too crazy. Whatever the reason, this person is completely impervious to any attempts to mind control them. This could be a major plot point in an episode involving hypnosis...or it could just be dashed off as a joke. Those who are immune may exploit the fact by going to Pretend to Be Brainwashed. It should be noted that in reality, nobody can be hypnotized unless they willingly submit to it, and even then they cannot be forced to do something that is against their moral code. And yes, there are also some people who just can't be hypnotized, period. One's susceptibility to hypnosis also is linked to how susceptible you are to the Placebo Effect ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PlaceboEffect"]. Related to No-Sell ["https://tvtropes.org/pmwiki/pmwiki.php/Main/NoSell"] and Disability Immunity. Supertrope to Hypnosis-Proof Dogs. Compare Intrinsic Vow: A person is immune to Mind Control that conflicts with one of their strongly held beliefs. Compare also Psychic Block Defense, immunity to telepathy. Contrast Weak-Willed and Hypno Fool.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

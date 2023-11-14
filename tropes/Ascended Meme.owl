@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#AscendedMeme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Sometimes a meme ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MemeticMutation"] about a work, that wasn't in the work before, catches the eye of the people responsible for that work, and they decide to actually put it in the work. Note that this is not one work referencing another work's meme ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MemeticMutation"]s, which would just be a Shout-Out. Can be an in-joke for an Ascended Fanboy ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AscendedFanboy"] character, or a Promoted Fanboy who makes sure it'll be in the show. Can also be a result of Approval of God, where the creator would approve of fanworks and memes derived from the source material. Now just to tell if an example fits: A Sister Trope ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SisterTrope"] of Ascended Fanon, Meme Acknowledgment, Continuity Nod, Mythology Gag (the latter two are references to things that were in the work). Compare Watch It for the Meme ["https://tvtropes.org/pmwiki/pmwiki.php/Main/WatchItForTheMeme"], Appropriated Appellation, Pandering to the Base, Official Fan-Submitted Content. Not to be confused for a work making a Forced Meme ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ForcedMeme"] itself.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

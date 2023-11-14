@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#HerowithanFinGood">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>The Minion with an F in Evil ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MinionWithAnFInEvil"] became a Punch-Clock Villain because Evil Is Cool, but his Pet the Dog personality foils his bosses' plans. The Hero with an F in Good is also (usually) a nice person deep down, and sometimes daydreams of becoming one of The Hero's True Companions, or being the hero by himself; but serious character flaws make it a poor career goal. He doesn't have a problem with doing heroic things, but he does have trouble when it comes to other aspects of being good. Typical Characteristics: This character differs from other related tropes as follows: Allowing them entry into a Super Hero ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SuperHero"] organization, etc. may cause serious problems for the group's reputation, cohesiveness, etc., so instead they sometimes become Flanderized into recurring Ineffectual Sympathetic Villains who the heroes can still count on when the Big Bad crosses the Moral Event Horizon because Everyone Has Standards. Compare The Team Wannabe ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheTeamWannabe"] and Underling with an F in PR. Contrast Nominal Hero and Token Evil Teammate.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

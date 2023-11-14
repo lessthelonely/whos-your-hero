@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#GirlyGirl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>The Girly Girl is a little girl or woman who likes things like dresses and perfume and jewelry, etc. However having some of these attributes doesn't necessarily make a girl 'girly'. Depending on local norms, a Tomboy ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Tomboy"] may have some of these traits, and the variety of Girly girls is great enough that no one trait can be called essential. Therefore, it is nearly inevitable she will invert the Tomboy ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Tomboy"] with a Girly Streak (which the tomboy plays straight). No examples for this page, please. Put all your examples under one of the various traits associated with Girly Girls. If we don't have a subtrope for your specific Girly Girl please feel free to use the YKTTW ["https://tvtropes.orghttps://tvtropes.org/pmwiki/yk_activity.php?interval=.25"] to create a trope for it. Compare Femininity Tropes ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FemininityTropes"]. Contrasts with Tomboy and One of the Boys. The male counterpart in terms of femininity is In Touch with His Feminine Side, for "sensitive guys" and "girly boys", aka tomgirls and sissies; the male counterpart in terms of subscribing to gender roles is Manly Man.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#UselessAccessory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>An accessory which characters never actually use, but which is noticeable enough that they must consciously choose to wear it. For example, a Discredited Trope ["https://tvtropes.org/pmwiki/pmwiki.php/Main/DiscreditedTrope"] from The Dark Age of Comic Books was superhero costumes featuring a large number of pouch-covered belts and harnesses - which never actually seemed to be used, since most of these heroes relied on their powers rather than on gadgets. This is a Super-Trope ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SuperTrope"] to the following tropes: Compare with Chekov's Gun ["https://tvtropes.org/pmwiki/pmwiki.php/JustForFun/ChekovsGun"] (not to be confused with Chekhov's Gun). Also related to Cosmetic Award and Badass Bandolier. A Set Bonus can make such an item a subversion.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#AffirmativeActionLegacy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>So, the Big ["https://tvtropes.org/pmwiki/pmwiki.php/Creator/MarvelComics"] Two comic publishers have a couple of issues. The first: brand new characters not heavily tied to already existing characters and continuity have a hard time becoming popular and long-lasting. The second, the eras when characters could stick (the Golden and Silver Ages) produced heterosexual white males almost exclusively. The solution to both? Take a preexisting character, and pass their superhero identity to a woman, racial minority, or LGBT person! Trouble is, the legacy characters, minority or not, often also don't stick very well and there is a history of them being replaced. It also doesn't help that sometimes, these new characters don't catch on and fall out of a regular role, occasionally resulting in another trope entirely ["https://tvtropes.org/pmwiki/pmwiki.php/Main/CListFodder"]. Furthermore, Unpleasable Fanbase aside, depending on how the original character is treated or how the mantle is passed to the new one the preexisting fanbase may react very badly. This can also be very dangerous for people hoping to use this trope to promote diversity or inclusivity: should the new character be so badly received that it actually damages the name or brand, it also becomes easy for people to blame the diversity or inclusivity for the drop in quality. That said, several of these characters have gone on to be popular and enduring heroes in their own right. See also Gender Flip ["https://tvtropes.org/pmwiki/pmwiki.php/Main/GenderFlip"], Race Lift, She's a Man in Japan, More Diverse Sequel.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

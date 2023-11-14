@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#ImpossiblyLowNeckline">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>A neckline that is so low that the wearer seems to be one deep breath away from a Wardrobe Malfunction ["https://tvtropes.org/pmwiki/pmwiki.php/Main/WardrobeMalfunction"] (which almost never actually happens). Held up mostly by gravity and good posture. note And if that fails there's always double-sided sticky tape. The actual outfit is not important for this trope. It could be a bathing suit ["https://tvtropes.org/pmwiki/pmwiki.php/Main/WalkingSwimsuitScene"], a Spy Catsuit, a Mini Dress Of Power, a Leotard of Power, a Sexy Santa Dress, a halter top, T-shirt, or even a Pimped-Out Dress, Fairytale Wedding Dress, or Happy Holidays Dress. All that matters is that its neckline seems to be held up by magic (or duct tape). This trope can even overlap with Victoria's Secret Compartment, though that will strain the viewers' Willing Suspension of Disbelief even further than it strains the fabric. This trope lends itself best to still images or animation, but it can be done in live-action. In Real Life ["https://tvtropes.org/pmwiki/pmwiki.php/Main/RealLife"], sleeveless bodices with gravity-defying decolletage are held in place by transparent straps or hidden adhesive. Another method is to sew strips of plastic or metal into the seams to make it rigid, resulting in a top that will stay up even when no one's in it.note Go on, get your 'boning' jokes in now. A Sister Trope ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SisterTrope"] to Navel-Deep Neckline, Sideboob, Underboobs, and Cleavage Window. Compare Magic Skirt ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MagicSkirt"], Of Corsets Sexy, Theiss Titillation Theory (it's sexy because it looks like it will fall to her waist at any second), Impractically Fancy Outfit, Impossibly Cool Clothes, Form-Fitting Wardrobe, Cleavage Window.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>
