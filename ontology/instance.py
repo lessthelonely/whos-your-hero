@@ -1,5 +1,4 @@
 from onto import Character, Story, Power, Trope, Media, Variant
-from rdflib import Graph, Namespace, RDF, OWL, Literal
 from owlready2 import *
 import os
 
@@ -298,13 +297,16 @@ create_character_rdf(["midnighter"], "midnighter.owl")
 create_character_rdf(["wally_west"], "wally_west.owl")
 
 
+from rdflib import Graph, Namespace, RDF, OWL, Literal # this line needs to be there otherwise it won't work
+
 def load_tropes(file_name, trope_name):
     clear_default_world()
 
     f = open("tropes/" + file_name, "r", encoding="utf8")
     trope_description = ' '.join(line.strip() for line in f)
-    trope = Trope(file_name.replace(".txt", ""))
-    trope.generalTropeDescription.append(trope_description)
+    uri_name = file_name.replace(".txt", "")
+    trope = Trope(uri_name)
+    trope.tropeDescription.append(trope_description)
     print(trope)
     if trope_name == "\"Freaky Friday\" Flip":
         trope_name = "Freaky Friday Flip"
@@ -323,27 +325,23 @@ def load_tropes(file_name, trope_name):
     g.bind("hero", hero)
 
     # Add triples for the Trope instance
-    g.add((hero[trope_name], RDF.type, OWL.NamedIndividual))
-    g.add((hero[trope_name], RDF.type, hero.Trope))
-    g.add((hero[trope_name], hero.generalTropeDescription, Literal(trope_description)))
+    g.add((hero[uri_name], RDF.type, OWL.NamedIndividual))
+    g.add((hero[uri_name], RDF.type, hero.Trope))
+    g.add((hero[uri_name], hero.tropeDescription, Literal(trope_description)))
 
     g.serialize(destination="tropes/" + rdf_name, format="xml")
 
 
-load_tropes("AGodIAmNot.txt", "AGodIAmNot")
+all_tropes_file = open("all_tropes.txt", "r")
+all_tropes = [line.strip() for line in all_tropes_file]
 
-# all_tropes_file = open("all_tropes.txt", "r")
-# all_tropes = [line.strip() for line in all_tropes_file]
-# all_tropes.sort()
-# 
-# tropes = []
-# directory = 'tropes'
-# for filename in os.scandir(directory):
-#     if filename.is_file():
-#         tropes.append(filename.name)
-# tropes.sort()
-# load_tropes(tropes[0], all_tropes[0])
-# for t in range(len(tropes)):
-#     load_tropes(tropes[t], all_tropes[t])
+tropes = []
+directory = 'tropes'
+for filename in os.scandir(directory):
+    if filename.is_file():
+        tropes.append(filename.name)
+tropes.sort()
+for t in range(len(tropes)):
+   load_tropes(tropes[t], all_tropes[t])
 
 
