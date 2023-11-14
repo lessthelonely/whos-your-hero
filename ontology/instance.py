@@ -314,8 +314,11 @@ def load_tropes(file_name, trope_name):
         trope_name = "The Reason You Suck Speech"
     if trope_name == "\"Well Done, Son\" Guy":
         trope_name = "Well Done Son Guy"
-    if trope_name[len(trope_name)-1] == "?":
-        trope_name = trope_name[0:len(trope_name)-1]
+    if trope_name == "The Knights Who Say \"Squee!\"":
+        trope_name = "The Knights Who Say Squee"
+    trope_name = trope_name.replace("/", "")
+    trope_name = trope_name.replace("?","")
+    trope_name = trope_name.replace("...", "")
 
     rdf_name = trope_name + ".owl"
 
