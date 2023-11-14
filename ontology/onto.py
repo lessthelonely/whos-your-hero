@@ -153,6 +153,10 @@ with onto:
         domain = [Trope]
         range = [str]
 
+    class generalTropeDescription(Property):
+        domain = [Trope]
+        range = [str]
+
     class hasTrope(Property):
         domain = [Character]
         range = [Trope]
