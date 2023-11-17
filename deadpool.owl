@@ -206,11 +206,11 @@
 </owl:Class>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
@@ -968,7 +968,7 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Enhancedregeneration/healingfactor">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
-  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Deadpool's primary ability is an extremely accelerated healing factor, derived from the mutant Wolverine and given to him by Weapon X. It allows him to regenerate bodily tissue at extreme, superhuman rates, and increases his longevity, giving him near-immortality. Unlike Wolverine's, however, his is driven to a certain extent by willpower, which provides an advantage in certain situations. He has regenerated from being ripped apart by a grenade, having been decapitated by the Punisher, and can survive in extreme conditions and sustain other severe injuries with no lasting damaged. Once when his body was destroyed, he was able to regenerate from his remaining hand. Foreign chemical/disease resistance</hero:powerDescription>
+  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Deadpool's primary ability is an extremely accelerated healing factor, derived from the mutant Wolverine and given to him by Weapon X. It allows him to regenerate bodily tissue at extreme, superhuman rates, and increases his longevity, giving him near-immortality. Unlike Wolverine's, however, his is driven to a certain extent by willpower, which provides an advantage in certain situations. He has regenerated from being ripped apart by a grenade, having been decapitated by the Punisher, and can survive in extreme conditions and sustain other severe injuries with no lasting damaged. Once when his body was destroyed, he was able to regenerate from his remaining hand.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
@@ -1004,7 +1004,7 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Immortality">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
-  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> When Thanos found out that Deadpool and Mistress Death share a romantic relationship between the two of them, he cursed Deadpool with immortality, meaning that he can't die by any means.Enhanced regeneration/healing factor</hero:powerDescription>
+  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> When Thanos found out that Deadpool and Mistress Death share a romantic relationship between the two of them, he cursed Deadpool with immortality, meaning that he can't die by any means.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 

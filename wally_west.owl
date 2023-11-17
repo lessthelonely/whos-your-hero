@@ -206,11 +206,11 @@
 </owl:Class>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
@@ -284,15 +284,19 @@
   <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#MultiversityTheJust"/>
   <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#Flashpoint"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#SpeedForceConduit"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#SuperhumanSpeed"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#DeceleratedAging"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#EnergyConstructCreation"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#SharingtheForce"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#StealSpeed"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#SpeedForceAura"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#SpeedForceLightning"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#SuperhumanStamina"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#SelfSustenance"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#InfiniteMassPunch"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#DimensionalTravel"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Regeneration"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Phasing"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Flight"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#IncreasedPerceptions"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#SuperchargedBrainActivity"/>
@@ -627,7 +631,13 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SpeedForceConduit">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
-  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Wally's primary super ability is his super speed which he gets from tapping into the Speed Force. He gained a connection to it after the same accident that gave Barry his powers and his connection to the force was possible because of adventures they shared together. However, after Barry died and Wally became the new Flash, he subconsciously limited his own speed to the speed of sound (originally they thought Wally's speed was affected by the Anti Matter wave). When he admitted it to himself, Wally broke he psychic blocks and achieved a new level of power. However, when Wally broke the light barrier for the first time, he tapped into the speed force and gained a full connection to it, increasing his powers while giving him while new set of abilities. In truth, West mainlines the power from the force itself and cannot be cut off from the source, unlike all the other Speedsters (besides Barry, Thawne, Max and possibly Savitar). Wally is the fastest of all the Speedsters, perhaps rivaled only by his mentor, Barry Allen (although Wally has said Bart Allen is faster than all speedsters put together) and surpassed only by Zoom (Hunter Zolomon), Flash (Bart Allen), The Black Flash and The Black Racer. He is arguably one of the fastest beings that has ever existed and certainly, faster than Superman. He is currently fast enough to easily break all the barriers and even enter the Speed Force. Wally has, on several occasions, traveled much faster than light and been pulled into and exited the Speed Force by his own volition. He is one of the few speedsters who was able to tap into the speed force and get out without direct outside help. Like Barry and Jay, Wally has his own "lightning rod" which is his wife Linda. Without her, he is not capable of coming back and will go to his final resting place. That is why he almost stayed in the speed force when he forgot Linda's name while at the same time Linda almost fell in love in the Flash from the future, John Fox. The only reason why he got out was because he remembered Linda's name and Linda herself remembered she loves Wally. During the Rebirth, Linda forgot about Wally so he wasn't able to get out of the Speed Force without Barry's help.Superhuman Speed</hero:powerDescription>
+  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Wally's primary super ability is his super speed which he gets from tapping into the Speed Force. He gained a connection to it after the same accident that gave Barry his powers and his connection to the force was possible because of adventures they shared together. However, after Barry died and Wally became the new Flash, he subconsciously limited his own speed to the speed of sound (originally they thought Wally's speed was affected by the Anti Matter wave). When he admitted it to himself, Wally broke he psychic blocks and achieved a new level of power. However, when Wally broke the light barrier for the first time, he tapped into the speed force and gained a full connection to it, increasing his powers while giving him while new set of abilities. In truth, West mainlines the power from the force itself and cannot be cut off from the source, unlike all the other Speedsters (besides Barry, Thawne, Max and possibly Savitar). Wally is the fastest of all the Speedsters, perhaps rivaled only by his mentor, Barry Allen (although Wally has said Bart Allen is faster than all speedsters put together) and surpassed only by Zoom (Hunter Zolomon), Flash (Bart Allen), The Black Flash and The Black Racer. He is arguably one of the fastest beings that has ever existed and certainly, faster than Superman. He is currently fast enough to easily break all the barriers and even enter the Speed Force. Wally has, on several occasions, traveled much faster than light and been pulled into and exited the Speed Force by his own volition. He is one of the few speedsters who was able to tap into the speed force and get out without direct outside help. Like Barry and Jay, Wally has his own "lightning rod" which is his wife Linda. Without her, he is not capable of coming back and will go to his final resting place. That is why he almost stayed in the speed force when he forgot Linda's name while at the same time Linda almost fell in love in the Flash from the future, John Fox. The only reason why he got out was because he remembered Linda's name and Linda herself remembered she loves Wally. During the Rebirth, Linda forgot about Wally so he wasn't able to get out of the Speed Force without Barry's help.</hero:powerDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#WallyWest</hero:belongsTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SuperhumanSpeed">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Wally West had different levels of speed over the years. During his days as Kid Flash, he was pretty fast, fast enough to easily keep up with Barry Allen and he could measure time in span of nanoseconds. However, it was pretty clear that his speed was nor comparable to that of his uncle, or even Superman. After Crisis on Infinite Earths, Wally was affected by the Anti Matter Wave which stopped his increased metabolism for killing him when he uses his speed, but it also slowed down to a level of speed comparable to the Speed of Sound. After his fight with Eobard Thawne, Max Mercury ("Zen Master of Speed") tried to teach Wally how to get faster and in doing so, told him he was afraid of replacing and overshadowing the legacy of his uncle Barry by becoming his equal. When Wally admitted that to himself, he achieved the new level of power and gained speed comparable to Eobard's. After he broke the light barrier and tapped into the Speed Force, Wally came out of it, gaining new sets of powers of abilities while upgrading his already existing ones by a large margin. Wally West became by far, one of the fastest beings on the planet, and is arguably one of the fastest beings to ever exist (Although the title of "Fastest Man" has been given back to Barry Allen in his return in "Final Crisis"). Theoretically, speeds greater than Mach 10 are dangerous to both the people and to the environment. This speed would still be the equivalent to approximately 2 miles per second, allowing him to cross the United States in about 23 minutes, or circle the world in about 3 hours, but the Speed Force has shown that if needed, Wally West can use it to prevent such effects from occurring, hence he is able to run at speeds much faster than light on the planet Earth without it having devastating effects on the planet. He can also run across bodies of water and up the sides of buildings. He has been able to casually move beyond the speed of thought, easily move so fast that even an multiple attacks moving at the speed of light seems to be standing still and at the same time scans the face of over five hundred thousand people for a specific expression in less than a picosecond. He is able to easily save and carry over half a million people 35 miles away from a nuclear warhead that had already detonated, including the ones at ground zero, in only 10 picoseconds, disable Mirror Master's gun in span of a picosecond with ease, as well as beat a fellow Speedster Eobard Thawne in span of a picosecond. He is able to casually reach speeds such as 500 times the speed of light. He has moved and ran so fast, that he was capable of outrunning The Black Flash to the end of time/space, past entropy, the next Big Bang and into the next Universe, before he could catch him and kill him. Wally also has increased perception, allowing him to proceed events that unfolded in span of an attosecond (an attosecond is one quintillionth of a second. To put this in perspective, one attosecond is to one second, what one second is to the age of the universe and it is the time period where light passes the distance on a molecular level).</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#WallyWest</hero:belongsTo>
 </owl:NamedIndividual>
 
@@ -657,7 +667,19 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SpeedForceAura">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
-  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The Flash's body is surrounded by what he calls his "Speed Force aura". This aura protects him and anyone who is running with him or carried by him, from the effects of using his speed. This includes friction and airborne particulate matter. It also protects him from injury from high speed impacts such as punches he delivers and receives from his opponents. With this aura he is able to absorb kinetic energy and inertia. Wally can sync his aura with his children, giving him the ability to pull either of them to him with a thought. The Speed Force Aura also gives Wally Super Human durability, allowing him to survive attacks from most powerful Meta-Humans without much damage, like Superman, Mongul, Green Lantern, Zoom, Wonder Woman and more.Speed Force Lightning</hero:powerDescription>
+  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The Flash's body is surrounded by what he calls his "Speed Force aura". This aura protects him and anyone who is running with him or carried by him, from the effects of using his speed. This includes friction and airborne particulate matter. It also protects him from injury from high speed impacts such as punches he delivers and receives from his opponents. With this aura he is able to absorb kinetic energy and inertia. Wally can sync his aura with his children, giving him the ability to pull either of them to him with a thought. The Speed Force Aura also gives Wally Super Human durability, allowing him to survive attacks from most powerful Meta-Humans without much damage, like Superman, Mongul, Green Lantern, Zoom, Wonder Woman and more.</hero:powerDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#WallyWest</hero:belongsTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SpeedForceLightning">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Due to his connection to the Speed Force, Wally generates Speed Force energy from his body in the form of electricity/lightning. Recently, Wally has shown that he is able to project this electrical energy as bolts from his hand. He did this to "shock" the forgotten memories of the Titans back into their minds. Wally's lightning (for whatever reason) turned blue.</hero:powerDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#WallyWest</hero:belongsTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SuperhumanStamina">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The Flash possesses vast superhuman endurance that is nearly inexhaustible. He was able to run non-stop for over 10 days straight without tiring against Krakkl (who was stealing the speed of his entire race and adding it to his own, a race where every single individual could achieve the speed of light), through time and space across existence (everywhere from the fourth dimension to the Big Bang was their track field) at speeds so far beyond light and so unimaginable, he was constantly breaking through all the barriers and even brushed the true Speed Force itself directly.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#WallyWest</hero:belongsTo>
 </owl:NamedIndividual>
 
@@ -681,7 +703,13 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Regeneration">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
-  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Accelerating his healing factor while using the Speed Force to sustain him, Wally can heal from any injury instantly, without prematurely aging like his alternate version, Walter West.Phasing</hero:powerDescription>
+  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Accelerating his healing factor while using the Speed Force to sustain him, Wally can heal from any injury instantly, without prematurely aging like his alternate version, Walter West.</hero:powerDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#WallyWest</hero:belongsTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Phasing">
+  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The Flash has always possessed the ability to control his speed and angular momentum at the molecular level, and control his molecular interactions to allow his body to pass through any substance. If he chooses Wally can excite the molecules of whatever substance he vibrates through to critical mass causing it to explode. While in an intangible state, the Flash is immune to any airborne viruses and can breathe regularly. He can also vibrate so fast that light does not reflect off him, rendering him invisible.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#WallyWest</hero:belongsTo>
 </owl:NamedIndividual>
 

@@ -206,11 +206,11 @@
 </owl:Class>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
@@ -511,13 +511,13 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Intellect">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
-  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Cassandra was given some detective training from Tim Drake while they were in Bl'dhaven.</hero:powerDescription>
+  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Cassandra was given some detective training from Tim Drake while they were in Bludhaven.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#CassandraCain</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WeaponsMaster">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
-  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She is also a master of different kinds of melee and ranged weaponry. Her time with Barbara Gordon and the Batman only enhanced her already considerable skills.Unarmed Combat</hero:powerDescription>
+  <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She is also a master of different kinds of melee and ranged weaponry. Her time with Barbara Gordon and the Batman only enhanced her already considerable skills.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#CassandraCain</hero:belongsTo>
 </owl:NamedIndividual>
 
