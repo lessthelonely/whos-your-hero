@@ -18,10 +18,502 @@ app.add_middleware(
 def read_root():
     return {"Hello": "World"}
 
+#get photo
+@app.get("/rdf-character/{file_name}/photo")
+def get_photo(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?photo
+    WHERE {{
+        ?individual hero:hasPhoto ?photo.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, photo = row
+        data.setdefault(str(individual_uri), []).append(str(photo))
+
+    return data
+
+#get birthday
+@app.get("/rdf-character/{file_name}/birthday")
+def get_birthday(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?birthday
+    WHERE {{
+        ?individual hero:birthday ?birthday.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, birthday = row
+        data.setdefault(str(individual_uri), []).append(str(birthday))
+
+    return data
+
+#get characterType
+@app.get("/rdf-character/{file_name}/characterType")
+def get_characterType(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?characterType
+    WHERE {{
+        ?individual hero:characterType ?characterType.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, characterType = row
+        data.setdefault(str(individual_uri), []).append(str(characterType))
+
+    return data
+
+#get number of issues the character appears in
+@app.get("/rdf-character/{file_name}/appearsIn")
+def get_appearsIn(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?appearsIn
+    WHERE {{
+        ?individual hero:appearsIn ?appearsIn.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, appearsIn = row
+        data.setdefault(str(individual_uri), []).append(str(appearsIn))
+
+    return data
+
+#get evolution
+@app.get("/rdf-character/{file_name}/evolution")
+def get_evolution(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+    g.parse(file_path)
+    query = f"""
+    SELECT ?individual ?evolution
+    WHERE {{
+        ?individual hero:evolution ?evolution.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, evolution = row
+        data.setdefault(str(individual_uri), []).append(str(evolution))
+
+    return data
+
+#get creation
+@app.get("/rdf-character/{file_name}/creation")
+def get_creation(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?creation
+    WHERE {{
+        ?individual hero:creation ?creation.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, creation = row
+        data.setdefault(str(individual_uri), []).append(str(creation))
+
+    return data
+
+#get creators
+@app.get("/rdf-character/{file_name}/creators")
+def get_creators(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?creators
+    WHERE {{
+        ?individual hero:creators ?creators.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, creators = row
+        data.setdefault(str(individual_uri), []).append(str(creators))
+
+    return data
+
+#get deaths
+@app.get("/rdf-character/{file_name}/deaths")
+def get_deaths(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?deaths
+    WHERE {{
+        ?individual hero:deaths ?deaths.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, deaths = row
+        data.setdefault(str(individual_uri), []).append(str(deaths))
+
+    return data
+
+#get origins
+@app.get("/rdf-character/{file_name}/origins")
+def get_origins(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?origins
+    WHERE {{
+        ?individual hero:origins ?origins.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, origins = row
+        data.setdefault(str(individual_uri), []).append(str(origins))
+
+    return data
+
+#get characteristics
+@app.get("/rdf-character/{file_name}/characteristics")
+def get_characteristics(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?characteristics
+    WHERE {{
+        ?individual hero:characteristics ?characteristics.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, characteristics = row
+        data.setdefault(str(individual_uri), []).append(str(characteristics))
+
+    return data
+
+#get publisher
+@app.get("/rdf-character/{file_name}/publisher")
+def get_publisher(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?publisher
+    WHERE {{
+        ?individual hero:publisher ?publisher.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, publisher = row
+        data.setdefault(str(individual_uri), []).append(str(publisher))
+
+    return data
+
+#get realName
+@app.get("/rdf-character/{file_name}/realName")
+def get_realName(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?realName
+    WHERE {{
+        ?individual hero:realName ?realName.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, realName = row
+        data.setdefault(str(individual_uri), []).append(str(realName))
+
+    return data
+
+#get summary
+@app.get("/rdf-character/{file_name}/summary")
+def get_summary(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?summary
+    WHERE {{
+        ?individual hero:summary ?summary.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, summary = row
+        data.setdefault(str(individual_uri), []).append(str(summary))
+
+    return data
+
+#get superName
+@app.get("/rdf-character/{file_name}/superName")
+def get_superName(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?superName
+    WHERE {{
+        ?individual hero:superName ?superName.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, superName = row
+        data.setdefault(str(individual_uri), []).append(str(superName))
+
+    return data
+
+#get hasDied -> not really needed because we have deaths: if a character hasn't died, deaths will return None
+@app.get("/rdf-character/{file_name}/hasDied")
+def get_hasDied(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?hasDied
+    WHERE {{
+        ?individual hero:hasDied ?hasDied.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, hasDied = row
+        data.setdefault(str(individual_uri), []).append(str(hasDied))
+
+    return data
+
+#get isWoman
+@app.get("/rdf-character/{file_name}/isWoman")
+def get_isWoman(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT DISTINCT ?individual ?isWoman
+    WHERE {{
+        ?individual hero:isWoman ?isWoman.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, isWoman = row
+        data.setdefault(str(individual_uri), []).append(str(isWoman))
+
+    return data
+
+#get isMan
+@app.get("/rdf-character/{file_name}/isMan")
+def get_isMan(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT DISTINCT ?individual ?isMan
+    WHERE {{
+        ?individual hero:isMan ?isMan.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, isMan = row
+        data.setdefault(str(individual_uri), []).append(str(isMan))
+
+    return data
+
+#get isNonBinary
+@app.get("/rdf-character/{file_name}/isNonBinary")
+def get_isNonBinary(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT DISTINCT ?individual ?isNonBinary
+    WHERE {{
+        ?individual hero:isNonBinary ?isNonBinary.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, isNonBinary = row
+        data.setdefault(str(individual_uri), []).append(str(isNonBinary))
+
+    return data
+
+#get firstAppearance
+@app.get("/rdf-character/{file_name}/firstAppearance")
+def get_firstAppearance(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?firstAppearance
+    WHERE {{
+        ?individual hero:firstAppearance ?firstAppearance.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, firstAppearance = row
+        data.setdefault(str(individual_uri), []).append(str(firstAppearance))
+
+    return data
+
+#get alias
+@app.get("/rdf-character/{file_name}/alias")
+def get_alias(file_name:str):
+    g = Graph()
+    file_path = f"{file_name}.owl"
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?individual ?alias
+    WHERE {{
+        ?individual hero:hasAlias ?alias.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        individual_uri, alias = row
+        data.setdefault(str(individual_uri), []).append(str(alias))
+
+    return data
+
 #get alternateVersions
 @app.get("/rdf-character/{file_name}/alternateVersions")
-def get_rdf(file_name:str):
-    # Replace this with your actual RDF data and SPARQL queries
+def get_alternateVersions(file_name:str):
     g = Graph()
     file_path = f"{file_name}.owl"
     g.parse(file_path)
@@ -46,8 +538,7 @@ def get_rdf(file_name:str):
 
 #get storyArcs
 @app.get("/rdf-character/{file_name}/storyArcs")
-def get_rdf(file_name:str):
-    # Replace this with your actual RDF data and SPARQL queries
+def get_storyArcs(file_name:str):
     g = Graph()
     file_path = f"{file_name}.owl"
     g.parse(file_path)
@@ -72,8 +563,7 @@ def get_rdf(file_name:str):
 
 #get powers
 @app.get("/rdf-character/{file_name}/powers")
-def get_rdf(file_name:str):
-    # Replace this with your actual RDF data and SPARQL queries
+def get_powers(file_name:str):
     g = Graph()
     file_path = f"{file_name}.owl"
     g.parse(file_path)
@@ -98,8 +588,7 @@ def get_rdf(file_name:str):
 
 #get character's tropes
 @app.get("/rdf-character/{file_name}/tropes")
-def get_rdf(file_name:str):
-    # Replace this with your actual RDF data and SPARQL queries
+def get_character_tropes(file_name:str):
     g = Graph()
     file_path = f"{file_name}.owl"
     g.parse(file_path)
@@ -124,8 +613,7 @@ def get_rdf(file_name:str):
 
 #get media
 @app.get("/rdf-character/{file_name}/media")
-def get_rdf(file_name:str):
-    # Replace this with your actual RDF data and SPARQL queries
+def get_media(file_name:str):
     g = Graph()
     file_path = f"{file_name}.owl"
     g.parse(file_path)
