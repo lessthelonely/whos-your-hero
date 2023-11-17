@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#SurpassedtheTeacher">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>For most of the career of a student, The Mentor ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheMentor"] overshadows the student in terms of ability. This is certainly justified, since it is the intention of a student to become more skilled by learning from a more experienced mentor. However, there may come a time when the student surpasses the mentor in ability. It is at this point at which the student reaches his full ability and becomes a master of his trade. This may result in the mentor becoming an Obsolete Mentor ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ObsoleteMentor"]. If the student is arrogant, when he proves he is superior, he often utters a Stock Phrase or some variation thereof from which the trope name originates: "The student has surpassed the teacher." If the mentor is the nice type, he will often be highly proud of his student ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SoProudOfYou"] (though perhaps with a bit of ego-stroking about his own teaching skills). If the student has surpassed his mentor but hasn't reached his full potential, his old master may tell him to find a new master who will teach the student more. If the mentor is the jealous type, he may become resentful of the student's ability, and in extreme cases, the mentor may become the student's enemy. When both the teacher and the student are evil, the student often proves his superiority by killing the teacher ["https://tvtropes.org/pmwiki/pmwiki.php/Main/RuleOfTwo"]. Direct Sub-Trope ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SubTrope"] of Superior Successor.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

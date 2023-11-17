@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#DefusingtheTykeBomb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Tykebombs ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Tykebomb"] are generally raised with people who tell them they're nothing but a weapon and usually treat them like crap. Then along comes someone who's different. When they look at the Tykebomb, they don't see a weapon, they see a messed-up little kid. Naturally, they try to rescue the poor Tykebomb, talking or fighting their way towards them. Hug Tropes are likely to comprise their arsenal; also expect The Power of Friendship to be used. The one doing the defusing is also likely to be a Warrior Therapist and/or an All-Loving Hero. Sometimes it works, sometimes it doesn't; what matters for trope purposes is the intent. Compare Because You Were Nice to Me ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BecauseYouWereNiceToMe"]. See I Am Not a Gun ["https://tvtropes.org/pmwiki/pmwiki.php/Main/IAmNotAGun"], when the Tyke-Bomb defuses themselves.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#ReformedbutNotTamed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>When it comes to characters turning from evil to good ["https://tvtropes.org/pmwiki/pmwiki.php/Main/HeelFaceTurn"], you would assume that their character and personality have changed. This isn't always the case, and the change isn't always complete and these characters still have the same ruthless attitude and behavior. This trope is when a character goes from evil to good while still retaining the characteristics they had as a villain ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Villains"]. There are plenty of reasons for why their immoral or unpleasant behavior remains the same despite changing their alignment: Very common in a setting of Black-and-Gray Morality ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BlackAndGrayMorality"]. This type of character is more likely to become The Hero's lancer, especially when the former is an Ideal Hero or The Cape. When it comes to this trope, turning over a new leaf is more complex than people thought it would be, which can invoke the thought that Humans Are Flawed or even bastards. Meta-wise, this can be done for the benefit of viewers who find the character interesting and entertaining as a villain and would get bored out by clear-cut goody guys. Also see Token Evil Teammate ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TokenEvilTeammate"], Combat Pragmatist, Above Good and Evil, or Vigilante Man. Subtrope of Quirky Good. Compare Hazy-Feel Turn and Heroes' Frontier Step. Not to be confused with Reformed, but Rejected, where a character turns for the better, but others don't acknowledge it.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#TookaLevelinKindness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>A sweet trope in which a Jerkass ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Jerkass"] develops a nicer attitude over time and becomes a genuinely pleasant person (or, at worst, a Jerk with a Heart of Gold). Usually this can be due to Character Development. A Heel–Face Turn may be involved as well. In some cases this may be a case of Characterization Marches On; as the series progresses, the writers realized that a nicer character fit the changing tone better than the original idea. This trope also covers situations where a character with a Hidden Heart of Gold feels safe enough to show his gentler side (in the presence of the main characters, anyway). If done over the course of one episode or short story, this may have been to set up an Aesop. Contrast Took a Level in Jerkass ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TookALevelInJerkass"]. Compare to Defrosting Ice Queen, which focuses on a specific Love Interest bringing an unfriendly character out of her shell. When a character becomes nicer in an adaptation, that's Adaptational Nice Guy. If this trope applies to the whole cast or the tone, it's Kinder and Cleaner.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

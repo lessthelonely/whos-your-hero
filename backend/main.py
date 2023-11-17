@@ -586,11 +586,8 @@ def get_powers(file_name:str):
 
     return data
 
-#get character's tropes
-@app.get("/rdf-character/{file_name}/tropes")
-def get_character_tropes(file_name:str):
+def trope_query(file_path):
     g = Graph()
-    file_path = f"{file_name}.owl"
     g.parse(file_path)
 
     query = f"""
@@ -608,8 +605,23 @@ def get_character_tropes(file_name:str):
     for row in results:
         trope_name = row['trope'].split('#')[1]
         data[trope_name] = row['description']
-
+    
     return data
+
+
+#get character's tropes
+@app.get("/rdf-character/{file_name}/tropes")
+def get_character_tropes(file_name:str):
+    file_path = f"{file_name}.owl"
+   
+    return trope_query(file_path)
+
+#get Trope's information
+@app.get("/rdf-trope/{file_name}")
+def get_trope(file_name:str):
+    file_path = "./tropes/owls/" + file_name + ".owl"
+   
+    return trope_query(file_path)
 
 #get media
 @app.get("/rdf-character/{file_name}/media")

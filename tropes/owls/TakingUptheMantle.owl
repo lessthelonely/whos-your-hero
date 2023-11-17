@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#TakingUptheMantle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>So you're two-thirds of the way through a book/movie/whatever, when suddenly, The Hero ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheHero"] / The Leader / The Chosen One, etc. dies, is imprisoned, performs a Face–Heel Turn, or is otherwise unable to act as their important role. All seems lost, a Take Up My Sword hasn't been pulled! What is to be done? But wait! A Sidekick ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Sidekick"], the Love Interest, The Rival, a Mauve Shirt, or even a Friendly Enemy steps or is forced into this important role, and the work that you are reading focuses on them for the rest of the time it takes to finish the work. Essentially, it's when someone invokes Legacy Character. Take Up My Sword ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TakeUpMySword"] is different in that it implies that the original had time to say something along the lines of I'm Dying, Please Take My MacGuffin to his successor, whereas with Taking Up The Mantle, the character has to take the initiative or be shown that it's what they have to do, but ultimately, they have to make the decision themselves. In so far as it applies to sidekicks, it's a relative to You Are in Command Now ["https://tvtropes.org/pmwiki/pmwiki.php/Main/YouAreInCommandNow"], which applies to more rigid situations where the Big Hat Of Command lands on a person's head whether they want it to or not, based on their level in the hierarchy. May or may not be related to and/or overlap with Legacy Character ["https://tvtropes.org/pmwiki/pmwiki.php/Main/LegacyCharacter"], Passing the Torch, All Up to You, You Are in Command Now, Field Promotion, or It's the Journey That Counts. The Trope Namer ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TropeNamer"] comes from a line in The Bible where Elisha literally takes up the mantle of Elijah the prophet.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

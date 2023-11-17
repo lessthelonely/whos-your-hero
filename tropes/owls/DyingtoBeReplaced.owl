@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#DyingtoBeReplaced">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Well, then. We'll just have to do something about that ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ThePlotReaper"], won't we? Contrast You Kill It, You Bought It ["https://tvtropes.org/pmwiki/pmwiki.php/Main/YouKillItYouBoughtIt"] when a character in-story, instead of a writer, kills another character to take on his job or MacGuffin. This trope is similar to Mentor Occupational Hazard ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MentorOccupationalHazard"] from an in-setting standpoint, but differs significantly as a trope in that such a mentor exists only to die so the hero can replace them; victims of this trope, on the other hand, are always established characters in their own right. May invoke Take Up My Sword ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TakeUpMySword"]. If the character's been absent for a while, they might have to be brought Back for the Dead (or just suffer a Bus Crash). Beware: This is an easy way to create a Replacement Scrappy ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ReplacementScrappy"] in some fans' eyes.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

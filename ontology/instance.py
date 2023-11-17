@@ -301,7 +301,7 @@ create_character_rdf(["wally_west"], "wally_west.owl")
 
 from rdflib import Graph, Namespace, RDF, OWL, Literal # this line needs to be there otherwise it won't work
 
-def load_tropes(file_name, trope_name):
+def load_tropes(file_name):
     clear_default_world()
 
     f = open("tropes/" + file_name, "r", encoding="utf8")
@@ -310,6 +310,7 @@ def load_tropes(file_name, trope_name):
     trope = Trope(uri_name)
     trope.tropeDescription.append(trope_description)
     print(trope)
+    """
     if trope_name == "\"Freaky Friday\" Flip":
         trope_name = "Freaky Friday Flip"
     if trope_name == "\"The Reason You Suck\" Speech":
@@ -321,8 +322,9 @@ def load_tropes(file_name, trope_name):
     trope_name = trope_name.replace("/", "")
     trope_name = trope_name.replace("?","")
     trope_name = trope_name.replace("...", "")
+    """
 
-    rdf_name = trope_name + ".owl"
+    rdf_name = uri_name + ".owl"
 
     # Create an RDF graph and bind namespaces
     g = Graph()
@@ -334,11 +336,11 @@ def load_tropes(file_name, trope_name):
     g.add((hero[uri_name], RDF.type, hero.Trope))
     g.add((hero[uri_name], hero.tropeDescription, Literal(trope_description)))
 
-    g.serialize(destination="tropes/" + rdf_name, format="xml")
+    g.serialize(destination="tropes/owls/" + rdf_name, format="xml")
 
 
-all_tropes_file = open("all_tropes.txt", "r")
-all_tropes = [line.strip() for line in all_tropes_file]
+#all_tropes_file = open("all_tropes.txt", "r")
+#all_tropes = [line.strip() for line in all_tropes_file]
 
 tropes = []
 directory = 'tropes'
@@ -347,6 +349,6 @@ for filename in os.scandir(directory):
         tropes.append(filename.name)
 tropes.sort()
 for t in range(len(tropes)):
-   load_tropes(tropes[t], all_tropes[t])
+   load_tropes(tropes[t])
 
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#HandsomeLech">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>A Casanova Wannabe ["https://tvtropes.org/pmwiki/pmwiki.php/Main/CasanovaWannabe"] with the added bonus of being conventionally attractive. Unfortunately, this may not apply to the rest of that person’s personality. The Handsome Lech is a shameless skirt chaser (even if his flirting is of the playful and charming kind). But when the more negative parts of this character’s personality become obvious (irresponsibility, fear of commitment, possible misogyny, etc.), this will drive away potential suitors. These are almost guaranteed to have luck with the one character (who is attracted to him, if only in a Slap-Slap-Kiss ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SlapSlapKiss"] way) willing to put up with these problems. If not, then Failure Is the Only Option. The Handsome Lech is more likely to be an Intentional Heartbreaker ["https://tvtropes.org/pmwiki/pmwiki.php/Main/IntentionalHeartbreaker"], but this isn't inherent. Compare and contrast Chivalrous Pervert ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ChivalrousPervert"], which this may or may not overlap with. While characters can be both if they are both charming and legitimately care about those they charm, frequently a work will contrast an awkward but sincere Chivalrous Pervert ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ChivalrousPervert"] with the Man of Wealth and Taste charm of a Handsome Lech only interested in adding tally marks to his list of "conquests". Also contrast the Kavorka Man, an unattractive male character who is quite successful with the ladies.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#CompromisingCall">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>This trope occurs when someone's attempt to communicate with a character ends up compromising them. Unlike other times when this happens ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SoMuchForStealth"], this is almost completely out of the character's control. Most of the time, it's not even malicious; the person calling just has no idea what situation the character is in when they make the call. This most commonly occurs when a character is sneaking through enemy territory and someone on their side calling them or breaking radio silence reveals the character's presence. Note that the character needs to be aware that they have been discovered for this trope to apply. Subtrope of So Much for Stealth ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SoMuchForStealth"]. May overlap with Embarrassing Ringtone. Compare Kinda Busy Here when a call becomes inconvenient not because the callee's cover is blown but because they are busy with something else more important, which is usually played for laughs. If someone is trying to assure others that things are a certain way and a call soon afterwards says otherwise, they are Instantly Proven Wrong.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#WolverineWannabe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Here are some of the common features of a Wolverine Wannabe: See also Superman Substitute ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SupermanSubstitute"], Batman Parody, The Fantastic Faux, Spider-Man Send-Up, HULK MASH!-Up, Wonder Woman Wannabe and Captain Patriotic for other superhero expies. For actual wolverines, see Wicked Weasel and Bad Ol' Badger.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

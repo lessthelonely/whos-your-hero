@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#AccidentalMisnaming">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Alice is The Ditz ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheDitz"], The Fool, a Cloudcuckoolander… the point is, she's an idiot. And since she's an idiot, she can't remember Bob's name, even though she's known him for ages. She can try, but it's unlikely that she'll ever hit upon the right name—unless things have just gotten real. Maybe she likes him and just has an odd way of showing it. She may be a normal person, but even normal people get mixed up with names sometimes. The outcome is the same—she can't pin the name down. This may be a Running Gag. Better yet, maybe Bob is an alien ["https://tvtropes.org/pmwiki/pmwiki.php/Main/LawOfAlienNames"], Super Hero, or an otherworldly creature in general, with a strange and/or long name—how could she know it? Pronouncing My Name for You ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PronouncingMyNameForYou"] might occur if the accidental misnaming is a mispronunciation. Malicious Misnaming ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MaliciousMisnaming"] is a Sister Trope in which using the wrong name on purpose is a bullying tactic. If the misnaming is a one-off incident in an emotional moment, it's Wrong-Name Outburst ["https://tvtropes.org/pmwiki/pmwiki.php/Main/WrongNameOutburst"]. If The Fool genuinely thinks Person B is someone else, it's Thoroughly Mistaken Identity. If the name change is intentional, see Significant Name Shift. If it's specifically about Santa Claus' reindeer, see Dasher, Dancer, Prancer and Nixon. For out-of-universe examples, see Viewer Name Confusion. Compare and contrast Too Important to Remember You.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#ConflictingLoyalty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Many people have more than one thing they consider worthy of Undying Loyalty ["https://tvtropes.org/pmwiki/pmwiki.php/Main/UndyingLoyalty"]: religion, country, family and friends, promises, perhaps a cause or whatever the author imagines. If a character is lucky, these differing claims can actually reinforce one another. But what happens if they conflict? Then we have Conflicting Loyalty. Whichever the character chooses, he may regard it as Dirty Business ["https://tvtropes.org/pmwiki/pmwiki.php/Main/DirtyBusiness"]. Many characters try (and may or may not succeed) to Take a Third Option. If the character can use a technicality, loophole, metaphorical truth, or harmless lie to resolve the dilemma in a way that benefits (or at least avoids harm to) both sides, expect this to usually be a moral act from a moral character, regardless of whether or not it succeeds. Related to Sadistic Choice ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SadisticChoice"]. Compare Rebellious Rebel, Anti-Mutiny. Sometimes invokes Honor Before Reason. Super-Trope to Even Mooks Have Loved Ones and To Be Lawful or Good. May be caused by Double Consciousness.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

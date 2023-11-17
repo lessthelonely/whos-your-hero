@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#JerkJustifications">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>There are certain mentalities that create Jerkasses ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Jerkass"], or at least allow them to tolerate themselves. They come in many versions, but most of them boil down to one of a few justifications: Straw Nihilists ["https://tvtropes.org/pmwiki/pmwiki.php/Main/StrawNihilist"], Manipulative Bastards, and Jerkasses of every type will self-righteously spout one of these philosophies whenever called out on their hostility, arrogance, and general pissy behavior. Can overlap with Obliviously Evil if the jerk genuinely believes they are right to hurt others, instead of merely coming up with excuses to make themselves feel better. Just because an author believes this about a character doesn't mean that every sympathetic character in the story should view the character as a justified jerk. In real life, some people have a hard time dealing with people who act abrasively and are unlikely to know why they act like jerks in the first place. Having everyone make excuses for the character in the story itself may result in a Jerk Sue ["https://tvtropes.org/pmwiki/pmwiki.php/Main/JerkSue"]. When the fans do this on their own ["https://tvtropes.org/pmwiki/pmwiki.php/Main/JerkassDissonance"], a Draco in Leather Pants is born. See also What the Hell, Hero?, a frequent response to Jerk Justifications. If a character's Jerk Justifications are the result of painful experience, can result in a Jerkass Woobie.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

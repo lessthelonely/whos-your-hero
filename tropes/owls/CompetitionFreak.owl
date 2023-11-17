@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#CompetitionFreak">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>A character who has an extremely aggressive treatment of competitive events, ranging from important goals to even light-hearted pastimes ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SeriousBusiness"]. "It's just a game" will always go over this person's head as he or she insists on being the best at any minor challenge placed in front of them. As far as they're concerned, Second Place Is for Losers. They are a Sore Loser and not a humble winner, rubbing it in with Unsportsmanlike Gloating. While the trope is often Played for Laughs ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PlayedForLaughs"], serious interpretations can exist. In most cases, expect them to have an Inferiority Superiority Complex or Freudian Excuse as to why they constantly insist on proving themselves or being the best at everything they do. The Rival ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheRival"] is often a case issued against a single competitor. See also Blood Knight and "Stop Having Fun" Guys. If you really want to crank up the annoyance factor, combine with Scrub. May also overlap into X Must Not Win or Nobody Calls Me "Chicken"! The ultimate extreme of this (comedic or serious) is the character who makes such Serious Business ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SeriousBusiness"] competitions out of things that would not ordinarily be competitions at all. (Being the first to go down a flight of stairs or open a door for someone, etc.)</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

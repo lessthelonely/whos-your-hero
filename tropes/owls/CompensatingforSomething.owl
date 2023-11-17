@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#CompensatingforSomething">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Like building an Evil Tower of Ominousness ["https://tvtropes.org/pmwiki/pmwiki.php/Main/EvilTowerOfOminousness"] or wielding a BFS or BFG, there are just some things that have to make other characters wonder if a male character must be compensating for certain other inadequacies. Despite the joke, sometimes bigger really is better ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BiggerIsBetter"], in a non-Freudian way, especially in fights. In these cases, you're not Compensating for Something, you're sane. Usually. Theorized by some ["https://tvtropes.org/pmwiki/pmwiki.php/Main/EveryoneIsJesusInPurgatory"] to be the reason Heroes Prefer Swords. If you actually have a small penis ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TeenyWeenie"], it would unfortunately make you an Acceptable Target. See also Phallic Weapon ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PhallicWeapon"], Mid-Life Crisis Car. This can be Gender-Inverted, though rarely, if a woman is trying to compensate for something like A-Cup Angst by padding her breasts to invoke Buxom Beauty Standard or a ticking Biological Clock. And of course, a similar phenomenon can occur with male or female examples of The Napoleon, who often try to compensate for lack of inches in a different context (cf. Small Girl, Big Gun). The examples are limited to In-Universe ["https://tvtropes.org/pmwiki/pmwiki.php/Main/InUniverse"]. Please do not add your own speculations.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

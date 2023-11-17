@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#OpeningNarration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Usually, these monologues do not change much over the course of a series, though some shows do revise them from season to season. The whole concept is probably an artifact from the days of radio, when, lacking title graphics, shows needed a memorable speech at the beginning to identify themselves to listeners. Sometimes, a show's first episode will start with a "Cold Opening", another name for The Teaser ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheTeaser"], and in every episode thereafter the Opening Narration will take its place. This will only happen if said episode is a Welcome Episode or an Everyone Meets Everyone Premiere. Also becoming increasingly common in Animes is to use a clip montage of the respective episode with the show's main character(s) explaining the plot of the episode. Especially common for Speculative Fiction ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SpeculativeFiction"]; often because the assumption that Viewers Are Morons prevails. Also known as a prologue or a "saga sell", an opening narration is often used to 'set the scene' at the opening of a show that might be confusing for first-time viewers (Joss Whedon ["https://tvtropes.org/pmwiki/pmwiki.php/Creator/JossWhedon"] famously used one for Buffy the Vampire Slayer, as the show was initially a mid-season replacement and new viewers might not 'get' the concept). See Opening Monologue ["https://tvtropes.org/pmwiki/pmwiki.php/Main/OpeningMonologue"] when this trope is used for standalone works or exclusively at the beginning of a series. See also Opening Scroll and Rules Spiel. Contrast with Signing Off Catchphrase.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

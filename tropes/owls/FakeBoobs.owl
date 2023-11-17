@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#FakeBoobs">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Due to the Buxom Beauty Standard ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BuxomBeautyStandard"], some women are concerned with their cup sizes, so they try to increase them with padding or surgery. Usually used as a way to demonstrate A-Cup Angst, and as a method for Breast Expansion. Very commonly Played for Laughs. For someone who's a Cross Dresser ["https://tvtropes.org/pmwiki/pmwiki.php/Main/CrossDresser"] or Disguised in Drag, simply using two appropriately-sized balls or stuffing a bra will suffice, but store-bought fake breasts are also available. Sometimes when two girls disguise themselves as a tall woman in a trench coat ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TotemPoleTrench"], the folded-up legs of the top girl will be the bust. See also Pillow Pregnancy ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PillowPregnancy"]. Compare Compensating for Something and Fake Muscles and contrast Hidden Buxom. Often involved in a Boob-Based Gag.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

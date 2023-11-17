@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#OddFriendship">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>A friendship which develops between two characters that would seem unlikely to be friends, whether it's because of them having diametrically opposed personalities, holding beliefs that would normally get one to try to demonize the other, or some other quirks of their beings that would lead to them clashing. Through their friendship, they learn more about each other and about themselves. The characters in an Odd Friendship may have little to do with each other initially — or even begin as bitter enemies — and their friendship grows over time. Distinguished from an Odd Couple ["https://tvtropes.org/pmwiki/pmwiki.php/Main/OddCouple"] in that these are usually two characters in an ensemble show, or a regular character and a Recurrer; whereas an Odd Couple ["https://tvtropes.org/pmwiki/pmwiki.php/Main/OddCouple"] usually consists of the two main characters in a show. See also: Interspecies Friendship ["https://tvtropes.org/pmwiki/pmwiki.php/Main/InterspeciesFriendship"], Intergenerational Friendship, Interclass Friendship, Action Duo, Vitriolic Best Buds, Rude Hero, Nice Sidekick, School Forced Us Together, Loser Friend Puzzles Outsiders, Cool Kid-and-Loser Friendship, Monster and the Maiden and Predator-Prey Friendship which is a sub-trope Compare Friendly Enemy ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FriendlyEnemy"] and Fire-Forged Friends.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

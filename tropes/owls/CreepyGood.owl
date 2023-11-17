@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#CreepyGood">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>The good guys don't always have to be warm and cuddly, or even all that attractive for that matter. Sometimes, they're even downright scary ["https://tvtropes.org/pmwiki/pmwiki.php/Main/NightmareFuel"]. This trope mostly applies to Friendly Neighborhood Vampires ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FriendlyNeighborhoodVampire"], Noble Demons, Uncanny Valley Girls, Benevolent Abominations, Angelic Abominations, etc. Nonhuman characters get this a lot, but it can also apply to full humans who unnerve allies and audience members with their methods or mannerisms. It can also follow a Heel–Face Turn, if the character switching to the side of good retains some moral ambiguity or monstrous traits. Psycho Sidekicks and good-guy (or at least harmless) versions of Stalker with a Crush can fall under this, as well. Contrast Villain with Good Publicity ["https://tvtropes.org/pmwiki/pmwiki.php/Main/VillainWithGoodPublicity"], which is an inversion, Face–Monster Turn, in which a good character changes sides after becoming creepy, and Token Evil Teammate, where an evil or nominally evil (though not necessarily creepy) character works with the heroes without having a Heel–Face Turn. Creepy Awesome may also apply, especially in the case of particularly badass characters. Compare Good is Not Nice ["https://tvtropes.org/pmwiki/pmwiki.php/Main/GoodIsNotNice"], Good Is Not Soft, Face of a Thug, and Dark Is Not Evil, which are sister tropes, and the Nightmare Fuel Station Attendant, who is usually also Creepy Good (unless, of course, they're evil). If it's the main character who's Creepy Good, it's a case of Horrifying Hero or Terror Hero.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

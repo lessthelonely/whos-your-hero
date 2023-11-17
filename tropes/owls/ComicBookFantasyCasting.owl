@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#ComicBookFantasyCasting">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Sometimes in comics or animated shows, a character is made to look like a particular actor or other celebrity whom the artist imagines playing the character. This might be out of admiration for the actor because the character fits with the actor's well-known roles, or in the hope that the actor would be flattered and try to get the comic adapted as a movie. Or it might be unconscious on the author/artist's part. Fantasy casting can also occur in non-visual media such as (non-illustrated) novels but can be harder to spot unless Word of God ["https://tvtropes.org/pmwiki/pmwiki.php/Main/WordOfGod"] acknowledges it, or the character is closely based on a particular role the actor is associated with. If the resemblance is outright stated in the text, it's Textual Celebrity Resemblance ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TextualCelebrityResemblance"]. For when the character is a direct impression or parody of a celebrity's public persona, see No Celebrities Were Harmed. For when an animated character is designed to resemble the real-world voice actor, see Ink-Suit Actor. See also Hypothetical Casting, for where creators do this as Word of God without making it explicit in canon. Not the same thing as when a comic book or animation is spun-off from an earlier live-action film or TV show and the characters inevitably are drawn to look like the live-action actors, which would be "Reality Casting". However, sometimes there are borderline cases where a comic or animation is adapted into a live-action medium and artists start drawing a character to look like the actor in the adaptation ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Retcanon"].</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

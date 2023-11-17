@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#IApprovedThisMessage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>In the United States, a portion of the Bipartisan Campaign Reform Act of 2002, otherwise known as the McCain-Feingold Act, requires that a political candidate for a federal office - or the group that produced it - give "a statement by the candidate that identifies the candidate and states that the candidate has approved the communication." This means an ad has to say something like, "I'm Cole Rupt ["https://tvtropes.org/pmwiki/pmwiki.php/Main/StevenUlyssesPerhero"], and I approved this message." This only applies to candidates for Congress and the presidency.note Or, theoretically, candidates for vice president. But in practice, VP candidates simply act as Number Two to the presidential candidates, and never run their own separate campaigns. Thus, it'll always be the presidential candidate who "approves this message," even if their running mate is providing the sound bites for the ad. Though Ted Cruz and Carly Fiorina did run some "We approve this message" ads. It does not apply to candidates for state or local office, or to anything other than politicians. The provision was added so that political candidates would be less likely to fund attack ads or ads with questionable claims. However, that doesn't stop outside parties like interest groups from running their own ads: the NRA or AARP could run an ad that says "Cole Rupt is a brain-eating alien," but it would obviously not have opposing candidate Bea Ribe's "approval." These must be followed by a statement along the lines of "Paid for by the Republicratic National Committee", or "The S.P.E.B.S.Q.S.A. ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FunWithAcronyms"]note Society for the Preservation and Encouragement of Barber Shop Quartet Singing in America, Inc. has paid for this message and is responsible for its content".</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

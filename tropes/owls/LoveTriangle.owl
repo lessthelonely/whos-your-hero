@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#LoveTriangle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Alice is in love with Bob, but Bob is in love with Charlie, while Charlie is in love with Alice, i.e. a love triangle. Well, that's just one of many versions ["https://tvtropes.org/pmwiki/pmwiki.php/Analysis/LoveTriangle"]. A Love Triangle commonly involves three people, love, and decisions. It can be dramatic, or it can result in Wacky Hijinx. Love triangles are usually resolved in one of four main ways: Sometimes a Love Triangle can come to involve a fourth person, while still ultimately being called a "triangle." ["https://tvtropes.org/pmwiki/pmwiki.php/Main/NonindicativeName"] But more complications that result from widening it can be explored further in a Love Dodecahedron. Expect anyone involved in the love triangle to become a Jealous Romantic Witness ["https://tvtropes.org/pmwiki/pmwiki.php/Main/JealousRomanticWitness"] when they see their romantic rival and object of affection being intimate in one way or another. Very common in Soap Opera ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SoapOpera"]. Compare Friend Versus Lover and Cock Fight.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

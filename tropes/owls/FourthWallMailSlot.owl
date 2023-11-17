@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#FourthWallMailSlot">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Sometimes, characters will answer questions from readers (though sometimes the questions are only meant to seem as if they came from readers, such as in Family Guy ["https://tvtropes.org/pmwiki/pmwiki.php/WesternAnimation/FamilyGuy"]), as if the Fourth Wall had a mail slot. This is particularly common with Webcomics, since the nature of the medium makes it easy to set up multiple pathways for audience feedback, such as a Shout Box, a blog-powered News Post, or a Message Board. One reason that webcomickers have given for answering questions in-character is to not give as many spoilers, since then the answers are limited to what the character knows. The Fourth-Wall Mail Slot is also a handy gimmick for sketching quick Filler Strips ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FillerStrips"] to prevent Schedule Slip, though many webcomickers keep it separate, as a bonus extra, many (such as El Goonish Shive) include it as a regular end-of-issue (or story-arc) feature. Some don't even make the in-character Q&amp;A into a comic, leaving it as plain text instead, or with just a small illustration. Occasionally this is used to reveal All There in the Manual-type information about the storyline that hasn't been mentioned in the comic and may not ever be. Some art-based Ask Blogs ["https://tvtropes.org/pmwiki/pmwiki.php/Main/CharacterBlog"] are basically if this took over the entire comic. Naturally, given all these advantages, it's not surprising that webcomic artists will sometimes blatantly make up stuff to push through the slot. ...wait ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ThatCameOutWrong"]. See also No Fourth Wall ["https://tvtropes.org/pmwiki/pmwiki.php/Main/NoFourthWall"], Postmodernism, Character Blog, Official Fan-Submitted Content, Letters to the Editor.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

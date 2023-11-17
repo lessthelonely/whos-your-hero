@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#JunkieParent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Someone who abuses drugs and is also a parent. They're usually a character's parent, but sometimes they're the main character themself. Unlike its sister trope the Alcoholic Parent ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AlcoholicParent"], this is almost never Played for Laughs (and it's Black Comedy when it is). These types of parents are far more likely to be portrayed as Abusive Parents or neglectful parents than alcoholic parents are. Also, unlike Alcoholic Parent ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AlcoholicParent"] (which leans towards fathers), this trope is more unisex (with a lean towards mothers). Sister trope to Alcoholic Parent ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AlcoholicParent"]. Usually a subtrope of Struggling Single Mother, and often overlaps with Single Mom Stripper. See also Addled Addict.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

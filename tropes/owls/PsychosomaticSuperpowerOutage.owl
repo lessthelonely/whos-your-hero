@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#PsychosomaticSuperpowerOutage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Super-powers are frequently linked to one's mental state. When the character has unresolved emotional issues, his or her superpowers can stop working. This is universally true of explicitly Psychoactive Powers ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PsychoactivePowers"], but this also can apply to powers that don't normally seem to have a psychoactive component. Sometimes, there's really nothing wrong with the character's powers; he's just so out of emotional whack that he just can't bring himself to use them. A Psychosomatic Superpower Outage is often precipitated by loss of self-confidence, loss of faith in one's cause, unresolved emotional conflict, a Freak Out ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FreakOut"] or extreme fear.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

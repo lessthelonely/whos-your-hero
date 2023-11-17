@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#KidSidekick">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>A character, often an adult or sometimes teenager, has a considerably younger Sidekick ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Sidekick"]. Traditionally the kid will often act as The Watson for the main character, and/or as someone for younger audiences to identify with. Sometimes the kid acts as a Morality Pet or as a Wish-Fulfillment personification, which goes some way to explaining the implausibility of a responsible adult putting a young child in dangerous situations. Sometimes the sidekick will be a Teen Genius or Child Prodigy in an attempt to justify their presence, or even a Cute Bruiser. Other times, they're The Load and a Damsel in Distress. May overlap with Junior Counterpart. Compare Tagalong Kid ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TagalongKid"], Kid-Appeal Character, Bratty Half-Pint, and Baker Street Regular. Contrast Older Sidekick.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

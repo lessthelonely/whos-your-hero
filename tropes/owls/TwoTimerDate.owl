@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#TwoTimerDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>A character schedules dates with two different people at the same time. But it's not like you can be two places at once, right? Rather than canceling one of the dates, the character tries to attend both simultaneously, constantly running back and forth between the two locations while making up various reasons to excuse themselves to avoid letting either party know where they are going. This ploy, which is most often used in comedies, is pretty much guaranteed not to end well. Can also apply to other scheduling conflicts, where the character tries to juggle one event that he's required to attend with the more personal event that he really wants to attend. If one of these scenes has a dress code ["https://tvtropes.org/pmwiki/pmwiki.php/Main/DressCode"] of some form, expect a character to be caught wearing the outfit for one event at the other. Alternatively, they may employ a lookalike (i.e. Twin Switch ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TwinSwitch"] or Identical Stranger) for one of the dates/events.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

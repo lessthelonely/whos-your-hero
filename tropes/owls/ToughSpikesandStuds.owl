@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#ToughSpikesandStuds">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Spiked/studded accessories and clothes are commonly worn by tough guys and gals in fiction. There is just something about the image of a character sporting a band of spikes or studs around their bodies that give them an intimidating, aggressive, or rebellious image. Collars and wristbands are the most common forms of this trope but it can also include gloves, belts, jackets, and footwear. These can be worn by both heroes and villains alike. A heroic character who wears these is likely to be an Anti-Hero ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AntiHero"], a Badass Biker, a Delinquent, a Goth, a Dominatrix, a '90s Anti-Hero ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AntiHero"], or The Quincy Punk. Spiked wristbands may also be worn by a Barbaric Bully. Characters who wear Tough Spikes and Studs may express their toughness in various ways. Some may be loud and aggressive, others more reserved and stoic, and a few may choose to only reveal their toughness when the situation calls for it. Spiked collars are quite common in cartoon bulldog characters. Sister Trope ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SisterTrope"] to Badass Longcoat, Scarf of Asskicking, Sleeves Are for Wimps and Badasses Wear Bandanas. May overlap with Spikes of Villainy</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

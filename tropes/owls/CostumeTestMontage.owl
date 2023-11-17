@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#CostumeTestMontage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Someone is trying to look good for something, a date, a meeting, long-lost relative, whatever. He decides he needs to wear something special, but what? So the character goes through a dozen different costumes in front of the mirror. He or she will often try a funny one-liner matching the costume's persona, or just as often dismiss it with a quip, usually "too butch" or "too much" (in which case the next one is "too little"). Someone else might be giving out the running commentary. Also, depending on the nature of the work, a prime opportunity for a Shout-Out ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ShoutOut"] or Mythology Gag when one of the outfits happens to be an Iconic Outfit of somebody else. The Shopping Montage ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ShoppingMontage"] and the Makeover Montage may include or consist of a scene like this. See also Improbable Hairstyle Sequence. Compare Beta Outfit ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BetaOutfit"]. See also Fashion-Shop Fashion Show ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FashionShopFashionShow"] (which draws on the "models on the catwalk" presentation).</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

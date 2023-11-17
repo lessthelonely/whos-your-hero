@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#BadassTransplant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>The Badass Transplant is when a character's awesome abilities aren't innate, but equipped. The hallmark of a Badass Transplant is that the part transplanted is significantly more badass than the rest of him, or even the source of his abilities entirely, and not something he obtained naturally. It might be mechanical ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ArtificialLimbs"], magical, or even possessed. If the transplant is from a particularly powerful entity, it might result in a Deadly Upgrade ["https://tvtropes.org/pmwiki/pmwiki.php/Main/DeadlyUpgrade"], a Superpowered Evil Side, or turn on its wielder. Frequent overlaps with Artificial Limbs, Artificial Limbs Are Stronger, Arm Cannon, and Superhuman Transfusion. Acquiring one may be the motive for someone Working for a Body Upgrade. Although organic parts almost always apply, weapon upgrades don't unless used previously by a proven badass. (For example, Mega Man X ["https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/MegaManX"] getting an upgrade isn't a Badass Transplant, but getting Zero's Z-Saber is; the saber itself is badass.)</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

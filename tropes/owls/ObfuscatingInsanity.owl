@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#ObfuscatingInsanity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>It's pretty much a given that no one takes crazy people seriously. It's also a given that a lot of people give crazy people a wide berth lest they flip out on them. A lot of people are aware of this and choose to take advantage of it, although their reasons for doing so vary from one character to the next. Sometimes the apparent nutcase is actually perfectly sane, other times they actually are a little on the Cloudcuckoolander ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Cloudcuckoolander"] side (or maybe more than a little) but are aware of their eccentricity and deliberately play it up to the Nth degree so that they appear to be far crazier than they actually are. If they are not the point-of-view character, the question may be left open. Not to be confused with Insanity Defense ["https://tvtropes.org/pmwiki/pmwiki.php/Main/InsanityDefense"]. Compare Obfuscating Stupidity, where people pretend to be dumb instead of crazy. Contrast Mask of Sanity for when someone actually is insane, but able to hide that fact well. Often times, this is a Reveal Trope ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheReveal"], so expect unmarked spoilers!</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

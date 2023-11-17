@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#NonHeteronormativeSociety">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>There are usually three reasons why this trope happens: Omegaverse fiction is an entire sub-genre of literature and (especially) fanfiction that portrays societies where humans have a secondary sex aside from male and female, that being alphas, betas, and omegas. This kind of literature often focuses on the romance between two men, usually one alpha and one omega, and very often portray the attraction between same-sex partners as entirely normal in that setting. There aren't exactly clear rules about how a society of this type works, and every author is free to make it their own, so some actually do address a similar version of homophobia which is the attraction between people of the same secondary gender rather than their primary ones. Related to Speculative Fiction LGBT ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SpeculativeFictionLGBT"].</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

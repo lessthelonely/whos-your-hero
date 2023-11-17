@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#WaifFu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>An Action Girl ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ActionGirl"] appears otherwise slender, svelte, or "waifish", with a near-total lack of visible musculature. Despite this, they are capable of holding their own or even overpowering warriors many times their size, while utilizing "Waif-Fu", a ballet-esque fighting style that goes out of its way to show off their curves and feminine assets. This is a tiny bit Truth in Television ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TruthInTelevision"] as women, even ones with big looking muscle, usually can't match men for upper body strength and speed. However, women are often more flexible, so it makes some sense they might want to use that advantage. This still doesn't eliminate the lack of mass and power thus a woman's hits won't pack as much of a punch (the reason why weight categories exist in combat sports). Related tropes: A subtrope of Pintsized Powerhouse ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PintsizedPowerhouse"]. Often used by Little Miss Badass, Mama Bear, Weak, but Skilled, Cute Bruiser, and Lady of War. Contrast and compare with Amazonian Beauty, Brawn Hilda, Statuesque Stunner, Glacier Waif who uses a completely different style of combat and Vasquez Always Dies where the females who do look like they can wipe the floor with you ... don't. The female version of Charles Atlas Superpower and often associated with Muscles Are Meaningless and Awesomeness by Analysis. Normally used with a lot of She-Fu acrobatics and turns, implying mystic martial arts. Not to be confused with wai ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PerverseSexualLust"]fu, although there definitely is plenty of overlap there.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

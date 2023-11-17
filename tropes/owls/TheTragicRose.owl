@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#TheTragicRose">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>In contrast to its strictly romantic usage ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FlowersOfRomance"], roses have long been a dual symbol of beauty and tragedy. The reasons for this are evident in the rose itself. The soft, fragrant petals are outwardly very beautiful, making it one of the most famous flowers in the world and perfect for romantic occasions. On the other hand, the stem of the rose is covered with sharp thorns, causing pain to careless hands. The colors of the rose can further this association since they can be any shade from a deep blood red to an innocent white. This trope is for characters and situations where the pleasure/pain duality is particularly evident. Frequently, a character with the name Rose is portrayed as being beautiful yet ends up with a life full of trauma and tragedy ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheWoobie"]. In other cases, roses can be used to symbolize any character or event with this duality. The trope can also be invoked by characters who adopt the rose as a symbol for this very reason. If you see a bunch of red roses in a scene and it doesn't look like anything romantic will be happening, expect tragedy. Gothic Horror uses this trope frequently in all variations; a blood-covered rose is a very popular, almost iconic, image of the genre. Cherry Blossoms ["https://tvtropes.org/pmwiki/pmwiki.php/Main/CherryBlossoms"] are used similarly in Japan. For roses used in a romantic setting, see Something about a Rose. Not to be confused with The Poppy, a red flower which represents wartime tragedy (and valor).</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>
