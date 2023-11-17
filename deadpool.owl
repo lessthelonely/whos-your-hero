@@ -199,18 +199,6 @@
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#videoGames">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
-  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#hasWeaponsEquipment">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
-  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-</owl:Class>
-
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#tropeDescription">
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -2037,11 +2025,6 @@
   <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kevin Fiege would confirm that Deadpool 3 was greenlit as both a Marvel Cinematic Universe production and R-rated. Soon after, Shawn Levy, who collaborated with Reynolds before, was announced as the director, although no date or production start was given.</hero:mediaDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#media2">
-  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Film</hero:mediaType>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#XMenTheAnimatedSeries">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animation</hero:mediaType>
@@ -2076,11 +2059,6 @@
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animation</hero:mediaType>
   <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deadpool appears in the episode "It's Deadpool, Again" where he is hired to kidnap Hurricane and turn him over to the Masters of Evil. He was voiced by Takehito Koyasu in the Japanese original and by Jason Spisak in the English dub.</hero:mediaDescription>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#media3">
-  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animation</hero:mediaType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#XMenLegendsIIRiseofApocalypse">
@@ -2153,11 +2131,6 @@
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Games</hero:mediaType>
   <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deadpool returns in the third Ultimate Alliance game, voiced again by Nolan North. He is affiliated with the X-Men in this game, and enters the plot after the Brotherhood's attack on the Xavier Institute ruins the tacos he was preparing.</hero:mediaDescription>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#media4">
-  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Games</hero:mediaType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ToyBiz">

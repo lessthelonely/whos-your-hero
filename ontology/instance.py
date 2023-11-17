@@ -117,6 +117,8 @@ def load_other_media(names):
         for line in range(len(file_contents)):
             if line in skip_lines:
                 continue
+            if file_contents[line].strip() == "":
+                continue
             if line == 0:
                 processed_name = file_contents[line + 1].strip().replace(" ", "").replace(":", "").replace("?", "").replace("!", "").replace(".", "").replace(",", "").replace("'", "").replace("\"", "").replace("(", "").replace(")", "").replace("-", "").replace("’", "")
                 character_media = Media(processed_name) # title

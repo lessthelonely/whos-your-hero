@@ -199,18 +199,6 @@
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
 
-<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#videoGames">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
-  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-</owl:Class>
-
-<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#hasWeaponsEquipment">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
-  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-</owl:Class>
-
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#tropeDescription">
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1787,11 +1775,6 @@
   <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emma appears as one of the main characters in the series, voiced by Kari Wahlgren.Uninvited, Emma Frost first appears at the mansion's front door seeking to join the X-Men. Wolverine refuses her, but is eventually forced to accept her into the team since she is the only telepath available and therefore the only one able to operate Cerebro. She successfully located Charles Xavier's lifeless body in the heart of Magneto's Genosha, but later attempts to locate Jean Grey were less successful. In an effort to remain on the team she informs Cyclops that 'given time I could locate her, but if [Wolverine] has his way I'll be gone tomorrow'. Frost is intelligent and tactical, and is an extremely powerful telepath. Her first telepathic fight as an X-Man was against the Shadow King. Storm had been manipulated into believing that Africa was burning and used her mutant powers to put the fires out. However, in reality she was tearing the country apart with rain storms and tornadoes.It was Emma's telepathic powers that saved Storm's life, the whole continent of Africa, and eventually defeat the Shadow King. Later on she was able to disable Psylocke's telepathic attacks with relative ease. Despite Wolverine's initial distrust of Frost, he has grown to accept her as a permanent member of the team.Her battle against the Shadow King and her success to mend some of Wolverine's memories of his time in Weapon X have earned his respect. However, she is extremely secretive and on one occasion lied to Wolverine about Forge's availability. She also appears to be fond of Cyclops, often watching him from afar. Cyclops is still depressed for the loss of Jean Grey. Emma offered to delete his memories of Jean and make him normal again.Emma betrays the X-Men after Jean is found. It is revealed that she has been working for the Inner Circle in an attempt to destroy the Phoenix Force. The Inner Circle then double crosses Emma and tries to use the Phoenix for their own ends. It, however proves too powerful for them to control. When the Phoenix Force is released and is searching for Jean, Emma traps it in her body, transforms into diamond and projects it into the atmosphere where it cannot find a host. She manages to ask Cyclops to forgive her before shattering and seemingly dies.X-Men (2012)In the Japanese X-Men anime, Emma is found to by the Astonishing X-Men (Beast, Cyclops, Logan and Storm) in a pod next to Armor in the U-Men Lab. It is revealed that Emma was kidnapped by the U-Men while searching for Hisako, her missing student. After copping the blame for forcing Jean Grey to commit suicide as Dark Phoenix, Emma joins the X-Men as to continue her tutelage of Armor. She even goes as far as allowing Xavier to view her mind and broadcast her life to the X-Men to gain Cyclops' trust.As the series goes on she is shown to care for younger mutants and enjoys teaching the next generation, a more motherly aspect - but still retains her ever-observant and cunning personality.Whilst Emma is shown to use both her Telepathy and Diamond Form, she lacks any of the hand-to-hand combat training and relies heavily on her Diamond Form to take a more defensive position in the team. She is voiced by Kaori Yamagata in the Japanese version, and by Ali Hillis in the English dub.</hero:mediaDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#media5">
-  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animation</hero:mediaType>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#XMenOriginsWolverine">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Film</hero:mediaType>
@@ -1802,11 +1785,6 @@
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Film</hero:mediaType>
   <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emma Frost appears in the 2011 film, X-Men: First Class and is portrayed by January Jones. She is shown to be the White Queen of the Hellfire Club lead by Sebastian Shaw. She is first shown when Moria MacTaggert sneaks into the Hellfire Club's quarters looking for Colonel Hendry. She is next seen going to meet with a Russian general who Shaw is supposed to meet. Professor Xavier and Magneto also infiltrate the building Emma is in and confront her. She is then captured and taken to the CIA headquarters. Months later, Magneto and his Brotherhood free her from her prison and ask her to join them, to which she agrees. She displays incredibly impressive telepathy defeating and blocking out Charles Xavier several times. She also possesses her diamond form which seems to augment her strength (she was able to send Erik flying into the sea with a single blow) and renders her immune to telepathy. However it does not seem to provide her any physical durability as Erik almost killed her by strangling her with the metal railing of a bed while she was in diamond form (a close up clearly shows it beginning to shatter around the area the pressure was applied, her neck) and Charles had to persuade him not to kill her, which he surely would have. In this incarnation, Emma seems to play more of a henchman-type second-in-command role rather than more of an equal power player as she was in the comics when she was the White Queen.</hero:mediaDescription>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#media6">
-  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Film</hero:mediaType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#XMenKonami">
@@ -1885,11 +1863,6 @@
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Games</hero:mediaType>
   <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emma is a playable character in the game. She is a Mutant type of champion.</hero:mediaDescription>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#media7">
-  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Games</hero:mediaType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ToyBiz">
