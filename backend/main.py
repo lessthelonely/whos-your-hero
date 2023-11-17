@@ -122,6 +122,40 @@ def get_rdf(file_name:str):
 
     return data
 
+#get media
+@app.get("/rdf-character/{file_name}/media")
+def get_rdf(file_name:str):
+    # Replace this with your actual RDF data and SPARQL queries
+    g = Graph()
+    file_path = f"{file_name}.owl"
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?media ?type ?description
+    WHERE {{
+        ?media rdf:type hero:Media.
+        OPTIONAL {{ ?media hero:mediaType ?type. }}
+        OPTIONAL {{ ?media hero:mediaDescription ?description. }}
+    }}
+
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        media = row.media.split('#')[1]
+        media_type = row.type
+        media_description = row.description
+
+        data[media] = {
+            "mediaType": media_type,
+            "mediaDescription": media_description,
+        }
+
+    return data
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)

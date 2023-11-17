@@ -1084,11 +1084,6 @@
   <hero:mediaDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the season one finale, "The Savage Time," Cassandra makes a cameo appearance in an alternate future timeline, alongside Dick Grayson, Tim Drake, and Barbara Gordon.</hero:mediaDescription>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#media1">
-  <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animation</hero:mediaType>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BatmanDarkTomorrow">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Games</hero:mediaType>
