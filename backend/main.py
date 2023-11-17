@@ -96,6 +96,32 @@ def get_rdf(file_name:str):
 
     return data
 
+#get character's tropes
+@app.get("/rdf-character/{file_name}/tropes")
+def get_rdf(file_name:str):
+    # Replace this with your actual RDF data and SPARQL queries
+    g = Graph()
+    file_path = f"{file_name}.owl"
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?trope ?description
+    WHERE {{
+        ?trope rdf:type hero:Trope.
+        ?trope hero:tropeDescription ?description.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        trope_name = row['trope'].split('#')[1]
+        data[trope_name] = row['description']
+
+    return data
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
