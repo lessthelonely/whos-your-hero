@@ -657,5 +657,40 @@ def get_media(file_name:str):
     return data
 
 
+#get shared values of a trope that various characters might have
+@app.get("/rdf-all/trope/{trope_name}")
+def get_trope_descriptions(trope_name: str):
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+
+    query = f"""
+        SELECT ?belongsTo ?tropeDescription
+        WHERE {{
+            ?trope rdf:type hero:Trope.
+            ?trope hero:belongsTo ?belongsTo.
+            ?trope hero:tropeDescription ?tropeDescription.
+            FILTER (?trope = hero:{trope_name})
+        }}
+    """
+
+    results = list(g.query(query))
+    data = {}
+
+    if len(results) > 0:
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        tropeDescription_list = [row.tropeDescription.toPython() for row in results]
+
+        offset = 0
+        for i in range(len(belongsTo_list)):
+            if belongsTo_list[i] in data:
+                offset += 1
+                continue
+
+            data[belongsTo_list[i]] = tropeDescription_list[i - offset]
+
+    return data
+
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
