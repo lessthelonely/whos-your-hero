@@ -691,6 +691,42 @@ def get_trope_descriptions(trope_name: str):
 
     return data
 
+#get shared values of a storyline that various characters might have
+#OriginalSin is a good example
+@app.get("/rdf-all/storyArc/{story_name}")
+def get_story_descriptions(story_name: str):
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+
+    query = f"""
+        SELECT ?belongsTo ?storyDescription
+        WHERE {{
+            ?story rdf:type hero:Story.
+            ?story hero:belongsTo ?belongsTo.
+            ?story hero:storyDescription ?storyDescription.
+            FILTER (?story = hero:{story_name})
+        }}
+    """
+
+    results = list(g.query(query))
+    data = {}
+
+    if len(results) > 0:
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        storyDescription_list = [row.storyDescription.toPython() for row in results]
+
+        offset = 0
+        for i in range(len(belongsTo_list)):
+            if belongsTo_list[i] in data:
+                offset += 1
+                continue
+
+            data[belongsTo_list[i]] = storyDescription_list[i - offset]
+
+    return data
+
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
