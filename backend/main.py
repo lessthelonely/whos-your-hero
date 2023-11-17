@@ -726,6 +726,40 @@ def get_story_descriptions(story_name: str):
 
     return data
 
+#get shared values of a power that various characters might have
+#Intellect is a good example
+@app.get("/rdf-all/powers/{power_name}")
+def get_story_descriptions(power_name: str):
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+
+    query = f"""
+        SELECT ?belongsTo ?powerDescription
+        WHERE {{
+            ?power rdf:type hero:Power.
+            ?power hero:belongsTo ?belongsTo.
+            ?power hero:powerDescription ?powerDescription.
+            FILTER (?power = hero:{power_name})
+        }}
+    """
+
+    results = list(g.query(query))
+    data = {}
+
+    if len(results) > 0:
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        powerDescription_list = [row.powerDescription.toPython() for row in results]
+
+        offset = 0
+        for i in range(len(belongsTo_list)):
+            if belongsTo_list[i] in data:
+                offset += 1
+                continue
+
+            data[belongsTo_list[i]] = powerDescription_list[i - offset]
+
+    return data
 
 
 if __name__ == "__main__":
