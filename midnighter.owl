@@ -205,6 +205,16 @@
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
 
+<owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+</owl:Class>
+
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#hasTrope">
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <rdfs:range rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
@@ -329,7 +339,6 @@
   <hero:realName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lucas Trent</hero:realName>
   <hero:summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midnighter is an augmented hero with superhuman physical abilities and the power to run through thousands of fight scenarios in his head before a single punch is thrown. Although he's one of the good guys, Midnighter enjoys violence and brutality and never feels more alive than when he's in the middle of a bloody brawl.</hero:summary>
   <hero:superName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midnighter</hero:superName>
-  <hero:isMan rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hero:isMan>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DaylighterDaylighter">
@@ -345,358 +354,429 @@
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheAuthority">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">However, it was not to be. Less than a year after Apollo and Midnighter's retirement, nearly the entire Stormwatch team was slaughtered in an Aliens/Stormwatch Crossover. Jenny Sparks would develop her vision for a new team, known as the Authority, and she approached Apollo and Midnighter about joining. Reluctantly (and because of Apollo), Midnighter agreed. It was then that he would take his place as "Night's Bringer of War," on a team consisting of Apollo, Swift, Jack Hawksmoor, the Engineer, the Doctor, and Jenny Sparks. His relationship with Apollo would only be hinted at until the Regis story arc, in which it was confirmed they were a couple.Of the many foes Midnighter faced with the Authority perhaps the most life-altering was the very governments they sought to improve. At one point, the political powers of Earth attempted to overpower the Authority and replace them with The New Authority, consisting of Surgeon, Teuton, Machine, Last Call, Rush, Street, and Union Jack. Of his team members, only Midnighter (along with baby Jenny Quantum) managed to escape capture and evade detection. His skills would ultimately free and save all the other original members of the Authority, though it very nearly cost him his life. Midnighter is notable for being one of the few gay superheroes in print. After his near death at the hands of government creation Seth (where even his backup heart was ripped from his chest), he married his longtime partner, Apollo, in a civil service on the The Carrier. Together, they adopted the reincarnation of Jenny Sparks, Jenny Quantum, as their daughter.Recently, even this happiness has been short lived. Midnighter was manipulated into believing that an Apollo from the future contacted him to tell him how the the Authority would ultimately become the very world oppressors they sought to overcome. This information prompted Midnighter to leave the team, as well as his husband and daughter, and to work alone for a time. However, it was discovered he was being controlled by a still-living Henry Bendix, who then set him in battle against his previous team members after getting on board The Carrier. Fortunately, Bendix's control over Midnighter was broken by the combined efforts of Jenny Quantum and Engineer, freeing him to once again join the team and be with Apollo.</hero:storyDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TimeTraveling">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midnighter currently has his own series in which he works apart from The Authority. In the first three issues he was kidnapped and forced to travel back in time to kill Hitler by a man named Paulus who replaced his second heart with a remote controlled bomb. A simple task that got very complicated when few officers from Temporal Police Department tried to stop him. He was captured by them, but forced their ship to crash in 1945. He teamed with them to get back to his time where he threatened Paulus with the death of his younger self. He then battles a mad scientist who experimented on stray animals. He defeated him and returned a missing cat to a young girl who asked for his help. He then had the scientist experiment on criminals he captured and then adopted a cyborg dog from the scientist.</hero:storyDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MidnighterRememberHisPast">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Midnighter became increasingly unhappy with not knowing his original identity or even remembering a normal human life, so Jenny Quantum helped a hacker friend of the Midnighter's discover that his true name was Lucas Trent, born in Harmony, Indiana on July 14, 1967. When the Midnighter tried returning to his hometown and his old identity, he ended up battling paramilitary superhumans who wanted to take over America. But he also became certain he never had been Lucas Trent, because Trent was remembered by everyone as a nice and decent man and the Midnighter knew himself to be a gleeful killer through and through. To Jenny's surprise, however, he wasn't angry with her for the deception; instead, he returned to Harmony to impersonate Trent further and practice being a normal person in a normal daily life. He also recently teamed up with the hero Grifter.</hero:storyDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WorldsEnd">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Due to the events following the assault by clones of the High the planet is now in a ruined state. Midnighter along with the rest of the Authority have been stranded in London (now Unlondon) due to the death of the Carrier. He spends his time bringing refugees to the Carrier's corpse as it is the closest thing to a safe location. He has to protect them from several threats such as diseased super beings called Incubites. When Apollo is infected by the Warhol virus (now calling itself the Burn), he attacks the Authority, seeking to use the doors to the Bleed as a way of spreading the Burn throughout the multiverse. The team manages to freeze him in order to prevent this from happening. Midnighter has a dream where a Century Baby named Gaia asks him to find her, telling him that she knows how to save Apollo. When he reaches the island that Gaia is stranded on, he finds himself under attack by a god-like force of nature called the Green Man, who turns out to be the former Doctor driven insane by the planet's demise. With the help of the team, Gaia manages to take control of the island and subdue the Doctor so that she can heal him. She gives Midnighter a magical apple and tells him to feed it to the infected Apollo. When he does so, Apollo is cleansed of the Burn and restored to normal.</hero:storyDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheDarkSide">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stormwatch tries to convince Apollo to join their team, however Apollo is reluctant to do so and that is when Midnighter appears and dispatches the three Stormwatch members that were there, namely Martian Manhunter, Jack Hawksmoor and the Projectionist. He then reveals that he has been following Apollo for quite some time now and has taken an interest upon him because of his power set and the way that he deals with threats. He then offers him a deal of partnership. Martian Manhunter then reveals that he was pretending to be out cold so that he could get a grasp of the situation and the threat presented, and tells the duo that Stormwatch could use both Apollo and Midnighter. He explains that Stormwatch is not in fact a regular superhero team and that the team has little qualms with killing.During this time Adam-One shows up through a door and offers Midnighter a place on the team as well, telling him that his skills are wasted against thugs and criminals when he could be defending the planet with Stormwatch. However, at the same time that this was happening Harry Tanner was up on the moon trying to deal with a alien threat, called the Scourge of Worlds that sent pieces of the moon as meteorites into Earth's atmosphere. This cut short the conversation and Apollo agreed to go deal with the meteors while Midnighter went to deal with a fallen meteor that turned into a rampaging antibody. When they arrived at the scene the antibody proved troublesome and absorbed all the members of Stormwatch present, with the exception of Midnighter. Apollo soon joins him and the two of them, in conjuction with the Projectionist [who was at the base] manage to come up with a successful plan to free their 'team members'. With this done, it allowed Hawksmoor to lead half of the team into an ancient formerly-underground city called Alba Umbra and from there allow Jenny Quantum to power up one of the cities' artifacts to turn the monster into glass.When the team returns to the Eye they discover that the Shadow Cabinet has chosen the Projectionist to be Stormwatch's new leader. While this is going on, Apollo and Midnighter slip away to explore the HQ. Midnighter tells Apollo that the two of them would be more effective together than as components of Stormwatch, since their goals differ greatly from the team's. There is a sudden emergency distress signal from hyperspace, and Apollo leaves to investigate it. Midnighter realizes that the emergency was just a distraction orchestrated by Harry Tanner so that he could steal the Stormwatch data caches. The two fight, with Tanner struggling to land a blow because of Midnighter's ability to predict every one of his moves. Just then, they are interrupted by Projectionist, whom Harry grabs and pulls into hyperspace with him, escaping after setting off a bomb on the alien horn that destroys the Eye. The force of the explosion throws Midnighter into hyperspace, where he lingers for a few death-defying moments until he is rescued by Apollo and taken back to the reformed Eye to be treated for his exposure to the hazardous environs of hyperspace. A short while later, he signs up with Stormwatch after a conversation with the Engineer, managing to persuade Apollo to join as well.</hero:storyDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MidnighterAttacksGrifter">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In his first mission as a member of Stormwatch, Midnighter is tasked with investigating a strange disturbance originating from the wreckage of the Eye in the Himalayas. When he arrives on site, he discovers that Cole Cash aka Grifter, the world's most wanted man, has also been investigating the crash. When Grifter lets slip that he knows about the Daemonite invasion of Earth, Midnighter attacks him, telling him that he cannot allow Grifter to live now that he knows what was supposed to be privileged information. Grifter struggles to fend off the attack, and manages to stun Midnighter by setting off a flare in his face. But even while temporarily blinded, Midnighter is still able to outmatch Grifter, who falls into a crevasse in the snow and is presumed dead (though he manages to save himself at the last moment). Finding nothing of significance in the wreckage, Midnighter opens a door to the Eye and leaves the Himalayas. After he leaves, the prisoner of the Eye slowly reveals himself: the Daemonite known as Helspont, who has plans for the invasion of Earth, plans that involve none other than Superman himself.</hero:storyDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheRiseofTheDemon">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midnighter convinces Apollo to accompany him to London, supposedly on a date. However, a fight breaks out, and it is revealed Midnighter had other things in mind. It turns out that Midnighter used to call London his home and served as it's protector. A nearby apartment building was a hotspot for strange happenings, which he was never able to resolve, and he came back to check up on things. This recent fight is just the most recent in a long line of disturbing and violent occurences in the building, including murder, rape, and torture. He and Apollo suit up to get to the bottom of things, and come across a boy named Lazarus scrawling pictures of demons on the walls using his parent's blood. As they enter the room, the boy, apparently unable to hold it back any longer, calls forth the demon Etrigan. Turns out he had been buried under the building, and it was his influence causing all the violence in the area. Midnighter attacks Etrigan, thinking he can take him while he's still weak, but Etrigan knocks him out with one punch. Apollo, thinking Midnighter dead, angrily attacks Etrigan, until the rest of Stormwatch shows up. Midnighter gets up, not dead after all, and joins in the attack, until they are able to drive Etrigan off. Apollo and Midnighter happily reunite after the fight is over, only to have the Engineer announce that a new rule is going into effect forbidding any romantic relationships between members. Apollo and Midnighter decide later to ignore the rule. Apollo suggests leaving Stormwatch together, but Midnighter declines, saying he feels he's found a home with Stormwatch and that he feels he needs the structure they provide.</hero:storyDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Betrayal">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Since escaping from The Eye after their last encounter, Harry Tanner set up a base in Antarctica, while putting together an elaborate plan to take down Stormwatch from the inside. He has a special plan in mind for Midnighter, however.His plan involves tricking small time criminal The Fox into acting as a sort of dimensional portal, which Harry uses to acquire technology needed to disguise himself as one of the Shadow Lords. Harry appears on the Eye of the Storm disguised as a Shadow Lord, and tells Stormwatch that they are to take a more proactive approach to the superbeings on Earth, and tells them to kill Superman, Batman, and Green Lantern, saying they are "a threat" presumably in the hopes that Stormwatch will kill themselves in the attempt, or at least weaken them. The Projectionist also makes a return, and it is revealed that Harry has somehow implanted a false memory in her mind of him dying in an explosion, and plotting against Stormwatch with Midnighter. Midnighter sees through Harry's disguise, and tells the others that Harry is trying to trick them, but to no avail. Harry tells them to arrest Midnighter, who abducts Projectionist and heads out a Door into Antarctica in an effort to uncover evidence that Harry is the 'Shadow Lord'. While tracking Midnighter, he kills several researchers, which he uses to frame Midnighter for murder, and convince Stormwatch that he needs to be killed.</hero:storyDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Grayson">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <hero:storyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">After Midnighter left the Stormwatch, he become an operative of the Gardener locating the stolen body parts of Paragon. While doing this he would have run ins with Agent 37 of Spyral. In one of these run ins Midnighter kidnapped Dick and brought him to the God Garden, where he would use the Garden's technology to remove Dick's implants and place it within himself. Stealing the implant proved to be a mistake as Dick was able to use his knowledge of the implants to beat the Midnighter. Midnighter would end up teaming up with Dick to stop the Fist of Cain from using Paragon's brain to incite a riot at a peace rally in Tel-aviv. After preventing the terrorist attack Midnighter soon parted ways with the Gardener because she had knowledge of the attack but choose not to intervene.</hero:storyDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SuperHumanAbilities">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midnighter's abilities were designed by Bendix to give him an all encompassing advantage in close-combat and tactical scenarios. He has superhuman strength, reflexes (and moving speed when necessary), healing, senses, aim and various other enhancements. He is said to have multiple redundant systems to keep him fighting in the worst of conditions. One example of this is a backup heart. Midnighter can also turn his pain receptors on and off so he can keep fighting when the pain would stop a normal man. The pain is not totally cut off though, so his healing factor is also very helpful. He's fought with, and healed from, a broken neck, broken limbs, holes through his chest, having his whole body set on fire, contracting various viruses (including AIDS) and other things. He can also function perfectly in anaerobic environments when necessary.Midnighter's body has been altered to give him inhuman balance as well as faster nerve endings so he can move and react quicker than any human and many super humans. He normally moves at slightly above human speed but can move so fast that enemies with super speed can't see him. Midnighter's senses allow him to detect any modifications or powers in anyone he looks at, as well as how they work, so he can defeat them. His other senses are so powerful that to trick him, his creator needed to find an alien that could not only change its appearance, but its scent and DNA.Midnighter's most famous ability is his power to predict how a battle will happen before it starts. His fight implants include a combat computer that allows him to run through a given combat situation millions of times in his mind, almost instantly covering nearly every possible result before the first punch is even thrown. He uses this information to predict the actions and or reactions of his foes, counteracting their moves almost before they even think to make them. According to Midnighter, his powers also work by letting him see the outcome of the battle he wants, and working backwards, following the right steps to get there.He liked to begin fights by announcing all of this, but got bored enough with the speech to have it printed on business cards, which he can leave for absent opponents (or kill them by throwing the sharp-edged cards).In the tour-de-force issue Midnighter #7, we see his world view in action as the issue begins at the final scene when he returns from battle to kiss Apollo, and each following page takes us further back in the actions that got him there--ending on the last page with his initial speech</hero:powerDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AcceleratedProbability">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the new 52 Midnighter's ability to predict the outcome of any situation still exists, but appears to have been supplemented by a form of precognitive enhanced tactical awareness as well as enhanced knowledge. He is able to finish other people's sentences before they have thought about it, and when Stormwatch's map of alien threats to Earth materialized in front of him and Apollo, he instantly knew what it was. He's even able to defeat Grifter,despite the fact that he was blind.When he fought one of The Hidden people, it was noted that even when one of the neanderthal men was in his feral state. Midnighter seemed to have known what moves he could make before he even made them. He has shown the ability to read body movements and correctly discern what a person's power is (such as Harry Tanner's ability to lie and be believed). He's able to see through Tanner's lies and was able to figure out that The Shadow Lord was Harry (even though everyone else was fooled,and didn't believe him at first). He has significant resistance to telepathic attacks, as he was able to resist the Scourge of Worlds' attempt to use the Martian Manhunter's telepathy on him (to an extent). He mentions that he has carbon-fibre muscles that presumably enhance his strength. Midnighter has easily snapped the Vitruvian Man's neck, broke Apollo's nose and also caused Martian Manhunter pain (and drew blood). He is fast enough to dodge a bullet shot by Grifter at point blank range after it was fired, he also knocked out Martian Manhunter, Jack Hawksmoor and The Projectionist before they could react. Being fast enough to easily move out of the way of machine gun fire from a terrorist (that had the gun directly on him) before the terrorist could react. Harry Tanner reputed to be the world's greatest swordsman, struggled to land even a single blow on Midnighter since the latter could predict every move he would make. After a few seconds of fighting, Midnighter immediately knew what Harry's power was. Midnighter has demonstrated the ability to move so stealthily that the Manhunter and Hawksmoor could not hear or sense his stalking them until it was too late. His suit (which is a carbon armor) enhances his durability as he was able to survive unaided in hyperspace for a while, it also seems to be resistant to energy weapons (such as being shot by Grifter's energy gun yet having no visible signs of damage. Even being resistant to Harry Tanner's energy blades). He also regularly carries knives, throwing stars, grenades, billy clubs &amp; nightsticks etc. He also seems to have some sort of healing factor since his lungs and inner organs healed from the effects of Hyper space. He's also taken hits from a bloodlusted Apollo and Skallox (and stayed conscious). He's drawn blood from Etrigan with a punch, and dodged blasts from Etrigan with ease (something Etrigan even acknowledged).Due to still being relatively new to his older, Wildstorm counterpart, he has less feats (especially since he only appears in the new 52 for approximately 20 issues). Thus having a lot less to draw upon than his older counterpart.Other Versions</hero:powerDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AmnesiacHero">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Midnighter can't remember anything before he was turned into the perfect killing machine he is, not even if he volunteered for the procedure or not, or his real name. Apollo was in the same boat in the Wildstorm Universe, but in the DC Rebirth version, he has a seperate origin story from the Midnighter and he remembers both his unhappy childhood and every torturous part of his forced conversion into a superpowered metahuman.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AntiHero">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> He kills people. A lot.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AwesomenessbyAnalysis">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Midnighter's enhancements go beyond a mere Sherlock Scan —- they can detect how a fight will end on sight, not to mention provide possible routes of victory. Midnighter</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BadassLongCoat">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Conspicuously missing from his original DCnU outfit, but currently restored.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BatmanCanBreatheinSpace">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> With a rebreather, he can survive a short time in outer space.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BatmanParody">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Midnighter can best be described as Batman if he were gay, had actual superpowers, and no qualms with killing.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BreakoutCharacter">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Easily one of Wildstorm's best known creations, having made the jump over to DC's New 52 with sporadic appearances across the line.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CrazyPrepared">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> It's Midnighter's main selling point —- he knows what somebody's next move will be before they do, and acts accordingly.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DarkIsNotEvil">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Depending on the Writer, but broadly speaking he is on the side of the good guys in spite of his black clothes and lunar motifs.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DependingontheArtist">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The color and styling of his hair, seemingly switching with every artist —- as of his 2015 solo title, it's currently a dirty blond mohawk.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Determinator">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Especially in the DCU version. Harm Apollo, and Midnighter will literally walk through Hell to find you and end you. And he will do anything to save Apollo from death  (and beyond) or die trying, not even trying to keep back any reserves to get himself back to safety should he fail in the attempt.  (Good thing DCU Apollo is less of a Damsel in Distress than in the Wildstorm Universe, and perfectly capable of getting himself out of trouble.) Though the way he took out the replacement team in the Wildstorm Auhtority series almost single-handedly, all while looking after baby Jenny all on his own for weeks, qualifies as well.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#FriendtoAllChildren">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Surprisingly enough, given his personality. Wildstorm!Midnighter (and Apollo, too) especially guns for villains who harm children, refuses to kill children himself (even if they're destined to grow up to become Hitler), and adopts baby Jenny Quantum, resulting in several Badass and Baby moments. DCU!Midnighter has this lovely speech to some child hostage victims of an insane gang/cult he just wiped out</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#GoodisNotNice/NominalHero">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> He's ''technically' a superhero...despite all evidence to the contrary</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#HealingFactor">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Part of his package of "combat enhancements" is a high-end healing ability. He mentions during Millar's run that his immune system "is as deadly as every other part of my body," allowing him to recover completely from even chronic diseases over the course of several weeks, and in The Magnificent Kevin, he goes from immobile to walking under his own power in an hour once his powers are back on. In Midnighter and Apollo he channeled the power of an angel for long enough that it should have burned out his body and killed him, as he was warned by the sorceror who bound that angel to him. Not only does he survive (albeit unable to stand and needing Apollo to carry him to safety), but he seems perfectly fine just a few days later.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#HitlersTimeTravelExemptionAct">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Midnighter went back in time under order of an affluent man to kill Hitler or else he'd ignite a bomb he put in Midnighter's chest. Upon seeing how broken Hitler was, he refused. Especially after he found out the real reason his client wanted Hitler dead was to allow his father, a Nazi official, to become a more effective ruler than Hitler, implying he would have replaced Hitler and would have been a worse tyrant than Hitler ever was if Hitler was killed.</hero:tropeDescription>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The first story arc of his solo series.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#IAmWhatIAm">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> In all of his solo stories, it's mentioned by Midnighter how much he hates his origin as a man-made killing machine, his murderous impulses, and violent tendencies due to how it makes him little different from the criminals he puts into the ground. His whole career as a violent anti-hero is geared towards pointing those murderous instincts towards targets who he feels deserves it most.Midnighter</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#LogicalWeakness">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> As emphasized by his enemy in his pair series of Midnighter &amp; Grifter while being pummeled, Midnighter's combative superiority are strictly dependent on him being faster and cleverer than his opponent. If his opponent is faster than he can react to their moves or is smart enough to predict his moves, his powers are rendered useless. In another story sponsored under Stormwatch</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ManlyGay">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> A big part of his appeal to readers, especially LGBTQ ones, is that he's a gay superhero who is also masculine.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#OneManArmy">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Numbers mean little to the guy. He tears through men like a hot knife through butter.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SlasherSmile">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> As beamingly demonstrated in the above image.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SociopathicHero">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> He's a killer all the way through, and he never pretends to be anything else. Though he's not fully sociopathic. The fact that he cares about limiting his killing to people who deserve it, and the fact that he truly, deeply loves Apollo and cares about their daughter, are pretty much the only reasons why he isn't a villain.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ToughSpikesandStuds">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Midnighter's original outfit has spiked gloves. He has another outfit with spiked shoulder guards.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WellIntentionedExtremist">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Which, compared to his Authority teammates, says a lot.</hero:tropeDescription>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> While Midnighter mainly just wants ethically permissable targets for his inherent violent urges and is fully aware he deserves to go to Hell someday (see the quote under I Am What I Am, above), Apollo has a rather unusual justification for why he often kills villains and does not feel like that makes him a bad person, even while he disapproves of Midnighter's levels of creative brutality. Basically, its because Apollo thinks their victims deserve to know that their abusers are gone and will never come back. The comparison to Thou Shall Not Kill type superheroes like Batman or Superman isn't spelled out, but from the contextnote Apollo had just been explaining how his father threw him out when he came out as gay at age 12. And then just a year later, aliens abducted him and torturously turned him into what he is now over the course of his teenage years. And after finally escaping, his asshole father rejected him again, now also for being "inhuman"., it can be deduced that he thinks that these heroes are simply too privileged (white; straight; filthy rich or having a supportive family; not having been forced into their metahuman status; never having been personally tortured/abused/victimized, or at least not at a time when they were still helpless civilians, instead mostly getting Mangst type drama about other people getting hurt) to ever truly empathize with the victims of the villains they're throwing in prison only for them to escape again and again to destroy the lives of more innocent people. Note that Apollo's Establishing Character Moment on the New 52 Stormwatch reboot was taking down a child pornography ring, not dealing with some alien threat or a fantastical and crazy villain like most of Batman's rogues gallery.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WolverineWannabe">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> While he has some similarities to Batman, Midnighter arguably has much more in common with Wolverine. He has enhanced strength, speed, agility, and a Healing Factor. He also wears spiked gloves, has an insatiable appetite for violence and has a background in black ops.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WouldHitaGirl">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Kills female enemies as much as male ones with extreme prejudice.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WouldHurtaChild/WouldntHurtAChild">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Zig-zagged He hates fighting kids and often refuses to harm them, but push him enough and he'll attack or even kill one if needed. He killed an evil baby twin of his adopted daughter Jenny to stop her from destroying reality once. Teenagers are fair game though, as he once attacked Genął for getting in his way and killed many of Kriegstein's teenage metahumans for being baddies.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AxCrazy">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> He certainly enjoys the violence he commits, especially when he especially hates the victim in question</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BadFuture">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Shown to become a violent, brain-damaged dictator in The Authority</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BreakThembyTalking">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Managed to convince a mercenary to give up and even help him by explaining how little his life matters to anyone and his employer.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CaptainErsatz">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Basically Batman if he was a vicious maniac, and in a relationship with Superman.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CivvieSpandex">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> During the Wildstorm era, his costume usually consists of a cowl mask with a leather trenchcoat, logo T-shirt, jeans or combat trousers, and combat boots. In the DC era, it became more of a specialized battlesuit.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CombatClairvoyance">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> His whole shtick is that he can see how a battle plays in his head out before making a step and often frightens his opponents by saying he's played out their fight a million times in his head already. Then he tried to pull it on Captain Atom. Suffice to say, Atom was not impressed.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DirtyBusiness">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> He takes care of this the most of the Authority roster, considering his spare time is mainly spent going to war zones and killing baddies.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#NonHeteronormativeSociety">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Midnighter learns this to be true of the future, apparently to a point where the term "gay" itself is archaic and out-of-use.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CoverIdentityAnomaly">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> "Lucas Trent" is known to be a nice guy — or was, at some point, anyway.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#EverytownAmerica">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Apparently Midnighter — or "Lucas Trent", at least — is from Harmony, Kansas.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#GetBackintheCloset">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> A panel depicting he and Apollo kissing was censored, but a later example in his solo book made a point of them kissing front and center.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MalevolentMaskedMen">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The Anthem group — extremists who supposedly act in the name of peace. And wear country flags on their face.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#OnlyKnownByHisNickname">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> He's only ever known as Midnighter.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#RapeandRevenge">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">  In Mark Millar's first arc on The Authority a Captain America stand-in known as the Commander raped Apollo. The last we see of him, he's on the ground, paralyzed by Apollo, and it's implied that Midnighter intends to return the favor — with a rusty jackhammer.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#PoliticallyIncorrectHero">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Millar's first arc on The Authority had Midnighter admit out-loud that he was a racist after getting tired of dealing with some refugees the team had taken on. Well, what he said was that the stress of living with thousands of refugees made him catch himself having racist thoughts about them. It came across like he regretted that part about himself. Which is actually a pretty nice representation of how people become better persons in this regard, self-awareness being the first step and all.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#RemembertheNewGuy">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Everybody in Harmony, who claim to have known Midnighter back when he was "Lucas Trent".</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheRemnant">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> He and Apollo are the lone survivors of an old Stormwatch cell made of expies of the founding members of the Justice League.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TimePolice">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Midnighter deals with a few of these while attempting to kill Hitler on a mission. He works out a deal with them to take out the guy who sent him to the past in the first place.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TokenEvilTeammate">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> He's this for the Authority and that's really saying something for a team of already murderous amoral superheroes. He handles most of the dirty business of the team and has admitted he's a murderous monster and killer, but accepts it as who he is.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AttemptedRape">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Some time after that story, the Authority team got usurped and replaced by new guys with the same powers, who then spend weeks torturing their originals in various ways - except for the Midnighter, who makes a timely strategic retreat to protect baby Jenny. Apollo gets deprived of sunlight and used as a punching bag by his own and Midnighter's replacement. But just when Apollo's replacement has worked through his homophobia enough to talk himself into sexually assaulting Apollo, the Midnighter shows up to put a construction bolt through his brain.note What is it with this guy and power tools as phallic symbols?</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AscendedMeme">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> His chin spike. Eventually explained in-universe after much fan teasing, having saved his life during a scrap prior to the start of his Stormwatch tenure.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BashBrothers">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> With Grayson.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#BuryYourGays">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Lampshaded and defied in Midnighter and Apollo</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#EatingtheEyeCandy">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Nitey enjoys a pleasant view provided by Dick in Grayson #6</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#EnemyMine">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">  Midnighter cooperates with Dick Grayson to stop the Fist of Cain from setting off a telepathic assault on a crowd.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#FoeRomanceSubtext/HomoeroticSubtext">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Laid on thick during his arc in Grayson.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#GoodVersusGood">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> With Dick in Grayson, thanks to Poor Communication Kills. During their third encounter, Midnighter boasted about how he could take down Spyral. If he had kept his mouth shut and not threatened to hurt Helena, Dick might have just negotiated a truce with him.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#HaveIMentionedIAmGay">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Midnighter's sexuality was pretty dubious to Apollo, until he explicitly stated it.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#HeroAntagonist">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> During his arc in Grayson. Mr. Minos</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MoralityChain">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Apollo to Midnighter. Kinda. Apollo isn't opposed in principle to killing villains, but he disapproves of the sheer level of Midnighter's brutality and unnecessarily painful ways of execution (if more because the gore could traumatize bystanders and the victims they're trying to save, not because he pities the villains). One certainly gets the feeling that if Midnighter ever were to dial it down a bit, it would be to gain approval in Apollo's eyes, though he isn't really able to change. Midnighter's acceptance of what he is, even though he doesn't like it, in contrast with Apollo's conflicting wishes to accept his lover and to make him someone better, someone Midnighter himself could live with more easily, are a central theme in the Midnighter and Apollo mini-series. In fact, wanting to be Midnighter's Morality Chain turns out to be the reason why Apollo chose his superhero name in the first place, in this version of canon</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#PatrioticFervor">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> He wears a tanktop depicting the American flag on a date in Russia. Though that may have just been trolling, given he was on a date with a dude, in Putin's Russia.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Uke">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Played With as shown in Midnighter and Apollo, while he is a Manly Gay and doesn't have any feminine traits, he's depicted as being the "bottom" in a romantic moment with Apollo and it's implied it's his preferred role. Midnighter also doesn't seem to mind that Apollo transports him in a Bridal Carry, though admittedly, he was badly hurt at the time. Still, considering his manly image and grouchy personality, it stands out how easily and unselfconsciously he cooperates with the pose.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WillTheyorWontThey">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> With Apollo, until they did in Stormwatch #18. They separated again following the DCYou relaunch, but the Midnighter solo series firmly establishes that, despite his wish to explore more relationships, Midnighter is still clearly in love with Apollo.  By the end of the series, they get back together.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TheWorfEffect">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Midnighter spends most of his issues in Grayson being somehow beaten by Dick, despite his cybernetic enhancements.</hero:tropeDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
 </owl:NamedIndividual>
 
 

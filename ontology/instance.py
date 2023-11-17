@@ -84,7 +84,7 @@ def load_first_appearance(names):
                 continue
             character.firstAppearance.append(line.strip())
 
-def load_story_arcs(names):
+def load_story_arcs(names, character_name):
     for folder_name in names:
         f = open(folder_name + "/" + folder_name + "_Major_Story_Arcs.txt", "r")
         file_contents = [line.strip() for line in f]
@@ -97,6 +97,7 @@ def load_story_arcs(names):
             else:
                 if character_story:
                     character_story.storyDescription.append(file_contents[line].strip())
+                    character_story.belongsTo.append("http://whosyourhero.com/heroes.owl#" + character_name)
                     character.storyArcs.append(character_story)
 
 def load_origin(names):
@@ -107,7 +108,7 @@ def load_origin(names):
                 continue
             character.origin.append(line.strip())
 
-def load_other_media(names):
+def load_other_media(names, character_name):
     for folder_name in names:
         f = open(folder_name + "/" + folder_name + "_Other_Media.txt", "r")
         file_contents = [line.strip() for line in f]
@@ -140,6 +141,7 @@ def load_other_media(names):
                     character_media.mediaType.append(media_type)
                 else: # description
                     character_media.mediaDescription.append(file_contents[line].strip())
+                    character_media.belongsTo.append("http://whosyourhero.com/heroes.owl#" + character_name)
                     character.otherMedia.append(character_media)
 
         # for line in f:
@@ -169,7 +171,7 @@ def load_characteristics(names):
                 continue
             character.characteristics.append(line.strip())
 
-def load_powers_and_abilities(names):
+def load_powers_and_abilities(names, character_name):
     for folder_name in names:
         f = open(folder_name + "/" + folder_name + "_Powers_and_Abilities.txt", "r")
         for line in f:
@@ -179,6 +181,7 @@ def load_powers_and_abilities(names):
             processed_name = power_info[0].strip().replace(" ", "").replace(":", "").replace("?", "").replace("!", "").replace(".", "").replace(",", "").replace("'", "").replace("\"", "").replace("(", "").replace(")", "").replace("-", "").replace("’", "")
             character_power = Power(processed_name)
             character_power.powerDescription.append(power_info[1])
+            character_power.belongsTo.append("http://whosyourhero.com/heroes.owl#" + character_name)
             character.powers.append(character_power)
         # f = open(folder_name + "/" + folder_name + "_Powers.txt", "r")
         # for line in f:
@@ -226,7 +229,7 @@ def load_super_name(names):
                 continue
             character.superName.append(line.strip())
 
-def load_character_tropes(names):
+def load_character_tropes(names, character_name):
     for folder_name in names:
         f = open(folder_name + "/" + folder_name + "_Tropes.txt", "r", encoding="utf8")
         for line in f:
@@ -236,25 +239,16 @@ def load_character_tropes(names):
             processed_name = trope_info[0].strip().replace(" ", "").replace(":", "").replace("?", "").replace("!", "").replace(".", "").replace(",", "").replace("'", "").replace("\"", "").replace("(", "").replace(")", "").replace("-", "").replace("’", "")
             character_trope = Trope(processed_name)
             character_trope.tropeDescription.append(trope_info[1])
+            character_trope.belongsTo.append("http://whosyourhero.com/heroes.owl#" + character_name)
             character.hasTrope.append(character_trope)
 
-def create_character_rdf(character_name, file_name):
+def create_character_rdf(character_name, file_name, name):
     # sparql doesn't allow for URI's with spaces or special characters
     clear_default_world()
-    if(character_name == ["cassandra_cain"]):
-        character = Character("CassandraCain")
+    character = Character(name)
+    if(character_name == ["cassandra_cain"] and character_name == ["emma_frost"]):
         character.isWoman.append(True)
-    elif(character_name == ["deadpool"]):
-        character = Character("Deadpool")
-        character.isMan.append(True)
-    elif(character_name == ["emma_frost"]):
-        character = Character("EmmaFrost")
-        character.isWoman.append(True)
-    elif(character_name == ["midnighter"]):
-        character = Character("Midnighter")
-        character.isMan.append(True)
-    elif(character_name == ["wally_west"]):
-        character = Character("WallyWest")
+    elif(character_name == ["deadpool"] and character_name == ["wally_west"] and character_name == ["midnighter"]):
         character.isMan.append(True)
 
     load_photos(character_name)
@@ -266,17 +260,17 @@ def create_character_rdf(character_name, file_name):
     load_creators(character_name)
     load_deaths(character_name)
     load_first_appearance(character_name)
-    load_story_arcs(character_name)
+    load_story_arcs(character_name, name)
     load_origin(character_name)
-    load_powers_and_abilities(character_name)
+    load_powers_and_abilities(character_name, name)
     load_publisher(character_name)
     load_real_name(character_name)
     load_summary(character_name)
     load_super_name(character_name)
-    load_character_tropes(character_name)
+    load_character_tropes(character_name, name)
 
     if character_name != ["midnighter"]:
-        load_other_media(character_name)
+        load_other_media(character_name, name)
         load_characteristics(character_name)
 
     if character_name != ["wally_west"]:
@@ -292,11 +286,11 @@ def create_character_rdf(character_name, file_name):
 
     
 
-create_character_rdf(["cassandra_cain"], "cassandra_cain.owl")
-create_character_rdf(["deadpool"], "deadpool.owl")
-create_character_rdf(["emma_frost"], "emma_frost.owl")
-create_character_rdf(["midnighter"], "midnighter.owl")
-create_character_rdf(["wally_west"], "wally_west.owl")
+create_character_rdf(["cassandra_cain"], "cassandra_cain.owl", "CassandraCain")
+create_character_rdf(["deadpool"], "deadpool.owl", "Deadpool")
+create_character_rdf(["emma_frost"], "emma_frost.owl", "EmmaFrost")
+create_character_rdf(["midnighter"], "midnighter.owl", "Midnighter")
+create_character_rdf(["wally_west"], "wally_west.owl", "WallyWest")
 
 
 from rdflib import Graph, Namespace, RDF, OWL, Literal # this line needs to be there otherwise it won't work
@@ -342,6 +336,7 @@ def load_tropes(file_name):
 #all_tropes_file = open("all_tropes.txt", "r")
 #all_tropes = [line.strip() for line in all_tropes_file]
 
+"""
 tropes = []
 directory = 'tropes'
 for filename in os.scandir(directory):
@@ -350,5 +345,6 @@ for filename in os.scandir(directory):
 tropes.sort()
 for t in range(len(tropes)):
    load_tropes(tropes[t])
+   """
 
 

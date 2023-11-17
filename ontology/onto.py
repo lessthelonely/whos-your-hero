@@ -144,6 +144,10 @@ with onto:
     class tropeDescription(Property):
         domain = [Trope]
         range = [str]
+
+    class belongsTo(Property):
+        domain = [Trope, Power, Story, Media, Variant]
+        range = [str]
         
     class hasTrope(Property):
         domain = [Character]
