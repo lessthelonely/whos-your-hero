@@ -44,5 +44,32 @@ def get_rdf(file_name:str):
 
     return data
 
+#get storyArcs
+@app.get("/rdf-character/{file_name}/storyArcs")
+def get_rdf(file_name:str):
+    # Replace this with your actual RDF data and SPARQL queries
+    g = Graph()
+    file_path = f"{file_name}.owl"
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?story ?description
+    WHERE {{
+        ?story rdf:type hero:Story.
+        ?story hero:storyDescription ?description.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        story_name = row['story'].split('#')[1]
+        data[story_name] = row['description']
+
+    return data
+
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
