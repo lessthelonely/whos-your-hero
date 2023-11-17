@@ -141,14 +141,6 @@ with onto:
         domain = [Character]
         range = [str]
 
-    class videoGames(Property):
-        domain = [Character]
-        range = [str]
-
-    class hasWeaponsEquipment(Property):
-        domain = [Character]
-        range = [str]
-
     class tropeDescription(Property):
         domain = [Trope]
         range = [str]

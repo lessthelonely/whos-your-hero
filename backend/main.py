@@ -70,6 +70,32 @@ def get_rdf(file_name:str):
 
     return data
 
+#get powers
+@app.get("/rdf-character/{file_name}/powers")
+def get_rdf(file_name:str):
+    # Replace this with your actual RDF data and SPARQL queries
+    g = Graph()
+    file_path = f"{file_name}.owl"
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?power ?description
+    WHERE {{
+        ?power rdf:type hero:Power.
+        ?power hero:powerDescription ?description.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = {}
+
+    for row in results:
+        power_name = row['power'].split('#')[1]
+        data[power_name] = row['description']
+
+    return data
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
