@@ -761,6 +761,47 @@ def get_story_descriptions(power_name: str):
 
     return data
 
+#get shared values of a media that various characters might have
+#MarvelAvengersAlliance
+@app.get("/rdf-all/media/{media_name}")
+def get_media(media_name: str):
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+
+    query = f"""
+        SELECT ?mediaType ?mediaDescription ?belongsTo
+        WHERE {{
+            ?media rdf:type hero:Media.
+            ?media hero:belongsTo ?belongsTo.
+            OPTIONAL{{ ?media hero:mediaType ?mediaType. }}
+            OPTIONAL{{ ?media hero:mediaDescription ?mediaDescription. }}
+            FILTER (?media = hero:{media_name})
+        }}
+    """
+
+    results = list(g.query(query))
+    data = {}
+
+    if len(results) > 0:
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        mediaType_list = [row.mediaType.toPython() for row in results]
+        mediaDescription_list = [row.mediaDescription.toPython() for row in results]
+
+        offset = 0
+        for i in range(len(belongsTo_list)):
+            if belongsTo_list[i] in data:
+                offset += 1
+                continue
+
+            data[belongsTo_list[i]] = {
+            "mediaType": mediaType_list[i - offset],
+            "mediaDescription": mediaDescription_list[i - offset],
+            }
+
+    return data
+
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)

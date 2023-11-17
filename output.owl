@@ -6623,7 +6623,7 @@
     <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Millar's first arc on The Authority had Midnighter admit out-loud that he was a racist after getting tired of dealing with some refugees the team had taken on. Well, what he said was that the stress of living with thousands of refugees made him catch himself having racist thoughts about them. It came across like he regretted that part about himself. Which is actually a pretty nice representation of how people become better persons in this regard, self-awareness being the first step and all.</hero:tropeDescription>
     <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
   </rdf:Description>
-  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#RuinsEarth9591">
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#f">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
     <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emma is the highest priestess of the church of the Next Generation. She legally adopted the children of her followers and made them unlock their psychic abilities through a surgery.</hero:alternateVersions>
