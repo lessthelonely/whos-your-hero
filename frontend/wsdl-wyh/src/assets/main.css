@@ -1,0 +1,36 @@
+@import './base.css';
+
+:root {
+  --colapsed-margin: 15px 20px 15px 100px !important;
+  --not-collapsed-margin: 15px 20px 15px 320px;
+}
+
+#main {
+  margin: var(--colapsed-margin);
+  transition: all 0.25s ease-out;
+}
+
+.collapsed {
+  transition: all 0.1s ease-out;
+  margin: var(--not-collapsed-margin) !important;
+}
+
+.v-sidebar-menu .vsm--link_level-1 .vsm--icon {
+  background-color: transparent !important;
+}
+.v-sidebar-menu .vsm--arrow {
+  background: linear-gradient(90deg, rgba(109,233,181,1) 0%, rgba(133,76,255,1) 100%);
+}
+
+.v-sidebar-menu .vsm--link_mobile, .v-sidebar-menu .vsm--mobile-bg, .v-sidebar-menu .vsm--toggle-btn {
+  background: linear-gradient(90deg, rgba(109,233,181,1) 0%, rgba(133,76,255,1) 100%);
+}
+
+.v-sidebar-menu .vsm--link_level-1.vsm--link_active {
+  -webkit-box-shadow: inset 3px 0 0 0 rgba(109,233,181,1) !important;
+  box-shadow: inset 3px 0 0 0 rgba(109,233,181,1) !important;
+}
+
+.v-sidebar-menu .vsm--arrow, .v-sidebar-menu .vsm--arrow_open {
+  transition: all 1s ease-out;
+}
