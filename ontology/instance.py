@@ -6,6 +6,7 @@ character = Character("CassandraCain")
 character.isWoman.append(True)
 trope = Trope("AbusiveParents")
 
+
 # Clear the default_world
 def clear_default_world():
     entities_to_destroy = list(default_world.individuals()) + list(default_world.data_properties())
@@ -212,6 +213,7 @@ def load_summary(names):
             if (line.strip() == ""):
                 continue
             character.summary.append(line.strip())
+            
 
 def load_character_evolution(names):
     for folder_name in names:
