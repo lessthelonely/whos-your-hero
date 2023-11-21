@@ -625,7 +625,7 @@ def get_trope(file_name:str):
 
 #get media
 @app.get("/rdf-character/{file_name}/media")
-def get_media(file_name:str):
+def get_media_character(file_name:str):
     g = Graph()
     file_path = f"{file_name}.owl"
     g.parse(file_path)
@@ -801,7 +801,37 @@ def get_media(media_name: str):
 
     return data
 
+#get complete information of a character
+@app.get("/rdf-character/{file_name}")
+def get_character(file_name:str):
+    data = {}
+    data['photo'] = get_photo(file_name)
+    data['birthday'] = get_birthday(file_name)
+    data['characterType'] = get_characterType(file_name)
+    data['appearsIn'] = get_appearsIn(file_name)
+    data['evolution'] = get_evolution(file_name)
+    data['creation'] = get_creation(file_name)
+    data['creators'] = get_creators(file_name)
+    data['deaths'] = get_deaths(file_name)
+    data['origins'] = get_origins(file_name)
+    data['characteristics'] = get_characteristics(file_name)
+    data['publisher'] = get_publisher(file_name)
+    data['realName'] = get_realName(file_name)
+    data['summary'] = get_summary(file_name)
+    data['superName'] = get_superName(file_name)
+    data['hasDied'] = get_hasDied(file_name)
+    data['isWoman'] = get_isWoman(file_name)
+    data['isMan'] = get_isMan(file_name)
+    data['isNonBinary'] = get_isNonBinary(file_name)
+    data['firstAppearance'] = get_firstAppearance(file_name)
+    data['alias'] = get_alias(file_name)
+    data['alternateVersions'] = get_alternateVersions(file_name)
+    data['storyArcs'] = get_storyArcs(file_name)
+    data['powers'] = get_powers(file_name)
+    data['tropes'] = get_character_tropes(file_name)
+    data['media'] = get_media_character(file_name)
 
+    return data
 
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=8000)
