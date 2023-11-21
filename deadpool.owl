@@ -206,10 +206,10 @@
 </owl:Class>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -246,7 +246,6 @@
 </owl:Class>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Deadpool">
-  <owl:sameAs rdf:resource="http://dbpedia.org/page/Deadpool"/>
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#BeforeWeaponX"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#TheWeaponXProgram"/>
@@ -605,6 +604,7 @@
   <hero:summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wade Wilson is a former test subject of the Weapon X program, where he received his regenerative healing factor through the scientific experiments conducted upon him.</hero:summary>
   <hero:summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A prominent enemy, ally and later, member of X-Force.  He's famous for breaking the Fourth Wall.</hero:summary>
   <hero:superName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deadpool</hero:superName>
+  <hero:isMan rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hero:isMan>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MessiahWar">

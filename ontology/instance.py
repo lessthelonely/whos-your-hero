@@ -248,9 +248,9 @@ def create_character_rdf(character_name, file_name, name):
     # sparql doesn't allow for URI's with spaces or special characters
     clear_default_world()
     character = Character(name)
-    if(character_name == ["cassandra_cain"] and character_name == ["emma_frost"]):
+    if(character_name == ["cassandra_cain"] or character_name == ["emma_frost"]):
         character.isWoman.append(True)
-    elif(character_name == ["deadpool"] and character_name == ["wally_west"] and character_name == ["midnighter"]):
+    elif(character_name == ["deadpool"] or character_name == ["wally_west"] or character_name == ["midnighter"]):
         character.isMan.append(True)
 
     load_photos(character_name)

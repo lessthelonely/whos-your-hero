@@ -206,10 +206,10 @@
 </owl:Class>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -246,7 +246,6 @@
 </owl:Class>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#EmmaFrost">
-  <owl:sameAs rdf:resource="http://dbpedia.org/page/Emma_Frost"/>
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#HellfireClub"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#GenerationX"/>
@@ -545,6 +544,7 @@
   <hero:realName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emma Grace Frost</hero:realName>
   <hero:summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emma Frost is a fictional character originating from Marvel Comics.  Originally starting off as a super villain and enemy of the X-Men, during which she was the White Queen of the Hellfire Club, Emma Frost is a powerful mutant telepath who can transform herself into organic diamond. She has become a prominent member of the X-Men. A gifted teacher, Emma is renowned for her beauty, wit, and sense of fashion.</hero:summary>
   <hero:superName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emma Frost</hero:superName>
+  <hero:isWoman rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hero:isWoman>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AgeofApocalypseEarth295">

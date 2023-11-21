@@ -206,10 +206,10 @@
 </owl:Class>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -246,7 +246,6 @@
 </owl:Class>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Midnighter">
-  <owl:sameAs rdf:resource="http://dbpedia.org/page/Midnighter"/>
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#TheAuthority"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#TimeTraveling"/>
@@ -340,6 +339,7 @@
   <hero:realName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lucas Trent</hero:realName>
   <hero:summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midnighter is an augmented hero with superhuman physical abilities and the power to run through thousands of fight scenarios in his head before a single punch is thrown. Although he's one of the good guys, Midnighter enjoys violence and brutality and never feels more alive than when he's in the middle of a bloody brawl.</hero:summary>
   <hero:superName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midnighter</hero:superName>
+  <hero:isMan rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hero:isMan>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#DaylighterDaylighter">

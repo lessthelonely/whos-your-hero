@@ -5,6 +5,8 @@
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:hero="http://whosyourhero.com/heroes.owl#">
 
+<owl:Ontology rdf:about="http://anonymous"/>
+
 <owl:Ontology rdf:about="http://whosyourhero.com/heroes.owl"/>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#Person">
@@ -204,10 +206,10 @@
 </owl:Class>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -244,7 +246,6 @@
 </owl:Class>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CassandraCain">
-  <owl:sameAs rdf:resource="http://dbpedia.org/page/Cassandra_Cain"/>
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Batgirl"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Ghost/Batgirl"/>
@@ -412,6 +413,7 @@
   <hero:realName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain-Wayne</hero:realName>
   <hero:summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The daughter of two notorious assassins, David Cain and Lady Shiva, Cassandra left her father as a child after she killed a man and saw his pain and fear while he died. After saving Commissioner Gordon's life, she became the new Batgirl with Batman and Oracle's blessing, and was later adopted by Bruce Wayne. She would later give the role of Batgirl to her friend Stephanie Brown, and became Black Bat. In the New 52 and Rebirth, she takes the alias of Orphan.</hero:summary>
   <hero:superName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cassandra Cain</hero:superName>
+  <hero:isWoman rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hero:isWoman>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Elseworlds">
