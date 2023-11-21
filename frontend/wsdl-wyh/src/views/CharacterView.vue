@@ -313,9 +313,43 @@ export default defineComponent({
         console.log(mediaDescriptions);
       }
 
+      //Get isWoman
+      var isWoman = false
+      if(JSON.stringify(characterData["isWoman"]) != "{}"){
+        isWoman = characterData["isWoman"][uri][0];
+        if(isWoman == "true"){
+          isWoman = true;
+        }
+        else{
+          isWoman = false;
+        }
+      }
 
+      console.log(isWoman);
 
+      //Get isMan
+      var isMan = false
+      if(JSON.stringify(characterData["isMan"]) != "{}"){
+        isMan = characterData["isMan"][uri][0];
+        if(isMan == "true"){
+          isMan = true;
+        }
+        else{
+          isMan = false;
+        }
+      }
 
+      //Get isNonBinary
+      var isNonBinary = false
+      if(JSON.stringify(characterData["isNonBinary"]) != "{}"){
+        isNonBinary = characterData["isNonBinary"][uri][0];
+        if(isNonBinary == "true"){
+          isNonBinary = true;
+        }
+        else{
+          isNonBinary = false;
+        }
+      }
   }
 })
 </script>
