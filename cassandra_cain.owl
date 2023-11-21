@@ -5,8 +5,6 @@
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:hero="http://whosyourhero.com/heroes.owl#">
 
-<owl:Ontology rdf:about="http://anonymous"/>
-
 <owl:Ontology rdf:about="http://whosyourhero.com/heroes.owl"/>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#Person">
@@ -206,11 +204,11 @@
 </owl:Class>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
@@ -246,6 +244,7 @@
 </owl:Class>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CassandraCain">
+  <owl:sameAs rdf:resource="http://dbpedia.org/page/Cassandra_Cain"/>
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Batgirl"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Ghost/Batgirl"/>
