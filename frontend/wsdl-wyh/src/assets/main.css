@@ -34,3 +34,15 @@
 .v-sidebar-menu .vsm--arrow, .v-sidebar-menu .vsm--arrow_open {
   transition: all 1s ease-out;
 }
+
+.character-card {
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 20px !important;
+  border: 1px solid #ccc;
+}
+
+.card-img-overlay {
+  position: absolute;
+  bottom: 5px;
+}

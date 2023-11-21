@@ -2,6 +2,8 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap"
 import VueSidebarMenu from 'vue-sidebar-menu'
 import App from './App.vue'
 
@@ -16,9 +18,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faQuestion, faUser, faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
-
-import bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
-import bootstrapjs from 'bootstrap/dist/js/bootstrap.min'
 
 /* add icons to the library */
 library.add(faQuestion, faUser, faPeopleGroup)

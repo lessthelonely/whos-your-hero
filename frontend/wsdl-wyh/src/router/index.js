@@ -14,7 +14,7 @@ const router = createRouter({
       component: () => import('../views/CharactersView.vue')
     },
     {
-      path: '/characters/:id',
+      path: '/character/:id',
       name: 'character page',
       component: () => import('../views/CharacterView.vue')
     }
