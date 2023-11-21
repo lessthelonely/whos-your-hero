@@ -350,6 +350,11 @@ export default defineComponent({
           isNonBinary = false;
         }
       }
+
+      //Cassandra doesn't have evolution or origins
+      //Midnighter doesn't have media or characteristics
+      //Wally doesn't have creation or evolution
+      //Emma, Deadpool and Wally don't have birthdays (it will be written as Unknown)
   }
 })
 </script>
