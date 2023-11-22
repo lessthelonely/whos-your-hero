@@ -917,7 +917,7 @@
     <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#LegoMarvelSuperHeroes"/>
     <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#XMenBattleofTheAtom"/>
     <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#MarvelFutureFight"/>
-    <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#MarvelContestofChampios"/>
+    <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#MarvelContestofChampions"/>
     <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#ToyBiz"/>
     <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#HeroClix"/>
     <hero:otherMedia rdf:resource="http://whosyourhero.com/heroes.owl#Hasbro"/>
@@ -5326,7 +5326,7 @@
     <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
     <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#EmmaFrost</hero:belongsTo>
   </rdf:Description>
-  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#MarvelContestofChampios">
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#MarvelContestofChampions">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
     <hero:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Games</hero:mediaType>
