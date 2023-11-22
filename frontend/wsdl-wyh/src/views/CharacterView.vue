@@ -372,14 +372,14 @@ function separateWordsByCapitalLetters(inputString) {
         wordsArray[i] = wordsArray[i].replace("of", " of");
       }
     }
-    if(wordsArray[i].includes("is")){
+    if(wordsArray[i].includes("is") && wordsArray[i] != "Analysis"){
           var index = wordsArray[i].indexOf("is");
           var nextIndex = index + "is".length;
           if(nextIndex == wordsArray[i].length){
             wordsArray[i] = wordsArray[i].replace("is", " is");
           }
         }
-    if(wordsArray[i].includes("or") && wordsArray[i] != "Junior" && wordsArray[i] != "Mentor"){
+    if(wordsArray[i].includes("or") && wordsArray[i] != "Junior" && wordsArray[i] != "Mentor" && wordsArray[i] != "Fervor"){
       var index = wordsArray[i].indexOf("or");
       var nextIndex = index + "or".length;
       if(nextIndex == wordsArray[i].length){
