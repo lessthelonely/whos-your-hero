@@ -83,7 +83,7 @@
     <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#HandtoHandCombatAdvanced"/>
     <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Intellect"/>
     <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#MechanicalAptitude"/>
-    <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#10MinuteRetirement"/>
+    <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TenMinuteRetirement"/>
     <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AbusiveParents"/>
     <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AccidentalMisnaming"/>
     <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#TheAce"/>
@@ -571,7 +571,7 @@
     <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Masterassassin"/>
     <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Mediumawareness/fourthwallbreaking"/>
     <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Minorrealitymanipluation"/>
-    <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#90sAntiHero"/>
+    <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#NinetiesAntiHero"/>
     <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AggressiveSubmissive"/>
     <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AlliterativeName"/>
     <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AlternateSelf"/>
@@ -4329,7 +4329,7 @@
     <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> She constantly got severe nosebleeds as her Psychic Powers were awakening.</hero:tropeDescription>
     <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#EmmaFrost</hero:belongsTo>
   </rdf:Description>
-  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#90sAntiHero">
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#NinetiesAntiHero">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
     <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Deadpool was introduced in 1991 as a Punch-Clock Villain with a one-word gritty name, wearing spandex covered with pouches and belts, wielding both guns and katanas, and had a personality limited to being an Ax-Crazy Deadpan Snarker. He developed into a Villain Protagonist in the mid-1990s and continued growing from there.</hero:tropeDescription>

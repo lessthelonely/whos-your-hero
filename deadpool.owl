@@ -360,7 +360,7 @@
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Masterassassin"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Mediumawareness/fourthwallbreaking"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Minorrealitymanipluation"/>
-  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#90sAntiHero"/>
+  <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#NinetiesAntiHero"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AggressiveSubmissive"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AlliterativeName"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AlternateSelf"/>
@@ -1039,7 +1039,7 @@
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#90sAntiHero">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#NinetiesAntiHero">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Deadpool was introduced in 1991 as a Punch-Clock Villain with a one-word gritty name, wearing spandex covered with pouches and belts, wielding both guns and katanas, and had a personality limited to being an Ax-Crazy Deadpan Snarker. He developed into a Villain Protagonist in the mid-1990s and continued growing from there.</hero:tropeDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
