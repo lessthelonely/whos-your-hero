@@ -8,6 +8,7 @@
 import { defineComponent } from 'vue'
 import axios from 'axios'
 
+    //vs, the, onthe, to, of -> be careful: need more time to think about it
 export default defineComponent({
   data() {
     return {
