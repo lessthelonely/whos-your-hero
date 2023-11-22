@@ -9,7 +9,29 @@ import { defineComponent } from 'vue'
 import axios from 'axios'
 import { Character } from '../stores/Character.js'
 
-    //vs, the, onthe, to, of -> be careful: need more time to think about it
+function separateWordsByCapitalLetters(inputString) {
+    // Use a regular expression to split the string at capital letters
+    inputString = inputString.replace(/_/g, ' ');
+    
+    // Use a regular expression to split the string at specific patterns
+    var wordsArray = inputString.split(/(?<=[^\/A-Z])(?=[A-Z]|$)/);
+  
+    for(var i = 0; i < wordsArray.length; i++){
+      if(wordsArray[i].includes("andthe")){
+        wordsArray[i] = wordsArray[i].replace("andthe", "and the");
+      }
+      if(wordsArray[i].includes("and")){
+        wordsArray[i] = wordsArray[i].replace("and", " and");
+      }
+      //vs, the, onthe, on, a (ARealManIsaKiller), ona (PutonaBus), to, of -> be careful: need more time to think about it
+    }
+  
+    // Join the array elements with space to form the final string
+    var resultString = wordsArray.join(' ');
+  
+    return resultString;
+  }
+
 export default defineComponent({
   data() {
     return {
@@ -252,11 +274,16 @@ export default defineComponent({
       //console.log(alias);
 
       //Get alternate Versions
-      var alternateVersions = []
       var alternateVersionsDict = {};
       if(JSON.stringify(characterData["alternateVersions"]) != "{}"){
-        alternateVersions = characterData["alternateVersions"];
         var alternateVersionsTypes = Object.keys(characterData["alternateVersions"]);
+
+        var alternateVersionsTypesTreated = [];
+          for (var i = 0; i < alternateVersionsTypes.length; i++) {
+            var alternateVersionsType = separateWordsByCapitalLetters(alternateVersionsTypes[i]);
+            alternateVersionsTypesTreated.push(alternateVersionsType);
+          }
+
         var alternateVersionsDescriptions = Object.values(characterData["alternateVersions"]);
 
         //console.log(alternateVersions);
@@ -264,57 +291,74 @@ export default defineComponent({
         //console.log(alternateVersionsDescriptions);
       }
 
-      for (var i = 0; i < alternateVersionsTypes.length; i++) {
-        alternateVersionsDict[alternateVersionsTypes[i]] = alternateVersionsDescriptions[i];
+      for (var i = 0; i < alternateVersionsTypesTreated.length; i++) {
+        alternateVersionsDict[alternateVersionsTypesTreated[i]] = alternateVersionsDescriptions[i];
       }
 
       //Get storyArcs
-      var storyArcs = []
       var storyArcsDict = {};
       if(JSON.stringify(characterData["storyArcs"]) != "{}"){
-        storyArcs = characterData["storyArcs"];
         var storyArcsTypes = Object.keys(characterData["storyArcs"]);
         var storyArcsDescriptions = Object.values(characterData["storyArcs"]);
+
+        var storyArcsTypesTreated = [];
+          for (var i = 0; i < storyArcsTypes.length; i++) {
+            var storyArcType = separateWordsByCapitalLetters(storyArcsTypes[i]);
+            storyArcsTypesTreated.push(storyArcType);
+          }
       }
 
-      for (var i = 0; i < storyArcsTypes.length; i++) {
-        storyArcsDict[storyArcsTypes[i]] = storyArcsDescriptions[i];
+      for (var i = 0; i < storyArcsTypesTreated.length; i++) {
+        storyArcsDict[storyArcsTypesTreated[i]] = storyArcsDescriptions[i];
       }
 
       //Get powers
-      var powers = []
       var powersDict = {};
       if(JSON.stringify(characterData["powers"]) != "{}"){
-        powers = characterData["powers"];
         var powersTypes = Object.keys(characterData["powers"]);
         var powersDescriptions = Object.values(characterData["powers"]);
+
+        var powersTypesTreated = [];
+          for (var i = 0; i < powersTypes.length; i++) {
+            var powersType = separateWordsByCapitalLetters(powersTypes[i]);
+            powersTypesTreated.push(powersType);
+          }
       }
 
-      for (var i = 0; i < powersTypes.length; i++) {
-        powersDict[powersTypes[i]] = powersDescriptions[i];
+      for (var i = 0; i < powersTypesTreated.length; i++) {
+        powersDict[powersTypesTreated[i]] = powersDescriptions[i];
       }
 
       //Get tropes
-      var tropes = []
       var tropesDict = {};
       if(JSON.stringify(characterData["tropes"]) != "{}"){
-        tropes = characterData["tropes"];
         var tropesTypes = Object.keys(characterData["tropes"]);
         var tropesDescriptions = Object.values(characterData["tropes"]);
+
+        var tropesTypesTreated = [];
+          for (var i = 0; i < tropesTypes.length; i++) {
+            var tropesType = separateWordsByCapitalLetters(tropesTypes[i]);
+            tropesTypesTreated.push(tropesType);
+          }
       }
 
-      for (var i = 0; i < tropesTypes.length; i++) {
-        tropesDict[tropesTypes[i]] = tropesDescriptions[i];
+      for (var i = 0; i < tropesTypesTreated.length; i++) {
+        tropesDict[tropesTypesTreated[i]] = tropesDescriptions[i];
       }
 
       //Get media
-      var media = []
       var mediaTypes = [];
       var mediaDescriptions = [];
       var mediaDict = {};
       if(JSON.stringify(characterData["media"]) != "{}"){
-        media = characterData["media"];
         var mediaTitles = Object.keys(characterData["media"]);
+
+        var mediaTitlesTreated = [];
+          for (var i = 0; i < mediaTitles.length; i++) {
+            var mediaTitle = separateWordsByCapitalLetters(mediaTitles[i]);
+            mediaTitlesTreated.push(mediaTitle);
+          }
+
         var mediaTypesDescriptions = Object.values(characterData["media"]);
 
         for (var i = 0; i < mediaTitles.length; i++) {
@@ -327,8 +371,8 @@ export default defineComponent({
         //console.log(mediaDescriptions);
       }
 
-      for (var i = 0; i < mediaTitles.length; i++) {
-        mediaDict[mediaTitles[i]] = {
+      for (var i = 0; i < mediaTitlesTreated.length; i++) {
+        mediaDict[mediaTitlesTreated[i]] = {
           "type": mediaTypes[i], 
           "description": mediaDescriptions[i]
         };
@@ -388,4 +432,3 @@ export default defineComponent({
   }
 })
 </script>
-
