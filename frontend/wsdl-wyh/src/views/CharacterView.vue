@@ -7,56 +7,59 @@
 <script>
 import { defineComponent } from 'vue'
 import axios from 'axios'
+import { Character } from '../stores/Character.js'
 
     //vs, the, onthe, to, of -> be careful: need more time to think about it
 export default defineComponent({
   data() {
     return {
       id: String,
-      name: String
+      name: String,
+      character: Character
+    }
+  },
+
+  methods: {
+    getName() {
+      switch (this.id) {
+        case "cassandra_cain":
+          this.name = "Cassandra Cain"
+          return "CassandraCain"
+          break;
+        case "emma_frost":
+          this.name = "Emma Frost"
+          return "EmmaFrost"
+          break;
+        case "wally_west":
+          this.name = "Wally West"
+          return "WallyWest"
+          break;
+        case "deadpool":
+          this.name = "Deadpool"
+          return "Deadpool"
+          break;
+        case "midnighter":
+          this.name = "Midnighter"
+          return "Midnighter"
+          break;
+        default:
+          throw console.error("Character not found");
+      }
     }
   },
 
   async beforeMount() {
     this.id = this.$route.params.id
 
-    this.name = '';
-    
-    var count = 0
-    for (var n in this.id.replace('_', ' ').split(' ')) {
-      this.name += n[0].toUpperCase() + n.slice(1)
-
-      if (count == this.id.replace('_', ' ').split(' ').length - 1)
-        this.name += ' '
-    }
-
     var characterData = {}
 
     await axios.get("http://localhost:8000/rdf-character/" + this.id)
       .then(response => {
         characterData = response.data
-        console.log(response.data)
+        //console.log(response.data)
       });
 
-      //Processing json data - put this wherever it's best for you
-      var characterName = ""
-      if(this.id == "cassandra_cain"){
-        characterName = "CassandraCain";
-      }
-      else if(this.id == "emma_frost"){
-        characterName = "EmmaFrost";
-      }
-      else if(this.id == "wally_west"){
-        characterName = "WallyWest";
-      }
-      else if(this.id == "deadpool"){
-        characterName = "Deadpool";
-      }
-      else{
-        characterName = "Midnighter";
-      }
-
-      var uri = "http://whosyourhero.com/heroes.owl#" + characterName;
+      var uri = "http://whosyourhero.com/heroes.owl#" + this.getName();
 
       //Get photo
       var photo = ""
@@ -78,7 +81,7 @@ export default defineComponent({
         birthday = "Unknown";
       }
 
-      console.log(birthday);
+      //console.log(birthday);
 
       //Get characterType
       var characterType = ""
@@ -89,7 +92,7 @@ export default defineComponent({
         characterType = "Unknown";
       }
 
-      console.log(characterType);
+      //console.log(characterType);
 
       //Get number of issues that character appears in
       var numberOfIssues = ""
@@ -100,7 +103,7 @@ export default defineComponent({
         numberOfIssues = "Unknown";
       }
 
-      console.log(numberOfIssues);
+      //console.log(numberOfIssues);
 
       //Get evolution
       var evolution = ""
@@ -111,7 +114,7 @@ export default defineComponent({
         evolution = "Unknown";
       }
 
-      console.log(evolution);
+      //console.log(evolution);
 
       //Get creation
       var creation = ""
@@ -122,7 +125,7 @@ export default defineComponent({
         creation = "Unknown";
       }
 
-      console.log(creation);
+      //console.log(creation);
 
       //Get creators
       var creators = ""
@@ -133,7 +136,7 @@ export default defineComponent({
         creators = "Unknown";
       }
 
-      console.log(creators);
+      //console.log(creators);
 
       //Get deaths
       var deaths = ""
@@ -144,7 +147,7 @@ export default defineComponent({
         deaths = "Unknown";
       }
 
-      console.log(deaths);
+      //console.log(deaths);
 
       //Get origins
       var origins = ""
@@ -155,15 +158,16 @@ export default defineComponent({
         origins = "Unknown";
       }
 
-      console.log(origins);
+      //console.log(origins);
 
       //Get characteristics
       var characteristics = [];
+      var characteristicsDict = {};
       if(JSON.stringify(characterData["characteristics"]) != "{}"){
         characteristics = characterData["characteristics"][uri];
       }
 
-      console.log(characteristics);
+      //console.log(characteristics);
 
       var characteristicsTypes = []
       var characteristicsDescriptions = [];
@@ -179,9 +183,10 @@ export default defineComponent({
         }
         characteristicsDescriptions.push(characteristicDescription);
       }
-      console.log(characteristicsTypes);
-      console.log(characteristicsDescriptions);
 
+      for (var i = 0; i < characteristicsTypes.length; i++) {
+        characteristicsDict[characteristicsTypes[i]] = characteristicsDescriptions[i];
+      }
 
       //Get publisher
       var publisher = ""
@@ -192,7 +197,7 @@ export default defineComponent({
         publisher = "Unknown";
       }
 
-      console.log(publisher);
+      //console.log(publisher);
 
       //Get real name
       var realName = ""
@@ -203,7 +208,7 @@ export default defineComponent({
         realName = "Unknown";
       }
 
-      console.log(realName);
+      //console.log(realName);
 
       //Get summary
       var summary = ""
@@ -214,7 +219,7 @@ export default defineComponent({
         summary = "Unknown";
       }
 
-      console.log(summary);
+      //console.log(summary);
 
       //Get super name
       var superName = ""
@@ -225,7 +230,7 @@ export default defineComponent({
         superName = "Unknown";
       }
 
-      console.log(superName);
+      //console.log(superName);
 
       //Get first appearance
       var firstAppearance = ""
@@ -236,7 +241,7 @@ export default defineComponent({
         firstAppearance = "Unknown";
       }
 
-      console.log(firstAppearance);
+      //console.log(firstAppearance);
 
       //Get alias
       var alias = []
@@ -244,61 +249,69 @@ export default defineComponent({
         alias = characterData["alias"][uri];
       }
 
-      console.log(alias);
+      //console.log(alias);
 
       //Get alternate Versions
       var alternateVersions = []
+      var alternateVersionsDict = {};
       if(JSON.stringify(characterData["alternateVersions"]) != "{}"){
         alternateVersions = characterData["alternateVersions"];
         var alternateVersionsTypes = Object.keys(characterData["alternateVersions"]);
         var alternateVersionsDescriptions = Object.values(characterData["alternateVersions"]);
 
-        console.log(alternateVersions);
-        console.log(alternateVersionsTypes);
-        console.log(alternateVersionsDescriptions);
+        //console.log(alternateVersions);
+        //console.log(alternateVersionsTypes);
+        //console.log(alternateVersionsDescriptions);
+      }
 
+      for (var i = 0; i < alternateVersionsTypes.length; i++) {
+        alternateVersionsDict[alternateVersionsTypes[i]] = alternateVersionsDescriptions[i];
       }
 
       //Get storyArcs
       var storyArcs = []
+      var storyArcsDict = {};
       if(JSON.stringify(characterData["storyArcs"]) != "{}"){
         storyArcs = characterData["storyArcs"];
         var storyArcsTypes = Object.keys(characterData["storyArcs"]);
         var storyArcsDescriptions = Object.values(characterData["storyArcs"]);
+      }
 
-        console.log(storyArcs);
-        console.log(storyArcsTypes);
-        console.log(storyArcsDescriptions);
+      for (var i = 0; i < storyArcsTypes.length; i++) {
+        storyArcsDict[storyArcsTypes[i]] = storyArcsDescriptions[i];
       }
 
       //Get powers
       var powers = []
+      var powersDict = {};
       if(JSON.stringify(characterData["powers"]) != "{}"){
         powers = characterData["powers"];
         var powersTypes = Object.keys(characterData["powers"]);
         var powersDescriptions = Object.values(characterData["powers"]);
+      }
 
-        console.log(powers);
-        console.log(powersTypes);
-        console.log(powersDescriptions);
+      for (var i = 0; i < powersTypes.length; i++) {
+        powersDict[powersTypes[i]] = powersDescriptions[i];
       }
 
       //Get tropes
       var tropes = []
+      var tropesDict = {};
       if(JSON.stringify(characterData["tropes"]) != "{}"){
         tropes = characterData["tropes"];
         var tropesTypes = Object.keys(characterData["tropes"]);
         var tropesDescriptions = Object.values(characterData["tropes"]);
+      }
 
-        console.log(tropes);
-        console.log(tropesTypes);
-        console.log(tropesDescriptions);
+      for (var i = 0; i < tropesTypes.length; i++) {
+        tropesDict[tropesTypes[i]] = tropesDescriptions[i];
       }
 
       //Get media
       var media = []
       var mediaTypes = [];
       var mediaDescriptions = [];
+      var mediaDict = {};
       if(JSON.stringify(characterData["media"]) != "{}"){
         media = characterData["media"];
         var mediaTitles = Object.keys(characterData["media"]);
@@ -308,10 +321,17 @@ export default defineComponent({
           mediaTypes.push(mediaTypesDescriptions[i]["mediaType"]);
           mediaDescriptions.push(mediaTypesDescriptions[i]["mediaDescription"]);
         }
-        console.log(media);
-        console.log(mediaTitles);
-        console.log(mediaTypes);
-        console.log(mediaDescriptions);
+        //console.log(media);
+        //console.log(mediaTitles);
+        //console.log(mediaTypes);
+        //console.log(mediaDescriptions);
+      }
+
+      for (var i = 0; i < mediaTitles.length; i++) {
+        mediaDict[mediaTitles[i]] = {
+          "type": mediaTypes[i], 
+          "description": mediaDescriptions[i]
+        };
       }
 
       //Get isWoman
@@ -325,8 +345,6 @@ export default defineComponent({
           isWoman = false;
         }
       }
-
-      console.log(isWoman);
 
       //Get isMan
       var isMan = false
@@ -352,6 +370,17 @@ export default defineComponent({
         }
       }
 
+      var gender = (isMan ? "Man" : (isWoman ? "Woman" : (isNonBinary ? "Non-binary" : "Unknown")));
+
+      this.character = new Character(uri, this.name,
+      photo, birthday, characterType, numberOfIssues,
+      evolution, creation, creators, deaths, origins,
+      characteristicsDict, publisher, realName, summary,
+      superName, firstAppearance, alias, alternateVersionsDict,
+      storyArcsDict, powersDict, tropesDict, mediaDict, gender)
+
+      console.log(this.character)
+      //console.log(characterData);
       //Cassandra doesn't have evolution or origins
       //Midnighter doesn't have media or characteristics
       //Wally doesn't have creation or evolution

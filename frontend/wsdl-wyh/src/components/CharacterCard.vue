@@ -1,5 +1,5 @@
 <template>
-    <div class="card character-card" style="width: 300px; height: 300px; padding: 0px; margin-right: 50px;" @click="redirect()">
+    <div class="card character-card" style="width: 300px; height: 300px; padding: 0px; margin-right: 50px;" @click="this.redirect()">
         <img :src="image" style="width: 100%; border-radius: 20px; padding: 0px;" />
         <div class="card-img-overlay"
             style="bottom: 0; top: 240px; text-align: center; justify-self: center; align-self: center; font-size: 20px; color: white;">
