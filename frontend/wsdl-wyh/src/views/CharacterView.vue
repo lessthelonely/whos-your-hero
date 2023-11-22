@@ -284,14 +284,18 @@ import axios from 'axios'
 import { Character } from '../stores/Character.js'
 
 function separateWordsByCapitalLetters(inputString) {
-      var wordsArray = inputString.split(/(?=[A-Z][a-z])|(?<=[a-z])(?=[A-Z0-9])/);
+  if(inputString == "Deadpool22018"){
+    return "Deadpool 2 2018";
+  }
+
+  var wordsArray = inputString.split(/(?=[A-Z][a-z])|(?<=[a-z])(?=[A-Z0-9])/);
   
   for (var i = 0; i < wordsArray.length; i++) {
     if(wordsArray[i][wordsArray[i].length - 1] == "/" || wordsArray[i][wordsArray[i].length - 1] == "–"){
       wordsArray[i] = wordsArray[i] + wordsArray[i + 1];
       wordsArray.splice(i + 1, 1);
     }
-    if(wordsArray[i][wordsArray[i].length - 1] == "&"){
+    if(wordsArray[i].includes("&")){
       wordsArray[i] = wordsArray[i].split("&")[0] + " & " + wordsArray[i + 1];
       wordsArray.splice(i + 1, 1);
     }
@@ -358,6 +362,20 @@ function separateWordsByCapitalLetters(inputString) {
         wordsArray[i] = wordsArray[i].replace("ona", " on a");
       }
     }
+    if (wordsArray[i].includes("fora")) {
+      var index = wordsArray[i].indexOf("fora");
+      var nextIndex = index + "fora".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("fora", " for a");
+      }
+    }
+    if (wordsArray[i].includes("witha")) {
+      var index = wordsArray[i].indexOf("witha");
+      var nextIndex = index + "witha".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("witha", " with a");
+      }
+    }
     if(wordsArray[i].includes("vs") && wordsArray[i] != "Chekhovs"){
       var index = wordsArray[i].indexOf("vs");
       var nextIndex = index + "vs".length;
@@ -372,14 +390,14 @@ function separateWordsByCapitalLetters(inputString) {
         wordsArray[i] = wordsArray[i].replace("of", " of");
       }
     }
-    if(wordsArray[i].includes("is") && wordsArray[i] != "Analysis" && wordsArray[i] != "Regenesis" && wordsArray[i] != "Orchis"){
+    if(wordsArray[i].includes("is") && wordsArray[i] != "Analysis" && wordsArray[i] != "Regenesis" && wordsArray[i] != "Orchis" && wordsArray[i] != "This"){
           var index = wordsArray[i].indexOf("is");
           var nextIndex = index + "is".length;
           if(nextIndex == wordsArray[i].length){
             wordsArray[i] = wordsArray[i].replace("is", " is");
           }
         }
-    if(wordsArray[i].includes("or") && wordsArray[i] != "Junior" && wordsArray[i] != "Mentor" && wordsArray[i] != "Fervor" && wordsArray[i] != "Survivor" && wordsArray[i] != "Terror" && wordsArray[i] != "Liquor" && wordsArray[i] != "Minor" && wordsArray[i] != "Warrior"){
+    if(wordsArray[i].includes("or") && wordsArray[i] != "Junior" && wordsArray[i] != "Mentor" && wordsArray[i] != "Fervor" && wordsArray[i] != "Survivor" && wordsArray[i] != "Terror" && wordsArray[i] != "Liquor" && wordsArray[i] != "Minor" && wordsArray[i] != "Warrior" && wordsArray[i] != "Major" && wordsArray[i] != "Humor" && wordsArray[i] != "Motor" && !(wordsArray[i].includes("for"))){
       var index = wordsArray[i].indexOf("or");
       var nextIndex = index + "or".length;
       if(nextIndex == wordsArray[i].length){
@@ -449,21 +467,21 @@ function separateWordsByCapitalLetters(inputString) {
             wordsArray[i] = wordsArray[i].replace("an", " an");
           }
     }
-    if(wordsArray[i].includes("in") && wordsArray[i] != "Skin" && wordsArray[i] != "Sin" && wordsArray[i] != "Robin" && wordsArray[i] != "Cain" && wordsArray[i] != "Ronin" && wordsArray[i] != "Villain" && wordsArray[i] != "Captain" && wordsArray[i] != "Brain" && wordsArray[i] != "Again" && wordsArray[i] != "Main" && wordsArray[i] != "Chain"){
+    if(wordsArray[i].includes("in") && wordsArray[i] != "Skin" && wordsArray[i] != "Sin" && wordsArray[i] != "Robin" && wordsArray[i] != "Cain" && wordsArray[i] != "Ronin" && wordsArray[i] != "Villain" && wordsArray[i] != "Captain" && wordsArray[i] != "Brain" && wordsArray[i] != "Again" && wordsArray[i] != "Main" && wordsArray[i] != "Chain" && wordsArray[i] != "Assassin"){
           var index = wordsArray[i].indexOf("in");
           var nextIndex = index + "in".length;
           if(nextIndex == wordsArray[i].length){
             wordsArray[i] = wordsArray[i].replace("in", " in");
           }
     }
-    if (wordsArray[i].includes("as") && wordsArray[i] != "Atlas" && wordsArray[i] != "Has" && wordsArray[i] != "Was" && wordsArray[i] != "Mithras") {
+    if (wordsArray[i].includes("as") && wordsArray[i] != "Atlas" && wordsArray[i] != "Has" && wordsArray[i] != "Was" && wordsArray[i] != "Mithras" && wordsArray[i] != "Ninjas") {
       var index = wordsArray[i].indexOf("as");
       var nextIndex = index + "as".length;
       if (nextIndex == wordsArray[i].length || wordsArray[i][nextIndex] == " ") {
         wordsArray[i] = wordsArray[i].replace("as", " as");
       }
     }
-    if(wordsArray[i].includes("at") && wordsArray[i] != "Bat" && wordsArray[i] != "What" && wordsArray[i] != "Combat" && wordsArray[i] != "That" && wordsArray[i] != "Copycat" && wordsArray[i] != "Kombat" && wordsArray[i] != "Coat" && wordsArray[i] != "Cat"){
+    if(wordsArray[i].includes("at") && wordsArray[i] != "Bat" && wordsArray[i] != "What" && wordsArray[i] != "Combat" && wordsArray[i] != "That" && wordsArray[i] != "Copycat" && wordsArray[i] != "Kombat" && wordsArray[i] != "Coat" && wordsArray[i] != "Cat" && wordsArray[i] != "Great"){
           var index = wordsArray[i].indexOf("at");
           var nextIndex = index + "at".length;
           if(nextIndex == wordsArray[i].length || wordsArray[i][nextIndex] == " "){
