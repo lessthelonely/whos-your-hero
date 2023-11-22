@@ -282,6 +282,161 @@ import axios from 'axios'
 import { Character } from '../stores/Character.js'
 
 //vs, the, onthe, to, of -> be careful: need more time to think about it
+function getIndexOfNextCapitalLetter(inputString) {
+    // Use a regular expression to split the string at capital letters
+    var index = inputString.search(/[A-Z]/);
+    return index;
+  }
+
+function separateWordsByCapitalLetters(inputString) {
+    // Use a regular expression to split the string at capital letters
+    inputString = inputString.replace(/_/g, ' ');
+    //see about - 
+    
+    // Use a regular expression to split the string at specific patterns
+    var wordsArray = inputString.split(/(?=[A-Z][a-z])|(?<=[a-z])(?=[A-Z])/);
+  
+    for(var i = 0; i < wordsArray.length; i++){
+      if(wordsArray[i][wordsArray[i].length - 1] == "/" || wordsArray[i][wordsArray[i].length - 1] == "–"){
+        wordsArray[i] = wordsArray[i] + wordsArray[i + 1];
+        wordsArray.splice(i + 1, 1);
+      }
+      if(wordsArray[i].includes("andthe")){
+        var index = wordsArray[i].indexOf("andthe");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "andthe".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("andthe", " and the");
+        }
+      }
+      if(wordsArray[i].includes("and") && !(wordsArray[i].includes("the"))){
+        var index = wordsArray[i].indexOf("and");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "and".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("and", " and");
+        }
+      }
+      if(wordsArray[i].includes("ofa")){
+        var index = wordsArray[i].indexOf("ofa");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "ofa".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("ofa", " of a");
+        }
+      }
+      if(wordsArray[i].includes("fromthe")){
+        var index = wordsArray[i].indexOf("fromthe");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "fromthe".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("fromthe", " from the");
+        }
+      }
+      if(wordsArray[i].includes("ofthe")){
+        var index = wordsArray[i].indexOf("ofthe");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "ofthe".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("ofthe", " of the");
+        }
+      }
+      if(wordsArray[i].includes("onthe")){
+        var index = wordsArray[i].indexOf("onthe");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "onthe".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("onthe", " on the");
+        }
+      }
+      if(wordsArray[i].includes("tothe")){
+        var index = wordsArray[i].indexOf("tothe");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "tothe".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("tothe", " to the");
+        }
+      }
+      if(wordsArray[i].includes("the") && !(wordsArray[i].includes("from") || wordsArray[i].includes("of") || wordsArray[i].includes("to") || wordsArray[i].includes("on"))){
+        var index = wordsArray[i].indexOf("the");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "the".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("the", " the");
+        }
+      }
+      if(wordsArray[i].includes("ona")){
+        var index = wordsArray[i].indexOf("ona"); 
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "ona".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("ona", " on a");
+        }
+      }
+      /*if(wordsArray[i].includes("vs")){
+        var index = wordsArray[i].indexOf("vs");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "vs".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("vs", " vs");
+        }
+      }*/
+      if(wordsArray[i].includes("of") && !(wordsArray[i].includes("a"))){
+        var index = wordsArray[i].indexOf("of");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "of".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("of", " of");
+        }
+      }
+      if(wordsArray[i].includes("to")){
+        var index = wordsArray[i].indexOf("to");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "to".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("to", " to");
+        }
+      }
+      if(wordsArray[i].includes("a") && !(wordsArray[i].includes("on") || wordsArray[i].includes("of"))){
+        var index = wordsArray[i].indexOf("a");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "a".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("a", " a");
+        }
+      }
+      if(wordsArray[i].includes("by")){
+        var index = wordsArray[i].indexOf("by");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "by".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("by", " by");
+        }
+      }
+      if(wordsArray[i].includes("but")){
+        var index = wordsArray[i].indexOf("but");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "but".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("but", " but");
+        }
+      }
+      if(wordsArray[i].includes("with")){
+        var index = wordsArray[i].indexOf("with");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "with".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("with", " with");
+        }
+      }
+    }
+  
+    // Join the array elements with space to form the final string
+    var resultString = wordsArray.join(' ');
+  
+    return resultString;
+  }
+
 export default defineComponent({
   data() {
     return {
@@ -584,19 +739,163 @@ export default defineComponent({
       tropesDict[tropesTypes[i]] = tropesDescriptions[i];
     }
 
-    //Get media
-    var media = []
-    var mediaTypes = [];
-    var mediaDescriptions = [];
-    var mediaDict = {};
-    if (JSON.stringify(characterData["media"]) != "{}") {
-      media = characterData["media"];
-      var mediaTitles = Object.keys(characterData["media"]);
-      var mediaTypesDescriptions = Object.values(characterData["media"]);
+      //console.log(publisher);
 
-      for (var i = 0; i < mediaTitles.length; i++) {
-        mediaTypes.push(mediaTypesDescriptions[i]["mediaType"]);
-        mediaDescriptions.push(mediaTypesDescriptions[i]["mediaDescription"]);
+      //Get real name
+      var realName = ""
+      if(JSON.stringify(characterData["realName"]) != "{}"){
+        realName = characterData["realName"][uri][0];
+      }
+      else{
+        realName = "Unknown";
+      }
+
+      //console.log(realName);
+
+      //Get summary
+      var summary = ""
+      if(JSON.stringify(characterData["summary"]) != "{}"){
+        summary = characterData["summary"][uri][0];
+      }
+      else{
+        summary = "Unknown";
+      }
+
+      //console.log(summary);
+
+      //Get super name
+      var superName = ""
+      if(JSON.stringify(characterData["superName"]) != "{}"){
+        superName = characterData["superName"][uri][0];
+      }
+      else{
+        superName = "Unknown";
+      }
+
+      //console.log(superName);
+
+      //Get first appearance
+      var firstAppearance = ""
+      if(JSON.stringify(characterData["firstAppearance"]) != "{}"){
+        firstAppearance = characterData["firstAppearance"][uri][0];
+      }
+      else{
+        firstAppearance = "Unknown";
+      }
+
+      //console.log(firstAppearance);
+
+      //Get alias
+      var alias = []
+      if(JSON.stringify(characterData["alias"]) != "{}"){
+        alias = characterData["alias"][uri];
+      }
+
+      //console.log(alias);
+
+      //Get alternate Versions
+      var alternateVersionsDict = {};
+      if(JSON.stringify(characterData["alternateVersions"]) != "{}"){
+        var alternateVersionsTypes = Object.keys(characterData["alternateVersions"]);
+
+        var alternateVersionsTypesTreated = [];
+          for (var i = 0; i < alternateVersionsTypes.length; i++) {
+            var alternateVersionsType = separateWordsByCapitalLetters(alternateVersionsTypes[i]);
+            alternateVersionsTypesTreated.push(alternateVersionsType);
+          }
+
+        var alternateVersionsDescriptions = Object.values(characterData["alternateVersions"]);
+
+        //console.log(alternateVersions);
+        //console.log(alternateVersionsTypes);
+        //console.log(alternateVersionsDescriptions);
+      }
+
+      for (var i = 0; i < alternateVersionsTypesTreated.length; i++) {
+        alternateVersionsDict[alternateVersionsTypesTreated[i]] = alternateVersionsDescriptions[i];
+      }
+
+      //Get storyArcs
+      var storyArcsDict = {};
+      if(JSON.stringify(characterData["storyArcs"]) != "{}"){
+        var storyArcsTypes = Object.keys(characterData["storyArcs"]);
+        var storyArcsDescriptions = Object.values(characterData["storyArcs"]);
+
+        var storyArcsTypesTreated = [];
+          for (var i = 0; i < storyArcsTypes.length; i++) {
+            var storyArcType = separateWordsByCapitalLetters(storyArcsTypes[i]);
+            storyArcsTypesTreated.push(storyArcType);
+          }
+      }
+
+      for (var i = 0; i < storyArcsTypesTreated.length; i++) {
+        storyArcsDict[storyArcsTypesTreated[i]] = storyArcsDescriptions[i];
+      }
+
+      //Get powers
+      var powersDict = {};
+      if(JSON.stringify(characterData["powers"]) != "{}"){
+        var powersTypes = Object.keys(characterData["powers"]);
+        var powersDescriptions = Object.values(characterData["powers"]);
+
+        var powersTypesTreated = [];
+          for (var i = 0; i < powersTypes.length; i++) {
+            var powersType = separateWordsByCapitalLetters(powersTypes[i]);
+            powersTypesTreated.push(powersType);
+          }
+      }
+
+      for (var i = 0; i < powersTypesTreated.length; i++) {
+        powersDict[powersTypesTreated[i]] = powersDescriptions[i];
+      }
+
+      //Get tropes
+      var tropesDict = {};
+      if(JSON.stringify(characterData["tropes"]) != "{}"){
+        var tropesTypes = Object.keys(characterData["tropes"]);
+        var tropesDescriptions = Object.values(characterData["tropes"]);
+
+        var tropesTypesTreated = [];
+          for (var i = 0; i < tropesTypes.length; i++) {
+            var tropesType = separateWordsByCapitalLetters(tropesTypes[i]);
+            tropesTypesTreated.push(tropesType);
+          }
+      }
+
+      for (var i = 0; i < tropesTypesTreated.length; i++) {
+        tropesDict[tropesTypesTreated[i]] = tropesDescriptions[i];
+      }
+
+      //Get media
+      var mediaTypes = [];
+      var mediaDescriptions = [];
+      var mediaDict = {};
+      if(JSON.stringify(characterData["media"]) != "{}"){
+        var mediaTitles = Object.keys(characterData["media"]);
+
+        var mediaTitlesTreated = [];
+          for (var i = 0; i < mediaTitles.length; i++) {
+            var mediaTitle = separateWordsByCapitalLetters(mediaTitles[i]);
+            mediaTitlesTreated.push(mediaTitle);
+          }
+
+        var mediaTypesDescriptions = Object.values(characterData["media"]);
+
+        for (var i = 0; i < mediaTitles.length; i++) {
+          mediaTypes.push(mediaTypesDescriptions[i]["mediaType"]);
+          mediaDescriptions.push(mediaTypesDescriptions[i]["mediaDescription"]);
+        }
+        //console.log(media);
+        //console.log(mediaTitles);
+        //console.log(mediaTypes);
+        //console.log(mediaDescriptions);
+      }
+
+      for (var i = 0; i < mediaTitlesTreated.length; i++) {
+        mediaDict[mediaTitlesTreated[i]] = {
+          "type": mediaTypes[i], 
+          "description": mediaDescriptions[i]
+        };
       }
       //console.log(media);
       //console.log(mediaTitles);
@@ -665,4 +964,3 @@ export default defineComponent({
   }
 })
 </script>
-
