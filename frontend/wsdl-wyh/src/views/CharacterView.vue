@@ -337,7 +337,7 @@ function separateWordsByCapitalLetters(inputString) {
         wordsArray[i] = wordsArray[i].replace("inthe", " in the");
       }
     }
-    if (wordsArray[i].includes("the") && !(wordsArray[i].includes("from") || wordsArray[i].includes("of") || wordsArray[i].includes("to") || wordsArray[i].includes("on"))) {
+    if (wordsArray[i].includes("the") && !(wordsArray[i].includes("of") || wordsArray[i].includes("to") || wordsArray[i].includes("on"))) {
       var index = wordsArray[i].indexOf("the");
       var nextIndex = index + "the".length;
       if (nextIndex == wordsArray[i].length) {
@@ -379,7 +379,7 @@ function separateWordsByCapitalLetters(inputString) {
             wordsArray[i] = wordsArray[i].replace("is", " is");
           }
         }
-    if(wordsArray[i].includes("or") && wordsArray[i] != "Junior" && wordsArray[i] != "Mentor" && wordsArray[i] != "Fervor" && wordsArray[i] != "Survivor"){
+    if(wordsArray[i].includes("or") && wordsArray[i] != "Junior" && wordsArray[i] != "Mentor" && wordsArray[i] != "Fervor" && wordsArray[i] != "Survivor" && wordsArray[i] != "Terror" && wordsArray[i] != "Liquor" && wordsArray[i] != "Minor" && wordsArray[i] != "Warrior"){
       var index = wordsArray[i].indexOf("or");
       var nextIndex = index + "or".length;
       if(nextIndex == wordsArray[i].length){
