@@ -9,21 +9,153 @@ import { defineComponent } from 'vue'
 import axios from 'axios'
 import { Character } from '../stores/Character.js'
 
+function getIndexOfNextCapitalLetter(inputString) {
+    // Use a regular expression to split the string at capital letters
+    var index = inputString.search(/[A-Z]/);
+    return index;
+  }
+
 function separateWordsByCapitalLetters(inputString) {
     // Use a regular expression to split the string at capital letters
     inputString = inputString.replace(/_/g, ' ');
+    //see about - 
     
     // Use a regular expression to split the string at specific patterns
-    var wordsArray = inputString.split(/(?<=[^\/A-Z])(?=[A-Z]|$)/);
+    var wordsArray = inputString.split(/(?=[A-Z][a-z])|(?<=[a-z])(?=[A-Z])/);
   
     for(var i = 0; i < wordsArray.length; i++){
+      if(wordsArray[i][wordsArray[i].length - 1] == "/" || wordsArray[i][wordsArray[i].length - 1] == "–"){
+        wordsArray[i] = wordsArray[i] + wordsArray[i + 1];
+        wordsArray.splice(i + 1, 1);
+      }
       if(wordsArray[i].includes("andthe")){
-        wordsArray[i] = wordsArray[i].replace("andthe", "and the");
+        var index = wordsArray[i].indexOf("andthe");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "andthe".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("andthe", " and the");
+        }
       }
-      if(wordsArray[i].includes("and")){
-        wordsArray[i] = wordsArray[i].replace("and", " and");
+      if(wordsArray[i].includes("and") && !(wordsArray[i].includes("the"))){
+        var index = wordsArray[i].indexOf("and");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "and".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("and", " and");
+        }
       }
-      //vs, the, onthe, on, a (ARealManIsaKiller), ona (PutonaBus), to, of -> be careful: need more time to think about it
+      if(wordsArray[i].includes("ofa")){
+        var index = wordsArray[i].indexOf("ofa");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "ofa".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("ofa", " of a");
+        }
+      }
+      if(wordsArray[i].includes("fromthe")){
+        var index = wordsArray[i].indexOf("fromthe");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "fromthe".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("fromthe", " from the");
+        }
+      }
+      if(wordsArray[i].includes("ofthe")){
+        var index = wordsArray[i].indexOf("ofthe");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "ofthe".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("ofthe", " of the");
+        }
+      }
+      if(wordsArray[i].includes("onthe")){
+        var index = wordsArray[i].indexOf("onthe");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "onthe".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("onthe", " on the");
+        }
+      }
+      if(wordsArray[i].includes("tothe")){
+        var index = wordsArray[i].indexOf("tothe");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "tothe".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("tothe", " to the");
+        }
+      }
+      if(wordsArray[i].includes("the") && !(wordsArray[i].includes("from") || wordsArray[i].includes("of") || wordsArray[i].includes("to") || wordsArray[i].includes("on"))){
+        var index = wordsArray[i].indexOf("the");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "the".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("the", " the");
+        }
+      }
+      if(wordsArray[i].includes("ona")){
+        var index = wordsArray[i].indexOf("ona"); 
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "ona".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("ona", " on a");
+        }
+      }
+      /*if(wordsArray[i].includes("vs")){
+        var index = wordsArray[i].indexOf("vs");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "vs".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("vs", " vs");
+        }
+      }*/
+      if(wordsArray[i].includes("of") && !(wordsArray[i].includes("a"))){
+        var index = wordsArray[i].indexOf("of");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "of".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("of", " of");
+        }
+      }
+      if(wordsArray[i].includes("to")){
+        var index = wordsArray[i].indexOf("to");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "to".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("to", " to");
+        }
+      }
+      if(wordsArray[i].includes("a") && !(wordsArray[i].includes("on") || wordsArray[i].includes("of"))){
+        var index = wordsArray[i].indexOf("a");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "a".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("a", " a");
+        }
+      }
+      if(wordsArray[i].includes("by")){
+        var index = wordsArray[i].indexOf("by");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "by".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("by", " by");
+        }
+      }
+      if(wordsArray[i].includes("but")){
+        var index = wordsArray[i].indexOf("but");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "but".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("but", " but");
+        }
+      }
+      if(wordsArray[i].includes("with")){
+        var index = wordsArray[i].indexOf("with");
+        var nextCapitalLetterIndex = getIndexOfNextCapitalLetter(wordsArray[i].slice(index));
+        var nextIndex = index + "with".length;
+        if(nextCapitalLetterIndex == nextIndex || nextIndex == wordsArray[i].length){
+          wordsArray[i] = wordsArray[i].replace("with", " with");
+        }
+      }
     }
   
     // Join the array elements with space to form the final string
