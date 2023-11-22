@@ -96,16 +96,18 @@
           </ul>
         </div>
 
-        <div class="media">
+        <div class="media" v-if="Object.keys(character.media).length != 0">
           <h5 style="margin-bottom: 12px;">
             Media
-          </h5>    
+          </h5>
           <div class="accordion-item" v-for="(mediaObj, mediaTitle) in character.media" v-bind:key="mediaTitle">
             <div>
-              <h6 style="border-radius: 10px 10px 0px 0px; margin: 0px; background-color: #212529; color: white; padding: 5px;">
+              <h6
+                style="border-radius: 10px 10px 0px 0px; margin: 0px; background-color: #212529; color: white; padding: 5px;">
                 {{ mediaTitle }}
               </h6>
-              <h6 style="font-size: 14px; font-style: italic; background-color: #343a40; color: white; padding: 5px; margin: 0px;">
+              <h6
+                style="font-size: 14px; font-style: italic; background-color: #343a40; color: white; padding: 5px; margin: 0px;">
                 {{ mediaObj.type }}
               </h6>
             </div>
@@ -129,7 +131,7 @@
             </h6>
 
             <img :src="character.photo"
-              style="width: 100%; height: 250px; padding: 0px; object-fit: cover; object-position: center top;" />
+              style="width: 100%; padding: 0px; object-fit: cover; object-position: center top;" />
           </th>
         </thead>
         <tbody>
@@ -463,11 +465,176 @@ function separateWordsByCapitalLetters(inputString) {
       // Join the array elements with space to form the final string
       var resultString = wordsArray.join(' ');
 
-      //remove double spaces
-      resultString = resultString.replace(/\s+/g, ' ');
-    
-      return resultString;
+  for (var i = 0; i < wordsArray.length; i++) {
+    var count = 0;
+    if (wordsArray[i][wordsArray[i].length - 1] == "/" || wordsArray[i][wordsArray[i].length - 1] == "–") {
+      wordsArray[i] = wordsArray[i] + wordsArray[i + 1];
+      wordsArray.splice(i + 1, 1);
     }
+    if (wordsArray[i].includes("andthe")) {
+      var index = wordsArray[i].indexOf("andthe");
+      var nextIndex = index + "andthe".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("andthe", " and the");
+      }
+    }
+    if (wordsArray[i].includes("and") && !(wordsArray[i].includes("the")) && (wordsArray[i] != "Grand")) {
+      var index = wordsArray[i].indexOf("and");
+      var nextIndex = index + "and".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("and", " and");
+      }
+    }
+    if (wordsArray[i].includes("ofa")) {
+      var index = wordsArray[i].indexOf("ofa");
+      var nextIndex = index + "ofa".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("ofa", " of a");
+      }
+    }
+    if (wordsArray[i].includes("fromthe")) {
+      var index = wordsArray[i].indexOf("fromthe");
+      var nextIndex = index + "fromthe".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("fromthe", " from the");
+      }
+    }
+    if (wordsArray[i].includes("ofthe")) {
+      var index = wordsArray[i].indexOf("ofthe");
+      var nextIndex = index + "ofthe".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("ofthe", " of the");
+      }
+    }
+    if (wordsArray[i].includes("onthe")) {
+      var index = wordsArray[i].indexOf("onthe");
+      var nextIndex = index + "onthe".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("onthe", " on the");
+      }
+    }
+    if (wordsArray[i].includes("tothe")) {
+      var index = wordsArray[i].indexOf("tothe");
+      var nextIndex = index + "tothe".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("tothe", " to the");
+      }
+    }
+    if (wordsArray[i].includes("inthe")) {
+      var index = wordsArray[i].indexOf("inthe");
+      var nextIndex = index + "inthe".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("inthe", " in the");
+      }
+    }
+    if (wordsArray[i].includes("with")) {
+      var index = wordsArray[i].indexOf("with");
+      var nextIndex = index + "with".length;
+      if (nextIndex == wordsArray[i].length || wordsArray[i][nextIndex] == " ") {
+        wordsArray[i] = wordsArray[i].replace("with", " with");
+      }
+    }
+    if (wordsArray[i].includes("the") && !(wordsArray[i].includes("from") || wordsArray[i].includes("of") || wordsArray[i].includes("to") || wordsArray[i].includes("on"))) {
+      var index = wordsArray[i].indexOf("the");
+      var nextIndex = index + "the".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("the", " the");
+      }
+    }
+    if (wordsArray[i].includes("ona")) {
+      var index = wordsArray[i].indexOf("ona");
+      var nextIndex = index + "ona".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("ona", " on a");
+      }
+    }
+    /*if(wordsArray[i].includes("vs")){
+      var index = wordsArray[i].indexOf("vs");
+      var nextIndex = index + "vs".length;
+      if(nextIndex == wordsArray[i].length){
+        wordsArray[i] = wordsArray[i].replace("vs", " vs");
+      }
+    }*/
+    if (wordsArray[i].includes("of")) {
+      var index = wordsArray[i].indexOf("of");
+      var nextIndex = index + "of".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("of", " of");
+      }
+    }
+    if (wordsArray[i].includes("unto")) {
+      var index = wordsArray[i].indexOf("unto");
+      var nextIndex = index + "unto".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("unto", " unto");
+      }
+    }
+    if (wordsArray[i].includes("to") && !(wordsArray[i].includes("unto"))) {
+      var index = wordsArray[i].indexOf("to");
+      var nextIndex = index + "to".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("to", " to");
+      }
+    }
+    if (wordsArray[i].includes("a") && !(wordsArray[i].includes("on") || wordsArray[i].includes("of")) && wordsArray[i] != "Alpha" && wordsArray[i] != "Myopia") {
+      var index = wordsArray[i].indexOf("a");
+      var nextIndex = index + "a".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("a", " a");
+      }
+    }
+    if (wordsArray[i].includes("by")) {
+      var index = wordsArray[i].indexOf("by");
+      var nextIndex = index + "by".length;
+      if (nextIndex == wordsArray[i].length || wordsArray[i][nextIndex] == " ") {
+        wordsArray[i] = wordsArray[i].replace("by", " by");
+      }
+    }
+    if (wordsArray[i].includes("but")) {
+      var index = wordsArray[i].indexOf("but");
+      var nextIndex = index + "but".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("but", " but");
+      }
+    }
+    if (wordsArray[i].includes("withan")) {
+      var index = wordsArray[i].indexOf("withan");
+      var nextIndex = index + "withan".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("withan", " with an");
+      }
+    }
+    if (wordsArray[i].includes("an")) {
+      var index = wordsArray[i].indexOf("an");
+      var nextIndex = index + "an".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("an", " an");
+      }
+    }
+    if (wordsArray[i].includes("in") && wordsArray[i] != "Skin") {
+      var index = wordsArray[i].indexOf("in");
+      var nextIndex = index + "in".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("in", " in");
+      }
+    }
+    if (wordsArray[i].includes("as")) {
+      var index = wordsArray[i].indexOf("as");
+      var nextIndex = index + "as".length;
+      if (nextIndex == wordsArray[i].length) {
+        wordsArray[i] = wordsArray[i].replace("as", " as");
+      }
+    }
+  }
+
+  // Join the array elements with space to form the final string
+  var resultString = wordsArray.join(' ');
+
+  //remove double spaces
+  resultString = resultString.replace(/\s+/g, ' ');
+
+  return resultString;
+}
 
 export default defineComponent({
   data() {
@@ -520,358 +687,357 @@ export default defineComponent({
     await axios.get("http://localhost:8000/rdf-character/" + this.id)
       .then(response => {
         characterData = response.data
-        //console.log(response.data)
       });
 
-      var uri = "http://whosyourhero.com/heroes.owl#" + this.getName();
+    var uri = "http://whosyourhero.com/heroes.owl#" + this.getName();
 
-      //Get photo
-      var photo = ""
-      if(JSON.stringify(characterData["photo"]) != "{}"){
-        photo = characterData["photo"][uri][0];
+    //Get photo
+    var photo = ""
+    if (JSON.stringify(characterData["photo"]) != "{}") {
+      photo = characterData["photo"][uri][0];
+    }
+    else {
+      this.photo = "https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png";
+    }
+
+    //Get birthday
+    var birthday = ""
+    if (JSON.stringify(characterData["birthday"]) != "{}") {
+      birthday = characterData["birthday"][uri][0];
+    }
+    else {
+      birthday = "Unknown";
+    }
+
+    //console.log(birthday);
+
+    //Get characterType
+    var characterType = ""
+    if (JSON.stringify(characterData["characterType"]) != "{}") {
+      characterType = characterData["characterType"][uri][0];
+    }
+    else {
+      characterType = "Unknown";
+    }
+
+    //console.log(characterType);
+
+    //Get number of issues that character appears in
+    var numberOfIssues = ""
+    if (JSON.stringify(characterData["appearsIn"]) != "{}") {
+      numberOfIssues = characterData["appearsIn"][uri][0];
+    }
+    else {
+      numberOfIssues = "Unknown";
+    }
+
+    //console.log(numberOfIssues);
+
+    //Get evolution
+    var evolution = ""
+    if (JSON.stringify(characterData["evolution"]) != "{}") {
+      evolution = characterData["evolution"][uri][0];
+    }
+    else {
+      evolution = "Unknown";
+    }
+
+    //console.log(evolution);
+
+    //Get creation
+    var creation = ""
+    if (JSON.stringify(characterData["creation"]) != "{}") {
+      creation = characterData["creation"][uri][0];
+    }
+    else {
+      creation = "Unknown";
+    }
+
+    //console.log(creation);
+
+    //Get creators
+    var creators = ""
+    if (JSON.stringify(characterData["creators"]) != "{}") {
+      creators = characterData["creators"][uri][0];
+    }
+    else {
+      creators = "Unknown";
+    }
+
+    //console.log(creators);
+
+    //Get deaths
+    var deaths = ""
+    if (JSON.stringify(characterData["deaths"]) != "{}") {
+      deaths = characterData["deaths"][uri][0];
+    }
+    else {
+      deaths = "Unknown";
+    }
+
+    //console.log(deaths);
+
+    //Get origins
+    var origins = ""
+    if (JSON.stringify(characterData["origins"]) != "{}") {
+      origins = characterData["origins"][uri][0];
+    }
+    else {
+      origins = "Unknown";
+    }
+
+    //console.log(origins);
+
+    //Get characteristics
+    var characteristics = [];
+    var characteristicsDict = {};
+    if (JSON.stringify(characterData["characteristics"]) != "{}") {
+      characteristics = characterData["characteristics"][uri];
+    }
+
+    //console.log(characteristics);
+
+    var characteristicsTypes = []
+    var characteristicsDescriptions = [];
+    for (var i = 0; i < characteristics.length; i++) {
+      var characteristic = characteristics[i].split(":");
+      characteristicsTypes.push(characteristic[0]);
+      var characteristicDescription = ""
+      if (characteristic[1][0] == " ") {
+        characteristicDescription = characteristic[1].slice(1);
       }
-      else{
-        this.photo = "https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png";
+      else {
+        characteristicDescription = characteristic[1];
       }
+      characteristicsDescriptions.push(characteristicDescription);
+    }
 
-      console.log(photo);
+    for (var i = 0; i < characteristicsTypes.length; i++) {
+      characteristicsDict[characteristicsTypes[i]] = characteristicsDescriptions[i];
+    }
 
-      //Get birthday
-      var birthday = ""
-      if(JSON.stringify(characterData["birthday"]) != "{}"){
-        birthday = characterData["birthday"][uri][0];
-      }
-      else{
-        birthday = "Unknown";
-      }
+    //Get publisher
+    var publisher = ""
+    if (JSON.stringify(characterData["publisher"]) != "{}") {
+      publisher = characterData["publisher"][uri][0];
+    }
+    else {
+      publisher = "Unknown";
+    }
 
-      //console.log(birthday);
+    //console.log(publisher);
 
-      //Get characterType
-      var characterType = ""
-      if(JSON.stringify(characterData["characterType"]) != "{}"){
-        characterType = characterData["characterType"][uri][0];
-      }
-      else{
-        characterType = "Unknown";
-      }
+    //Get real name
+    var realName = ""
+    if (JSON.stringify(characterData["realName"]) != "{}") {
+      realName = characterData["realName"][uri][0];
+    }
+    else {
+      realName = "Unknown";
+    }
 
-      //console.log(characterType);
+    //console.log(realName);
 
-      //Get number of issues that character appears in
-      var numberOfIssues = ""
-      if(JSON.stringify(characterData["appearsIn"]) != "{}"){
-        numberOfIssues = characterData["appearsIn"][uri][0];
-      }
-      else{
-        numberOfIssues = "Unknown";
-      }
+    //Get summary
+    var summary = ""
+    if (JSON.stringify(characterData["summary"]) != "{}") {
+      summary = characterData["summary"][uri][0];
+    }
+    else {
+      summary = "Unknown";
+    }
 
-      //console.log(numberOfIssues);
+    //console.log(summary);
 
-      //Get evolution
-      var evolution = ""
-      if(JSON.stringify(characterData["evolution"]) != "{}"){
-        evolution = characterData["evolution"][uri][0];
-      }
-      else{
-        evolution = "Unknown";
-      }
+    //Get super name
+    var superName = ""
+    if (JSON.stringify(characterData["superName"]) != "{}") {
+      superName = characterData["superName"][uri][0];
+    }
+    else {
+      superName = "Unknown";
+    }
 
-      //console.log(evolution);
+    //console.log(superName);
 
-      //Get creation
-      var creation = ""
-      if(JSON.stringify(characterData["creation"]) != "{}"){
-        creation = characterData["creation"][uri][0];
-      }
-      else{
-        creation = "Unknown";
-      }
+    //Get first appearance
+    var firstAppearance = ""
+    if (JSON.stringify(characterData["firstAppearance"]) != "{}") {
+      firstAppearance = characterData["firstAppearance"][uri][0];
+    }
+    else {
+      firstAppearance = "Unknown";
+    }
 
-      //console.log(creation);
+    //console.log(firstAppearance);
 
-      //Get creators
-      var creators = ""
-      if(JSON.stringify(characterData["creators"]) != "{}"){
-        creators = characterData["creators"][uri][0];
-      }
-      else{
-        creators = "Unknown";
-      }
+    //Get alias
+    var alias = []
+    if (JSON.stringify(characterData["alias"]) != "{}") {
+      alias = characterData["alias"][uri];
+    }
 
-      //console.log(creators);
+    //console.log(alias);
 
-      //Get deaths
-      var deaths = ""
-      if(JSON.stringify(characterData["deaths"]) != "{}"){
-        deaths = characterData["deaths"][uri][0];
-      }
-      else{
-        deaths = "Unknown";
-      }
+    //Get alternate Versions
+    var alternateVersionsDict = {};
+    if (JSON.stringify(characterData["alternateVersions"]) != "{}") {
+      var alternateVersionsTypes = Object.keys(characterData["alternateVersions"]);
 
-      //console.log(deaths);
-
-      //Get origins
-      var origins = ""
-      if(JSON.stringify(characterData["origins"]) != "{}"){
-        origins = characterData["origins"][uri][0];
-      }
-      else{
-        origins = "Unknown";
-      }
-
-      //console.log(origins);
-
-      //Get characteristics
-      var characteristics = [];
-      var characteristicsDict = {};
-      if(JSON.stringify(characterData["characteristics"]) != "{}"){
-        characteristics = characterData["characteristics"][uri];
-      }
-
-      //console.log(characteristics);
-
-      var characteristicsTypes = []
-      var characteristicsDescriptions = [];
-      for(var i = 0; i < characteristics.length; i++){
-        var characteristic = characteristics[i].split(":");
-        characteristicsTypes.push(characteristic[0]);
-        var characteristicDescription = ""
-        if(characteristic[1][0] == " "){
-          characteristicDescription = characteristic[1].slice(1);
-        }
-        else{
-          characteristicDescription = characteristic[1];
-        }
-        characteristicsDescriptions.push(characteristicDescription);
-      }
-
-      for (var i = 0; i < characteristicsTypes.length; i++) {
-        characteristicsDict[characteristicsTypes[i]] = characteristicsDescriptions[i];
-      }
-
-      //Get publisher
-      var publisher = ""
-      if(JSON.stringify(characterData["publisher"]) != "{}"){
-        publisher = characterData["publisher"][uri][0];
-      }
-      else{
-        publisher = "Unknown";
-      }
-
-      //console.log(publisher);
-
-      //Get real name
-      var realName = ""
-      if(JSON.stringify(characterData["realName"]) != "{}"){
-        realName = characterData["realName"][uri][0];
-      }
-      else{
-        realName = "Unknown";
-      }
-
-      //console.log(realName);
-
-      //Get summary
-      var summary = ""
-      if(JSON.stringify(characterData["summary"]) != "{}"){
-        summary = characterData["summary"][uri][0];
-      }
-      else{
-        summary = "Unknown";
-      }
-
-      //console.log(summary);
-
-      //Get super name
-      var superName = ""
-      if(JSON.stringify(characterData["superName"]) != "{}"){
-        superName = characterData["superName"][uri][0];
-      }
-      else{
-        superName = "Unknown";
-      }
-
-      //console.log(superName);
-
-      //Get first appearance
-      var firstAppearance = ""
-      if(JSON.stringify(characterData["firstAppearance"]) != "{}"){
-        firstAppearance = characterData["firstAppearance"][uri][0];
-      }
-      else{
-        firstAppearance = "Unknown";
-      }
-
-      //console.log(firstAppearance);
-
-      //Get alias
-      var alias = []
-      if(JSON.stringify(characterData["alias"]) != "{}"){
-        alias = characterData["alias"][uri];
-      }
-
-      //console.log(alias);
-
-      //Get alternate Versions
-      var alternateVersionsDict = {};
-      if(JSON.stringify(characterData["alternateVersions"]) != "{}"){
-        var alternateVersionsTypes = Object.keys(characterData["alternateVersions"]);
-
-        var alternateVersionsTypesTreated = [];
-          for (var i = 0; i < alternateVersionsTypes.length; i++) {
-            var alternateVersionsType = separateWordsByCapitalLetters(alternateVersionsTypes[i]);
-            alternateVersionsTypesTreated.push(alternateVersionsType);
-          }
-
-        var alternateVersionsDescriptions = Object.values(characterData["alternateVersions"]);
-
-        //console.log(alternateVersions);
-        //console.log(alternateVersionsTypes);
-        //console.log(alternateVersionsDescriptions);
+      var alternateVersionsTypesTreated = [];
+      for (var i = 0; i < alternateVersionsTypes.length; i++) {
+        var alternateVersionsType = separateWordsByCapitalLetters(alternateVersionsTypes[i]);
+        alternateVersionsTypesTreated.push(alternateVersionsType);
       }
 
-      for (var i = 0; i < alternateVersionsTypesTreated.length; i++) {
-        alternateVersionsDict[alternateVersionsTypesTreated[i]] = alternateVersionsDescriptions[i];
+      var alternateVersionsDescriptions = Object.values(characterData["alternateVersions"]);
+
+      //console.log(alternateVersions);
+      //console.log(alternateVersionsTypes);
+      //console.log(alternateVersionsDescriptions);
+    }
+
+    for (var i = 0; i < alternateVersionsTypesTreated.length; i++) {
+      alternateVersionsDict[alternateVersionsTypesTreated[i]] = alternateVersionsDescriptions[i];
+    }
+
+    //Get storyArcs
+    var storyArcsDict = {};
+    if (JSON.stringify(characterData["storyArcs"]) != "{}") {
+      var storyArcsTypes = Object.keys(characterData["storyArcs"]);
+      var storyArcsDescriptions = Object.values(characterData["storyArcs"]);
+
+      var storyArcsTypesTreated = [];
+      for (var i = 0; i < storyArcsTypes.length; i++) {
+        var storyArcType = separateWordsByCapitalLetters(storyArcsTypes[i]);
+        storyArcsTypesTreated.push(storyArcType);
       }
+    }
 
-      //Get storyArcs
-      var storyArcsDict = {};
-      if(JSON.stringify(characterData["storyArcs"]) != "{}"){
-        var storyArcsTypes = Object.keys(characterData["storyArcs"]);
-        var storyArcsDescriptions = Object.values(characterData["storyArcs"]);
+    for (var i = 0; i < storyArcsTypesTreated.length; i++) {
+      storyArcsDict[storyArcsTypesTreated[i]] = storyArcsDescriptions[i];
+    }
 
-        var storyArcsTypesTreated = [];
-          for (var i = 0; i < storyArcsTypes.length; i++) {
-            var storyArcType = separateWordsByCapitalLetters(storyArcsTypes[i]);
-            storyArcsTypesTreated.push(storyArcType);
-          }
+    //Get powers
+    var powersDict = {};
+    if (JSON.stringify(characterData["powers"]) != "{}") {
+      var powersTypes = Object.keys(characterData["powers"]);
+      var powersDescriptions = Object.values(characterData["powers"]);
+
+      var powersTypesTreated = [];
+      for (var i = 0; i < powersTypes.length; i++) {
+        var powersType = separateWordsByCapitalLetters(powersTypes[i]);
+        powersTypesTreated.push(powersType);
       }
+    }
 
-      for (var i = 0; i < storyArcsTypesTreated.length; i++) {
-        storyArcsDict[storyArcsTypesTreated[i]] = storyArcsDescriptions[i];
+    for (var i = 0; i < powersTypesTreated.length; i++) {
+      powersDict[powersTypesTreated[i]] = powersDescriptions[i];
+    }
+
+    //Get tropes
+    var tropesDict = {};
+    if (JSON.stringify(characterData["tropes"]) != "{}") {
+      var tropesTypes = Object.keys(characterData["tropes"]);
+      var tropesDescriptions = Object.values(characterData["tropes"]);
+
+      var tropesTypesTreated = [];
+      for (var i = 0; i < tropesTypes.length; i++) {
+        var tropesType = separateWordsByCapitalLetters(tropesTypes[i]);
+        tropesTypesTreated.push(tropesType);
       }
+    }
 
-      //Get powers
-      var powersDict = {};
-      if(JSON.stringify(characterData["powers"]) != "{}"){
-        var powersTypes = Object.keys(characterData["powers"]);
-        var powersDescriptions = Object.values(characterData["powers"]);
+    for (var i = 0; i < tropesTypesTreated.length; i++) {
+      tropesDict[tropesTypesTreated[i]] = tropesDescriptions[i];
+    }
 
-        var powersTypesTreated = [];
-          for (var i = 0; i < powersTypes.length; i++) {
-            var powersType = separateWordsByCapitalLetters(powersTypes[i]);
-            powersTypesTreated.push(powersType);
-          }
-      }
+    //Get media
+    var mediaTypes = [];
+    var mediaDescriptions = [];
+    var mediaDict = {};
+    if (JSON.stringify(characterData["media"]) != "{}") {
+      var mediaTitles = Object.keys(characterData["media"]);
 
-      for (var i = 0; i < powersTypesTreated.length; i++) {
-        powersDict[powersTypesTreated[i]] = powersDescriptions[i];
-      }
-
-      //Get tropes
-      var tropesDict = {};
-      if(JSON.stringify(characterData["tropes"]) != "{}"){
-        var tropesTypes = Object.keys(characterData["tropes"]);
-        var tropesDescriptions = Object.values(characterData["tropes"]);
-
-        var tropesTypesTreated = [];
-          for (var i = 0; i < tropesTypes.length; i++) {
-            var tropesType = separateWordsByCapitalLetters(tropesTypes[i]);
-            tropesTypesTreated.push(tropesType);
-          }
-      }
-
-      for (var i = 0; i < tropesTypesTreated.length; i++) {
-        tropesDict[tropesTypesTreated[i]] = tropesDescriptions[i];
-      }
-
-      //Get media
-      var mediaTypes = [];
-      var mediaDescriptions = [];
-      var mediaDict = {};
       var mediaTitlesTreated = [];
-      if(JSON.stringify(characterData["media"]) != "{}"){
-        var mediaTitles = Object.keys(characterData["media"]);
+      for (var i = 0; i < mediaTitles.length; i++) {
+        var mediaTitle = separateWordsByCapitalLetters(mediaTitles[i]);
+        mediaTitlesTreated.push(mediaTitle);
+      }
 
-        
-          for (var i = 0; i < mediaTitles.length; i++) {
-            var mediaTitle = separateWordsByCapitalLetters(mediaTitles[i]);
-            mediaTitlesTreated.push(mediaTitle);
-          }
+      var mediaTypesDescriptions = Object.values(characterData["media"]);
 
-        var mediaTypesDescriptions = Object.values(characterData["media"]);
-
-        for (var i = 0; i < mediaTitles.length; i++) {
-          mediaTypes.push(mediaTypesDescriptions[i]["mediaType"]);
-          mediaDescriptions.push(mediaTypesDescriptions[i]["mediaDescription"]);
-        }
-        //console.log(media);
-        //console.log(mediaTitles);
-        //console.log(mediaTypes);
-        //console.log(mediaDescriptions);
+      for (var i = 0; i < mediaTitles.length; i++) {
+        mediaTypes.push(mediaTypesDescriptions[i]["mediaType"]);
+        mediaDescriptions.push(mediaTypesDescriptions[i]["mediaDescription"]);
       }
 
       for (var i = 0; i < mediaTitlesTreated.length; i++) {
         mediaDict[mediaTitlesTreated[i]] = {
-          "type": mediaTypes[i], 
+          "type": mediaTypes[i],
           "description": mediaDescriptions[i]
         };
       }
+      //console.log(media);
+      //console.log(mediaTitles);
+      //console.log(mediaTypes);
+      //console.log(mediaDescriptions);
+    }
 
-      //Get isWoman
-      var isWoman = false
-      if(JSON.stringify(characterData["isWoman"]) != "{}"){
-        isWoman = characterData["isWoman"][uri][0];
-        if(isWoman == "true"){
-          isWoman = true;
-        }
-        else{
-          isWoman = false;
-        }
+
+
+    //Get isWoman
+    var isWoman = false
+    if (JSON.stringify(characterData["isWoman"]) != "{}") {
+      isWoman = characterData["isWoman"][uri][0];
+      if (isWoman == "true") {
+        isWoman = true;
       }
-
-      //Get isMan
-      var isMan = false
-      if(JSON.stringify(characterData["isMan"]) != "{}"){
-        isMan = characterData["isMan"][uri][0];
-        if(isMan == "true"){
-          isMan = true;
-        }
-        else{
-          isMan = false;
-        }
+      else {
+        isWoman = false;
       }
+    }
 
-      //Get isNonBinary
-      var isNonBinary = false
-      if(JSON.stringify(characterData["isNonBinary"]) != "{}"){
-        isNonBinary = characterData["isNonBinary"][uri][0];
-        if(isNonBinary == "true"){
-          isNonBinary = true;
-        }
-        else{
-          isNonBinary = false;
-        }
+    //Get isMan
+    var isMan = false
+    if (JSON.stringify(characterData["isMan"]) != "{}") {
+      isMan = characterData["isMan"][uri][0];
+      if (isMan == "true") {
+        isMan = true;
       }
+      else {
+        isMan = false;
+      }
+    }
 
-      var gender = (isMan ? "Man" : (isWoman ? "Woman" : (isNonBinary ? "Non-binary" : "Unknown")));
+    //Get isNonBinary
+    var isNonBinary = false
+    if (JSON.stringify(characterData["isNonBinary"]) != "{}") {
+      isNonBinary = characterData["isNonBinary"][uri][0];
+      if (isNonBinary == "true") {
+        isNonBinary = true;
+      }
+      else {
+        isNonBinary = false;
+      }
+    }
 
-      this.character = new Character(uri, this.name,
+    var gender = (isMan ? "Man" : (isWoman ? "Woman" : (isNonBinary ? "Non-binary" : "Unknown")));
+
+
+    this.character = new Character(uri, this.name,
       photo, birthday, characterType, numberOfIssues,
       evolution, creation, creators, deaths, origins,
       characteristicsDict, publisher, realName, summary,
       superName, firstAppearance, alias, alternateVersionsDict,
       storyArcsDict, powersDict, tropesDict, mediaDict, gender)
 
-      console.log(this.character)
-      //console.log(characterData);
-      //Cassandra doesn't have evolution or origins
-      //Midnighter doesn't have media or characteristics
-      //Wally doesn't have creation or evolution
-      //Emma, Deadpool and Wally don't have birthdays (it will be written as Unknown)
+    console.log("media", this.character.media)
+    //console.log(characterData);
+    //Cassandra doesn't have evolution or origins
+    //Midnighter doesn't have media or characteristics
+    //Wally doesn't have creation or evolution
+    //Emma, Deadpool and Wally don't have birthdays (it will be written as Unknown)
   }
 })
 </script>

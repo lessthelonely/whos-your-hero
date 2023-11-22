@@ -1,12 +1,17 @@
 <template>
-  <div style="display: flex;">
+  <div style="display: flex; margin-bottom: 15px;">
     <div class="header">
       <h1 style="font-weight: bold;">
         {{ trope.name }}
       </h1>
-      <p style="text-align: justify;" v-html="trope.description">
+      <p style="text-align: justify; padding-right: 10px;" v-html="trope.description">
       </p>
     </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column;">
+    <h4 style="margin-bottom: 10px;">Seen on...</h4>
+    <CharacterTrope v-for="(value, key) in characterTropes" :name="key" :description="value" />
   </div>
 </template>
 
@@ -14,11 +19,17 @@
 import { defineComponent } from 'vue'
 import axios from 'axios'
 import { Trope } from '../stores/Trope.js'
+import CharacterTrope from '../components/CharacterTrope.vue'
 
 export default defineComponent({
+  components: {
+    CharacterTrope
+  },
+
   data() {
     return {
-      trope: Trope
+      trope: Trope,
+      characterTropes: {}
     }
   },
 
@@ -65,24 +76,21 @@ export default defineComponent({
 
     parseDescription(description) {
       let urlsWithBraces = [...description.match(/(?<!\\)(\[.*?(?<!\\)\])/g)]
-      
+
       let urls = urlsWithBraces.map(urlWithBraces => {
-        let urlWithoutBraces = urlWithBraces.substring(1, urlWithBraces.length-1);
-        let urlWithoutQuotation = urlWithoutBraces.substring(1, urlWithoutBraces.length-1);
+        let urlWithoutBraces = urlWithBraces.substring(1, urlWithBraces.length - 1);
+        let urlWithoutQuotation = urlWithoutBraces.substring(1, urlWithoutBraces.length - 1);
 
         return urlWithoutQuotation
       });
-     
+
       description = description.split('["').join('').split('"]').join('');
 
       for (var i = 0; i < urls.length; i++) {
-        var newLink = `<a href="${urls[i]}" style="font-style: normal;"><sup>ref</sup></a>`; 
+        var newLink = `<a href="${urls[i]}" style="font-style: normal;"><sup>ref</sup></a>`;
         description = description.replace(" " + urls[i], newLink);
-        console.log("desc replace", description)
       }
 
-      console.log("desc", description);
-      
       return description;
     }
   },
@@ -95,8 +103,15 @@ export default defineComponent({
       .then(response => {
 
         this.trope = new Trope(this.separateWordsByCapitalLetters(this.id), this.parseDescription(response.data[this.id]));
-        console.log(this.trope);
-      })
+      });
+
+    await axios
+      .get("http://localhost:8000/rdf-all/trope/" + this.id)
+      .then(response => {
+        for (var property in response.data) {
+          this.characterTropes[this.separateWordsByCapitalLetters(property)] = response.data[property]
+        }
+      });
   }
 })
 </script>

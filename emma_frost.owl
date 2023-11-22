@@ -923,7 +923,7 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AbusiveParents">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Her mother was a neglectful Rich Bitch and a prescription drug abuser while her father was cold and emotionless and encouraged his children to play mindgames with each other.Winston Frost</hero:tropeDescription>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Her mother was a neglectful Rich Bitch and a prescription drug abuser while her father was cold and emotionless and encouraged his children to play mindgames with each other.</hero:tropeDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#EmmaFrost</hero:belongsTo>
 </owl:NamedIndividual>
 
