@@ -1,7 +1,279 @@
 <template>
-  <h1>
+  <div style="display: flex;">
+    <div class="col-md-7" style="width: 70%;">
+      <div class="header">
+        <h1 style="font-weight: bold;">
+          {{ character.name }}
+        </h1>
+        <h6 style="font-style: italic;">
+          {{ character.characterType }}
+        </h6>
+      </div>
 
-  </h1>
+      <div class="body" style="text-align: justify; padding-right: 30px;">
+        <p class="summary">
+          {{ character.summary }}
+        </p>
+
+        <div class="creation">
+          <h5 style="margin-bottom: 5px;">
+            Creation
+          </h5>
+          <p style="margin-top: 0px;">
+            {{ character.creation }}
+          </p>
+        </div>
+
+        <div class="origins">
+          <h5 style="margin-bottom: 5px;">
+            Origins
+          </h5>
+          <p style="margin-top: 0px;">
+            {{ character.origins }}
+          </p>
+        </div>
+
+        <div class="evolution">
+          <h5 style="margin-bottom: 5px;">
+            Evolution
+          </h5>
+          <p style="margin-top: 0px;">
+            {{ character.evolution }}
+          </p>
+        </div>
+
+        <div class="alternative-versions">
+          <h5 style="margin-bottom: 12px;">
+            Alternate Versions
+          </h5>
+          <div v-for="(altVerDes, altVerType) in character.alternateVersions" v-bind:key="altVerType.toString()"
+            style="margin-bottom: 5px;">
+            <h6 style="font-style: italic; margin-bottom: 5px;">
+              {{ altVerType }}
+            </h6>
+            <p style="margin-top: 0px;">
+              {{ altVerDes }}
+            </p>
+          </div>
+        </div>
+
+        <div class="powers">
+          <h5 style="margin-bottom: 12px;">
+            Powers
+          </h5>
+          <ul v-for="(powerDes, powerName) in character.powers" v-bind:key="powerName.toString()"
+            style="margin-bottom: 5px;">
+            <li style="margin-bottom: 5px;">
+              <strong>{{ powerName.trim() }}</strong> {{ '- ' + powerDes }}
+            </li>
+          </ul>
+        </div>
+
+        <div class="story-arcs" style="margin-bottom: 10px;">
+          <h5 style="margin-bottom: 12px;">
+            Story Arcs
+          </h5>
+          <div v-for="(storyArcsDes, storyArcsType) in character.storyArcs" v-bind:key="storyArcsType.toString()"
+            style="margin-bottom: 5px;">
+            <h6 style="font-style: italic; margin-bottom: 5px;">
+              {{ storyArcsType }}
+            </h6>
+            <p style="margin-top: 0px;">
+              {{ storyArcsDes }}
+            </p>
+          </div>
+        </div>
+
+        <div class="tropes" style="margin-bottom: 15px;">
+          <h5 style="margin-bottom: 12px;">
+            Tropes
+          </h5>
+          <ul v-for="(tropeDes, tropeName) in character.tropes" v-bind:key="tropeName.toString()"
+            style="margin-bottom: 5px;">
+            <li style="margin-bottom: 5px;">
+              <em>{{ tropeName.trim() }}</em> {{ '- ' + tropeDes.trim() }}
+            </li>
+          </ul>
+        </div>
+
+        <div class="media">
+          <h5 style="margin-bottom: 12px;">
+            Media
+          </h5>    
+          <div class="accordion-item" v-for="(mediaObj, mediaTitle) in character.media" v-bind:key="mediaTitle">
+            <div>
+              <h6 style="border-radius: 10px 10px 0px 0px; margin: 0px; background-color: #212529; color: white; padding: 5px;">
+                {{ mediaTitle }}
+              </h6>
+              <h6 style="font-size: 14px; font-style: italic; background-color: #343a40; color: white; padding: 5px; margin: 0px;">
+                {{ mediaObj.type }}
+              </h6>
+            </div>
+            <p style="background-color: #adb5bd; padding: 5px; border-radius: 0px 0px 10px 10px;">
+              {{ mediaObj.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3" style="width: 30%; justify-content: center;">
+      <table class="table table-dark">
+        <thead colspan="2">
+          <th colspan="2">
+            <h3 style="font-weight: bold; text-align: center; margin-bottom: 0px;">
+              General Information
+            </h3>
+
+            <h6 style="font-style: italic; text-align: center; margin-bottom: 0px;">
+              {{ character.name }}
+            </h6>
+
+            <img :src="character.photo"
+              style="width: 100%; height: 250px; padding: 0px; object-fit: cover; object-position: center top;" />
+          </th>
+        </thead>
+        <tbody>
+          <tr style="width: 100%" colspan="2">
+            <td style="font-weight: bold;" scope="col">
+              {{ "Birthday" }}
+            </td>
+            <td class="table-secondary" style="font-size: 15px; padding: 0px;" scope="col">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-secondary">
+                  {{ character.birthday }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr style="width: 100%" colspan="2">
+            <td style="font-weight: bold;" scope="col">
+              {{ "Number of Issues" }}
+            </td>
+            <td class="table-secondary" style="font-size: 15px; padding: 0px;" scope="col">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-secondary">
+                  {{ character.numberOfIssues }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr style="width: 100%" colspan="2">
+            <td style="font-weight: bold;" scope="col">
+              {{ "Real Name" }}
+            </td>
+            <td class="table-secondary" style="font-size: 15px; padding: 0px;" scope="col">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-secondary">
+                  {{ character.realName }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr style="width: 100%" colspan="2">
+            <td style="font-weight: bold;" scope="col">
+              {{ "Super Name" }}
+            </td>
+            <td class="table-secondary" style="font-size: 15px; padding: 0px;" scope="col">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-secondary">
+                  {{ character.superName }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr style="width: 100%" colspan="2">
+            <td style="font-weight: bold;" scope="col">
+              {{ "Aliases" }}
+            </td>
+            <td class="table-secondary" style="font-size: 15px; padding: 0px;" scope="col">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-secondary" v-for="a in character.alias" v-bind:key="a">
+                  {{ a }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr style="width: 100%" colspan="2">
+            <td style="font-weight: bold;" scope="col">
+              {{ "First Appearance" }}
+            </td>
+            <td class="table-secondary" style="font-size: 15px; padding: 0px;" scope="col">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-secondary" style="font-style: italic;">
+                  {{ character.firstAppearance }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr style="width: 100%" colspan="2">
+            <td style="font-weight: bold;" scope="col">
+              {{ "Creator(s)" }}
+            </td>
+            <td class="table-secondary" style="font-size: 15px; padding: 0px;" scope="col">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-secondary">
+                  {{ character.creators }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr style="width: 100%" colspan="2">
+            <td style="font-weight: bold;" scope="col">
+              {{ "Publisher" }}
+            </td>
+            <td class="table-secondary" style="font-size: 15px; padding: 0px;" scope="col">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-secondary">
+                  {{ character.publisher }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr colspan="2" class="table-dark" style="margin: 0px; padding: 0px;">
+            <td colspan="2">
+
+              <h6 style="font-weight: bold; text-align: center; margin-bottom: 0px;">
+                Characteristics
+              </h6>
+            </td>
+          </tr>
+          <tr style="width: 100%" colspan="2">
+            <td style="font-weight: bold;" scope="col">
+              {{ "Gender" }}
+            </td>
+            <td class="table-secondary" style="font-size: 15px; padding: 0px;" scope="col">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-secondary">
+                  {{ character.gender }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr style="width: 100%" v-for="(key, value) in character.characteristics" v-bind:key="key" colspan="2">
+            <td style="font-weight: bold;" scope="col">
+              {{ value }}
+            </td>
+            <td class="table-secondary" v-if="isSimple(value)" style="font-size: 15px; padding: 0px;" scope="col">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-secondary">
+                  {{ key }}
+                </li>
+              </ul>
+            </td>
+            <td class="table-secondary" style="font-size: 14px; padding: 0px;" scope="col" v-else>
+              <ul class="list-group list-group-flush">
+                <li v-for="item in key.replace(';', ',').split(',')" v-bind:key="item.toString()"
+                  class="list-group-item list-group-item-secondary">
+                  {{ item }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -218,6 +490,11 @@ export default defineComponent({
         default:
           throw console.error("Character not found");
       }
+    },
+
+    isSimple(variable) {
+      var simples = ["Place of Birth", "Education", "Height", "Weight", "Eyes", "Hair", "Distinguishing Features", "Identity"]
+      return simples.includes(variable);
     }
   },
 
