@@ -372,14 +372,14 @@ function separateWordsByCapitalLetters(inputString) {
         wordsArray[i] = wordsArray[i].replace("of", " of");
       }
     }
-    if(wordsArray[i].includes("is") && wordsArray[i] != "Analysis"){
+    if(wordsArray[i].includes("is") && wordsArray[i] != "Analysis" && wordsArray[i] != "Regenesis" && wordsArray[i] != "Orchis"){
           var index = wordsArray[i].indexOf("is");
           var nextIndex = index + "is".length;
           if(nextIndex == wordsArray[i].length){
             wordsArray[i] = wordsArray[i].replace("is", " is");
           }
         }
-    if(wordsArray[i].includes("or") && wordsArray[i] != "Junior" && wordsArray[i] != "Mentor" && wordsArray[i] != "Fervor"){
+    if(wordsArray[i].includes("or") && wordsArray[i] != "Junior" && wordsArray[i] != "Mentor" && wordsArray[i] != "Fervor" && wordsArray[i] != "Survivor"){
       var index = wordsArray[i].indexOf("or");
       var nextIndex = index + "or".length;
       if(nextIndex == wordsArray[i].length){
@@ -442,7 +442,7 @@ function separateWordsByCapitalLetters(inputString) {
         wordsArray[i] = wordsArray[i].replace("withan", " with an");
       }
     }
-    if(wordsArray[i].includes("an") && wordsArray[i] != "Man" && wordsArray[i] != "Logan" && wordsArray[i] != "Batman" && wordsArray[i] != "Human" && wordsArray[i] != "Gunman" && wordsArray[i] != "Amazonian" && wordsArray[i] != "Spartan" && wordsArray[i] != "Deadpan" && wordsArray[i] != "Superhuman" && wordsArray[i] != "Superman" && wordsArray[i] != "Than" && wordsArray[i] != "Freudian" && wordsArray[i] != "Can"){
+    if(wordsArray[i].includes("an") && wordsArray[i] != "Man" && wordsArray[i] != "Logan" && wordsArray[i] != "Batman" && wordsArray[i] != "Human" && wordsArray[i] != "Gunman" && wordsArray[i] != "Amazonian" && wordsArray[i] != "Spartan" && wordsArray[i] != "Deadpan" && wordsArray[i] != "Superhuman" && wordsArray[i] != "Superman" && wordsArray[i] != "Than" && wordsArray[i] != "Freudian" && wordsArray[i] != "Can" && wordsArray[i] != "Technician"){
           var index = wordsArray[i].indexOf("an");
           var nextIndex = index + "an".length;
           if(nextIndex == wordsArray[i].length){
@@ -463,7 +463,7 @@ function separateWordsByCapitalLetters(inputString) {
         wordsArray[i] = wordsArray[i].replace("as", " as");
       }
     }
-    if(wordsArray[i].includes("at") && wordsArray[i] != "Bat" && wordsArray[i] != "What" && wordsArray[i] != "Combat" && wordsArray[i] != "That" && wordsArray[i] != "Copycat" && wordsArray[i] != "Kombat" && wordsArray[i] != "Coat"){
+    if(wordsArray[i].includes("at") && wordsArray[i] != "Bat" && wordsArray[i] != "What" && wordsArray[i] != "Combat" && wordsArray[i] != "That" && wordsArray[i] != "Copycat" && wordsArray[i] != "Kombat" && wordsArray[i] != "Coat" && wordsArray[i] != "Cat"){
           var index = wordsArray[i].indexOf("at");
           var nextIndex = index + "at".length;
           if(nextIndex == wordsArray[i].length || wordsArray[i][nextIndex] == " "){
