@@ -297,6 +297,13 @@ function separateWordsByCapitalLetters(inputString) {
             wordsArray[i] = wordsArray[i].replace("andthe", " and the");
           }
         }
+        if(wordsArray[i].includes("anda")){
+          var index = wordsArray[i].indexOf("anda");
+          var nextIndex = index + "anda".length;
+          if(nextIndex == wordsArray[i].length){
+            wordsArray[i] = wordsArray[i].replace("anda", " and a");
+          }
+        }
         if(wordsArray[i].includes("and") && !(wordsArray[i].includes("the")) && (wordsArray[i] != "Grand")){
           var index = wordsArray[i].indexOf("and");
           var nextIndex = index + "and".length;
@@ -346,18 +353,18 @@ function separateWordsByCapitalLetters(inputString) {
             wordsArray[i] = wordsArray[i].replace("inthe", " in the");
           }
         }
-        if(wordsArray[i].includes("with")){
-          var index = wordsArray[i].indexOf("with");
-          var nextIndex = index + "with".length;
-          if(nextIndex == wordsArray[i].length || wordsArray[i][nextIndex] == " "){
-            wordsArray[i] = wordsArray[i].replace("with", " with");
-          }
-        }
         if(wordsArray[i].includes("the") && !(wordsArray[i].includes("from") || wordsArray[i].includes("of") || wordsArray[i].includes("to") || wordsArray[i].includes("on"))){
           var index = wordsArray[i].indexOf("the");
           var nextIndex = index + "the".length;
           if(nextIndex == wordsArray[i].length){
             wordsArray[i] = wordsArray[i].replace("the", " the");
+          }
+        }
+        if(wordsArray[i].includes("with")){
+          var index = wordsArray[i].indexOf("with");
+          var nextIndex = index + "with".length;
+          if(nextIndex == wordsArray[i].length || wordsArray[i][nextIndex] == " "){
+            wordsArray[i] = wordsArray[i].replace("with", " with");
           }
         }
         if(wordsArray[i].includes("ona")){
@@ -367,13 +374,13 @@ function separateWordsByCapitalLetters(inputString) {
             wordsArray[i] = wordsArray[i].replace("ona", " on a");
           }
         }
-        /*if(wordsArray[i].includes("vs")){
+        if(wordsArray[i].includes("vs")){
           var index = wordsArray[i].indexOf("vs");
           var nextIndex = index + "vs".length;
           if(nextIndex == wordsArray[i].length){
             wordsArray[i] = wordsArray[i].replace("vs", " vs");
           }
-        }*/
+        }
         if(wordsArray[i].includes("of")){
           var index = wordsArray[i].indexOf("of");
           var nextIndex = index + "of".length;
@@ -395,7 +402,7 @@ function separateWordsByCapitalLetters(inputString) {
             wordsArray[i] = wordsArray[i].replace("to", " to");
           }
         }
-        if(wordsArray[i].includes("a") && !(wordsArray[i].includes("on") || wordsArray[i].includes("of")) && wordsArray[i] != "Alpha" && wordsArray[i] != "Myopia"){
+        if(wordsArray[i].includes("a") && !(wordsArray[i].includes("on") || wordsArray[i].includes("of")) && wordsArray[i] != "Alpha" && wordsArray[i] != "Myopia" && wordsArray[i] != "Kotobukiya" && wordsArray[i] != "Necrosha"){
           var index = wordsArray[i].indexOf("a");
           var nextIndex = index + "a".length;
           if(nextIndex == wordsArray[i].length){
@@ -423,14 +430,14 @@ function separateWordsByCapitalLetters(inputString) {
             wordsArray[i] = wordsArray[i].replace("withan", " with an");
           }
         }
-        if(wordsArray[i].includes("an")){
+        if(wordsArray[i].includes("an") && wordsArray[i] != "Man" && wordsArray[i] != "Logan"){
           var index = wordsArray[i].indexOf("an");
           var nextIndex = index + "an".length;
           if(nextIndex == wordsArray[i].length){
             wordsArray[i] = wordsArray[i].replace("an", " an");
           }
         }
-        if(wordsArray[i].includes("in") && wordsArray[i] != "Skin"){
+        if(wordsArray[i].includes("in") && wordsArray[i] != "Skin" && wordsArray[i] != "Sin"){
           var index = wordsArray[i].indexOf("in");
           var nextIndex = index + "in".length;
           if(nextIndex == wordsArray[i].length){
@@ -440,8 +447,15 @@ function separateWordsByCapitalLetters(inputString) {
         if(wordsArray[i].includes("as")){
           var index = wordsArray[i].indexOf("as");
           var nextIndex = index + "as".length;
-          if(nextIndex == wordsArray[i].length){
+          if(nextIndex == wordsArray[i].length || wordsArray[i][nextIndex] == " "){
             wordsArray[i] = wordsArray[i].replace("as", " as");
+          }
+        }
+        if(wordsArray[i].includes("at")){
+          var index = wordsArray[i].indexOf("at");
+          var nextIndex = index + "at".length;
+          if(nextIndex == wordsArray[i].length){
+            wordsArray[i] = wordsArray[i].replace("at", " at");
           }
         }
       }
@@ -778,10 +792,11 @@ export default defineComponent({
       var mediaTypes = [];
       var mediaDescriptions = [];
       var mediaDict = {};
+      var mediaTitlesTreated = [];
       if(JSON.stringify(characterData["media"]) != "{}"){
         var mediaTitles = Object.keys(characterData["media"]);
 
-        var mediaTitlesTreated = [];
+        
           for (var i = 0; i < mediaTitles.length; i++) {
             var mediaTitle = separateWordsByCapitalLetters(mediaTitles[i]);
             mediaTitlesTreated.push(mediaTitle);
