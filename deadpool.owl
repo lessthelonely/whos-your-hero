@@ -206,11 +206,11 @@
 </owl:Class>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
@@ -348,18 +348,18 @@
   <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#DeadpoolTheDuckEarth791021"/>
   <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#DeadpoolTheDuckEarth616"/>
   <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#SkulldozertheMagnificent"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Enhancedregeneration/healingfactor"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Foreignchemical/diseaseresistance"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Telepathicimmunity"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Enhancedhumanstrength"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Superhumanstamina"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Superhumanreflexes/agility/speed"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#EnhancedRegeneration/HealingFactor"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#ForeignChemical/DiseaseResistance"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#TelepathicImmunity"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#EnhancedHumanStrength"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#SuperhumanStamina"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#SuperhumanReflexes/Agility/Speed"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Immortality"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Mastermartialartist"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Skilledlinguist"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Masterassassin"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Mediumawareness/fourthwallbreaking"/>
-  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Minorrealitymanipluation"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#MasterMartialArtist"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#SkilledLinguist"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#MasterAssassin"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#MediumAwareness/FourthWallBreaking"/>
+  <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#MinorRealityManipluation"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#NinetiesAntiHero"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AggressiveSubmissive"/>
   <hero:hasTrope rdf:resource="http://whosyourhero.com/heroes.owl#AlliterativeName"/>
@@ -967,37 +967,37 @@
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Enhancedregeneration/healingfactor">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#EnhancedRegeneration/HealingFactor">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Deadpool's primary ability is an extremely accelerated healing factor, derived from the mutant Wolverine and given to him by Weapon X. It allows him to regenerate bodily tissue at extreme, superhuman rates, and increases his longevity, giving him near-immortality. Unlike Wolverine's, however, his is driven to a certain extent by willpower, which provides an advantage in certain situations. He has regenerated from being ripped apart by a grenade, having been decapitated by the Punisher, and can survive in extreme conditions and sustain other severe injuries with no lasting damaged. Once when his body was destroyed, he was able to regenerate from his remaining hand.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Foreignchemical/diseaseresistance">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#ForeignChemical/DiseaseResistance">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The healing factor also provides a certain degree of immunity from foreign chemicals such as toxins or sedatives, and gives him near-immunity from all diseases and ailments. Shen Kuei once used enough poison to "kill 25 elephants" to knock out Deadpool for "about an hour", highlighting his resistance. This also ensures that it is extremely difficult (but not impossible) for Wade to become intoxicated.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Telepathicimmunity">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#TelepathicImmunity">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Due to his brain neurons maintaining a state of "perpetual flux", Deadpool is completely immune to psychic assaults, and powerful telepaths such as Emma Frost or Cable have not been able to gain access to his mind - even Ghost Rider's infamous Penance Stare was not able to faze Deadpool.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Enhancedhumanstrength">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#EnhancedHumanStrength">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Deadpool's strength exceeds that of a peak athlete in his prime, due to the various alterations his body has gone through with the Weapon X treatments. While not as strong as Captain America (whose maximum bench press over 1800lbs), Wade can readily lift/press approximately 1000 lbs, and has the stamina to perform feats of strength for extended periods of time.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Superhumanstamina">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SuperhumanStamina">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Due to his healing factor, Wade's body produces less fatigue toxins and gets rid of existing ones much quicker than that of a normal human's, which allows him to exert himself for much longer than humanly possible.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Superhumanreflexes/agility/speed">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SuperhumanReflexes/Agility/Speed">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Deadpool's speed, reflexes and agility are highly enhanced, and he has coordination and speed to go toe-to-toe with many skilled fighters at once and not lose, clear a room in a few jumps, and perform complicated acrobatic manouvres with ease. He's shown to easily dodge bullets at close range, disarm opponents without them even being aware of what has happened, and has deflected bullets with his katana at point blank range. His speed is such that he can dodge bullets after they've been fired (and move out of the way while it is only inches away from his face).</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
@@ -1009,31 +1009,31 @@
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Mastermartialartist">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MasterMartialArtist">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Deadpool is a highly skilled martial artist, and is able to easily engage highly-trained foes such as Wolverine or multiple ninjas in combat with ease. He also shows a degree of unpredictability in his fighting style, allowing him to defeat even Taskmaster in single combat.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Skilledlinguist">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#SkilledLinguist">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Deadpool is fluent in many languages, including Japanese, Russian, German, Spanish, and possibly more.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Masterassassin">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MasterAssassin">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Wade is highly trained in the art of killing, espionage, covert ops, infiltration, escape, marksmanship, and even Wolverine once admitted that Deadpool is a better killer than him.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Mediumawareness/fourthwallbreaking">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MediumAwareness/FourthWallBreaking">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Like She-Hulk, Deadpool is one of the few characters known for breaking the fourth wall. This trend started in the late '90s when it was made popular by Joe Kelly. Deadpool breaks the fourth wall by talking about his own comic (sometimes even having copies of it somehow), referring to artists or writers or even the reader, and discussing comics in general. He is most known for, however, talking to the yellow narration bubbles that his comic has. There have been several theories as to what the boxes really are but no one other than Deadpool can see them in continuity and therefore many people in the Marvel Universe think Deadpool is crazy. Deadpool also references popular media culture in the comics such as video games, celebrities, social networking, and what's going on with the real world at the time.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Minorrealitymanipluation">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MinorRealityManipluation">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <hero:powerDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Due to his ability to realize he is in a fictional world, Deadpool can perform actions that directly defy the rules of reality and physics - for example, he uses a bottomless satchel to store an infinite amount of ammuniation, weaponry, and other such objects. In Ultimate Alliance 2, Deadpool weaponizes his own health bar to beat an opponent with it. Deadpool also posesses knowledge that only a comic book reader could know, such as mentioning Mephisto erasing Spider-Man's unmasking from existance, or remembering which comic issue a character last appeared in.</hero:powerDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Deadpool</hero:belongsTo>
