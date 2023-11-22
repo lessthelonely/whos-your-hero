@@ -488,7 +488,6 @@ export default defineComponent({
     await axios.get("http://localhost:8000/rdf-character/" + this.id)
       .then(response => {
         characterData = response.data
-        //console.log(response.data)
       });
 
       var uri = "http://whosyourhero.com/heroes.owl#" + this.getName();
@@ -501,8 +500,6 @@ export default defineComponent({
       else{
         this.photo = "https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png";
       }
-
-      console.log(photo);
 
       //Get birthday
       var birthday = ""

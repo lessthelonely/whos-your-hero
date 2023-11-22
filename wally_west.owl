@@ -770,7 +770,7 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#AbusiveParents">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Modern interpretations of his character portray Rudy and Mary West as emotionally abusive parents. Depending on the Writer, Rudy West can be even physically abusive. A while into his life as an adult, he's taken a more nuanced view of them as having their own reasons for acting the way they did, but still doesn't particularly like them. The Flash</hero:tropeDescription>
+  <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Modern interpretations of his character portray Rudy and Mary West as emotionally abusive parents. Depending on the Writer, Rudy West can be even physically abusive. A while into his life as an adult, he's taken a more nuanced view of them as having their own reasons for acting the way they did, but still doesn't particularly like them.</hero:tropeDescription>
   <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#WallyWest</hero:belongsTo>
 </owl:NamedIndividual>
 

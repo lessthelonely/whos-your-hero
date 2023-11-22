@@ -42,7 +42,16 @@
   border: 1px solid #ccc;
 }
 
+.character-trope-card {
+  width: 100px;
+  background-color: #adb5bd;
+}
+
 .card-img-overlay {
   position: absolute;
   bottom: 5px;
+}
+
+.character-trope-img {
+  height: 189.5px;
 }
