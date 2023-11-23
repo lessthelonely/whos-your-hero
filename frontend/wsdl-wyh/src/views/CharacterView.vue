@@ -96,7 +96,7 @@
           </ul>
         </div>
 
-        <div class="media" v-if="Object.keys(character.media).length != 0">
+        <div class="media" v-if="JSON.stringify(character.media) != '{}'">
           <h5 style="margin-bottom: 12px;">
             Media
           </h5>
