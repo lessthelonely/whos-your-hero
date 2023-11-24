@@ -656,6 +656,43 @@ def get_media_character(file_name:str):
 
     return data
 
+#get all tropes
+@app.get("/rdf-all/trope")
+def get_trope_descriptions():
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?trope ?belongsTo ?tropeDescription
+        WHERE {{
+            ?trope rdf:type hero:Trope.
+            ?trope hero:belongsTo ?belongsTo.
+            ?trope hero:tropeDescription ?tropeDescription.
+        }}
+    """
+
+    results = list(g.query(query))
+    data = {}
+    if len(results) > 0:
+        trope_list = [row.trope.toPython().split('#')[1] for row in results]
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        tropeDescription_list = [row.tropeDescription.toPython() for row in results]
+    
+        offset = 0
+        for i in range(len(trope_list)):
+            trope_name = trope_list[i]
+            if trope_name in data:
+                offset += 1
+                continue
+            
+            data[trope_name] = {
+                'belongsTo': belongsTo_list[i - offset],
+                'tropeDescription': tropeDescription_list[i - offset]
+            }
+
+    return data
+
 
 #get shared values of a trope that various characters might have
 @app.get("/rdf-all/trope/{trope_name}")
