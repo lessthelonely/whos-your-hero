@@ -658,39 +658,59 @@ def get_media_character(file_name:str):
 
 #get all tropes
 @app.get("/rdf-all/trope")
-def get_trope_descriptions():
+def get_repeated_tropes():
     g = Graph()
     file_path = "output.owl"
     g.parse(file_path)
-
     query = f"""
-    SELECT ?trope ?belongsTo ?tropeDescription
+           SELECT ?trope ?belongsTo ?tropeDescription
         WHERE {{
-            ?trope rdf:type hero:Trope.
-            ?trope hero:belongsTo ?belongsTo.
-            ?trope hero:tropeDescription ?tropeDescription.
+          # Subquery to get tropes with more than one belongsTo
+          {{
+            SELECT ?trope
+            WHERE {{
+              ?trope rdf:type hero:Trope.
+              ?trope hero:belongsTo ?belongsTo.
+            }}
+            GROUP BY ?trope
+            HAVING (COUNT(DISTINCT ?belongsTo) > 1)
+          }}
+        
+          # Retrieve details for tropes identified in the subquery
+          ?trope rdf:type hero:Trope.
+          ?trope hero:belongsTo ?belongsTo.
+          ?trope hero:tropeDescription ?tropeDescription.
         }}
-    """
+        
+        """
+
 
     results = list(g.query(query))
     data = {}
     if len(results) > 0:
+
         trope_list = [row.trope.toPython().split('#')[1] for row in results]
         belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
         tropeDescription_list = [row.tropeDescription.toPython() for row in results]
-    
-        offset = 0
+
         for i in range(len(trope_list)):
             trope_name = trope_list[i]
+
+
             if trope_name in data:
-                offset += 1
-                continue
-            
-            data[trope_name] = {
-                'belongsTo': belongsTo_list[i - offset],
-                'tropeDescription': tropeDescription_list[i - offset]
+                if belongsTo_list[i] in data[trope_name]['belongsTo'] or tropeDescription_list[i] in data[trope_name]['tropeDescription']:
+                    continue
+                data[trope_name]['belongsTo'] += [belongsTo_list[i]]
+                data[trope_name]['tropeDescription'] += [tropeDescription_list[i]]
+            else:
+                data[trope_name] = {
+                'belongsTo': [belongsTo_list[i]],
+                'tropeDescription': [tropeDescription_list[i]]
             }
 
+
+        
+    
     return data
 
 
