@@ -396,8 +396,8 @@ function separateWordsByCapitalLetters(inputString) {
           if(nextIndex == wordsArray[i].length){
             wordsArray[i] = wordsArray[i].replace("is", " is");
           }
-        }
-    if(wordsArray[i].includes("or") && wordsArray[i] != "Junior" && wordsArray[i] != "Mentor" && wordsArray[i] != "Fervor" && wordsArray[i] != "Survivor" && wordsArray[i] != "Terror" && wordsArray[i] != "Liquor" && wordsArray[i] != "Minor" && wordsArray[i] != "Warrior" && wordsArray[i] != "Major" && wordsArray[i] != "Humor" && wordsArray[i] != "Motor" && !(wordsArray[i].includes("for"))){
+    }
+    if(wordsArray[i].includes("or") && wordsArray[i] != "Junior" && wordsArray[i] != "Mentor" && wordsArray[i] != "Fervor" && wordsArray[i] != "Survivor" && wordsArray[i] != "Terror" && wordsArray[i] != "Liquor" && wordsArray[i] != "Minor" && wordsArray[i] != "Warrior" && wordsArray[i] != "Major" && wordsArray[i] != "Humor" && wordsArray[i] != "Motor" && wordsArray[i] != "Determinator" && !(wordsArray[i].includes("for"))){
       var index = wordsArray[i].indexOf("or");
       var nextIndex = index + "or".length;
       if(nextIndex == wordsArray[i].length){
