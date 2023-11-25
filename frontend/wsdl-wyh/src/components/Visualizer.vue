@@ -104,9 +104,16 @@ export default defineComponent({
 
                 style: [ // the stylesheet for the graph
                     {
-                        selector: 'node',
+                        selector: '.character',
                         style: {
-                            'background-color': '#666',
+                            'background-color': 'rgba(133,76,255,1)',
+                            'label': 'data(id)'
+                        }
+                    },
+                    {
+                        selector: '.trope',
+                        style: {
+                            'background-color': 'rgba(109,233,181,1)',
                             'label': 'data(id)'
                         }
                     },
