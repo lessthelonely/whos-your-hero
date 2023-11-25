@@ -7,8 +7,13 @@ import "bootstrap"
 import VueSidebarMenu from 'vue-sidebar-menu'
 import App from './App.vue'
 
+import cytoscape from 'cytoscape'
+import spread from 'cytoscape-spread'
+
 import 'vue-sidebar-menu/dist/vue-sidebar-menu.css'
 import router from './router/index.js'
+
+cytoscape.use(spread);
 
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -30,5 +35,6 @@ app.component('font-awesome-icon', FontAwesomeIcon)
 app.use(VueSidebarMenu)
 app.use(createPinia())
 app.use(router)
+app.use(cytoscape)
 
 app.mount('#app')
