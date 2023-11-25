@@ -1,6 +1,6 @@
 <template>
   <div style="padding: 50px; display: flex; justify-content: center; flex-direction: column; align-items: center;">
-    <div class="row" style="margin-bottom: 20px;">
+    <div class="row" style="margin-bottom: 20px; justify-content: center;">
       <img src="/images/Logo.png" style="width: 60%;" />
     </div>
     <div class="row" style="align-items: center; text-align: center; justify-content: center;">

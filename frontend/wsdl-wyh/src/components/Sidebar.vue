@@ -49,17 +49,16 @@ export default defineComponent({
                         },
                     },
                 },
-                // {
-                //     href: '/charts',
-                //     title: 'Charts',
-                //     icon: 'fa fa-chart-area',
-                //     child: [
-                //         {
-                //             href: '/charts/sublink',
-                //             title: 'Sub Link',
-                //         },
-                //     ],
-                // },
+                {
+                    href: '/graph',
+                    title: 'Graph',
+                    icon: {
+                        element: 'font-awesome-icon',
+                        attributes: {
+                            icon: 'diagram-project',
+                        }
+                    }
+                },
             ],
         }
     }
