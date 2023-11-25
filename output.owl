@@ -3661,7 +3661,7 @@
     <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Midnighter learns this to be true of the future, apparently to a point where the term "gay" itself is archaic and out-of-use.</hero:tropeDescription>
     <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#Midnighter</hero:belongsTo>
   </rdf:Description>
-  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#10MinuteRetirement">
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#TenMinuteRetirement">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
     <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> In the New Teen Titans series, he retired from his Kid Flash persona for several reasons. After Barry's death and Wally regaining his health at the end of Crisis on Infinite Earths, he came back to become The Flash. This part of his career is mostly ignored or modified Post-Crisis by linking it completely to his illness as this characterization of him clashes a lot with his overall personality. After being left for dead by "Barry" during "The Return of Barry Allen", Wally also briefly considered retiring. He later retired again after his wife's miscarriage, but that was mostly because when the Spectre wiped everyone's memory of his identity, he was affected as well. It was also short-lived.</hero:tropeDescription>

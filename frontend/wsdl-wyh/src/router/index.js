@@ -29,6 +29,11 @@ const router = createRouter({
       component: () => import('../views/TropeView.vue')
     },
     {
+      path: '/tropes/',
+      name: 'tropes page',
+      component: () => import('../views/TropesView.vue')
+    },
+    {
       path: '/graph',
       name: 'graph page',
       component: () => import('../views/GraphView.vue')

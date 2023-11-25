@@ -656,6 +656,29 @@ def get_media_character(file_name:str):
 
     return data
 
+@app.get("/rdf-all/tropenames")
+def get_tropenames():
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+
+    query = f"""
+    SELECT ?trope
+    WHERE {{
+        ?trope rdf:type hero:Trope.
+    }}
+    """
+
+    results = g.query(query)
+
+    data = []
+
+    for row in results:
+        trope_name = row['trope'].split('#')[1]
+        data.append(trope_name)
+    
+    return data
+
 #get all tropes
 @app.get("/rdf-all/trope")
 def get_repeated_tropes():

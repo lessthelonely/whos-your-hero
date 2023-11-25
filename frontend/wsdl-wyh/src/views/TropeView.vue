@@ -20,6 +20,7 @@ import { defineComponent } from 'vue'
 import axios from 'axios'
 import { Trope } from '../stores/Trope.js'
 import CharacterTrope from '../components/CharacterTrope.vue'
+import { separateWordsByCapitalLetters } from '../assets/utils/utils.js'
 
 export default defineComponent({
   components: {
@@ -61,19 +62,6 @@ export default defineComponent({
       }
     },
 
-    separateWordsByCapitalLetters(inputString) {
-      // Use a regular expression to split the string at capital letters
-      inputString = inputString.replace(/_/g, ' ');
-
-      // Use a regular expression to split the string at specific patterns
-      var wordsArray = inputString.split(/(?=[A-Z][a-z])|(?<=[a-z])(?=[A-Z])/);
-
-      // Join the array elements with space to form the final string
-      var resultString = wordsArray.join(' ');
-
-      return resultString;
-    },
-
     parseDescription(description) {
       let urlsWithBraces = [...description.match(/(?<!\\)(\[.*?(?<!\\)\])/g)]
 
@@ -102,14 +90,14 @@ export default defineComponent({
       .get("http://localhost:8000/rdf-trope/" + this.id)
       .then(response => {
 
-        this.trope = new Trope(this.separateWordsByCapitalLetters(this.id), this.parseDescription(response.data[this.id]));
+        this.trope = new Trope(separateWordsByCapitalLetters(this.id), this.parseDescription(response.data[this.id]));
       });
 
     await axios
       .get("http://localhost:8000/rdf-all/trope/" + this.id)
       .then(response => {
         for (var property in response.data) {
-          this.characterTropes[this.separateWordsByCapitalLetters(property)] = response.data[property]
+          this.characterTropes[separateWordsByCapitalLetters(property)] = response.data[property]
         }
       });
   }

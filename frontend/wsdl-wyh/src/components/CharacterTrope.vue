@@ -25,6 +25,7 @@
 import { defineComponent } from 'vue'
 import axios from 'axios'
 import { Trope } from '../stores/Trope.js'
+import { separateWordsByCapitalLetters } from '../assets/utils/utils.js'
 
 export default defineComponent({
     props: {
@@ -65,19 +66,6 @@ export default defineComponent({
                 default:
                     throw console.error("Character not found");
             }
-        },
-
-        separateWordsByCapitalLetters(inputString) {
-            // Use a regular expression to split the string at capital letters
-            inputString = inputString.replace(/_/g, ' ');
-
-            // Use a regular expression to split the string at specific patterns
-            var wordsArray = inputString.split(/(?=[A-Z][a-z])|(?<=[a-z])(?=[A-Z])/);
-
-            // Join the array elements with space to form the final string
-            var resultString = wordsArray.join(' ');
-
-            return resultString;
         },
 
         parseDescription(description) {

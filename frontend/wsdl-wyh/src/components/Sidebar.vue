@@ -50,6 +50,16 @@ export default defineComponent({
                     },
                 },
                 {
+                    href: '/tropes',
+                    title: 'Tropes',
+                    icon: {
+                        element: 'font-awesome-icon',
+                        attributes: {
+                            icon: 'bars-staggered'
+                        },
+                    },
+                },
+                {
                     href: '/graph',
                     title: 'Graph',
                     icon: {
