@@ -3,6 +3,9 @@
     {{ state }} -->
     <div id="cy">
     </div>
+    <div id="description">
+        {{ selectedDescription  }}
+    </div>
 </template>
 
 <script>
@@ -17,13 +20,13 @@ export default defineComponent({
 
     data() {
         return {
-            state: String
+            selectedDescription: String
         }
     },
 
     setup() {
         return {
-            state: "loading"
+            selectedDescription: null
         }
     },
 
@@ -91,7 +94,7 @@ export default defineComponent({
             let cy = cytoscape({
 
                 container: this.cy, // container to render in
-                
+
                 elements: {// list of graph elements to start with
                     nodes: [
                         ...characterNodes,
@@ -138,7 +141,7 @@ export default defineComponent({
                             return 1000000
                         }
                         else if (node.hasClass('trope')) {
-                        console.log("Node is trope")
+                            console.log("Node is trope")
                             return 1000000
                         }
                         
@@ -147,11 +150,11 @@ export default defineComponent({
                 }
             })
 
-            cy.on('tap', 'edge', function (evt) {
+            cy.on('tap', 'edge', evt => {
                 var edge = evt.target;
                 let label = edge.data('label');
-
-                // Add label to visualize
+                this.selectedDescription = label;
+                this.$forceUpdate();
             });
 
             cy.on('tap', 'node', function (evt) {
