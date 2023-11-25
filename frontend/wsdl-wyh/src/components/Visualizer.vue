@@ -82,8 +82,8 @@ export default defineComponent({
                     data: {
                         id: `${characterTropeList[i].character}-${characterTropeList[i].trope}`,
                         source: characterTropeList[i].character,
-                        target: characterTropeList[i].trope
-                        // label: characterTropeList[i].description
+                        target: characterTropeList[i].trope,
+                        label: characterTropeList[i].description
                     }
                 });
             }
@@ -136,7 +136,28 @@ export default defineComponent({
                     // rows: 1
                 }
             })
+
+            cy.on('tap', 'edge', function (evt) {
+                var edge = evt.target;
+                let label = edge.data('label');
+
+                // Add label to visualize
+            });
+
+            cy.on('tap', 'node', function (evt) {
+                var node = evt.target;
+                if (node.hasClass('character')) {
+                    // Redirect to character page
+                    router.push({ name: 'character page', params: { name: node.id() } });
+                }
+                else if (node.hasClass('trope')) {
+                    // Redirect to trope page
+                    router.push({ name: 'trope page', params: { name: node.id() } });
+                }
+            });
         }
+
+
         /*
         character: function (val) {
             this.state = 'character changed'
