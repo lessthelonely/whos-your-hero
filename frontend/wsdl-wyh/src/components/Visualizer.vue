@@ -4,14 +4,14 @@
     <div id="cy">
     </div>
     <div id="description">
-        {{ selectedDescription  }}
+        {{ selectedDescription }}
     </div>
 </template>
 
 <script>
 import { defineComponent, ref, onMounted } from 'vue'
 import cytoscape from 'cytoscape'
-import  router  from '../router/index.js'
+import router from '../router/index.js'
 
 // import popper from 'cytoscape-popper'
 
@@ -26,7 +26,10 @@ export default defineComponent({
 
     setup() {
         return {
-            selectedDescription: null
+            selectedDescription: null,
+            selectedType: null,
+            selectedName: null,
+            selectedNode: null
         }
     },
 
@@ -91,6 +94,28 @@ export default defineComponent({
                 });
             }
 
+            let layoutBFSOptions = () => {
+                return {
+                    name: 'breadthfirst',
+                    roots: this.selectedNode
+                }
+            }
+
+            let layoutCoseOptions = {
+                name: 'cose',
+                nodeRepulsion: node => {
+                    if (node.hasClass('character')) {
+                        console.log("Node is character")
+                        return 1000000
+                    }
+                    else if (node.hasClass('trope')) {
+                        console.log("Node is trope")
+                        return 1000000
+                    }
+
+                }
+            }
+
             let cy = cytoscape({
 
                 container: this.cy, // container to render in
@@ -133,21 +158,7 @@ export default defineComponent({
                     }
                 ],
 
-                layout: {
-                    name: 'cose',
-                    nodeRepulsion: node => {
-                        if (node.hasClass('character')) {
-                            console.log("Node is character")
-                            return 1000000
-                        }
-                        else if (node.hasClass('trope')) {
-                            console.log("Node is trope")
-                            return 1000000
-                        }
-                        
-                    }
-                    // rows: 1
-                }
+                layout: layoutCoseOptions
             })
 
             cy.on('tap', 'edge', evt => {
@@ -157,15 +168,27 @@ export default defineComponent({
                 this.$forceUpdate();
             });
 
-            cy.on('tap', 'node', function (evt) {
+
+
+            cy.on('tap', 'node', evt => {
                 var node = evt.target;
+                if (this.selectedNode != node) {
+                    // Selecting one or another
+                    this.selectedNode = node;
+                    cy.layout(layoutBFSOptions()).run();
+                }
+                else {
+                    // Deselecting
+                    cy.layout(layoutCoseOptions).run();
+                }
                 if (node.hasClass('character')) {
+
                     // Redirect to character page
-                    router.push({ name: 'character page', params: { id: node.id() } });
+                    // router.push({ name: 'character page', params: { id: node.id() } });
                 }
                 else if (node.hasClass('trope')) {
                     // Redirect to trope page
-                    router.push({ name: 'trope page', params: { id: node.id() } });
+                    // router.push({ name: 'trope page', params: { id: node.id() } });
                 }
             });
         }
@@ -174,7 +197,7 @@ export default defineComponent({
         /*
         character: function (val) {
             this.state = 'character changed'
-
+ 
             let characterName = this.character.name
             let thisNode = {
                 data: {
@@ -202,14 +225,14 @@ export default defineComponent({
                     }
                 })
             }
-
+ 
             tropeNodes = tropeNodes.splice(0, 5);
             tropeEdges = tropeEdges.splice(0, 5);
-
+ 
             let cy = cytoscape({
-
+ 
                 container: this.cy, // container to render in
-
+ 
                 elements: {// list of graph elements to start with
                     nodes: [
                         thisNode,
@@ -219,7 +242,7 @@ export default defineComponent({
                         ...tropeEdges
                     ]
                 },
-
+ 
                 style: [ // the stylesheet for the graph
                     {
                         selector: 'node',
@@ -228,7 +251,7 @@ export default defineComponent({
                             'label': 'data(id)'
                         }
                     },
-
+ 
                     {
                         selector: 'edge',
                         style: {
@@ -240,7 +263,7 @@ export default defineComponent({
                         }
                     }
                 ],
-
+ 
                 layout: {
                     name: 'cose',
                     nodeRepulsion: node => {
