@@ -8,6 +8,8 @@
 <script>
 import { defineComponent, ref, onMounted } from 'vue'
 import cytoscape from 'cytoscape'
+import  router  from '../router/index.js'
+
 // import popper from 'cytoscape-popper'
 
 
@@ -146,11 +148,11 @@ export default defineComponent({
                 var node = evt.target;
                 if (node.hasClass('character')) {
                     // Redirect to character page
-                    router.push({ name: 'character page', params: { name: node.id() } });
+                    router.push({ name: 'character page', params: { id: node.id() } });
                 }
                 else if (node.hasClass('trope')) {
                     // Redirect to trope page
-                    router.push({ name: 'trope page', params: { name: node.id() } });
+                    router.push({ name: 'trope page', params: { id: node.id() } });
                 }
             });
         }
