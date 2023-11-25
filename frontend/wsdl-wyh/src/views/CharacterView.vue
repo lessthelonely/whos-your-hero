@@ -10,7 +10,6 @@
         </h6>
       </div>
 
-      <Visualizer :character="this.character" />
       <div class="body" style="text-align: justify; padding-right: 30px;">
         <p class="summary">
           {{ character.summary }}
@@ -283,7 +282,6 @@
 import { defineComponent } from 'vue'
 import axios from 'axios'
 import { Character } from '../stores/Character.js'
-import Visualizer from '../components/Visualizer.vue'
 
 function separateWordsByCapitalLetters(inputString) {
   if(inputString == "Deadpool22018"){
@@ -515,10 +513,6 @@ export default defineComponent({
       name: String,
       character: Character
     }
-  },
-
-  components: {
-    Visualizer
   },
   
   methods: {
