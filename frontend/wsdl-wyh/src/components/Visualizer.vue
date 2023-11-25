@@ -137,8 +137,11 @@ export default defineComponent({
                             console.log("Node is character")
                             return 1000000
                         }
+                        else if (node.hasClass('trope')) {
                         console.log("Node is trope")
-                        return 1000
+                            return 1000000
+                        }
+                        
                     }
                     // rows: 1
                 }
