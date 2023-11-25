@@ -1435,7 +1435,7 @@
   <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#SoProudofYou">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
-    <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> After improving himself as a hero and a man, he gets to hear this from all older members of the superhero community at least once, and hearing those words from Barry himself at the end of Blitz is what makes him the happiest. Barry</hero:tropeDescription>
+    <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> After improving himself as a hero and a man, he gets to hear this from all older members of the superhero community at least once, and hearing those words from Barry himself at the end of Blitz is what makes him the happiest.</hero:tropeDescription>
     <hero:tropeDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> To Kitty in Giant Size Astonishing X-Men #1 and Hisako in the anime. She also tells her daughter/clone Esme that out of all the Stepford Cuckoos, she is the one that Emma is most proud of.</hero:tropeDescription>
     <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#WallyWest</hero:belongsTo>
     <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#EmmaFrost</hero:belongsTo>
