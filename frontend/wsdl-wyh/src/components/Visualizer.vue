@@ -1,7 +1,6 @@
 <template>
     visualizer
     {{ state }}
-    {{ character }}
     <div id="cy">
     </div>
 </template>
@@ -29,42 +28,54 @@ export default defineComponent({
     props: {
         character: Character
     },
+    watch: {
+        character: function (val) {
+            this.state = 'character changed'
 
-    mounted() {
-        this.cy = document.getElementById('cy')
-    },
-
-    updateGraph(newCharacter) {
-        if (!this.character) {
-            this.state = 'no character'
-            return
-        }
-        this.state = 'character found'
-        return
-        // Map tropes to nodes
+            let characterName = this.character.name
         let thisNode = {
             data: {
-                id: this.character.name,
-                class: 'character'
+                    id:characterName,
+                },
+                classes: ['character']
             }
-        }
-        let tropeNodes = this.character.tropes.map(trope => {
-            return {
+            // Iterate this.character.trops dictionary
+            // For each trope, create a node
+            // For each trope, create an edge from thisNode to the trope node
+            let tropeNodes = [];
+            let tropeEdges = [];
+            for (const [key, value] of Object.entries(this.character.tropes)) {
+                tropeNodes.push({
+                    data: {
+                        id: key,
+                    },
+                    classes: ['trope']
+                })
+                tropeEdges.push({
                 data: {
-                    id: trope.name,
-                    class: 'trope'
+                        id: `${this.character.name}-${key}`,
+                        source: characterName,
+                        target: key
                 }
+                })
             }
-        })
+
+            tropeNodes = tropeNodes.splice(0, 5);
+            tropeEdges = tropeEdges.splice(0, 5);
 
         let cy = cytoscape({
 
-            container: myEle, // container to render in
+                container: this.cy, // container to render in
 
-            elements: [ // list of graph elements to start with
+                elements: {// list of graph elements to start with
+                    nodes: [
                 thisNode,
-                ...tropeNodes,
+                        ...tropeNodes
             ],
+                    edges: [
+                        ...tropeEdges
+                    ]
+                },
 
             style: [ // the stylesheet for the graph
                 {
@@ -88,16 +99,43 @@ export default defineComponent({
             ],
 
             layout: {
-                name: 'grid',
-                rows: 1
+                    name: 'cose',
+                    nodeRepulsion: node => {
+                        if (node.hasClass('character')) {
+                            console.log("Node is character")
+                            return 1000000
+                        }
+                        console.log("Node is trope")
+                        return 1000
+                    }
+                    // rows: 1
             }
         })
 
-    },
-    watch: {
-        character: function (newCharacter) {
-            this.updateGraph(newCharacter)
+            cy.on('tap', 'node', function (evt) {
+                var node = evt.target;
+                if (node.hasClass('character')) {
+                    console.log('tapped character' + node.id());
+                }
+                else if (node.hasClass('trope')) {
+                    console.log('tapped trope ' + node.id());
+                }
+            });
         }
+    },
+    mounted() {
+        console.log("Mounted character", this.character)
+        this.cy = document.getElementById('cy')
+        // if (this.character) {
+        //     this.state = 'no character'
+        //     return
+        // }
+        // this.state = 'character found'
+        // console.log("My character", this.character)
+
+        return
+        // Map tropes to nodes
+
     }
 })
 </script>
