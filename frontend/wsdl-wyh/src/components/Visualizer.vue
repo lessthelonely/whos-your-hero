@@ -1,6 +1,6 @@
 <template>
-    visualizer
-    {{ state }}
+    <!-- visualizer
+    {{ state }} -->
     <div id="cy">
     </div>
 </template>
@@ -8,8 +8,7 @@
 <script>
 import { defineComponent, ref, onMounted } from 'vue'
 import cytoscape from 'cytoscape'
-import popper from 'cytoscape-popper'
-//import { Character } from '../stores/Character'
+// import popper from 'cytoscape-popper'
 
 
 export default defineComponent({
@@ -27,7 +26,6 @@ export default defineComponent({
     },
 
     props: {
-        //character: Character,
         tropeData: Object
     },
     watch: {
