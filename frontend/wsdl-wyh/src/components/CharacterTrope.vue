@@ -10,7 +10,7 @@
         <div class="col-md-8" style="width: 80%; padding: 0px;">
             <h6
                 style="border-radius: 0px 10px 0px 0px; margin: 0px; background-color: #212529; color: white; padding: 10px;">
-                {{ name }}
+                {{ iteration != "" ? iteration : name }}
             </h6>
             <p
                 style="height: 150px; text-align: justify; background-color: #adb5bd; padding: 10px; border-radius: 0px 0px 10px 0px;">
@@ -31,6 +31,10 @@ export default defineComponent({
     props: {
         name: String,
         description: String,
+        iteration: {
+            type: String,
+            default: ""
+        },
     },
 
 
@@ -93,8 +97,10 @@ export default defineComponent({
     },
 
     async beforeMount() {
+        console.log("name", this.name)
         var backend_name = this.name.toLowerCase().replace(" ", "_");
         console.log("backend_name", backend_name)
+
         await axios.get("http://localhost:8000/rdf-character/" + backend_name + "/photo")
             .then(response => {
                 this.photo = response.data["http://whosyourhero.com/heroes.owl#" + this.name.replace(" ", "")][0];

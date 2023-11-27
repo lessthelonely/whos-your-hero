@@ -1,10 +1,11 @@
 <template>
-
+    <Visualizer :tropeData="this.tropeData" />
 </template>
   
 <script>
 import { defineComponent } from 'vue'
 import axios from 'axios'
+import Visualizer from '../components/Visualizer.vue'
 
 export default defineComponent({
     props: {
@@ -12,10 +13,12 @@ export default defineComponent({
     },
 
     components: {
+        Visualizer
     },
 
     data() {
         return {
+            tropeData: Object
         }
     },
 
@@ -62,7 +65,10 @@ export default defineComponent({
     },
 
     async beforeMount() {
-        
+        await axios.get("http://localhost:8000/rdf-all/trope")
+            .then(response => {
+                this.tropeData = response.data
+            });
     }
 })
 </script>
