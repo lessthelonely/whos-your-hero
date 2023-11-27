@@ -40,4 +40,4 @@ def get_character_tropes(folder_info, url):
 # get_character_tropes("midnighter", "https://tvtropes.org/pmwiki/pmwiki.php/Characters/TheAuthorityMidnighter")
 # get_character_tropes("emma_frost", "https://tvtropes.org/pmwiki/pmwiki.php/Characters/MarvelComicsEmmaFrost")
 # get_character_tropes("wally_west","https://tvtropes.org/pmwiki/pmwiki.php/Characters/TheFlashWallyWest")
-get_character_tropes("deadpool", "https://tvtropes.org/pmwiki/pmwiki.php/Characters/DeadpoolWadeWilson")
+get_character_tropes("deadpool", "https://tvtropes.org/pmwiki/pmwiki.php/Characters/DeadpoolWadeWilson")# get_character_tropes("deadpool", "https://tvtropes.org/pmwiki/pmwiki.php/Characters/DeadpoolWadeWilson")
