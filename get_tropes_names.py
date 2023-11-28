@@ -14,7 +14,8 @@ def get_tropes_names(folder_name):
 
 #get_tropes_names("cassandra_cain")
 #get_tropes_names("emma_frost")
-get_tropes_names("wally_west")
-get_tropes_names("deadpool")
-get_tropes_names("midnighter")
+#get_tropes_names("wally_west")
+#get_tropes_names("deadpool")
+#get_tropes_names("midnighter")
+get_tropes_names("cyclops")
 

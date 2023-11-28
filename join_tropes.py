@@ -13,6 +13,7 @@ get_tropes("emma_frost")
 get_tropes("wally_west")
 get_tropes("deadpool")
 get_tropes("midnighter")
+get_tropes("cyclops")
 
 bonus_tropes = set()
 with open("all_tropes_clean.txt", "w", encoding="utf-8") as f:

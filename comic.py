@@ -98,3 +98,5 @@ get_comic_character_info("cassandra_cain", "Cassandra Cain", "https://comicvine.
 get_comic_character_info("midnighter", "Midnighter", "https://comicvine.gamespot.com/midnighter/4005-2196/")
 get_comic_character_info("deadpool", "Deadpool", "https://comicvine.gamespot.com/deadpool/4005-7606/")
 get_comic_character_info("wally_west", "Wally West", "https://comicvine.gamespot.com/wally-west/4005-23879/")get_comic_character_info("wally_west", "Wally West", "https://comicvine.gamespot.com/wally-west/4005-23879/")
+get_comic_character_info("wally_west", "Wally West", "https://comicvine.gamespot.com/wally-west/4005-23879/")
+get_comic_character_info("cyclops", "Cyclops", "https://comicvine.gamespot.com/cyclops/4005-1459/")
