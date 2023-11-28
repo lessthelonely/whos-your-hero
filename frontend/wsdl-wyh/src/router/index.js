@@ -37,6 +37,11 @@ const router = createRouter({
       path: '/graph',
       name: 'graph page',
       component: () => import('../views/GraphView.vue')
+    },
+    {
+      path: '/random',
+      name: 'random page',
+      component: () => import('../views/RandomView.vue')
     }
   ]
 })

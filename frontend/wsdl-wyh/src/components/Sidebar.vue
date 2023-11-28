@@ -69,6 +69,16 @@ export default defineComponent({
                         }
                     }
                 },
+                {
+                    href: '/random',
+                    title: 'Random',
+                    icon: {
+                        element: 'font-awesome-icon',
+                        attributes: {
+                            icon: 'shuffle',
+                        }
+                    }
+                },
             ],
         }
     }
