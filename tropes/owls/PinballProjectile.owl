@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#PinballProjectile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>A variant of Bizarre and Improbable Ballistics ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BizarreAndImprobableBallistics"], where a bullet, arrow, stone, whatever, ricochets off several objects before finally hitting its target. Can be either accidental or just a sign of the shooter's skill. A sister-trope, Hyper-Destructive Bouncing Ball, describes instances when an item ricochets, causing random damage. That is not this trope; this always has a definite target, even if the shot hits the target as a result of pure luck. To pull this off intentionally means you're either The Gunslinger ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheGunslinger"] or an exceptional (and highly unrealistic) Master Archer; pulling it off accidentally makes you incredibly lucky. This is often a characteristic of the Precision-Guided Boomerang, though returning to the wielder is not necessary. You may find one in a Trick Shot Puzzle. Technically Truth in Television ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TruthInTelevision"], but with a huge asterisk — see real-life examples. Most treatments in fiction are Artistic License – Physics at its finest, the biggest issues being the number of ricochettes, and the ability to control the angle of deflection. Compare Reflecting Laser ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ReflectingLaser"] and Coin-Targeting Trickshot. Also see Bouncing Battler, where a character uses this as a fighting technique.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

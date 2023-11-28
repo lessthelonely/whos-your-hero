@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#LoveInterest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>The princess to be rescued ["https://tvtropes.org/pmwiki/pmwiki.php/Main/DamselInDistress"], or the Prince Charming to sweep the heroine off her feet. Or just someone that happens to become romantically involved. It's a Super-Trope ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SuperTrope"] so universal, that there are too many specific examples to list. There are a few in the list below. Compare Attraction Tropes ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AttractionTropes"], Flirting and Courtship, Dating Tropes, Marriage Tropes, Index of Romantic Couples. Contrast Celibate Hero, who is immune to this. More innocent Sister Trope ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SisterTrope"] to Lust Object.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

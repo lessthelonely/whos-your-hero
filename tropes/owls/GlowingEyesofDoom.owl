@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#GlowingEyesofDoom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Whether a permanent indication of malevolence, the emergence of the Superpowered Evil Side ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SuperpoweredEvilSide"], or perhaps the result of a Berserk Button or Rage Breaking Point, these eyes are clearly not a good sign. However, they aren't necessarily the province of villains — particularly powerful heroes often manifest this trope when it's time for the gloves to come off. Unlike Red Eyes, Take Warning, these always mean immediate trouble and thus are near the top of the hierarchy of "Uh-Oh" Eyes. Thanks to the description of Pallas Athena in Homer's The Iliad, this trope is Older Than Feudalism. Very good for giving the Death Glare ["https://tvtropes.org/pmwiki/pmwiki.php/Main/DeathGlare"]. A Slasher Smile or other happily murderous expression doesn't hurt, either. You can usually tell the trouble is over when the eye lights go out ["https://tvtropes.org/pmwiki/pmwiki.php/Main/EyeLightsOut"]. Unless they come back. Unsurprisingly, a Sub-Trope ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SubTrope"] of Glowing Eyes. Compare The Darkness Gazes Back.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

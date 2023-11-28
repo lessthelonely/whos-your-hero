@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#HorribleJudgeofCharacter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Some people just can't read other people. They see the villain ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Villains"] and think they're The Hero, they see a Sleazy Politician and think they'll change the world for the better, and they think Sergeant Rock is a Jerkass when he just wants to keep everyone alive. This person might be overly trusting or naïve, or have a hard time reading social cues and body language, or maybe they're just dimwitted in general ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheDitz"]. They could also be too closed off to hear other characters' warnings about the bad guy's true nature. This can be a matter of degree, ranging from characters who routinely get everybody wrong ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ExaggeratedTrope"] to an absurd degree, to normal people who are usually at least okay at judging other people but critically get one key character wrong for reasonable reasons, whether that be because the subject of their mistake is a Manipulative Bastard or because Love Makes You Dumb. This can lead to a My God, What Have I Done? ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MyGodWhatHaveIDone"] on the part of the character doing it if their misjudgement makes them the Unwitting Instigator of Doom. If they never do, they could continue being the Unwitting Pawn to the point of being Too Dumb to Live. This is the inverse of Excellent Judge of Character ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ExcellentJudgeOfCharacter"], where a character is really good at figuring other people out. If everybody is a bad judge of a particular character, that character may be a Hero with Bad Publicity ["https://tvtropes.org/pmwiki/pmwiki.php/Main/HeroWithBadPublicity"] or a Villain with Good Publicity. If the work expects the audience not to figure out that an Obviously Evil character is a villain, that's Obvious Judas.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

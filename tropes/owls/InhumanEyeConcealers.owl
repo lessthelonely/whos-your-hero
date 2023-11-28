@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#InhumanEyeConcealers">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>In much the same way that Blind People Wear Sunglasses ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BlindPeopleWearSunglasses"], characters with strange eyes often wear some form of covering to disguise them in public: villains might use them to conceal their "Uh-Oh" Eyes, cyborgs may wear them to hide ocular prosthetics from squeamish civilians, and the subtler breeds of magical beings can use them to pass as human — especially in settings where there's some kind of Masquerade in place. Among the most popular variations on this theme involve dark sunglasses and wraparound shades — justifying ["https://tvtropes.org/pmwiki/pmwiki.php/Main/JustifiedTrope"] the use of Sunglasses at Night — but in truth, the coverings can include almost anything so long as they conceal the inhuman elements of their eyes: spectacles, contact lenses, blindfolds, domino masks, glass eyes, illusions, or even bangs. In live-action works, this often doubles as Obscured Special Effects ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ObscuredSpecialEffects"]. A subtrope of Hide Your Otherness ["https://tvtropes.org/pmwiki/pmwiki.php/Main/HideYourOtherness"]. Compare and contrast with Skin-Tone Disguise.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

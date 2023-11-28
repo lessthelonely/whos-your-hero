@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#HeartbrokenBadass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>   A badass falls head over heels in love and has their heart broken, sometimes because their love interest outright rejects them, sometimes because the object of their affections falls in love elsewhere or is already in a relationship with another, or some other tragic event happens that denies the badass the affections of their love interest. The worst case scenario by far is when their love interest is Stuffed into the Fridge ["https://tvtropes.org/pmwiki/pmwiki.php/Main/StuffedIntoTheFridge"], killed off just to spite the badass. Compare Broken Ace ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BrokenAce"]. See also You Killed My Father and Dead Sidekick. Occasionally, after the rejection, the badass will fall victim to Heroic BSoD and Break the Badass.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

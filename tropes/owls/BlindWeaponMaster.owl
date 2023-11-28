@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#BlindWeaponMaster">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>They hold their staff (or other weapon) like they know what they're doing, but since they're completely without sight surely they aren't that dangerous, right? Wrong. The Blind Weaponmasters are some of the most deadly adversaries a character can face. In possession of supernatural senses born from blindness ["https://tvtropes.org/pmwiki/pmwiki.php/Main/DisabilitySuperpower"] or just Badass Normal enough to compensate for the weaponmaster's loss with other natural senses, the Blind Weaponmaster will surprise any overconfident character and make heroes push their skill to its limits. A blind weaponmaster may invoke Your Eyes Can Deceive You by fighting in a visibly challenging location such as fog or total darkness which would even out the drawback or even reverse it on the weaponmaster's opponent instead. The Blind Weaponmaster's weapon of choice is stereotypically a staff, but other blunt weapons have been used as well. Blades are rare but not unheard of. A subtrope of Handicapped Badass ["https://tvtropes.org/pmwiki/pmwiki.php/Main/HandicappedBadass"]. See also the aforementioned Your Eyes Can Deceive You for when normally-sighted characters would have to fight without the use of their eyes.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

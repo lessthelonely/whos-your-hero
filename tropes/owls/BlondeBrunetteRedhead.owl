@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#BlondeBrunetteRedhead">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>The hair equivalent to vanilla, chocolate, and strawberry (dessert flavors) or yellow, blue, and red (primary colors) or ketchup, mustard, and relish (condiments) or gold, silver, bronze (metals). The trope is strictly for visual appeal; they are not personality types ["https://tvtropes.org/pmwiki/pmwiki.php/Literature/HowNotToWriteANovel"]. Sometimes, they're heroes. Sometimes, they're friends. Sometimes, they're contenders ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BettyAndVeronica"], fighting for the same love interest. Whatever the details, they're proof that Central Casting does count: three women, three natural hair colors. Collect the full set. This trope was inspired — or at least made popular — by The Andrews Sisters, a Girl Group from the 1940s who were famous for entertaining US army forces during World War II. Their diversity of hair colors—all natural—was probably due to their partial Norwegian-Greek ancestry, an interesting mixed race in those days. Strictly speaking, these women need not have the exact Clairol hues of blonde, brown/black, and red, particularly when stepping away from ["https://tvtropes.org/pmwiki/pmwiki.php/Main/HairColorDissonance"] the natural spectrum. The blonde will have the lightest hair, the brunette the darkest, and the redhead will have a distinct moderate shade — all for instant sight recognition. Note: Although this is stereotypically a female trope, male (or mixed-gender) examples also count. However, in such cases, the masculinized spellings "blond" and "brunet" are applicable instead of "blonde" and "brunette". See also Chromatic Arrangement ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ChromaticArrangement"], Power Trio, The Three Faces of Eve, The Hecate Sisters, Beauty, Brains, and Brawn.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

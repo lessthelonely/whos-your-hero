@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#SinglePowerSuperheroes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>There are many superheroes out there. Some, like Batman ["https://tvtropes.org/pmwiki/pmwiki.php/Franchise/Batman"], do their super-heroing using years and years of training their bodies, showing human capability to a remarkable extent, possibly with the help from a utility belt as well. Others are like Superman, having a whole grab-bag of superpowers that needn't even be remotely related in some of the extreme cases. Then, there are superheroes like Cyclops. Beast Boy. Static. The middle-roaders. The ones that only have one listed superpower, but which they sometimes have many uses for. As you can guess, this trope excuses unmentioned Required Secondary Powers ["https://tvtropes.org/pmwiki/pmwiki.php/Main/RequiredSecondaryPowers"], since they often aren't a power in their own right, though the line can get a little fuzzy at times. Elemental Powers are a sub-trope of this. In a show with Cast Speciation, this can easily become What Kind of Lame Power Is Heart, Anyway?. (See Hawkman in the Superfriends cartoon.) One Person, One Power ["https://tvtropes.org/pmwiki/pmwiki.php/Main/OnePersonOnePower"] is when this applies to every powered person in a setting.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

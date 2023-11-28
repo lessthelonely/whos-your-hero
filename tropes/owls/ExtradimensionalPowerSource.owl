@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#ExtradimensionalPowerSource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>The laws of thermodynamics and conservation of mass prove there's a finite amount of energy in this universe. It can never be created or destroyed, but just change form. Of course, there ain't no rule that says you can't bring in energy from somewhere else ["https://tvtropes.org/pmwiki/pmwiki.php/Main/LoopholeAbuse"] to solve your needs. Enter the extradimensional power source, which is Exactly What It Says on the Tin: utilizing the energy from another reality for whatever purpose one might have in mind for it. Depending on the work, the extradimensional energy can be of magical, technological, cosmic, or even quantic nature. The latter often happens in sci-fi works because otherwordly particles are convenient Applied Phlebotinum ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AppliedPhlebotinum"]. Using energy from another world frequently has unforeseen consequences, because of how it may interact with a different world. At worst, that other world may be populated, and sucking the energy out of it is killing them. If there is No Conservation of Energy ["https://tvtropes.org/pmwiki/pmwiki.php/Main/NoConservationOfEnergy"] in a work, this trope is the most likely reason. Contrast Background Magic Field, which is when the power comes from the same dimension as the user.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

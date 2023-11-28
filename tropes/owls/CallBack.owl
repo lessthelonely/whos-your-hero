@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#CallBack">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>A relevant reference to an event taking place earlier than the timeline of the present story. One type of call back is a Running Gag ["https://tvtropes.org/pmwiki/pmwiki.php/Main/RunningGag"]. This is often used to remind viewers that there is an ongoing storyline. More or less a Shout-Out to itself — but if that's all that it's doing, then it's a Continuity Nod; a Call-Back brings back an element that is actually relevant again. Compare: Alternately, in comedy: Tying the loose ends of a later, seemingly unrelated, joke to one earlier in the show; better known as a Brick Joke ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BrickJoke"]. Sometimes a Call-Back will take up so much of a chapter or episode that it becomes a Sequel Episode ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SequelEpisode"] to the earlier story it's referencing. The opposite of this is either Foreshadowing ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Foreshadowing"] (a forward reference done in a previous episode) or Call-Forward (a "fake" forward reference in a flashback or prequel). If a creator is referencing their previous work in a way that's separate from the plot, that's Production Throwback. See also Chekhov's Gun, Chekhov's Boomerang, Brick Joke, Book Ends, Mythology Gag, Sequel Episode, Internal Homage, and Meaningful Echo.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

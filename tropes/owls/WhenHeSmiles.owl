@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#WhenHeSmiles">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>      So there is this one character who never smiles. They are always so serious. Or maybe they're The Eeyore ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheEeyore"] who always sees the worst of things. Then one day they smile, and there is something about the sheer happiness in that smile that makes whoever is watching immediately feel welcome, or better, and very often want to make them smile again. Preferably a lot. Depending on the application, can lead to Love at First Sight, a Love Epiphany, or a heartwarming moment. In summary, the requirements for this trope are: On rare occasions, this can be played with a character who typically shows an insincere smile (such as a Stepford Smiler ["https://tvtropes.org/pmwiki/pmwiki.php/Main/StepfordSmiler"] or a Smug Smiler) who then has a sincere smile. It's not actually Always Female ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AlwaysFemale"]; the title comes from the song "Absolutely (Story of a Girl)". Go Out with a Smile often involves this plus Tear Jerker. May involve Finger-Forced Smile. A shy cousin to What Beautiful Eyes!, and Unkempt Beauty; a subtrope of O.O.C. Is Serious Business. Contrast with The Unsmile, where the smile is just plain unnatural. Compare with Serendipity Shock, Beautiful Tears (when crying makes a character look prettier). See Smile of Approval if the character's smile is geared towards someone they don't think too fondly of. In-Universe Examples Only ["https://tvtropes.org/pmwiki/pmwiki.php/Administrivia/InUniverseExamplesOnly"], please. Do not include Audience Reactions.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

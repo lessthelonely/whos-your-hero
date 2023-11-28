@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#TheExtremistWasRight">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Here are the people ["https://tvtropes.org/pmwiki/pmwiki.php/Main/Characters"] whom everyone, sometimes even the viewers, thought were the Well-Intentioned Extremist or Knight Templar that always turns out to be wrong — but instead they were completely right. Their ideas about how to go about making the world a better place are appropriate, and not only are they genuinely working toward a better world, they've succeeded in doing so, or else succeed during the course of the story. These are genuine examples of that term that so many villains falsely claim to be, necessary evils, within the context of the story. Compare/contrast Well-Intentioned Extremist ["https://tvtropes.org/pmwiki/pmwiki.php/Main/WellIntentionedExtremist"], Villain with Good Publicity, Villain Has a Point, Jerkass Has a Point, Repressive, but Efficient, Utopia Justifies the Means, Benevolent Dictator, and Necessarily Evil. Also see Psycho Supporter, when an ally of the hero does this so the hero never has to. The Omniscient Morality License is a common result of this trope being mishandled; though if the one doing this is a god or God, then the issue gets even more contentious. The specifically religious version is the Soulsaving Crusader. Often a result of the ending, and thus has a tendency to overlap with The Bad Guy Wins. Contrast Fascist, but Inefficient when a government is both ruthless and incompetent, and Pyrrhic Victory or Meaningless Villain Victory when the (ruthless) means end up ruining the (well-intentioned) ends. For when some fans feel compelled to justify a villain's actions, even when they aren't actually right, see Draco in Leather Pants. When the author feels a character falls under this trope, but the audience disagrees, it's often a result of Values Dissonance. When this isn't intentional, it can fall under Strawman Has a Point.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

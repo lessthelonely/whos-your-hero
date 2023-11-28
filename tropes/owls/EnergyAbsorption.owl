@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#EnergyAbsorption">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Some devices, characters, Humongous Mecha ["https://tvtropes.org/pmwiki/pmwiki.php/Main/HumongousMecha"] and/or supernatural beings have the power to absorb Ki, Life Energy, Energy Weapons, and sometimes even Liquid Assets. The absorbed power may be part of a Charged Attack, it may be available to power the user's Tim Taylor Technology, it may be the result of an artificial Negative Space Wedgie, or the power may just be a specialized form of Deflector Shields. The traditional Achilles' Heel ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AchillesHeel"] of Energy Absorption users is Phlebotinum Overload. Particularly astute protagonists will think to Reverse Polarity and use the power as a substitute for Energy Weapons before it overloads.... Energy Absorption is usually, but not always, an example of Feed It with Fire ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FeedItWithFire"]. Compare and contrast with Adaptive Ability, which has a similar effect, but without the risk of Phlebotinum Overload. Also contrast Energy Donation, for when this goes in the opposite direction. See also Elemental Absorption when this is done with Elemental Powers. Rare Radiation-Immune Mutants may go beyond mere resistance and actually feed on or absorb radiation. See also Going to Give It More Energy when a person deliberately feeds one energy until they can't absorb anymore.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

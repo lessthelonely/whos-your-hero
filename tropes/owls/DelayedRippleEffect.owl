@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#DelayedRippleEffect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Oh, no! After leaving your Time Machine ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TimeMachine"], you stepped on the Butterfly of Doom. This can only mean it's The End of the World as We Know It! But wait... it takes a while for the changes to "catch up" with the present. Looks like it's going to be a Race Against the Clock to Set Right What Once Went Wrong! In some Time Travel ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TimeTravel"] stories it takes a certain amount of San Dimas Time for history to change. Normally, this will be done so that the protagonists can prevent irreversible changes from making it to the present. Or maybe the story is set in a universe where people don't have Ripple-Effect-Proof Memory. Or the filmmakers just didn't have the time or money to create an Alternate Universe. Whatever. The point is that there's a time limit for "fixing" history and you better not pass it! A Ripple Effect Indicator is frequently used to show the Delayed Ripple Effect is happening. This doesn't make intuitive sense, but then again, time travel generally doesn't. It is fairly common, though, for changes to Travel at the Speed of Plot ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TravelingAtTheSpeedOfPlot"] — for example, some "bad" change that sets up a crisis takes days or hours to hit the heroes, while the "good" change that resolves it propagates instantly. Sometimes, the ripple is portrayed as propagating through time. For example, the wave hits a certain time. Ten minutes later, the wave hits ten years in the past.note One would expect the wave to hit ten minutes in the future, ten minutes later. It would already have hit ten years in the past, ten years ago. The Trope Namer ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TropeNamer"] is from the Back to the Future films.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

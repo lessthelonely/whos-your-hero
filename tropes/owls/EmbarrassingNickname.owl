@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#EmbarrassingNickname">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>It might be a nickname with a horribly embarrassing story behind it, or something family members or lovers use only when they're alone (in which case it overlaps with Affectionate Nickname ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AffectionateNickname"]). It will often reference a character's appearance or lack of ability in one area or another; sexual prowess (or endowment) is a common one. Because it is embarrassing it may be a Berserk Button for its recipient. This is frequently a comedy trope, but not always; the backstory behind the nickname can also apply to a harrowing event from the character's past like a tragic mistake they made ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MyGreatestFailure"] —they simply need to be ashamed of the nickname they are now burdened with. Sub-Trope ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SubTrope"] of In-Series Nickname. Appropriated Appellation is this trope defied. May overlap with Do Not Call Me "Paul". See also Accidental Misnaming, Atrocious Alias, Malicious Misnaming, Nobody Calls Me "Chicken"!, Embarrassing First Name, Insistent Terminology, Named After the Injury, and Outgrowing the Childish Name.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

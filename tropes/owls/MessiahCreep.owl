@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#MessiahCreep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>This seems likely to happen to a character who was previously The Ditz ["https://tvtropes.org/pmwiki/pmwiki.php/Main/TheDitz"] or The Fool, or otherwise fell into This Loser Is You category. More cynically, it may occur because characters otherwise lacking any genuine positive qualities can only compensate by the "kindness of their heart". It can also occur as a result of exclusively positive Character Development. A character actually learns their Aesops and overcomes the flaws in their personality, but creators are loath to have them develop new flaws, so they end up perfect. Note that not all characters falling into the Messianic Archetype ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MessianicArchetype"] are victims of Messiah Creep: it's about the archetype overriding previous characterization. If the character fell into the archetype from the beginning, it is Not an Example. Often crosses over with a "Save the World" Climax ["https://tvtropes.org/pmwiki/pmwiki.php/Main/SaveTheWorldClimax"]; as their goals escalate to the scale of Saving the World, their personality evolves into one worthy of the task. This does not mean ["https://tvtropes.org/pmwiki/pmwiki.php/JustForFun/IThoughtItMeant"] a Messiah who's a creep. Although that also happens.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

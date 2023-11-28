@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#EyeBeams">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription> A Stock Superpower ["https://tvtropes.org/pmwiki/pmwiki.php/Main/StockSuperpowersIndex"] (and also a classic Super Robot weapon) that allows characters to shoot blasts out of their eyes. Blasts of what, you ask? Sometimes the generic, all-encompassing term of "energy." Sometimes "heat," in which case it is (logically) known as Heat Vision. Sometimes "lasers," in which case it is known (again, with excessive logic) as Laser Vision. The point is, they hurt. These are the real Glowing Eyes of Doom. This is the stock power of the Mecha Mook ["https://tvtropes.org/pmwiki/pmwiki.php/Main/MechaMooks"] and those with powers beyond mortal men. Also, a stock joke about "laser eye surgery" fad. Seldom is it explained ["https://tvtropes.org/pmwiki/pmwiki.php/Main/RequiredSecondaryPowers"] how a beam which can burn or injure just about anything else is contained when trapped behind the character's eyelids, nor how the beam-producing mechanism within the eye avoids obstructing the vision of the actual seeing parts of the eye. Compare X-Ray Vision ["https://tvtropes.org/pmwiki/pmwiki.php/Main/XRayVision"], Deadly Gaze, Magical Eye, Breath Weapon, Head Blast, Hand Blast, and Psi Blast. Often The Glasses Come Off for this. A favorite attack for the Oculothorax. Not to be confused with I-beams, the architectural element, although those too can be used as weapons.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

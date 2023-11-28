@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#BlindfoldedVision">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>The self-imposed version of being a Blind Seer ["https://tvtropes.org/pmwiki/pmwiki.php/Main/BlindSeer"] or Blind Weaponmaster. A sighted character who has blindfolded vision can see just as well, if not better than if that character wasn’t blindfolded. The reasons for this vary, a mentor teaching the student that Your Eyes Can Deceive You may take it to the next level, invoking Disability Superpower and complementing it with Charles Atlas training to grant Super-Senses, freeing the student from the tyranny of sight. Another possibility is the character's Psychic Powers and Third Eye are enhanced with sensory deprivation, or the blindfold is itself a powerful artifact that confers sight beyond sight a la X-Ray Vision. Perhaps the most terrifying option is that the blindfold is a self-imposed handicap ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PowerLimiter"] to keep an eye-related power under control. When the blindfold comes off, people fall down. Most importantly, Blindfold Vision provides copious quantities of cool.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

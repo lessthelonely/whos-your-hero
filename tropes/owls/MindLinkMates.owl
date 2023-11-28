@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#MindLinkMates">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>This is a romantic trope where lovers share not just their lives and beds, but actually their consciousness ["https://tvtropes.org/pmwiki/pmwiki.php/Main/PsychicLink"]. Most often they're from an already telepathic race, but this telepathy goes even further; maybe they're always aware of the other, not just when communicating but always; or they understand each other better than anyone else; or they actually feel exactly like the other, or something like that. Sometimes successful reproduction is tied to it. Sometimes the sanity of one, usually the male, or both partners depends on the mindlink. Often the link is not unsoliticious. It goes both ways, so if something bad happens to one of them... It's doubtful whether real humans could take this for a half an hour, but anyway, it's often presented as superior to a normal relationship, more fulfilling or close or "true". It can also be taken as a "metaphor". This is a subtrope of Fantastic Romance ["https://tvtropes.org/pmwiki/pmwiki.php/Main/FantasticRomance"]. Also see: Mental Affair.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>
