@@ -8,10 +8,9 @@ def get_trope_description(url):
     full_url = url_trope + url
     page = requests.get(full_url)
     soup = BeautifulSoup(page.content, "lxml")
-    find_text = soup.find_all("h1")[1].find_all_previous("p")
+    find_text = soup.find("div", {"id": "main-article"}).find_all("p")
+
     # reorder the list
-    find_text.reverse()
-    find_text = find_text[4:]
 
     text = ""
     for t in find_text:
@@ -39,12 +38,4 @@ def get_trope_description(url):
             f.write(text)
 
 
-# read the tropes from the file
-# tropes_url = ["PopCulturedBadass", "StepfordSnarker", "StatuesqueStunner", "UselessAccessory", "WillTheyorWontThey", "ElementalMotifs"]
-
-tropes_url = ["ActionHero"]
-for t in tropes_url:
-    print(t)
-    get_trope_description(t)
-
-
+get_trope_description("ActionHero")
