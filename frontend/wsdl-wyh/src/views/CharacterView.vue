@@ -316,6 +316,9 @@ export default defineComponent({
         case "midnighter":
           this.name = "Midnighter"
           return "Midnighter"
+        case "cyclops":
+          this.name = "Cyclops"
+          return "Cyclops"
           break;
         default:
           throw console.error("Character not found");
