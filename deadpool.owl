@@ -207,10 +207,10 @@
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
@@ -597,7 +597,7 @@
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Place of Birth: Unknown</hero:characteristics>
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marital Status: Widower (of Mercedes Wilson)/Separated (of Shiklah)</hero:characteristics>
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occupation: Mercenary, Field Agent of Krakoa's X-Force; formerly soldier, assassin, arms dealer, and King of Monster Island</hero:characteristics>
-  <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Known Relatives: Thomas Wilson (father, deceased), Hailey Wilson (mother, deceased), Shiklah (wife, estranged), Mercedes Wilson (wife, deceased), Eleanor Camacho (daughter)</hero:characteristics>
+  <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Known Relatives: Thomas Wilson (father - deceased), Hailey Wilson (mother - deceased), Shiklah (wife - estranged), Mercedes Wilson (wife - deceased), Eleanor Camacho (daughter)</hero:characteristics>
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distinguishing Features: Deadpool is covered head to toe in welts and scabs thanks to his late stage cancer and super healing factor intermingling causing him to look "like Ryan Renolds [sic] crossed with a shar-pei."</hero:characteristics>
   <hero:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marvel</hero:publisher>
   <hero:realName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wade Winston Wilson</hero:realName>

@@ -3,6 +3,18 @@ export function separateWordsByCapitalLetters(inputString) {
     if(inputString == "Deadpool22018"){
       return "Deadpool 2 2018";
     }
+    if (inputString == "HeroicBSoD") {
+      return "Heroic BSoD";
+    }
+    if (inputString == "MoreHerothanThou") {
+      return "More Hero than Thou";
+    }
+    if (inputString == "BatmanGrabsaGun") {
+      return "Batman Grabs a Gun";
+    }
+    if (inputString == "JerkassHasaPoint") {
+      return "Jerkass Has a Point";
+    }
   
     var wordsArray = inputString.split(/(?=[A-Z][a-z])|(?<=[a-z])(?=[A-Z0-9])/);
     
@@ -106,14 +118,14 @@ export function separateWordsByCapitalLetters(inputString) {
           wordsArray[i] = wordsArray[i].replace("of", " of");
         }
       }
-      if(wordsArray[i].includes("is") && wordsArray[i] != "Analysis" && wordsArray[i] != "Regenesis" && wordsArray[i] != "Orchis" && wordsArray[i] != "This"){
+      if(wordsArray[i].includes("is") && wordsArray[i] != "Analysis" && wordsArray[i] != "Genesis" && wordsArray[i] != "Regenesis" && wordsArray[i] != "Orchis" && wordsArray[i] != "This" && wordsArray[i] != "His"){
             var index = wordsArray[i].indexOf("is");
             var nextIndex = index + "is".length;
             if(nextIndex == wordsArray[i].length){
               wordsArray[i] = wordsArray[i].replace("is", " is");
             }
           }
-      if(wordsArray[i].includes("or") && wordsArray[i] != "Junior" && wordsArray[i] != "Mentor" && wordsArray[i] != "Fervor" && wordsArray[i] != "Survivor" && wordsArray[i] != "Terror" && wordsArray[i] != "Liquor" && wordsArray[i] != "Minor" && wordsArray[i] != "Warrior" && wordsArray[i] != "Major" && wordsArray[i] != "Humor" && wordsArray[i] != "Motor" && !(wordsArray[i].includes("for"))){
+      if(wordsArray[i].includes("or") && wordsArray[i] != "Junior" && wordsArray[i] != "Mentor" && wordsArray[i] != "Fervor" && wordsArray[i] != "Survivor" && wordsArray[i] != "Terror" && wordsArray[i] != "Liquor" && wordsArray[i] != "Minor" && wordsArray[i] != "Warrior" && wordsArray[i] != "Major" && wordsArray[i] != "Humor" && wordsArray[i] != "Motor" && wordsArray[i] != "Visor" && wordsArray[i] != "Pryor" && wordsArray[i] != "Factor" && wordsArray[i] != "Color" && wordsArray[i] != "Armor" && wordsArray[i] != "Determinator" && wordsArray[i] != "Poor" && wordsArray[i] != "Error" && !(wordsArray[i].includes("for"))){
         var index = wordsArray[i].indexOf("or");
         var nextIndex = index + "or".length;
         if(nextIndex == wordsArray[i].length){
@@ -134,7 +146,7 @@ export function separateWordsByCapitalLetters(inputString) {
           wordsArray[i] = wordsArray[i].replace("to", " to");
         }
       }
-      if(wordsArray[i].includes("a") && !(wordsArray[i].includes("on") || wordsArray[i].includes("of")) && wordsArray[i] != "Alpha" && wordsArray[i] != "Myopia" && wordsArray[i] != "Kotobukiya" && wordsArray[i] != "Necrosha" && wordsArray[i] != "Insignia" && wordsArray[i] != "Ninja" && wordsArray[i] != "Aura" && wordsArray[i] != "Extra" && wordsArray[i] != "Emma"){
+      if(wordsArray[i].includes("a") && !(wordsArray[i].includes("on") || wordsArray[i].includes("of")) && wordsArray[i] != "Alpha" && wordsArray[i] != "Myopia" && wordsArray[i] != "Kotobukiya" && wordsArray[i] != "Necrosha" && wordsArray[i] != "Insignia" && wordsArray[i] != "Ninja" && wordsArray[i] != "Aura" && wordsArray[i] != "Extra" && wordsArray[i] != "Emma" && wordsArray[i] != "Utopia" && wordsArray[i] != "Godzilla"){
             var index = wordsArray[i].indexOf("a");
             var nextIndex = index + "a".length;
             if(nextIndex == wordsArray[i].length){
@@ -148,14 +160,14 @@ export function separateWordsByCapitalLetters(inputString) {
           wordsArray[i] = wordsArray[i].replace("with", " with");
         }
       }
-      if (wordsArray[i].includes("and") && !(wordsArray[i].includes("the")) && (wordsArray[i] != "Grand") && (wordsArray[i] != "Hand")) {
+      if (wordsArray[i].includes("and") && !(wordsArray[i].includes("the")) && (wordsArray[i] != "Grand") && (wordsArray[i] != "Hand") && wordsArray[i] != "Husband" && wordsArray[i] != "Stand") {
         var index = wordsArray[i].indexOf("and");
         var nextIndex = index + "and".length;
         if (nextIndex == wordsArray[i].length) {
           wordsArray[i] = wordsArray[i].replace("and", " and");
         }
       }
-      if (wordsArray[i].includes("by") && !(wordsArray[i].includes("Baby"))) {
+      if (wordsArray[i].includes("by") && !(wordsArray[i].includes("Baby")) && !(wordsArray[i].includes("Ruby"))) {
         var index = wordsArray[i].indexOf("by");
         var nextIndex = index + "by".length;
         if (nextIndex == wordsArray[i].length || wordsArray[i][nextIndex] == " ") {
@@ -176,7 +188,7 @@ export function separateWordsByCapitalLetters(inputString) {
           wordsArray[i] = wordsArray[i].replace("withan", " with an");
         }
       }
-      if(wordsArray[i].includes("an") && wordsArray[i] != "Man" && wordsArray[i] != "Logan" && wordsArray[i] != "Batman" && wordsArray[i] != "Human" && wordsArray[i] != "Gunman" && wordsArray[i] != "Amazonian" && wordsArray[i] != "Spartan" && wordsArray[i] != "Deadpan" && wordsArray[i] != "Superhuman" && wordsArray[i] != "Superman" && wordsArray[i] != "Than" && wordsArray[i] != "Freudian" && wordsArray[i] != "Can" && wordsArray[i] != "Technician"){
+      if(wordsArray[i].includes("an") && wordsArray[i] != "Man" && wordsArray[i] != "Logan" && wordsArray[i] != "Batman" && wordsArray[i] != "Human" && wordsArray[i] != "Gunman" && wordsArray[i] != "Amazonian" && wordsArray[i] != "Spartan" && wordsArray[i] != "Deadpan" && wordsArray[i] != "Superhuman" && wordsArray[i] != "Superman" && wordsArray[i] != "Than" && wordsArray[i] != "Freudian" && wordsArray[i] != "Can" && wordsArray[i] != "Technician" && wordsArray[i] != "Jean" && wordsArray[i] != "Nathan" && wordsArray[i] != "Barbarian" && wordsArray[i] != "Inhuman" && wordsArray[i] != "Totalitarian"  && wordsArray[i] != "Utilitarian" && !(wordsArray[i].includes("than"))){
             var index = wordsArray[i].indexOf("an");
             var nextIndex = index + "an".length;
             if(nextIndex == wordsArray[i].length){
@@ -197,7 +209,7 @@ export function separateWordsByCapitalLetters(inputString) {
           wordsArray[i] = wordsArray[i].replace("as", " as");
         }
       }
-      if(wordsArray[i].includes("at") && wordsArray[i] != "Bat" && wordsArray[i] != "What" && wordsArray[i] != "Combat" && wordsArray[i] != "That" && wordsArray[i] != "Copycat" && wordsArray[i] != "Kombat" && wordsArray[i] != "Coat" && wordsArray[i] != "Cat" && wordsArray[i] != "Great"){
+      if(wordsArray[i].includes("at") && wordsArray[i] != "Bat" && !(wordsArray[i].includes("What")) && wordsArray[i] != "Combat" && wordsArray[i] != "That" && wordsArray[i] != "Copycat" && wordsArray[i] != "Kombat" && wordsArray[i] != "Coat" && wordsArray[i] != "Cat" && wordsArray[i] != "Great"){
             var index = wordsArray[i].indexOf("at");
             var nextIndex = index + "at".length;
             if(nextIndex == wordsArray[i].length || wordsArray[i][nextIndex] == " "){

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hero="http://whosyourhero.com/heroes.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://whosyourhero.com/heroes.owl#BroughtToYouByTheLetterX">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+    <hero:tropeDescription>Superheroes and supervillains are, in many ways, much like athletes. Both frequently perform amazing physical feats envied by ordinary folk; both often collect themselves into teams with fancy names; both wear colorful, form-fitting uniforms. And both have a tendency to adorn those uniforms with single letters of the alphabet. Stumped for a Chest Insignia ["https://tvtropes.org/pmwiki/pmwiki.php/Main/ChestInsignia"]? Just style up the first letter of your Code Name in sufficiently distinctive typeface, and have at it! It doesn't even have to be the first letter. It can be just your favorite letter, or it could be your full name! See also Alphabet Architecture ["https://tvtropes.org/pmwiki/pmwiki.php/Main/AlphabetArchitecture"], where buildings are built in the shape of letters.</hero:tropeDescription>
+  </rdf:Description>
+</rdf:RDF>

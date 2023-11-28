@@ -9,6 +9,7 @@ rdf_store.parse("wally_west.owl", format="xml")
 rdf_store.parse("deadpool.owl", format="xml")
 rdf_store.parse("emma_frost.owl", format="xml")
 rdf_store.parse("midnighter.owl", format="xml")
+rdf_store.parse("cyclops.owl", format = "xml")
 
 # You now have all the data from the RDF files in the rdf_store
 
