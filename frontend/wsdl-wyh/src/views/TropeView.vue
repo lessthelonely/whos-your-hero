@@ -1,17 +1,20 @@
 <template>
-  <div style="display: flex; margin-bottom: 15px;">
-    <div class="header">
-      <h1 style="font-weight: bold;">
-        {{ trope.name }}
-      </h1>
-      <p style="text-align: justify; padding-right: 10px;" v-html="trope.description">
-      </p>
+  <SplashScreen v-if="!loaded" />
+  <div v-else>
+    <div style="display: flex; margin-bottom: 15px;">
+      <div class="header">
+        <h1 style="font-weight: bold;">
+          {{ trope.name }}
+        </h1>
+        <p style="text-align: justify; padding-right: 10px;" v-html="trope.description">
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div style="display: flex; flex-direction: column;">
-    <h4 style="margin-bottom: 10px;">Seen on...</h4>
-    <CharacterTrope v-for="(value, key) in characterTropes" :name="key" :description="value" />
+    <div style="display: flex; flex-direction: column;">
+      <h4 style="margin-bottom: 10px;">Seen on...</h4>
+      <CharacterTrope v-for="(value, key) in characterTropes" :name="key" :description="value" />
+    </div>
   </div>
 </template>
 
@@ -21,16 +24,19 @@ import axios from 'axios'
 import { Trope } from '../stores/Trope.js'
 import CharacterTrope from '../components/CharacterTrope.vue'
 import { separateWordsByCapitalLetters } from '../assets/utils/utils.js'
+import SplashScreen from './SplashScreen.vue'
 
 export default defineComponent({
   components: {
-    CharacterTrope
+    CharacterTrope,
+    SplashScreen
   },
 
   data() {
     return {
       trope: Trope,
-      characterTropes: {}
+      characterTropes: {},
+      loaded: false
     }
   },
 
@@ -91,6 +97,7 @@ export default defineComponent({
       .then(response => {
 
         this.trope = new Trope(separateWordsByCapitalLetters(this.id), this.parseDescription(response.data[this.id]));
+
       });
 
     await axios
@@ -99,6 +106,8 @@ export default defineComponent({
         for (var property in response.data) {
           this.characterTropes[separateWordsByCapitalLetters(property)] = response.data[property]
         }
+
+        this.loaded = true
       });
   }
 })

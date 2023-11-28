@@ -1,11 +1,13 @@
 <template>
-    <Visualizer :tropeData="this.tropeData" />
+    <SplashScreen v-if="!loaded"/>
+    <Visualizer :tropeData="this.tropeData" v-else/>
 </template>
   
 <script>
 import { defineComponent } from 'vue'
 import axios from 'axios'
 import Visualizer from '../components/Visualizer.vue'
+import SplashScreen from './SplashScreen.vue'
 
 export default defineComponent({
     props: {
@@ -13,12 +15,14 @@ export default defineComponent({
     },
 
     components: {
-        Visualizer
+        Visualizer,
+        SplashScreen
     },
 
     data() {
         return {
-            tropeData: Object
+            loaded: false,
+            tropeData: Object,
         }
     },
 
@@ -69,6 +73,10 @@ export default defineComponent({
             .then(response => {
                 this.tropeData = response.data
             });
+    },
+
+    mounted() {
+        this.loaded = true
     }
 })
 </script>

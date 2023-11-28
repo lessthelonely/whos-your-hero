@@ -18,20 +18,24 @@
 .v-sidebar-menu .vsm--link_level-1 .vsm--icon {
   background-color: transparent !important;
 }
+
 .v-sidebar-menu .vsm--arrow {
-  background: linear-gradient(90deg, rgba(109,233,181,1) 0%, rgba(133,76,255,1) 100%);
+  background: linear-gradient(90deg, rgba(109, 233, 181, 1) 0%, rgba(133, 76, 255, 1) 100%);
 }
 
-.v-sidebar-menu .vsm--link_mobile, .v-sidebar-menu .vsm--mobile-bg, .v-sidebar-menu .vsm--toggle-btn {
-  background: linear-gradient(90deg, rgba(109,233,181,1) 0%, rgba(133,76,255,1) 100%);
+.v-sidebar-menu .vsm--link_mobile,
+.v-sidebar-menu .vsm--mobile-bg,
+.v-sidebar-menu .vsm--toggle-btn {
+  background: linear-gradient(90deg, rgba(109, 233, 181, 1) 0%, rgba(133, 76, 255, 1) 100%);
 }
 
 .v-sidebar-menu .vsm--link_level-1.vsm--link_active {
-  -webkit-box-shadow: inset 3px 0 0 0 rgba(109,233,181,1) !important;
-  box-shadow: inset 3px 0 0 0 rgba(109,233,181,1) !important;
+  -webkit-box-shadow: inset 3px 0 0 0 rgba(109, 233, 181, 1) !important;
+  box-shadow: inset 3px 0 0 0 rgba(109, 233, 181, 1) !important;
 }
 
-.v-sidebar-menu .vsm--arrow, .v-sidebar-menu .vsm--arrow_open {
+.v-sidebar-menu .vsm--arrow,
+.v-sidebar-menu .vsm--arrow_open {
   transition: all 1s ease-out;
 }
 
@@ -62,7 +66,7 @@
 }
 
 .trope-link:hover {
-  color: rgba(109,233,181,1);
+  color: rgba(109, 233, 181, 1);
   text-decoration: none;
 }
 
@@ -76,7 +80,162 @@
 }
 
 #router-button {
-  background: linear-gradient(90deg, rgba(109,233,181,1) 0%, rgba(133,76,255,1) 100%);
+  background: linear-gradient(90deg, rgba(109, 233, 181, 1) 0%, rgba(133, 76, 255, 1) 100%);
   width: auto;
   border: var(--bs-body-color);
+}
+
+.loader {
+  background: linear-gradient(320deg, #6de9b5, #854cff);
+  background-size: 400% 400%;
+  animation: Loading 30s ease-in-out infinite;
+  bottom: 0;
+  color: white;
+  display: block;
+  font-size: 32px;
+  left: 0;
+  overflow: hidden;
+  padding-top: 10vh;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+@keyframes Loading {
+  0% {
+    background-position: 0% 86%
+  }
+
+  25% {
+    background-position: 100% 15%
+  }
+
+  50% {
+    background-position: 0% 86%
+  }
+
+  75% {
+    background-position: 100% 15%
+  }
+
+  100% {
+    background-position: 0% 86%
+  }
+}
+
+@keyframes ldio-yxsjncmm31 {
+  0% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.ldio-yxsjncmm31 div {
+  left: 95px;
+  top: 48px;
+  position: absolute;
+  animation: ldio-yxsjncmm31 linear 1s infinite;
+  background: #ffffff;
+  width: 10px;
+  height: 24px;
+  border-radius: 0px / 0px;
+  transform-origin: 5px 52px;
+}
+
+.ldio-yxsjncmm31 div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -0.9166666666666666s;
+  background: #ffffff;
+}
+
+.ldio-yxsjncmm31 div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -0.8333333333333334s;
+  background: #ffffff;
+}
+
+.ldio-yxsjncmm31 div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.75s;
+  background: #ffffff;
+}
+
+.ldio-yxsjncmm31 div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.6666666666666666s;
+  background: #ffffff;
+}
+
+.ldio-yxsjncmm31 div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.5833333333333334s;
+  background: #ffffff;
+}
+
+.ldio-yxsjncmm31 div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.5s;
+  background: #ffffff;
+}
+
+.ldio-yxsjncmm31 div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.4166666666666667s;
+  background: #ffffff;
+}
+
+.ldio-yxsjncmm31 div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.3333333333333333s;
+  background: #ffffff;
+}
+
+.ldio-yxsjncmm31 div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.25s;
+  background: #ffffff;
+}
+
+.ldio-yxsjncmm31 div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.16666666666666666s;
+  background: #ffffff;
+}
+
+.ldio-yxsjncmm31 div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.08333333333333333s;
+  background: #ffffff;
+}
+
+.ldio-yxsjncmm31 div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+  background: #ffffff;
+}
+
+.loadingio-spinner-spinner-xrtdp68scor {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+
+.ldio-yxsjncmm31 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+  /* see note above */
+}
+
+.ldio-yxsjncmm31 div {
+  box-sizing: content-box;
 }

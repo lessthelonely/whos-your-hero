@@ -1,5 +1,6 @@
 <template>
-  <div class="row">
+  <SplashScreen v-if="!loaded"/>
+  <div class="row" v-else>
     <h3>Tropes</h3>
   </div>
   <div class="row" style="margin-top: 10px;">
@@ -16,10 +17,11 @@
 <script>
 import { separateWordsByCapitalLetters } from '../assets/utils/utils.js'
 import axios from 'axios';
+import SplashScreen from './SplashScreen.vue'
 
 export default {
   components: {
-
+    SplashScreen
   },
 
   data() {
@@ -40,6 +42,7 @@ export default {
     await axios.get("http://localhost:8000/rdf-all/tropenames")
       .then(response => {
         tropeNames = response.data
+        this.loaded = true
       });
 
       for(var i = 0; i < tropeNames.length; i++) {
