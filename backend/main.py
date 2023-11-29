@@ -784,6 +784,60 @@ def get_repeated_storyArcs():
     return data
 
 #get all that are shared media and its connections
+@app.get("/rdf-all/media")
+def get_repeated_media():
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+    query = f"""
+            SELECT ?media ?belongsTo ?mediaType ?mediaDescription
+        WHERE {{
+            # Subquery to get media with more than one belongsTo
+            {{
+                SELECT ?media
+                WHERE {{
+                    ?media rdf:type hero:Media.
+                    ?media hero:belongsTo ?belongsTo.
+                }}
+                GROUP BY ?media
+                HAVING (COUNT(DISTINCT ?belongsTo) > 1)
+            }}
+
+            # Retrieve details for media identified in the subquery
+            ?media rdf:type hero:Media.
+            ?media hero:belongsTo ?belongsTo.
+            OPTIONAL{{ ?media hero:mediaType ?mediaType. }}
+            OPTIONAL{{ ?media hero:mediaDescription ?mediaDescription. }}
+        }}
+    """
+
+    results = list(g.query(query))
+    data = {}
+    if len(results) > 0:
+
+        media_list = [row.media.toPython().split('#')[1] for row in results]
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        mediaType_list = [row.mediaType.toPython() for row in results]
+        mediaDescription_list = [row.mediaDescription.toPython() for row in results]
+
+        for i in range(len(media_list)):
+            media_name = media_list[i]
+
+
+            if media_name in data:
+                if belongsTo_list[i] in data[media_name]['belongsTo'] or mediaDescription_list[i] in data[media_name]['mediaDescription']:
+                    continue
+                data[media_name]['belongsTo'] += [belongsTo_list[i]]
+                data[media_name]['mediaType'] += [mediaType_list[i]] # can remove it?
+                data[media_name]['mediaDescription'] += [mediaDescription_list[i]]
+            else:
+                data[media_name] = {
+                'belongsTo': [belongsTo_list[i]],
+                'mediaType': [mediaType_list[i]],
+                'mediaDescription': [mediaDescription_list[i]]
+            }
+            
+    return data
 
 #get all that are shared tropes and its connections
 @app.get("/rdf-all/trope")
