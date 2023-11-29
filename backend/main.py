@@ -679,7 +679,63 @@ def get_tropenames():
     
     return data
 
-#get all tropes
+#get all that are shared power and its connections
+@app.get("/rdf-all/power")
+def get_repeated_powers():
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+    query = f"""
+              SELECT ?power ?belongsTo ?powerDescription
+        WHERE {{
+            # Subquery to get powers with more than one belongsTo
+            {{
+                SELECT ?power
+                WHERE {{
+                    ?power rdf:type hero:Power.
+                    ?power hero:belongsTo ?belongsTo.
+                }}
+                GROUP BY ?power
+                HAVING (COUNT(DISTINCT ?belongsTo) > 1)
+            }}
+
+            # Retrieve details for powers identified in the subquery
+            ?power rdf:type hero:Power.
+            ?power hero:belongsTo ?belongsTo.
+            ?power hero:powerDescription ?powerDescription.
+        }}
+    """
+
+    results = list(g.query(query))
+    data = {}
+    if len(results) > 0:
+            
+            power_list = [row.power.toPython().split('#')[1] for row in results]
+            belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+            powerDescription_list = [row.powerDescription.toPython() for row in results]
+    
+            for i in range(len(power_list)):
+                power_name = power_list[i]
+    
+    
+                if power_name in data:
+                    if belongsTo_list[i] in data[power_name]['belongsTo'] or powerDescription_list[i] in data[power_name]['powerDescription']:
+                        continue
+                    data[power_name]['belongsTo'] += [belongsTo_list[i]]
+                    data[power_name]['powerDescription'] += [powerDescription_list[i]]
+                else:
+                    data[power_name] = {
+                    'belongsTo': [belongsTo_list[i]],
+                    'powerDescription': [powerDescription_list[i]]
+                }
+                    
+    return data
+
+#get all that are shared storyline and its connections
+
+#get all that are shared media and its connections
+
+#get all that are shared tropes and its connections
 @app.get("/rdf-all/trope")
 def get_repeated_tropes():
     g = Graph()
@@ -731,11 +787,7 @@ def get_repeated_tropes():
                 'tropeDescription': [tropeDescription_list[i]]
             }
 
-
-        
-    
     return data
-
 
 #get shared values of a trope that various characters might have
 @app.get("/rdf-all/trope/{trope_name}")
