@@ -732,6 +732,56 @@ def get_repeated_powers():
     return data
 
 #get all that are shared storyline and its connections
+@app.get("/rdf-all/storyArc")
+def get_repeated_storyArcs():
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+    query = f"""
+            SELECT ?story ?belongsTo ?storyDescription
+        WHERE {{
+            # Subquery to get storyArcs with more than one belongsTo
+            {{
+                SELECT ?story
+                WHERE {{
+                    ?story rdf:type hero:Story.
+                    ?story hero:belongsTo ?belongsTo.
+                }}
+                GROUP BY ?story
+                HAVING (COUNT(DISTINCT ?belongsTo) > 1)
+            }}
+
+            # Retrieve details for storyArcs identified in the subquery
+            ?story rdf:type hero:Story.
+            ?story hero:belongsTo ?belongsTo.
+            ?story hero:storyDescription ?storyDescription.
+        }}
+    """
+
+    results = list(g.query(query))
+    data = {}
+    if len(results) > 0:
+
+        story_list = [row.story.toPython().split('#')[1] for row in results]
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        storyDescription_list = [row.storyDescription.toPython() for row in results]
+
+        for i in range(len(story_list)):
+            story_name = story_list[i]
+
+
+            if story_name in data:
+                if belongsTo_list[i] in data[story_name]['belongsTo'] or storyDescription_list[i] in data[story_name]['storyDescription']:
+                    continue
+                data[story_name]['belongsTo'] += [belongsTo_list[i]]
+                data[story_name]['storyDescription'] += [storyDescription_list[i]]
+            else:
+                data[story_name] = {
+                'belongsTo': [belongsTo_list[i]],
+                'storyDescription': [storyDescription_list[i]]
+            }
+                
+    return data
 
 #get all that are shared media and its connections
 
