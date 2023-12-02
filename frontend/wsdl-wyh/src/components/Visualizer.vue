@@ -20,6 +20,10 @@
                 <input type="checkbox" class="form-check-input" id="media-checkbox" name="media" value="media" checked>
                 <label for="media">Media</label>
             </div>
+            <div style="width: 20%;">
+                <input type="checkbox" class="form-check-input" id="variant-checkbox" name="variant" value="variant" checked>
+                <label for="variant">Alternate Versions</label>
+            </div>
         </div>
     </div>
 
@@ -331,6 +335,9 @@ export default defineComponent({
             else if (this.selectedNode.hasClass('media')) {
                 return false;
             }
+            else if (this.selectedNode.hasClass('variant')) {
+                return false;
+            }
             else {
                 return false;
             }
@@ -353,6 +360,7 @@ export default defineComponent({
             this.powerData = this.graphData.powerData;
             this.storyArcData = this.graphData.storyArcData;
             this.mediaData = this.graphData.mediaData;
+            this.variantData = this.graphData.variantData;
 
             console.log("tropedata", this.tropeData);
             let characters = [];
@@ -360,10 +368,13 @@ export default defineComponent({
             let powers = [];
             let storyArcs = [];
             let medias = [];
+            let variants = [];
             let characterTropeList = [];
             let characterPowerList = [];
             let characterStoryArcList = [];
-            let characterMediaList = []
+            let characterMediaList = [];
+            let characterVariantList = [];
+
             for (const [key, val] of Object.entries(this.tropeData)) {
                 tropes.push(separateWordsByCapitalLetters(key));
                 let belongsTo = val.belongsTo;
@@ -412,6 +423,23 @@ export default defineComponent({
                 }
             }
 
+            for (const [key, val] of Object.entries(this.variantData)) {
+                variants.push(separateWordsByCapitalLetters(key));
+                let belongsTo = val.belongsTo;
+                let alternateVersionsDescriptions = val.alternateVersionsDescription;
+                for (let i = 0; i < belongsTo.length; i++) {
+                    let character = belongsTo[i];
+                    let variantCharacterDescription = alternateVersionsDescriptions[i];
+                    characters.push(separateWordsByCapitalLetters(character));
+                    characterVariantList.push({
+                        character: separateWordsByCapitalLetters(character),
+                        variant : separateWordsByCapitalLetters(key),
+                        description: variantCharacterDescription
+                    });
+                }
+            }
+
+
             for (const [key, val] of Object.entries(this.mediaData)) {
                 medias.push({
                     id: separateWordsByCapitalLetters(key),
@@ -439,10 +467,12 @@ export default defineComponent({
             let powerNodes = [];
             let storyArcNodes = [];
             let mediaNodes = [];
+            let variantNodes = [];
             let tropeEdges = [];
             let powerEdges = [];
             let storyArcEdges = [];
             let mediaEdges = [];
+            let variantEdges = [];
 
             for (let i = 0; i < tropes.length; i++) {
                 tropeNodes.push({
@@ -477,6 +507,15 @@ export default defineComponent({
                         id: storyArcs[i]
                     },
                     classes: ['storyArc']
+                });
+            }
+
+            for (let i = 0; i < variants.length; i++) {
+                variantNodes.push({
+                    data: {
+                        id: variants[i]
+                    },
+                    classes: ['variant']
                 });
             }
 
@@ -523,6 +562,17 @@ export default defineComponent({
                 });
             }
 
+            for (let i = 0; i < characterVariantList.length; i++) {
+                variantEdges.push({
+                    data: {
+                        id: `${characterVariantList[i].character}-${characterVariantList[i].variant}`,
+                        source: characterVariantList[i].character,
+                        target: characterVariantList[i].variant,
+                        label: characterVariantList[i].description
+                    }
+                });
+            }
+
             for (let i = 0; i < characterMediaList.length; i++) {
                 mediaEdges.push({
                     data: {
@@ -565,13 +615,15 @@ export default defineComponent({
                         ...tropeNodes,
                         ...powerNodes,
                         ...storyArcNodes,
-                        ...mediaNodes
+                        ...mediaNodes,
+                        ...variantNodes
                     ],
                     edges: [
                         ...tropeEdges,
                         ...powerEdges,
                         ...storyArcEdges,
-                        ...mediaEdges
+                        ...mediaEdges,
+                        ...variantEdges
                     ]
                 },
 
@@ -609,6 +661,13 @@ export default defineComponent({
                         style: {
                             'background-color': 'rgba(0,0,255,1)',
                             'label': 'data(label)'
+                        }
+                    },
+                    {
+                        selector: '.variant',
+                        style: {
+                            'background-color': 'rgba(255,0,255,1)',
+                            'label': 'data(id)'
                         }
                     },
                     {

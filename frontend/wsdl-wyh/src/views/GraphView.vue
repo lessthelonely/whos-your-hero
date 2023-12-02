@@ -73,6 +73,7 @@ export default defineComponent({
         let powerData;
         let storyArcData;
         let mediaData;
+        let variantData;
         await axios.get("http://localhost:8000/rdf-all/trope")
             .then(response => {
                 tropeData = response.data
@@ -89,12 +90,17 @@ export default defineComponent({
             .then(response => {
                 mediaData = response.data
             });
+        await axios.get("http://localhost:8000/rdf-all/variant")
+            .then(response => {
+                variantData = response.data
+            });
 
         this.graphData = {
             "tropeData": tropeData,
             "powerData": powerData,
             "storyArcData": storyArcData,
-            "mediaData": mediaData
+            "mediaData": mediaData,
+            "variantData": variantData
         }
     },
 
