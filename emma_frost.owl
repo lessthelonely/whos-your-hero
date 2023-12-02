@@ -206,9 +206,9 @@
 </owl:Class>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -329,7 +329,7 @@
   <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#MarvelMangaverseEarth2301"/>
   <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#MarvelAdventuresEarth20051"/>
   <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#BossFrostEarth32134"/>
-  <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#XMenNoirEarth7207"/>
+  <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#XMenNoirEarth90214"/>
   <hero:alternateVersions rdf:resource="http://whosyourhero.com/heroes.owl#EarthTRN667"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#Telepathy"/>
   <hero:powers rdf:resource="http://whosyourhero.com/heroes.owl#OrganicDiamondForm"/>
@@ -642,7 +642,7 @@
   <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the Mondo City region of Battleworld, Emma Frost was part of the Boss Enforcement Council. As psychics were the one type of mutant not considered to be in violation of Mondo City's "Genetic Decency Act," Emma was recruited as a child to be part of the Psi-Division. When the Bosses invaded Yinsen City, Emma and her cohorts clashed with the Defenders. Emma was distracted after being mentally attacked by the White Tiger God within Ava Ayala's amulet, which allowed She-Hulk to knock her unconscious. After the situation was resolved, Emma was seen as one of the Bosses making peace with the Defenders.</hero:alternateVersions>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#XMenNoirEarth7207">
+<owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#XMenNoirEarth90214">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
   <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emma Frost is the warden of Genosha Bay, a prison for Earth's worst sociopaths. Emma was a student of Professor X at Harvard University. She believes that living with a sociopath can turn a person in a sociopath as well, so she keeps her most dangerous inmates isolated from the others. This version of Emma seems to have a bondage fetish as referred to when she is tied up in prison.</hero:alternateVersions>
 </owl:NamedIndividual>
