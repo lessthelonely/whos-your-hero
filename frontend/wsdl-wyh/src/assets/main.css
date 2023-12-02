@@ -237,3 +237,16 @@
   box-sizing: content-box;
 }
 
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#power-checkbox:checked, #media-checkbox:checked {
+  background-color: rgba(109, 233, 181, 1);
+  border-color: #ccc;
+}
+
+#trope-checkbox:checked, #storyArc-checkbox:checked {
+  background-color: rgba(133, 76, 255, 1);
+  border-color: #ccc;
+}

@@ -2,7 +2,27 @@
     <div class="row" style="display: flex; flex-direction: row; width: 100%; padding: 0px;">
         <div id="cy">
         </div>
+        <div class="row" style="margin-top: 15px; justify-content: center;">
+            <div style="width: 10%;">
+                <input type="checkbox" class="form-check-input" id="trope-checkbox" name="trope" value="trope" checked>
+                <label for="trope">Trope</label>
+            </div>
+            <div style="width: 10%;">
+
+                <input type="checkbox" class="form-check-input" id="power-checkbox" name="power" value="power" checked>
+                <label for="power">Power</label>
+            </div>
+            <div style="width: 10%;">
+                <input type="checkbox" class="form-check-input" id="storyArc-checkbox" name="storyArc" value="storyArc" checked>
+                <label for="storyArc">Story Arc</label>
+            </div>
+            <div style="width: 10%;">
+                <input type="checkbox" class="form-check-input" id="media-checkbox" name="media" value="media" checked>
+                <label for="media">Media</label>
+            </div>
+        </div>
     </div>
+
     <div id="description" style="margin-top: 25px;" v-if="this.selectedDescription != null">
         <CharacterTrope :name="selectedDescriptionCharacter" :description="selectedDescription"
             :iteration="selectedDescriptionCharacter + ' iteration of ' + selectedDescriptionTrope" />
@@ -256,6 +276,8 @@ export default defineComponent({
 
     setup() {
         return {
+            cyElem: null,
+            cy: null,
             selectedDescription: null,
             selectedType: null,
             selectedName: null,
@@ -312,6 +334,16 @@ export default defineComponent({
             else {
                 return false;
             }
+        },
+        updateVisibleNodes(e) {
+            if (this.cy == null) {
+                return
+            }
+            let target = e.target.value
+
+            this.cy.style().selector('.' + target).style({
+                'display': e.target.checked ? 'element' : 'none'
+            }).update()
         }
     },
 
@@ -523,9 +555,9 @@ export default defineComponent({
                 }
             }
 
-            let cy = cytoscape({
+            this.cy = cytoscape({
 
-                container: this.cy, // container to render in
+                container: this.cyElem, // container to render in
 
                 elements: {// list of graph elements to start with
                     nodes: [
@@ -595,7 +627,7 @@ export default defineComponent({
                 layout: layoutSpreadOptions
             })
 
-            cy.on('tap', 'edge', evt => {
+            this.cy.on('tap', 'edge', evt => {
                 var edge = evt.target;
                 let label = edge.data('label');
                 this.selectedDescription = label;
@@ -607,18 +639,18 @@ export default defineComponent({
 
 
 
-            cy.on('tap', 'node', evt => {
+            this.cy.on('tap', 'node', evt => {
                 var node = evt.target;
                 this.selectedDescription = null;
                 if (this.selectedNode != node) {
                     // Selecting one or another
                     this.selectedNode = node;
-                    cy.layout(layoutBFSOptions()).run();
+                    this.cy.layout(layoutBFSOptions()).run();
                 }
                 else {
                     // Deselecting
                     this.selectedNode = null;
-                    cy.layout(layoutSpreadOptions).run();
+                    this.cy.layout(layoutSpreadOptions).run();
                 }
                 this.$forceUpdate()
 
@@ -709,7 +741,7 @@ export default defineComponent({
                 }
             })
 
-            cy.on('tap', 'edge', evt => {
+            this.cy.on('tap', 'edge', evt => {
                 var edge = evt.target;
                 let label = edge.data('label');
                 this.selectedDescription = label;
@@ -718,7 +750,7 @@ export default defineComponent({
 
 
 
-            cy.on('tap', 'node', evt => {
+            this.cy.on('tap', 'node', evt => {
                 var node = evt.target;
                 if (this.selectedNode != node) {
                     // Selecting one or another
@@ -743,7 +775,13 @@ export default defineComponent({
     },
     mounted() {
         console.log("Mounted character", this.character)
-        this.cy = document.getElementById('cy')
+        this.cyElem = document.getElementById('cy')
+        let checkboxes = document.querySelectorAll('input[type=checkbox]')
+        for (let i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].addEventListener('change', (e) => {
+                this.updateVisibleNodes(e);
+            })
+        }
         // if (this.character) {
         //     this.state = 'no character'
         //     return
