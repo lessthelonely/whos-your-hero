@@ -246,7 +246,7 @@ input[type="checkbox"] {
   border-color: #ccc;
 }
 
-#trope-checkbox:checked, #storyArc-checkbox:checked {
+#trope-checkbox:checked, #storyArc-checkbox:checked, #variant-checkbox:checked {
   background-color: rgba(133, 76, 255, 1);
   border-color: #ccc;
 }
