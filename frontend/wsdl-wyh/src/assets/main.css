@@ -57,7 +57,8 @@
 }
 
 .character-trope-img {
-  height: auto;
+  height: 189.5px;
+  max-height: auto;
 }
 
 .trope-link {

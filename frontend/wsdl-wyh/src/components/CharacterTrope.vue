@@ -13,7 +13,7 @@
                 {{ iteration != "" ? iteration : name }}
             </h6>
             <p
-                style="text-align: justify; background-color: #adb5bd; padding: 10px; border-radius: 0px 0px 10px 0px;">
+                style="height: 200px; text-align: justify; background-color: #adb5bd; padding: 10px; border-radius: 0px 0px 10px 0px;">
                 {{ description }}
             </p>
         </div>
