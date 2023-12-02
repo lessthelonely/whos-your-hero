@@ -839,6 +839,58 @@ def get_repeated_media():
             
     return data
 
+#get all that are shared alternate versions and its connections
+@app.get("/rdf-all/variant")
+def get_repeated_alternate_versions():
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+    query = f"""
+           SELECT ?variant ?belongsTo ?alternateVersionsDescription
+        WHERE {{
+          {{
+            SELECT ?variant
+            WHERE {{
+              ?variant rdf:type hero:Variant.
+              ?variant hero:belongsTo ?belongsTo.
+            }}
+            GROUP BY ?variant
+            HAVING (COUNT(DISTINCT ?belongsTo) > 1)
+          }}
+        
+          ?variant rdf:type hero:Variant.
+          ?variant hero:belongsTo ?belongsTo.
+          ?variant hero:alternateVersionsDescription ?alternateVersionsDescription.
+        }}
+        
+        """
+
+
+    results = list(g.query(query))
+    data = {}
+    if len(results) > 0:
+
+        variant_list = [row.variant.toPython().split('#')[1] for row in results]
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        alternateVersionsDescription_list = [row.alternateVersionsDescription.toPython() for row in results]
+
+        for i in range(len(variant_list)):
+            variant_name = variant_list[i]
+
+
+            if variant_name in data:
+                if belongsTo_list[i] in data[variant_name]['belongsTo'] or alternateVersionsDescription_list[i] in data[variant_name]['alternateVersionsDescription']:
+                    continue
+                data[variant_name]['belongsTo'] += [belongsTo_list[i]]
+                data[variant_name]['alternateVersionsDescription'] += [alternateVersionsDescription_list[i]]
+            else:
+                data[variant_name] = {
+                'belongsTo': [belongsTo_list[i]],
+                'alternateVersionsDescription': [alternateVersionsDescription_list[i]]
+            }
+
+    return data
+
 #get all that are shared tropes and its connections
 @app.get("/rdf-all/trope")
 def get_repeated_tropes():
