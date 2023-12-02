@@ -150,7 +150,7 @@ def load_other_media(names, character_name):
         #         continue
         #     character.otherMedia.append(line.strip())
 
-def load_alternate_version(names):
+def load_alternate_version(names, character_name):
     for folder_name in names:
         f = open(folder_name + "/" + folder_name + "_Alternate_Versions.txt", "r")
         file_contents = [line.strip() for line in f]
@@ -161,7 +161,8 @@ def load_alternate_version(names):
                  alternate_version = Variant(processed_name)
             else:
                 if alternate_version:
-                    alternate_version.alternateVersions.append(file_contents[line].strip())
+                    alternate_version.alternateVersionsDescription.append(file_contents[line].strip())
+                    alternate_version.belongsTo.append("http://whosyourhero.com/heroes.owl#" + character_name)
                     character.alternateVersions.append(alternate_version)
 
 def load_characteristics(names):
@@ -250,12 +251,12 @@ def create_character_rdf(character_name, file_name, name):
     character = Character(name)
     if(character_name == ["cassandra_cain"] or character_name == ["emma_frost"]):
         character.isWoman.append(True)
-    elif(character_name == ["deadpool"] or character_name == ["wally_west"] or character_name == ["midnighter"]):
+    elif(character_name == ["deadpool"] or character_name == ["wally_west"] or character_name == ["midnighter"] or character_name == ["cyclops"]):
         character.isMan.append(True)
 
     load_photos(character_name)
     load_aliases(character_name)
-    load_alternate_version(character_name)
+    load_alternate_version(character_name, name)
     load_appears_in(character_name)
     load_birthday(character_name)
     load_character_type(character_name)
@@ -293,6 +294,7 @@ create_character_rdf(["deadpool"], "deadpool.owl", "Deadpool")
 create_character_rdf(["emma_frost"], "emma_frost.owl", "EmmaFrost")
 create_character_rdf(["midnighter"], "midnighter.owl", "Midnighter")
 create_character_rdf(["wally_west"], "wally_west.owl", "WallyWest")
+create_character_rdf(["cyclops"], "cyclops.owl", "Cyclops")
 
 
 from rdflib import Graph, Namespace, RDF, OWL, Literal # this line needs to be there otherwise it won't work

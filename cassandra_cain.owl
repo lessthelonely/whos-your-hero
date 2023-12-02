@@ -206,11 +206,11 @@
 </owl:Class>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
@@ -418,12 +418,14 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Elseworlds">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
-  <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An adult version of Cassandra appeared as the subject of an issue of Solo. She was shown to be married to Tim Drake.</hero:alternateVersions>
+  <hero:alternateVersionsDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An adult version of Cassandra appeared as the subject of an issue of Solo. She was shown to be married to Tim Drake.</hero:alternateVersionsDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#CassandraCain</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Pre52">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
-  <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the Pre-52 Cass was given her language from a physic and didn't need to study language, however in the New 52 she has to learn how to speak through normal circumstances.</hero:alternateVersions>
+  <hero:alternateVersionsDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the Pre-52 Cass was given her language from a physic and didn't need to study language, however in the New 52 she has to learn how to speak through normal circumstances.</hero:alternateVersionsDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#CassandraCain</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Batgirl">

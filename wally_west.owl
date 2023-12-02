@@ -206,11 +206,11 @@
 </owl:Class>
 
 <owl:Class rdf:about="http://whosyourhero.com/heroes.owl#belongsTo">
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
-  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Power"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Story"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
+  <rdfs:domain rdf:resource="http://whosyourhero.com/heroes.owl#Media"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </owl:Class>
@@ -485,17 +485,20 @@
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#KingdomCome">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
-  <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wally West is the Flash in Kingdom Come. He has become an embodiment of the Speed Force. He is the protector of Keystone city and according to Spectre has been made a utopia because of Wally. In this universe Wally is too fast to be held on one plane of existence. This is seen when he grabs Norman McCay. He joins Superman's new Justice League. He is one of the few heroes who survived the nuclear bomb.</hero:alternateVersions>
+  <hero:alternateVersionsDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wally West is the Flash in Kingdom Come. He has become an embodiment of the Speed Force. He is the protector of Keystone city and according to Spectre has been made a utopia because of Wally. In this universe Wally is too fast to be held on one plane of existence. This is seen when he grabs Norman McCay. He joins Superman's new Justice League. He is one of the few heroes who survived the nuclear bomb.</hero:alternateVersionsDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#WallyWest</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#MultiversityTheJust">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
-  <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wally West from earth 16 is a second generation hero, member of a Justice League who only reenacts old battles in a world where there are no more dangers.</hero:alternateVersions>
+  <hero:alternateVersionsDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wally West from earth 16 is a second generation hero, member of a Justice League who only reenacts old battles in a world where there are no more dangers.</hero:alternateVersionsDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#WallyWest</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Flashpoint">
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Variant"/>
-  <hero:alternateVersions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the universe of Flashpoint, Wally was the camera man of reporter Iris West. He died trying to find proof than Central City local hero Citizen Cold, was really a corrupt criminal.</hero:alternateVersions>
+  <hero:alternateVersionsDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the universe of Flashpoint, Wally was the camera man of reporter Iris West. He died trying to find proof than Central City local hero Citizen Cold, was really a corrupt criminal.</hero:alternateVersionsDescription>
+  <hero:belongsTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://whosyourhero.com/heroes.owl#WallyWest</hero:belongsTo>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#KidFlashandtheTeenTitans">
