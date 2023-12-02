@@ -4,9 +4,10 @@
         </div>
     </div>
     <div id="description" v-if="this.selectedDescription != null">
-        <CharacterTrope :name="selectedDescriptionCharacter" :description="selectedDescription" :iteration="selectedDescriptionCharacter + ' iteration of ' + selectedDescriptionTrope"/>
+        <CharacterTrope :name="selectedDescriptionCharacter" :description="selectedDescription"
+            :iteration="selectedDescriptionCharacter + ' iteration of ' + selectedDescriptionTrope" />
     </div>
-    <div class="row" v-if="this.selectedNode != null">
+    <div class="row" v-if="this.showButton()">
         <div id="router-button" class="btn btn-primary" style="width: 100;" @click="goToPage()">
             Go to Page
         </div>
@@ -263,7 +264,7 @@ export default defineComponent({
     },
 
     props: {
-        tropeData: Object
+        graphData: Object,
     },
     methods: {
         goToPage() {
@@ -271,7 +272,7 @@ export default defineComponent({
                 return
             }
             let id = this.selectedNode.data('id')
-            
+
             //console.log(pageId);
 
             if (this.selectedNode.hasClass('character')) {
@@ -285,15 +286,52 @@ export default defineComponent({
                 // Redirect to trope page
                 router.push({ name: 'trope page', params: { id: pageId } });
             }
+
+        },
+        
+        showButton() {
+            if (this.selectedNode == null) {
+                return false;
+            }
+
+            if (this.selectedNode.hasClass('character')) {
+                return true;
+            }
+            else if (this.selectedNode.hasClass('trope')) {
+                return true;
+            }
+            else if (this.selectedNode.hasClass('power')) {
+                return false;
+            }
+            else if (this.selectedNode.hasClass('storyArc')) {
+                return false;
+            }
+            else if (this.selectedNode.hasClass('media')) {
+                return false;
+            }
+            else {
+                return false;
+            }
         }
     },
 
     watch: {
-        tropeData: function (val) {
+        graphData: function (val) {
+            this.tropeData = this.graphData.tropeData;
+            this.powerData = this.graphData.powerData;
+            this.storyArcData = this.graphData.storyArcData;
+            this.mediaData = this.graphData.mediaData;
+
             console.log("tropedata", this.tropeData);
             let characters = [];
             let tropes = [];
+            let powers = [];
+            let storyArcs = [];
+            let medias = [];
             let characterTropeList = [];
+            let characterPowerList = [];
+            let characterStoryArcList = [];
+            let characterMediaList = []
             for (const [key, val] of Object.entries(this.tropeData)) {
                 tropes.push(separateWordsByCapitalLetters(key));
                 let belongsTo = val.belongsTo;
@@ -310,12 +348,69 @@ export default defineComponent({
                 }
             }
 
+            for (const [key, val] of Object.entries(this.powerData)) {
+                powers.push(separateWordsByCapitalLetters(key));
+                let belongsTo = val.belongsTo;
+                let powerDescriptions = val.powerDescription;
+                for (let i = 0; i < belongsTo.length; i++) {
+                    let character = belongsTo[i];
+                    let powerCharacterDescription = powerDescriptions[i];
+                    characters.push(separateWordsByCapitalLetters(character));
+                    characterPowerList.push({
+                        character: separateWordsByCapitalLetters(character),
+                        power: separateWordsByCapitalLetters(key),
+                        description: powerCharacterDescription
+                    });
+                }
+            }
+
+            for (const [key, val] of Object.entries(this.storyArcData)) {
+                storyArcs.push(separateWordsByCapitalLetters(key));
+                let belongsTo = val.belongsTo;
+                let storyArcDescriptions = val.storyDescription;
+                for (let i = 0; i < belongsTo.length; i++) {
+                    let character = belongsTo[i];
+                    let storyArcCharacterDescription = storyArcDescriptions[i];
+                    characters.push(separateWordsByCapitalLetters(character));
+                    characterStoryArcList.push({
+                        character: separateWordsByCapitalLetters(character),
+                        storyArc: separateWordsByCapitalLetters(key),
+                        description: storyArcCharacterDescription
+                    });
+                }
+            }
+
+            for (const [key, val] of Object.entries(this.mediaData)) {
+                medias.push({
+                    id: separateWordsByCapitalLetters(key),
+                    media: val.mediaType[0]
+                });
+                let belongsTo = val.belongsTo;
+                let mediaDescriptions = val.mediaDescription;
+                for (let i = 0; i < belongsTo.length; i++) {
+                    let character = belongsTo[i];
+                    let mediaCharacterDescription = mediaDescriptions[i];
+                    characters.push(separateWordsByCapitalLetters(character));
+                    characterMediaList.push({
+                        character: separateWordsByCapitalLetters(character),
+                        media: separateWordsByCapitalLetters(key),
+                        description: mediaCharacterDescription
+                    });
+                }
+            }
+
             // Make into a set
             characters = [...new Set(characters)]
 
             let tropeNodes = [];
             let characterNodes = [];
+            let powerNodes = [];
+            let storyArcNodes = [];
+            let mediaNodes = [];
             let tropeEdges = [];
+            let powerEdges = [];
+            let storyArcEdges = [];
+            let mediaEdges = [];
 
             for (let i = 0; i < tropes.length; i++) {
                 tropeNodes.push({
@@ -335,6 +430,34 @@ export default defineComponent({
                 });
             }
 
+            for (let i = 0; i < powers.length; i++) {
+                powerNodes.push({
+                    data: {
+                        id: powers[i]
+                    },
+                    classes: ['power']
+                });
+            }
+
+            for (let i = 0; i < storyArcs.length; i++) {
+                storyArcNodes.push({
+                    data: {
+                        id: storyArcs[i]
+                    },
+                    classes: ['storyArc']
+                });
+            }
+
+            for (let i = 0; i < medias.length; i++) {
+                mediaNodes.push({
+                    data: {
+                        id: medias[i].id,
+                        label: `${medias[i].id} (${medias[i].media})`
+                    },
+                    classes: ['media']
+                });
+            }
+
             for (let i = 0; i < characterTropeList.length; i++) {
                 tropeEdges.push({
                     data: {
@@ -345,6 +468,40 @@ export default defineComponent({
                     }
                 });
             }
+
+            for (let i = 0; i < characterPowerList.length; i++) {
+                powerEdges.push({
+                    data: {
+                        id: `${characterPowerList[i].character}-${characterPowerList[i].power}`,
+                        source: characterPowerList[i].character,
+                        target: characterPowerList[i].power,
+                        label: characterPowerList[i].description
+                    }
+                });
+            }
+
+            for (let i = 0; i < characterStoryArcList.length; i++) {
+                storyArcEdges.push({
+                    data: {
+                        id: `${characterStoryArcList[i].character}-${characterStoryArcList[i].storyArc}`,
+                        source: characterStoryArcList[i].character,
+                        target: characterStoryArcList[i].storyArc,
+                        label: characterStoryArcList[i].description
+                    }
+                });
+            }
+
+            for (let i = 0; i < characterMediaList.length; i++) {
+                mediaEdges.push({
+                    data: {
+                        id: `${characterMediaList[i].character}-${characterMediaList[i].media}`,
+                        source: characterMediaList[i].character,
+                        target: characterMediaList[i].media,
+                        label: characterMediaList[i].description
+                    }
+                });
+            }
+
 
             let layoutBFSOptions = () => {
                 return {
@@ -357,11 +514,9 @@ export default defineComponent({
                 name: 'spread',
                 nodeRepulsion: node => {
                     if (node.hasClass('character')) {
-                        console.log("Node is character")
+                        // console.log("Node is character")
                         return 1000000
-                    }
-                    else if (node.hasClass('trope')) {
-                        console.log("Node is trope")
+                    } else {
                         return 1000000
                     }
 
@@ -375,16 +530,21 @@ export default defineComponent({
                 elements: {// list of graph elements to start with
                     nodes: [
                         ...characterNodes,
-                        ...tropeNodes
+                        ...tropeNodes,
+                        ...powerNodes,
+                        ...storyArcNodes,
+                        ...mediaNodes
                     ],
                     edges: [
-                        ...tropeEdges
+                        ...tropeEdges,
+                        ...powerEdges,
+                        ...storyArcEdges,
+                        ...mediaEdges
                     ]
                 },
 
                 style: [ // the stylesheet for the graph
                     {
-                        selector: '.character',
                         selector: '.character',
                         style: {
                             'background-color': 'rgba(133,76,255,1)',
@@ -396,6 +556,27 @@ export default defineComponent({
                         style: {
                             'background-color': 'rgba(109,233,181,1)',
                             'label': 'data(id)'
+                        }
+                    },
+                    {
+                        selector: '.power',
+                        style: {
+                            'background-color': 'rgba(255,255,0,1)',
+                            'label': 'data(id)'
+                        }
+                    },
+                    {
+                        selector: '.storyArc',
+                        style: {
+                            'background-color': 'rgba(255,0,0,1)',
+                            'label': 'data(id)'
+                        }
+                    },
+                    {
+                        selector: '.media',
+                        style: {
+                            'background-color': 'rgba(0,0,255,1)',
+                            'label': 'data(label)'
                         }
                     },
                     {
@@ -440,7 +621,7 @@ export default defineComponent({
                     cy.layout(layoutSpreadOptions).run();
                 }
                 this.$forceUpdate()
-                
+
             });
         },
 

@@ -1,6 +1,6 @@
 <template>
-    <SplashScreen v-if="!loaded"/>
-    <Visualizer :tropeData="this.tropeData" v-else/>
+    <SplashScreen v-if="!loaded" />
+    <Visualizer :graphData="this.graphData" v-else />
 </template>
   
 <script>
@@ -22,7 +22,7 @@ export default defineComponent({
     data() {
         return {
             loaded: false,
-            tropeData: Object,
+            graphData: Object,
         }
     },
 
@@ -69,10 +69,33 @@ export default defineComponent({
     },
 
     async beforeMount() {
+        let tropeData;
+        let powerData;
+        let storyArcData;
+        let mediaData;
         await axios.get("http://localhost:8000/rdf-all/trope")
             .then(response => {
-                this.tropeData = response.data
+                tropeData = response.data
             });
+        await axios.get("http://localhost:8000/rdf-all/power")
+            .then(response => {
+                powerData = response.data
+            });
+        await axios.get("http://localhost:8000/rdf-all/storyArc")
+            .then(response => {
+                storyArcData = response.data
+            });
+        await axios.get("http://localhost:8000/rdf-all/media")
+            .then(response => {
+                mediaData = response.data
+            });
+
+        this.graphData = {
+            "tropeData": tropeData,
+            "powerData": powerData,
+            "storyArcData": storyArcData,
+            "mediaData": mediaData
+        }
     },
 
     mounted() {

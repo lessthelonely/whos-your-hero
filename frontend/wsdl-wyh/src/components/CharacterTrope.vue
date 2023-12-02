@@ -13,7 +13,7 @@
                 {{ iteration != "" ? iteration : name }}
             </h6>
             <p
-                style="height: 150px; text-align: justify; background-color: #adb5bd; padding: 10px; border-radius: 0px 0px 10px 0px;">
+                style="text-align: justify; background-color: #adb5bd; padding: 10px; border-radius: 0px 0px 10px 0px;">
                 {{ description }}
             </p>
         </div>
@@ -41,6 +41,20 @@ export default defineComponent({
     data() {
         return {
             photo: String
+        }
+    },
+    watch: {
+        name: async function (newName) {
+            console.log("name", this.name)
+            var backend_name = this.name.toLowerCase().replace(" ", "_");
+            console.log("backend_name", backend_name)
+
+            await axios.get("http://localhost:8000/rdf-character/" + backend_name + "/photo")
+                .then(response => {
+                    this.photo = response.data["http://whosyourhero.com/heroes.owl#" + this.name.replace(" ", "")][0];
+                }); {
+                this.getName();
+            }
         }
     },
 
