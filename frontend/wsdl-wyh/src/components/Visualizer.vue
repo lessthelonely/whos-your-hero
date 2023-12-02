@@ -1,9 +1,9 @@
 <template>
-    <div class="row">
+    <div class="row" style="display: flex; flex-direction: row; width: 100%; padding: 0px;">
         <div id="cy">
         </div>
     </div>
-    <div id="description" v-if="this.selectedDescription != null">
+    <div id="description" style="margin-top: 25px;" v-if="this.selectedDescription != null">
         <CharacterTrope :name="selectedDescriptionCharacter" :description="selectedDescription"
             :iteration="selectedDescriptionCharacter + ' iteration of ' + selectedDescriptionTrope" />
     </div>
@@ -288,7 +288,7 @@ export default defineComponent({
             }
 
         },
-        
+
         showButton() {
             if (this.selectedNode == null) {
                 return false;

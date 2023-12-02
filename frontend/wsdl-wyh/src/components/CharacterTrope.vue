@@ -1,19 +1,12 @@
 <template>
-    <div class="row" style="width: 100%; padding-left: 12px;">
-        <div class="col-md-2" style="width: 20%; padding: 0px;">
-            <div class="display: flex; width: 100%; height: 100%; padding: 0px;">
-                <img class="character-trope-img" :src="photo"
-                    style="border-radius: 10px 0px 0px 10px; width: 100%; object-fit: cover; object-position: center top;" />
-            </div>
-
-        </div>
-        <div class="col-md-8" style="width: 80%; padding: 0px;">
-            <h6
-                style="border-radius: 0px 10px 0px 0px; margin: 0px; background-color: #212529; color: white; padding: 10px;">
+    <div class="row" style="display: flex; flex-wrap: nowrap; flex-direction: row; width: 100%; padding: 0px;">
+        <img class="image character-trope-img" :src="photo"
+            style="padding: 0px; border-radius: 10px 0px 0px 10px; width: 20%; object-fit: cover; object-position: center top; background-image: asset-url(attr('photo'))" />
+        <div style="width: 80%; padding: 0px;">
+            <h6 style="height: 10%; border-radius: 0px 10px 0px 0px; margin: 0px; background-color: #212529; color: white; padding: 10px;">
                 {{ iteration != "" ? iteration : name }}
             </h6>
-            <p
-                style="text-align: justify; background-color: #adb5bd; padding: 10px; border-radius: 0px 0px 10px 0px;">
+            <p style="height: 90%; text-align: justify; background-color: #adb5bd; padding: 10px; border-radius: 0px 0px 10px 0px;">
                 {{ description }}
             </p>
         </div>
