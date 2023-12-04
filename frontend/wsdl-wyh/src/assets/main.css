@@ -241,12 +241,27 @@ input[type="checkbox"] {
   margin-right: 5px;
 }
 
-#power-checkbox:checked, #media-checkbox:checked {
+#power-checkbox:checked {
+  background-color: yellow;
+  border-color: #ccc;
+}
+
+#trope-checkbox:checked {
   background-color: rgba(109, 233, 181, 1);
   border-color: #ccc;
 }
 
-#trope-checkbox:checked, #storyArc-checkbox:checked, #variant-checkbox:checked {
-  background-color: rgba(133, 76, 255, 1);
+#storyArc-checkbox:checked {
+  background-color: red;
+  border-color: #ccc;
+}
+
+#media-checkbox:checked {
+  background-color: blue;
+  border-color: #ccc;
+}
+
+#variant-checkbox:checked {
+  background-color: magenta;
   border-color: #ccc;
 }
