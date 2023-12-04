@@ -521,8 +521,8 @@ def get_alternateVersions(file_name:str):
     query = f"""
     SELECT ?variant ?description
     WHERE {{
-        ?variant rdf:type hero:Variant.
-        ?variant hero:alternateVersions ?description.
+         ?variant rdf:type hero:Variant.
+         ?variant hero:alternateVersionsDescription ?description.
     }}
     """
 
