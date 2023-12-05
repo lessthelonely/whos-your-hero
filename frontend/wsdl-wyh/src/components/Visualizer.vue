@@ -13,7 +13,8 @@
                 <label for="power">Power</label>
             </div>
             <div style="width: 10%;">
-                <input type="checkbox" class="form-check-input" id="storyArc-checkbox" name="storyArc" value="storyArc" checked>
+                <input type="checkbox" class="form-check-input" id="storyArc-checkbox" name="storyArc" value="storyArc"
+                    checked>
                 <label for="storyArc">Story Arc</label>
             </div>
             <div style="width: 10%;">
@@ -21,8 +22,20 @@
                 <label for="media">Media</label>
             </div>
             <div style="width: 20%;">
-                <input type="checkbox" class="form-check-input" id="variant-checkbox" name="variant" value="variant" checked>
+                <input type="checkbox" class="form-check-input" id="variant-checkbox" name="variant" value="variant"
+                    checked>
                 <label for="variant">Alternate Versions</label>
+            </div>
+            <div style="width: 20%;">
+                <div >
+                    <input type="radio" class="form-check-input" id="all-universe-radio" name="universe" value="all">
+                    <label for="all-universe-radi">All Universes</label>
+                    <input type="radio" class="form-check-input" id="marvel-universe-radio" name="universe"
+                        value="marvel-universe">
+                    <label for="marvel-universe-radio">Marvel Universe</label>
+                    <!-- <input type="radio" class="form-check-input" id="dc-universe-radio" name="universe" value="dc-universe">
+                    <label for="dc-universe-radio">DC Universe</label> -->
+                </div>
             </div>
         </div>
     </div>
@@ -346,11 +359,49 @@ export default defineComponent({
             if (this.cy == null) {
                 return
             }
-            let target = e.target.value
+            let value = e.target.value
 
-            this.cy.style().selector('.' + target).style({
+
+            this.cy.style().selector('.' + value).style({
                 'display': e.target.checked ? 'element' : 'none'
             }).update()
+
+        },
+        updateUniverseVisibleNodes(e) {
+            if (this.cy == null) {
+                return;
+            }
+            let marvelCharsNames = ["Emma Frost", "Cyclops", "Deadpool"];
+            let dcCharsNames = ["Wally West", "Cassandra Cain", "Midnighter"];
+
+            let value = e.target.value;
+            let filterNames;
+            if (value == "dc-universe") {
+                filterNames = dcCharsNames;
+
+                // this.cy.update();
+
+            }
+            else if (value == "marvel-universe") {
+                filterNames = marvelCharsNames;
+            }
+            else {
+                filterNames = [...dcCharsNames, ...marvelCharsNames];
+            }
+
+            console.log("Universe", e.target.checked)
+            let notUniverseNames = this.cy.$('.character').filter(function (element, i) {
+                return !filterNames.includes(element.data('id'));
+            });
+            let universeNames = this.cy.$('.character').filter(function (element, i) {
+                return filterNames.includes(element.data('id'));
+            });
+            notUniverseNames.style({
+                'display': !e.target.checked ? 'element' : 'none'
+            });
+            universeNames.style({
+                'display': e.target.checked ? 'element' : 'none'
+            });
         }
     },
 
@@ -433,7 +484,7 @@ export default defineComponent({
                     characters.push(separateWordsByCapitalLetters(character));
                     characterVariantList.push({
                         character: separateWordsByCapitalLetters(character),
-                        variant : separateWordsByCapitalLetters(key),
+                        variant: separateWordsByCapitalLetters(key),
                         description: variantCharacterDescription
                     });
                 }
@@ -839,6 +890,13 @@ export default defineComponent({
         for (let i = 0; i < checkboxes.length; i++) {
             checkboxes[i].addEventListener('change', (e) => {
                 this.updateVisibleNodes(e);
+            })
+        }
+
+        let radios = document.querySelectorAll('input[type=radio]')
+        for (let i = 0; i < radios.length; i++) {
+            radios[i].addEventListener('change', (e) => {
+                this.updateUniverseVisibleNodes(e);
             })
         }
         // if (this.character) {
