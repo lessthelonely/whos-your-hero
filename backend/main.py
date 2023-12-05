@@ -1122,7 +1122,6 @@ def get_character(file_name:str):
 
     return data
 
-#get all that are shared media and its connections
 @app.get("/rdf-all/marvelmedia")
 def get_repeated_media():
     g = Graph()
@@ -1179,6 +1178,274 @@ SELECT ?media ?belongsTo ?mediaType ?mediaDescription
                 'mediaDescription': [mediaDescription_list[i]]
             }
             
+    return data
+
+@app.get("/rdf-all/dcmedia")
+def get_repeated_media():
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+    query = f"""
+SELECT ?media ?belongsTo ?mediaType ?mediaDescription
+        WHERE {{
+            # Subquery to get media with more than one belongsTo
+            {{
+                SELECT ?media
+                WHERE {{
+                    ?media rdf:type hero:Media.
+                    ?media hero:belongsTo ?belongsTo.
+                }}
+                GROUP BY ?media
+                HAVING (COUNT(DISTINCT ?belongsTo) > 1)
+        }}
+
+        # Retrieve details for media identified in the subquery
+        ?media rdf:type hero:Media.
+        ?media hero:belongsTo ?belongsTo.
+        OPTIONAL{{ ?media hero:mediaType ?mediaType. }}
+        OPTIONAL{{ ?media hero:mediaDescription ?mediaDescription. }}
+
+        FILTER (?belongsTo = "http://whosyourhero.com/heroes.owl#WallyWest" || ?belongsTo = "http://whosyourhero.com/heroes.owl#Midnighter" || ?belongsTo = "http://whosyourhero.com/heroes.owl#CassandraCain")
+    }}
+"""
+
+
+    results = list(g.query(query))
+    data = {}
+    if len(results) > 0:
+
+        media_list = [row.media.toPython().split('#')[1] for row in results]
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        mediaType_list = [row.mediaType.toPython() for row in results]
+        mediaDescription_list = [row.mediaDescription.toPython() for row in results]
+
+        for i in range(len(media_list)):
+            media_name = media_list[i]
+
+
+            if media_name in data:
+                if belongsTo_list[i] in data[media_name]['belongsTo'] or mediaDescription_list[i] in data[media_name]['mediaDescription']:
+                    continue
+                data[media_name]['belongsTo'] += [belongsTo_list[i]]
+                data[media_name]['mediaType'] += [mediaType_list[i]] # can remove it?
+                data[media_name]['mediaDescription'] += [mediaDescription_list[i]]
+            else:
+                data[media_name] = {
+                'belongsTo': [belongsTo_list[i]],
+                'mediaType': [mediaType_list[i]],
+                'mediaDescription': [mediaDescription_list[i]]
+            }
+            
+    return data
+
+@app.get("/rdf-all/marvelstoryArc")
+def get_repeated_storyArcs():
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+    query = f"""
+            SELECT ?story ?belongsTo ?storyDescription
+        WHERE {{
+            # Subquery to get storyArcs with more than one belongsTo
+            {{
+                SELECT ?story
+                WHERE {{
+                    ?story rdf:type hero:Story.
+                    ?story hero:belongsTo ?belongsTo.
+                }}
+                GROUP BY ?story
+                HAVING (COUNT(DISTINCT ?belongsTo) > 1)
+            }}
+
+            # Retrieve details for storyArcs identified in the subquery
+            ?story rdf:type hero:Story.
+            ?story hero:belongsTo ?belongsTo.
+            ?story hero:storyDescription ?storyDescription.
+
+            FILTER (?belongsTo = "http://whosyourhero.com/heroes.owl#Cyclops" || ?belongsTo = "http://whosyourhero.com/heroes.owl#EmmaFrost" || ?belongsTo = "http://whosyourhero.com/heroes.owl#Deadpool")
+        }}
+    """
+
+    results = list(g.query(query))
+    data = {}
+    if len(results) > 0:
+
+        story_list = [row.story.toPython().split('#')[1] for row in results]
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        storyDescription_list = [row.storyDescription.toPython() for row in results]
+
+        for i in range(len(story_list)):
+            story_name = story_list[i]
+
+
+            if story_name in data:
+                if belongsTo_list[i] in data[story_name]['belongsTo'] or storyDescription_list[i] in data[story_name]['storyDescription']:
+                    continue
+                data[story_name]['belongsTo'] += [belongsTo_list[i]]
+                data[story_name]['storyDescription'] += [storyDescription_list[i]]
+            else:
+                data[story_name] = {
+                'belongsTo': [belongsTo_list[i]],
+                'storyDescription': [storyDescription_list[i]]
+            }
+                
+    return data
+
+@app.get("/rdf-all/dcstoryArc")
+def get_repeated_storyArcs():
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+    query = f"""
+            SELECT ?story ?belongsTo ?storyDescription
+        WHERE {{
+            # Subquery to get storyArcs with more than one belongsTo
+            {{
+                SELECT ?story
+                WHERE {{
+                    ?story rdf:type hero:Story.
+                    ?story hero:belongsTo ?belongsTo.
+                }}
+                GROUP BY ?story
+                HAVING (COUNT(DISTINCT ?belongsTo) > 1)
+            }}
+
+            # Retrieve details for storyArcs identified in the subquery
+            ?story rdf:type hero:Story.
+            ?story hero:belongsTo ?belongsTo.
+            ?story hero:storyDescription ?storyDescription.
+
+            FILTER (?belongsTo = "http://whosyourhero.com/heroes.owl#WallyWest" || ?belongsTo = "http://whosyourhero.com/heroes.owl#Midnighter" || ?belongsTo = "http://whosyourhero.com/heroes.owl#CassandraCain")
+        }}
+    """
+
+    results = list(g.query(query))
+    data = {}
+    if len(results) > 0:
+
+        story_list = [row.story.toPython().split('#')[1] for row in results]
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        storyDescription_list = [row.storyDescription.toPython() for row in results]
+
+        for i in range(len(story_list)):
+            story_name = story_list[i]
+
+
+            if story_name in data:
+                if belongsTo_list[i] in data[story_name]['belongsTo'] or storyDescription_list[i] in data[story_name]['storyDescription']:
+                    continue
+                data[story_name]['belongsTo'] += [belongsTo_list[i]]
+                data[story_name]['storyDescription'] += [storyDescription_list[i]]
+            else:
+                data[story_name] = {
+                'belongsTo': [belongsTo_list[i]],
+                'storyDescription': [storyDescription_list[i]]
+            }
+                
+    return data
+
+@app.get("/rdf-all/marvelvariant")
+def get_repeated_alternate_versions():
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+    query = f"""
+           SELECT ?variant ?belongsTo ?alternateVersionsDescription
+        WHERE {{
+          {{
+            SELECT ?variant
+            WHERE {{
+              ?variant rdf:type hero:Variant.
+              ?variant hero:belongsTo ?belongsTo.
+            }}
+            GROUP BY ?variant
+            HAVING (COUNT(DISTINCT ?belongsTo) > 1)
+          }}
+        
+          ?variant rdf:type hero:Variant.
+          ?variant hero:belongsTo ?belongsTo.
+          ?variant hero:alternateVersionsDescription ?alternateVersionsDescription.
+          FILTER (?belongsTo = "http://whosyourhero.com/heroes.owl#Cyclops" || ?belongsTo = "http://whosyourhero.com/heroes.owl#EmmaFrost" || ?belongsTo = "http://whosyourhero.com/heroes.owl#Deadpool")
+        }}
+        
+        """
+
+
+    results = list(g.query(query))
+    data = {}
+    if len(results) > 0:
+
+        variant_list = [row.variant.toPython().split('#')[1] for row in results]
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        alternateVersionsDescription_list = [row.alternateVersionsDescription.toPython() for row in results]
+
+        for i in range(len(variant_list)):
+            variant_name = variant_list[i]
+
+
+            if variant_name in data:
+                if belongsTo_list[i] in data[variant_name]['belongsTo'] or alternateVersionsDescription_list[i] in data[variant_name]['alternateVersionsDescription']:
+                    continue
+                data[variant_name]['belongsTo'] += [belongsTo_list[i]]
+                data[variant_name]['alternateVersionsDescription'] += [alternateVersionsDescription_list[i]]
+            else:
+                data[variant_name] = {
+                'belongsTo': [belongsTo_list[i]],
+                'alternateVersionsDescription': [alternateVersionsDescription_list[i]]
+            }
+
+    return data
+
+@app.get("/rdf-all/dcvariant")
+def get_repeated_alternate_versions():
+    g = Graph()
+    file_path = "output.owl"
+    g.parse(file_path)
+    query = f"""
+           SELECT ?variant ?belongsTo ?alternateVersionsDescription
+        WHERE {{
+          {{
+            SELECT ?variant
+            WHERE {{
+              ?variant rdf:type hero:Variant.
+              ?variant hero:belongsTo ?belongsTo.
+            }}
+            GROUP BY ?variant
+            HAVING (COUNT(DISTINCT ?belongsTo) > 1)
+          }}
+        
+          ?variant rdf:type hero:Variant.
+          ?variant hero:belongsTo ?belongsTo.
+          ?variant hero:alternateVersionsDescription ?alternateVersionsDescription.
+        FILTER (?belongsTo = "http://whosyourhero.com/heroes.owl#WallyWest" || ?belongsTo = "http://whosyourhero.com/heroes.owl#Midnighter" || ?belongsTo = "http://whosyourhero.com/heroes.owl#CassandraCain")
+        }}
+        
+        """
+
+
+    results = list(g.query(query))
+    data = {}
+    if len(results) > 0:
+
+        variant_list = [row.variant.toPython().split('#')[1] for row in results]
+        belongsTo_list = [row.belongsTo.toPython().split('#')[1] for row in results]
+        alternateVersionsDescription_list = [row.alternateVersionsDescription.toPython() for row in results]
+
+        for i in range(len(variant_list)):
+            variant_name = variant_list[i]
+
+
+            if variant_name in data:
+                if belongsTo_list[i] in data[variant_name]['belongsTo'] or alternateVersionsDescription_list[i] in data[variant_name]['alternateVersionsDescription']:
+                    continue
+                data[variant_name]['belongsTo'] += [belongsTo_list[i]]
+                data[variant_name]['alternateVersionsDescription'] += [alternateVersionsDescription_list[i]]
+            else:
+                data[variant_name] = {
+                'belongsTo': [belongsTo_list[i]],
+                'alternateVersionsDescription': [alternateVersionsDescription_list[i]]
+            }
+
     return data
 
 
