@@ -477,6 +477,7 @@
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Education: College graduate</hero:characteristics>
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occupation: Super Hero</hero:characteristics>
   <hero:characteristics rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Known Relatives: Rudy West (father), Mary West (mother), Iris West Allen (aunt), Barry Allen/Flash (uncle), Daniel West (uncle), Wallace West (nephew), Linda Park (wife), Iris West (daughter), Jai West (son), Dawn Allen (cousin), Don Allen (cousin), Bart Allen/Impulse (first cousin once removed)</hero:characteristics>
+  <hero:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DC Comics</hero:publisher>
   <hero:realName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wallace Rudolph West</hero:realName>
   <hero:summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Struck by the same lightning bolt that turned his uncle Barry Allen into the Flash, Wallace Rudolph "Wally" West took the name Kid Flash, became Barry's sidekick, and joined the Teen Titans. Eventually, Wally became the Flash to honor his uncle's memory, who died saving the Universe. He also became a member of the Justice League. He married a woman named Linda Park and had two kids, Jai and Iris West II. Currently, Wally was pulled from the Speed Force by Barry and is one of two fastest men alive.</hero:summary>
   <hero:superName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wally West</hero:superName>
