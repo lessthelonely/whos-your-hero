@@ -1130,16 +1130,6 @@ def get_repeated_media():
     query = f"""
 SELECT ?media ?belongsTo ?mediaType ?mediaDescription
         WHERE {{
-            # Subquery to get media with more than one belongsTo
-            {{
-                SELECT ?media
-                WHERE {{
-                    ?media rdf:type hero:Media.
-                    ?media hero:belongsTo ?belongsTo.
-                }}
-                GROUP BY ?media
-                HAVING (COUNT(DISTINCT ?belongsTo) > 1)
-        }}
 
         # Retrieve details for media identified in the subquery
         ?media rdf:type hero:Media.
@@ -1188,17 +1178,6 @@ def get_repeated_media():
     query = f"""
 SELECT ?media ?belongsTo ?mediaType ?mediaDescription
         WHERE {{
-            # Subquery to get media with more than one belongsTo
-            {{
-                SELECT ?media
-                WHERE {{
-                    ?media rdf:type hero:Media.
-                    ?media hero:belongsTo ?belongsTo.
-                }}
-                GROUP BY ?media
-                HAVING (COUNT(DISTINCT ?belongsTo) > 1)
-        }}
-
         # Retrieve details for media identified in the subquery
         ?media rdf:type hero:Media.
         ?media hero:belongsTo ?belongsTo.
@@ -1246,16 +1225,6 @@ def get_repeated_storyArcs():
     query = f"""
             SELECT ?story ?belongsTo ?storyDescription
         WHERE {{
-            # Subquery to get storyArcs with more than one belongsTo
-            {{
-                SELECT ?story
-                WHERE {{
-                    ?story rdf:type hero:Story.
-                    ?story hero:belongsTo ?belongsTo.
-                }}
-                GROUP BY ?story
-                HAVING (COUNT(DISTINCT ?belongsTo) > 1)
-            }}
 
             # Retrieve details for storyArcs identified in the subquery
             ?story rdf:type hero:Story.
@@ -1299,16 +1268,6 @@ def get_repeated_storyArcs():
     query = f"""
             SELECT ?story ?belongsTo ?storyDescription
         WHERE {{
-            # Subquery to get storyArcs with more than one belongsTo
-            {{
-                SELECT ?story
-                WHERE {{
-                    ?story rdf:type hero:Story.
-                    ?story hero:belongsTo ?belongsTo.
-                }}
-                GROUP BY ?story
-                HAVING (COUNT(DISTINCT ?belongsTo) > 1)
-            }}
 
             # Retrieve details for storyArcs identified in the subquery
             ?story rdf:type hero:Story.
@@ -1352,15 +1311,7 @@ def get_repeated_alternate_versions():
     query = f"""
            SELECT ?variant ?belongsTo ?alternateVersionsDescription
         WHERE {{
-          {{
-            SELECT ?variant
-            WHERE {{
-              ?variant rdf:type hero:Variant.
-              ?variant hero:belongsTo ?belongsTo.
-            }}
-            GROUP BY ?variant
-            HAVING (COUNT(DISTINCT ?belongsTo) > 1)
-          }}
+
         
           ?variant rdf:type hero:Variant.
           ?variant hero:belongsTo ?belongsTo.
@@ -1404,15 +1355,7 @@ def get_repeated_alternate_versions():
     query = f"""
            SELECT ?variant ?belongsTo ?alternateVersionsDescription
         WHERE {{
-          {{
-            SELECT ?variant
-            WHERE {{
-              ?variant rdf:type hero:Variant.
-              ?variant hero:belongsTo ?belongsTo.
-            }}
-            GROUP BY ?variant
-            HAVING (COUNT(DISTINCT ?belongsTo) > 1)
-          }}
+
         
           ?variant rdf:type hero:Variant.
           ?variant hero:belongsTo ?belongsTo.
