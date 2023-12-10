@@ -1,0 +1,18 @@
+To see the web interface, one just needs to run the backend and frontend.
+It's neccessary to install some requirements, which are in the requirements.txt file.
+
+To run the backend:
+```
+cd backend
+python main.py
+```
+
+To run the frontend:
+```
+cd frontend/wsdl-wyh
+npm i
+npm run dev
+```
+
+If you want to see the ontology and create new instances of it, you can do so in the folder labeled ontology.
+onto.py includes the ontology code, your_ontology.owl includes the ontology, instance.py includes the code to create the various instances of the ontology for all the characters.

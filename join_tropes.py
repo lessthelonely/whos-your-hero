@@ -8,11 +8,11 @@ def get_tropes(folder_name):
         for t in tropes:
             all_tropes.add(t)
 
-get_tropes("cassandra_cain")
-get_tropes("emma_frost")
-get_tropes("wally_west")
-get_tropes("deadpool")
-get_tropes("midnighter")
+#get_tropes("cassandra_cain")
+#get_tropes("emma_frost")
+#get_tropes("wally_west")
+#get_tropes("deadpool")
+#get_tropes("midnighter")
 get_tropes("cyclops")
 
 bonus_tropes = set()

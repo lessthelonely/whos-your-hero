@@ -22,7 +22,7 @@ def read_root():
 @app.get("/rdf-character/{file_name}/photo")
 def get_photo(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
     g.parse(file_path)
 
     query = f"""
@@ -46,7 +46,7 @@ def get_photo(file_name:str):
 @app.get("/rdf-character/{file_name}/birthday")
 def get_birthday(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
     g.parse(file_path)
 
     query = f"""
@@ -70,7 +70,7 @@ def get_birthday(file_name:str):
 @app.get("/rdf-character/{file_name}/characterType")
 def get_characterType(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
     g.parse(file_path)
 
     query = f"""
@@ -94,7 +94,7 @@ def get_characterType(file_name:str):
 @app.get("/rdf-character/{file_name}/appearsIn")
 def get_appearsIn(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
     g.parse(file_path)
 
     query = f"""
@@ -118,7 +118,7 @@ def get_appearsIn(file_name:str):
 @app.get("/rdf-character/{file_name}/evolution")
 def get_evolution(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
     g.parse(file_path)
     query = f"""
     SELECT ?individual ?evolution
@@ -141,7 +141,7 @@ def get_evolution(file_name:str):
 @app.get("/rdf-character/{file_name}/creation")
 def get_creation(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -166,7 +166,7 @@ def get_creation(file_name:str):
 @app.get("/rdf-character/{file_name}/creators")
 def get_creators(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -191,7 +191,7 @@ def get_creators(file_name:str):
 @app.get("/rdf-character/{file_name}/deaths")
 def get_deaths(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -216,7 +216,7 @@ def get_deaths(file_name:str):
 @app.get("/rdf-character/{file_name}/origins")
 def get_origins(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -241,7 +241,7 @@ def get_origins(file_name:str):
 @app.get("/rdf-character/{file_name}/characteristics")
 def get_characteristics(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -266,7 +266,7 @@ def get_characteristics(file_name:str):
 @app.get("/rdf-character/{file_name}/publisher")
 def get_publisher(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -291,7 +291,7 @@ def get_publisher(file_name:str):
 @app.get("/rdf-character/{file_name}/realName")
 def get_realName(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -316,7 +316,7 @@ def get_realName(file_name:str):
 @app.get("/rdf-character/{file_name}/summary")
 def get_summary(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -341,7 +341,7 @@ def get_summary(file_name:str):
 @app.get("/rdf-character/{file_name}/superName")
 def get_superName(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -366,7 +366,7 @@ def get_superName(file_name:str):
 @app.get("/rdf-character/{file_name}/hasDied")
 def get_hasDied(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -391,7 +391,7 @@ def get_hasDied(file_name:str):
 @app.get("/rdf-character/{file_name}/isWoman")
 def get_isWoman(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -416,7 +416,7 @@ def get_isWoman(file_name:str):
 @app.get("/rdf-character/{file_name}/isMan")
 def get_isMan(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -441,7 +441,7 @@ def get_isMan(file_name:str):
 @app.get("/rdf-character/{file_name}/isNonBinary")
 def get_isNonBinary(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -466,7 +466,7 @@ def get_isNonBinary(file_name:str):
 @app.get("/rdf-character/{file_name}/firstAppearance")
 def get_firstAppearance(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
 
     g.parse(file_path)
 
@@ -491,7 +491,7 @@ def get_firstAppearance(file_name:str):
 @app.get("/rdf-character/{file_name}/alias")
 def get_alias(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
     g.parse(file_path)
 
     query = f"""
@@ -515,7 +515,7 @@ def get_alias(file_name:str):
 @app.get("/rdf-character/{file_name}/alternateVersions")
 def get_alternateVersions(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
     g.parse(file_path)
 
     query = f"""
@@ -540,7 +540,7 @@ def get_alternateVersions(file_name:str):
 @app.get("/rdf-character/{file_name}/storyArcs")
 def get_storyArcs(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
     g.parse(file_path)
 
     query = f"""
@@ -565,7 +565,7 @@ def get_storyArcs(file_name:str):
 @app.get("/rdf-character/{file_name}/powers")
 def get_powers(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
     g.parse(file_path)
 
     query = f"""
@@ -612,7 +612,7 @@ def trope_query(file_path):
 #get character's tropes
 @app.get("/rdf-character/{file_name}/tropes")
 def get_character_tropes(file_name:str):
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
    
     return trope_query(file_path)
 
@@ -627,7 +627,7 @@ def get_trope(file_name:str):
 @app.get("/rdf-character/{file_name}/media")
 def get_media_character(file_name:str):
     g = Graph()
-    file_path = f"{file_name}.owl"
+    file_path = "ontology_characters/" + file_name + ".owl"
     g.parse(file_path)
 
     query = f"""
@@ -659,7 +659,7 @@ def get_media_character(file_name:str):
 @app.get("/rdf-all/tropenames")
 def get_tropenames():
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
 
     query = f"""
@@ -683,7 +683,7 @@ def get_tropenames():
 @app.get("/rdf-all/power")
 def get_repeated_powers():
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
     query = f"""
               SELECT ?power ?belongsTo ?powerDescription
@@ -735,7 +735,7 @@ def get_repeated_powers():
 @app.get("/rdf-all/storyArc")
 def get_repeated_storyArcs():
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
     query = f"""
             SELECT ?story ?belongsTo ?storyDescription
@@ -787,7 +787,7 @@ def get_repeated_storyArcs():
 @app.get("/rdf-all/media")
 def get_repeated_media():
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
     query = f"""
     SELECT ?media ?belongsTo ?mediaType ?mediaDescription
@@ -844,7 +844,7 @@ def get_repeated_media():
 @app.get("/rdf-all/variant")
 def get_repeated_alternate_versions():
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
     query = f"""
            SELECT ?variant ?belongsTo ?alternateVersionsDescription
@@ -896,7 +896,7 @@ def get_repeated_alternate_versions():
 @app.get("/rdf-all/trope")
 def get_repeated_tropes():
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
     query = f"""
            SELECT ?trope ?belongsTo ?tropeDescription
@@ -950,7 +950,7 @@ def get_repeated_tropes():
 @app.get("/rdf-all/trope/{trope_name}")
 def get_trope_descriptions(trope_name: str):
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
 
     query = f"""
@@ -985,7 +985,7 @@ def get_trope_descriptions(trope_name: str):
 @app.get("/rdf-all/storyArc/{story_name}")
 def get_story_descriptions(story_name: str):
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
 
     query = f"""
@@ -1020,7 +1020,7 @@ def get_story_descriptions(story_name: str):
 @app.get("/rdf-all/powers/{power_name}")
 def get_story_descriptions(power_name: str):
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
 
     query = f"""
@@ -1055,7 +1055,7 @@ def get_story_descriptions(power_name: str):
 @app.get("/rdf-all/media/{media_name}")
 def get_media(media_name: str):
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
 
     query = f"""
@@ -1125,7 +1125,7 @@ def get_character(file_name:str):
 @app.get("/rdf-all/marvelmedia")
 def get_repeated_media():
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
     query = f"""
 SELECT ?media ?belongsTo ?mediaType ?mediaDescription
@@ -1173,7 +1173,7 @@ SELECT ?media ?belongsTo ?mediaType ?mediaDescription
 @app.get("/rdf-all/dcmedia")
 def get_repeated_media():
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
     query = f"""
 SELECT ?media ?belongsTo ?mediaType ?mediaDescription
@@ -1220,7 +1220,7 @@ SELECT ?media ?belongsTo ?mediaType ?mediaDescription
 @app.get("/rdf-all/marvelstoryArc")
 def get_repeated_storyArcs():
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
     query = f"""
             SELECT ?story ?belongsTo ?storyDescription
@@ -1263,7 +1263,7 @@ def get_repeated_storyArcs():
 @app.get("/rdf-all/dcstoryArc")
 def get_repeated_storyArcs():
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
     query = f"""
             SELECT ?story ?belongsTo ?storyDescription
@@ -1306,7 +1306,7 @@ def get_repeated_storyArcs():
 @app.get("/rdf-all/marvelvariant")
 def get_repeated_alternate_versions():
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
     query = f"""
            SELECT ?variant ?belongsTo ?alternateVersionsDescription
@@ -1350,7 +1350,7 @@ def get_repeated_alternate_versions():
 @app.get("/rdf-all/dcvariant")
 def get_repeated_alternate_versions():
     g = Graph()
-    file_path = "output.owl"
+    file_path = "ontology_characters/output.owl"
     g.parse(file_path)
     query = f"""
            SELECT ?variant ?belongsTo ?alternateVersionsDescription

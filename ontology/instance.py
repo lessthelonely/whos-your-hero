@@ -337,10 +337,10 @@ def load_tropes(file_name):
     g.serialize(destination="tropes/owls/" + rdf_name, format="xml")
 
 
-#all_tropes_file = open("all_tropes.txt", "r")
-#all_tropes = [line.strip() for line in all_tropes_file]
+all_tropes_file = open("all_tropes.txt", "r")
+all_tropes = [line.strip() for line in all_tropes_file]
 
-"""
+
 tropes = []
 directory = 'tropes'
 for filename in os.scandir(directory):
@@ -349,6 +349,14 @@ for filename in os.scandir(directory):
 tropes.sort()
 for t in range(len(tropes)):
    load_tropes(tropes[t])
-   """
 
 
+"""
+tropes = []
+with open("new_tropes.txt", "r") as f:
+    for line in f:
+        tropes.append(line.strip() + ".txt")
+tropes.sort()
+for t in range(len(tropes)):
+   load_tropes(tropes[t])
+"""
