@@ -265,3 +265,15 @@ input[type="checkbox"] {
   background-color: magenta;
   border-color: #ccc;
 }
+
+#all-universe-radio:checked {
+  color: white;
+  background-color: black;
+  border-color: #ccc;
+} 
+
+#marvel-universe-radio:checked {
+  accent-color: #232323;
+  background-color: rgb(193, 15, 15);
+  border-color: #ccc;
+}

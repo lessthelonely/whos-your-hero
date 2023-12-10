@@ -27,14 +27,12 @@
                 <label for="variant">Alternate Versions</label>
             </div>
             <div style="width: 20%;">
-                <div >
+                <div>
                     <input type="radio" class="form-check-input" id="all-universe-radio" name="universe" value="all">
-                    <label for="all-universe-radi">All Universes</label>
+                    <label for="all-universe-radio" style="margin-left: 2.5px;">All Universes</label>
                     <input type="radio" class="form-check-input" id="marvel-universe-radio" name="universe"
-                        value="marvel-universe">
-                    <label for="marvel-universe-radio">Marvel Universe</label>
-                    <!-- <input type="radio" class="form-check-input" id="dc-universe-radio" name="universe" value="dc-universe">
-                    <label for="dc-universe-radio">DC Universe</label> -->
+                        value="marvel-universe" style="margin-left: 10px;">
+                    <label for="marvel-universe-radio" style="margin-left: 2.5px;">Marvel Universe</label>
                 </div>
             </div>
         </div>
