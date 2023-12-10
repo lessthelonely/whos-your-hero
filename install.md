@@ -1,6 +1,11 @@
 To see the web interface, one just needs to run the backend and frontend.
 It's neccessary to install some requirements, which are in the requirements.txt file.
 
+To install the requirements:
+```
+pip install -r requirements.txt
+```
+
 To run the backend:
 ```
 cd backend
