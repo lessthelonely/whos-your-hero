@@ -246,6 +246,7 @@
 </owl:Class>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#CassandraCain">
+  <owl:sameAs rdf:resource="http://dbpedia.org/page/Cassandra_Cain"/>
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Batgirl"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#Ghost/Batgirl"/>

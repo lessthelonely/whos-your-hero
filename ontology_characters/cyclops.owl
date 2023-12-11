@@ -246,6 +246,7 @@
 </owl:Class>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Cyclops">
+  <owl:sameAs rdf:resource="http://dbpedia.org/page/Cyclops_(Marvel_Comics)"/>
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Trope"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#FirstClass"/>

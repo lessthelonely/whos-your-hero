@@ -246,6 +246,7 @@
 </owl:Class>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#Deadpool">
+  <owl:sameAs rdf:resource="http://dbpedia.org/page/Deadpool"/>
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#BeforeWeaponX"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#TheWeaponXProgram"/>

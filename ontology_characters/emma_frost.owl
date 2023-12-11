@@ -246,6 +246,7 @@
 </owl:Class>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#EmmaFrost">
+  <owl:sameAs rdf:resource="http://dbpedia.org/page/Emma_Frost"/>
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#HellfireClub"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#GenerationX"/>

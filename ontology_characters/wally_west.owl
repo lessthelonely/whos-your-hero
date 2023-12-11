@@ -246,6 +246,7 @@
 </owl:Class>
 
 <owl:NamedIndividual rdf:about="http://whosyourhero.com/heroes.owl#WallyWest">
+  <owl:sameAs rdf:resource="http://dbpedia.org/page/Wally_West"/>
   <rdf:type rdf:resource="http://whosyourhero.com/heroes.owl#Character"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#KidFlashandtheTeenTitans"/>
   <hero:storyArcs rdf:resource="http://whosyourhero.com/heroes.owl#TheNewTeenTitans"/>
